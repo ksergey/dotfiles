@@ -1,0 +1,259 @@
+" Crossplatform config
+if has('win32') || has ('win64')
+    let $VIMHOME=$HOME."/vimfiles"
+else
+    let $VIMHOME=$HOME."/.vim"
+endif
+
+call plug#begin($VIMHOME.'/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'derekwyatt/vim-fswitch', { 'for': ['c', 'cpp'] }
+" Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp'] }
+Plug 'sheerun/vim-polyglot'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-markdown', { 'for': ['markdown'] }
+Plug 'ervandew/supertab'
+Plug 'justinmk/vim-syntax-extra'
+Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
+Plug 'airblade/vim-gitgutter'
+Plug 'majutsushi/tagbar'
+Plug 'itchyny/lightline.vim'
+
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+
+Plug 'junegunn/fzf', { 'dir': $VIMHOME.'/fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+
+Plug 'benmills/vimux'
+
+" Colorschemes
+Plug 'josuegaleas/jay'
+Plug 'morhetz/gruvbox'
+Plug 'co1ncidence/mountaineer'
+
+call plug#end()
+
+if exists('glaive#Install')
+  call glaive#Install()
+endif
+
+let mapleader="\<Space>"
+let g:load_doxygen_syntax=1
+
+"---------------------------------------
+" NERDTree
+"---------------------------------------
+let g:NERDTreeChDirMode=0
+let g:NERDTreeShowHidden=1
+let g:NERDTreeWinPos="left"
+let g:NERDTreeWinSize=40
+let g:NERDTreeMinimalUI=1
+let g:NERDTreeDirArrows=0
+let g:NERDTreeIgnore=['\.pyc$']
+map <F11> <Esc>:NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"---------------------------------------
+" tagbar
+"---------------------------------------
+let g:tagbar_left=0
+let g:tagbar_autoclose=0
+let g:tagbar_autofocus=1
+let g:tagbar_compact=1
+let g:tagbar_indent=1
+let g:tagbar_show_visibility=1
+let g:tagbar_show_linenumbers=0
+let g:tagbar_singleclick=1
+let g:tagbar_iconchars=['▶', '▼']
+let g:tagbar_previewwin_pos = "aboveleft"
+let g:tagbar_autopreview=0
+map <F12> <Esc>:TagbarToggle<CR>
+
+"---------------------------------------
+" fswitch
+"---------------------------------------
+augroup fswitch-autocommands
+    au BufEnter *.cpp,*.cc let b:fswitchdst  = 'hpp,h'
+    au BufEnter *.cpp,*.cc let b:fswitchlocs = './,../include'
+    au BufEnter *.h,*.hpp let b:fswitchdst  = 'cpp,cc,c'
+    au BufEnter *.h,*.hpp let b:fswitchlocs = './,../src'
+augroup END
+map <F3> :FSHere<CR>
+
+"---------------------------------------
+" supertab
+"---------------------------------------
+let g:SuperTabCrMapping=0
+let g:SuperTabDefaultCompletionType="<c-n>"
+
+"---------------------------------------
+" vim-cpp-enhanced-highlight
+"---------------------------------------
+let g:cpp_class_scope_highlight=1
+let g:cpp_member_variable_highlight=1
+
+"---------------------------------------
+" ultisnips
+"---------------------------------------
+let g:UltiSnipsSnippetsDir=$VIMHOME."/snippets""
+
+"---------------------------------------
+" vim-gitgutter
+"---------------------------------------
+let g:gitgutter_enabled=0
+nmap <leader>m :GitGutterToggle<cr>
+
+"---------------------------------------
+" vim-codefmt
+"---------------------------------------
+map <leader>z :FormatCode clang-format<cr>
+
+"---------------------------------------
+" fzf.vim
+"---------------------------------------
+" Empty value to disable preview window altogether
+let g:fzf_preview_window = ''
+map <leader>g :GFiles<cr>
+map <leader>f :Files<cr>
+
+"---------------------------------------
+" vimux
+"---------------------------------------
+map <leader>t :VimuxPromptCommand("make ")<cr>
+map <Leader>r :VimuxRunLastCommand<cr>
+
+"---------------------------------------
+" vim settings
+"---------------------------------------
+syntax on
+syntax sync minlines=256
+filetype plugin on
+filetype indent on
+set nocompatible
+set backspace=indent,eol,start
+set nobackup
+set nowritebackup
+set noswapfile
+set noeol
+set nowrap
+"set number
+set smarttab
+set expandtab
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set shiftround
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set matchpairs+=<:>
+set ruler
+set showcmd
+set laststatus=2
+set cmdheight=1
+set noshowmode
+set wildmenu
+set wildcharm=<TAB>
+set nostartofline
+set splitright
+set splitbelow
+set textwidth=120
+set title
+set scrolloff=3
+set sidescrolloff=3
+set encoding=utf-8
+set termencoding=utf-8
+set fileformats=unix,dos,mac
+set foldmethod=manual
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+set fillchars=vert:\│
+set comments=sl:/*,mb:\ *,elx:\ */
+set complete-=i
+set sessionoptions=blank,buffers,folds,help,resize,tabpages,winpos,winsize
+set shortmess=atI
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set synmaxcol=512
+
+set cindent
+set cinoptions=g-1
+
+"---------------------------------------
+" VIM colorscheme
+"---------------------------------------
+let &t_ut='' " fix issue with kitty
+set t_Co=256
+set background=dark
+"silent! colorscheme jay
+colorscheme gruvbox
+"colorscheme mountaineer
+
+let g:lightline = {'colorscheme': 'gruvbox', 'enable':{'statusline': 1, 'tabline': 1}}
+
+"---------------------------------------
+" VIM bindings
+"---------------------------------------
+nnoremap <silent> <cr> :nohlsearch<cr><cr>
+nmap <F1> <Esc>
+imap <F1> <Esc>
+nmap <PageUp> <C-U><C-U>
+imap <PageUp> <C-O><C-U><C-O><C-U>
+nmap <PageDown> <C-D><C-D>
+imap <PageDown> <C-O><C-D><C-O><C-D>
+map <S-J> <C-W>j
+map <S-K> <C-W>k
+map <S-H> <C-W>h
+map <S-L> <C-W>l
+ino <Down> <C-O>gj
+ino <Up> <C-O>gk
+nno <Down> gj
+nno <Up> gk
+nmap <leader>n :set invnumber<cr>
+nmap <leader>b :set list!<cr>
+nmap <leader>w :set wrap!<cr>
+nmap <leader>h :set hlsearch!<cr>
+nmap <leader>q :q!<cr>
+map 1 <Esc>:tabprevious<cr>
+map 3 <Esc>:tabnext<cr>
+map 2 <Esc>:tabnew<cr>
+map <leader>p :set paste!<cr>
+map <leader>c :set cursorline!<cr>
+
+"---------------------------------------
+" VIM autocommands
+"---------------------------------------
+autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd VimResized * :wincmd =
+autocmd BufNewFile,BufRead *.ipp set syntax=cpp
+
+"---------------------------------------
+" Functions
+"---------------------------------------
+function! IncludeGuard()
+    let includeGuard = "KSERGEY_" . expand("%:t:r") . "_" . strftime("%d%m%y%H%M%S")
+    call append(0, "#ifndef " . includeGuard)
+    call append(1, "#define " . includeGuard)
+    call append(line("$"), "#endif /* " . includeGuard . " */")
+endfunction
+map <C-g> <Esc>:call IncludeGuard()<CR>
+
+function! IncludeLicense()
+    if (&ft=="c" || &ft=="cpp" || &ft=="cc" || &ft=="h" || &ft=="hpp")
+        let licenseFile = $VIMHOME."/cpp_license"
+        if filereadable(licenseFile)
+            execute ":0r " . licenseFile
+        else
+            echo licenseFile . " not exists"
+        endif
+    else
+        echo "Feature available only for c++/c files"
+    endif
+endfunction
+map <C-l> <Esc>:call IncludeLicense()<CR>
