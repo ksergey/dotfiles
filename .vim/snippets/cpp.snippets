@@ -14,14 +14,14 @@ snippet cl "class .. (class)"
 		$1() = default;
 	};
 snippet main
-	#include <iostream>
+	#include <fmt/format.h>
 
 	int main([[maybe_unused]] int argc, [[maybe_unused]] char* argv[])
 	{
 		try {
 			${0}
 		} catch (std::exception const& e) {
-			std::cout << "ERROR: " << e.what() << '\n';
+			fmt::print(stderr, "ERROR: {}\n", e.what());
 			return EXIT_FAILURE;
 		}
 		return EXIT_SUCCESS;
