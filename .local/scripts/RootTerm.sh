@@ -1,7 +1,8 @@
 #!/bin/bash
 
-CLASSNAME="RootTerm"
+# xdotool required
 
+CLASSNAME="RootTerm"
 WINDOW_ID=$(xdotool search --classname "${CLASSNAME}")
 
 if [ -z "${WINDOW_ID}" ]; then
