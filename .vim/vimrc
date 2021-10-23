@@ -33,7 +33,6 @@ Plug 'benmills/vimux'
 " Colorschemes
 Plug 'josuegaleas/jay'
 Plug 'morhetz/gruvbox'
-Plug 'co1ncidence/mountaineer'
 
 call plug#end()
 
@@ -192,7 +191,6 @@ set t_Co=256
 set background=dark
 "silent! colorscheme jay
 colorscheme gruvbox
-"colorscheme mountaineer
 
 let g:lightline = {'colorscheme': 'gruvbox', 'enable':{'statusline': 1, 'tabline': 1}}
 
