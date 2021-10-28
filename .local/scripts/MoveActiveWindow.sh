@@ -27,6 +27,11 @@ case "${DIRECTION}" in
   "bottom")
     xdotool windowmove --sync ${WINDOW_WINDOW} x $((${WORKAREA_Y} + ${WORKAREA_HEIGHT} - ${WINDOW_HEIGHT}))
     ;;
+  "center")
+    xdotool windowmove --sync ${WINDOW_WINDOW} \
+      $((${WORKAREA_X} + (${WORKAREA_WIDTH} - ${WINDOW_WIDTH})/2)) \
+      $((${WORKAREA_Y} + (${WORKAREA_HEIGHT} - ${WINDOW_HEIGHT})/2))
+    ;;
   "toggle-maximize")
     xdotool windowstate --toggle MAXIMIZED_VERT ${WINDOW_WINDOW} windowstate --toggle MAXIMIZED_HORZ ${WINDOW_WINDOW}
     ;;
