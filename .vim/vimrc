@@ -183,6 +183,8 @@ set synmaxcol=512
 set cindent
 set cinoptions=g-1
 
+set noautoread
+
 "---------------------------------------
 " VIM colorscheme
 "---------------------------------------
