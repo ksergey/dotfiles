@@ -232,6 +232,8 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd VimResized * :wincmd =
 autocmd BufNewFile,BufRead *.ipp set syntax=cpp
+autocmd FileChangedRO * echohl WarningMsg | echo "File changed RO." | echohl None
+autocmd FileChangedShell * echohl WarningMsg | echo "File changed shell." | echoh
 
 "---------------------------------------
 " Functions
