@@ -238,14 +238,6 @@ autocmd FileChangedShell * echohl WarningMsg | echo "File changed shell." | echo
 "---------------------------------------
 " Functions
 "---------------------------------------
-function! IncludeGuard()
-    let includeGuard = "KSERGEY_" . expand("%:t:r") . "_" . strftime("%d%m%y%H%M%S")
-    call append(0, "#ifndef " . includeGuard)
-    call append(1, "#define " . includeGuard)
-    call append(line("$"), "#endif /* " . includeGuard . " */")
-endfunction
-map <C-g> <Esc>:call IncludeGuard()<CR>
-
 function! IncludeLicense()
     if (&ft=="c" || &ft=="cpp" || &ft=="cc" || &ft=="h" || &ft=="hpp")
         let licenseFile = $VIMHOME."/cpp_license"
