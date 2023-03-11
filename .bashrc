@@ -18,7 +18,10 @@ alias ls='ls --color=auto'
 alias grep='grep --color'
 alias vi='vim'
 alias view='vim -R'
-alias owner='pacman -Qo'
+
+# Helpers
+# sudo pacreport --unowned-files | tee report.log
+# pacman -Qo <file>
 
 # history
 export HISTCONTROL=ignoreboth
@@ -34,13 +37,13 @@ complete -cf man
 complete -cf pkill
 
 # path
-export LOCAL_PATH="$HOME/.local"
-export PATH="$LOCAL_PATH/bin:$PATH"
-export PKG_CONFIG_PATH="$LOCAL_PATH/lib/pkgconfig"
-export BOOST_ROOT="$LOCAL_PATH"
+export LOCAL_PATH="${HOME}/.local"
+export PATH="${LOCAL_PATH}/bin:${LOCAL_PATH}/scripts:${PATH}"
+export PKG_CONFIG_PATH="${LOCAL_PATH}/lib/pkgconfig"
+export BOOST_ROOT="${LOCAL_PATH}"
 
-[[ -z "$XDG_CONFIG_HOME"  ]] && export XDG_CONFIG_HOME="$HOME/.config"
-[[ -f "$HOME/.dircolors" ]] && eval $(dircolors -b "$HOME/.dircolors")
+[[ -z "${XDG_CONFIG_HOME}"  ]] && export XDG_CONFIG_HOME="${HOME}/.config"
+[[ -f "${HOME}/.dircolors" ]] && eval $(dircolors -b "${HOME}/.dircolors")
 
 # color man
 export LESS_TERMCAP_mb=$'\E[01;31m'
