@@ -6,7 +6,4 @@
     default = matching
 
 [alias]
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-    suball = submodule update --recursive --init
+    xlog = !git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
