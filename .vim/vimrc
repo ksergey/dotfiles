@@ -238,7 +238,7 @@ autocmd FileChangedShell * echohl WarningMsg | echo "File changed shell." | echo
 "---------------------------------------
 " Functions
 "---------------------------------------
-function! includeLicense()
+function! IncludeLicense()
     let licenseFile = ""
     if (&ft == "c" || &ft == "cpp" || &ft == "cc" || &ft == "h" || &ft == "hpp")
         let licenseFile = $VIMHOME."/cpp_license"
@@ -254,4 +254,4 @@ function! includeLicense()
         echo licenseFile . " not exists"
     endif
 endfunction
-map <C-l> <Esc>:call includeLicense()<CR>
+map <C-l> <Esc>:call IncludeLicense()<CR>
