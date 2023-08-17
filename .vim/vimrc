@@ -238,16 +238,20 @@ autocmd FileChangedShell * echohl WarningMsg | echo "File changed shell." | echo
 "---------------------------------------
 " Functions
 "---------------------------------------
-function! IncludeLicense()
-    if (&ft=="c" || &ft=="cpp" || &ft=="cc" || &ft=="h" || &ft=="hpp")
+function! includeLicense()
+    let licenseFile = ""
+    if (&ft == "c" || &ft == "cpp" || &ft == "cc" || &ft == "h" || &ft == "hpp")
         let licenseFile = $VIMHOME."/cpp_license"
-        if filereadable(licenseFile)
-            execute ":0r " . licenseFile
-        else
-            echo licenseFile . " not exists"
-        endif
+    elseif (&ft == "sh" || expand("%") == "CMakeLists.txt")
+        let licenseFile = $VIMHOME."/bash_license"
+    endif
+
+    if (licenseFile == "")
+        echo "feature not available for this file type"
+    elseif filereadable(licenseFile)
+        execute ":0r " . licenseFile
     else
-        echo "Feature available only for c++/c files"
+        echo licenseFile . " not exists"
     endif
 endfunction
-map <C-l> <Esc>:call IncludeLicense()<CR>
+map <C-l> <Esc>:call includeLicense()<CR>
