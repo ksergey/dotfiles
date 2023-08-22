@@ -241,9 +241,9 @@ autocmd FileChangedShell * echohl WarningMsg | echo "File changed shell." | echo
 function! IncludeLicense()
     let licenseFile = ""
     if (&ft == "c" || &ft == "cpp" || &ft == "cc" || &ft == "h" || &ft == "hpp")
-        let licenseFile = $VIMHOME."/cpp_license"
+        let licenseFile = $VIMHOME."/license_cpp"
     elseif (&ft == "sh" || expand("%") == "CMakeLists.txt")
-        let licenseFile = $VIMHOME."/bash_license"
+        let licenseFile = $VIMHOME."/license_bash"
     endif
 
     if (licenseFile == "")
