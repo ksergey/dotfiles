@@ -20,6 +20,7 @@ Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 Plug 'itchyny/lightline.vim'
+Plug 'nickel-lang/vim-nickel'
 
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
