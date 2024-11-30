@@ -18,6 +18,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color'
 alias vi='vim'
 alias view='vim -R'
+alias lsblk='lsblk -o name,mountpoint,label,size,uuid'
 
 # Helpers
 # sudo pacreport --unowned-files | tee report.log
