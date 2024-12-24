@@ -1,0 +1,231 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "privacy",
+    "backlight",
+    "pulseaudio#microphone",
+    "pulseaudio",
+    "group/power",
+    "custom/swaync",
+    "tray",
+    "custom/power"
+  ],
+
+  "custom/actions": {
+    "format": "",
+    "tooltip-format": "System Actions",
+    "on-click": "fuzzel-actions"
+  },
+
+  "hyprland/workspaces": {
+    "show-special": true,
+    "special-visible-only": true,
+    "format": "{icon}",
+    "format-icons": {
+      "discord": "",
+      "lunatask": "",
+      "monitor": "󰍹",
+      "obsidian": "",
+      "spotify": "",
+      "active": "",
+      "default": "",
+      "empty": "",
+      "persistent": "",
+      "urgent": "",
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "hyprland/window": {
+    "max-length": 50,
+    "format": "{title}",
+    "icon": true
+  },
+
+  "clock": {
+    "format": "  {:%H:%M}",
+    "tooltip-format": "  {:%a, %d %b}",
+    "calendar": {
+      "mode": "month",
+      "weeks-pos": "left",
+      "mode-mon-col": 3,
+      "format": {
+        "months": "<span color='@base06'><b>{}</b></span>",
+        "days": "<span color='@base05'><b>{}</b></span>",
+        "weeks": "<span color='@base0E'><b>W{}</b></span>",
+        "weekdays": "<span color='@base0A'><b>{}</b></span>",
+        "today": "<span color='@base0B'><b><u>{}</u></b></span>"
+      },
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    },
+  },
+
+  "custom/hyprcast": {
+    "exec": "~/.config/hypr/scripts/hyprcast.fish -w",
+    "return-type": "json",
+    "hide-empty-text": true,
+    "on-click": "~/.config/hypr/scripts/hyprcast.fish",
+    "interval": "once",
+    "signal": 1
+  },
+
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [ "󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 " ],
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "󰝟  Muted",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "scroll-step": 5,
+    "format-icons": [ "󰕿", "󰖀", "󰕾" ]
+  },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": " ",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-click-right": "pavucontrol -t 4",
+    "on-scroll-up": "",
+    "on-scroll-down": "",
+	  "tooltip-format": "{source_desc} | {source_volume}%"
+  },
+
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "battery",
+      "idle_inhibitor",
+      "power-profiles-daemon"
+    ]
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "󱐋  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{icon}  {time}",
+    "format-icons": [ " ", " ", " ", " ", " " ]
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " "
+    }
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon} ",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+
+  "group/hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "custom/monitor",
+      "disk",
+      "cpu",
+      "temperature",
+      "memory",
+    ]
+  },
+
+  "custom/monitor":  {
+    "format": "",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch workspace special:monitor"
+  },
+
+  "disk": {
+    "format": "󰋊 {percentage_free}%"
+  },
+
+  "cpu": {
+    "format": "  {usage}%",
+    "interval": 1
+  },
+
+  "temperature": {
+    "format": "  {temperatureC}°C",
+    "interval": 1,
+    "critical-format": "󰸁 {temperatureC}°C",
+    "critical-threshold": 90
+  },
+
+  "memory": {
+    "format": "  {used}/{total}GiB",
+    "interval": 1
+  },
+
+  "tray": {
+    "spacing": 5
+  },
+
+  "custom/swaync": {
+    "tooltip": false,
+    "format": "{} {icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰂛",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰂛"
+    },
+    "return-type": "json",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout -p layer-shell"
+  }
+}

@@ -1,9 +1,0 @@
-# keyboard layout
-setxkbmap -layout us,ru -option grp:caps_toggle
-
-# screen powersave
-xset +dpms
-xset dpms 0 0 300
-
-# disable beep
-xset -b
