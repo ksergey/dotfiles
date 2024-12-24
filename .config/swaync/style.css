@@ -1,4 +1,4 @@
-@define-color base00 #32302f;
+@define-color base01 #32302f;
 @define-color base01 #3c3836;
 @define-color base02 #504945;
 @define-color base03 #665c54;
@@ -366,7 +366,6 @@
 
 .control-center {
   /* The Control Center which contains the old notifications + widgets */
-  background: alpha(@base00, 0.8);
   color: @base05;
   border-radius: 7px;
   border: 2px solid @base0D;
@@ -510,6 +509,7 @@
 
 .widget-mpris .widget-mpris-player > box > button {
   /* Change player control buttons */
+  color: @base06;
 }
 
 .widget-mpris .widget-mpris-player > box > button:hover {
