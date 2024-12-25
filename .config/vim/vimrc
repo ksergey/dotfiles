@@ -9,7 +9,7 @@ call plug#begin($VIMHOME.'/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'derekwyatt/vim-fswitch', { 'for': ['c', 'cpp'] }
-" Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp'] }
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp'] }
 Plug 'sheerun/vim-polyglot'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown', { 'for': ['markdown'] }
@@ -82,7 +82,7 @@ augroup fswitch-autocommands
     au BufEnter *.h,*.hpp let b:fswitchdst  = 'cpp,cc,c'
     au BufEnter *.h,*.hpp let b:fswitchlocs = './,../src'
 augroup END
-map <F3> :FSHere<CR>
+nmap <leader>s :FSHere<CR>
 
 "---------------------------------------
 " supertab
@@ -105,7 +105,7 @@ let g:UltiSnipsSnippetsDir=$VIMHOME."/snippets""
 " vim-gitgutter
 "---------------------------------------
 let g:gitgutter_enabled=0
-nmap <leader>m :GitGutterToggle<cr>
+nmap <leader>m :GitGutterToggle<CR>
 
 "---------------------------------------
 " vim-codefmt
@@ -124,7 +124,7 @@ map <leader>f :Files<cr>
 " vimux
 "---------------------------------------
 map <leader>t :VimuxPromptCommand("make ")<cr>
-map <Leader>r :VimuxRunLastCommand<cr>
+map <leader>r :VimuxRunLastCommand<cr>
 
 "---------------------------------------
 " vim settings
