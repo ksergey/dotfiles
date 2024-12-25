@@ -2,7 +2,7 @@
 if has('win32') || has ('win64')
     let $VIMHOME=$HOME."/vimfiles"
 else
-    let $VIMHOME=$HOME."/.vim"
+    let $VIMHOME=$HOME."/.config/vim"
 endif
 
 call plug#begin($VIMHOME.'/plugged')
@@ -32,8 +32,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'benmills/vimux'
 
 " Colorschemes
-Plug 'josuegaleas/jay'
 Plug 'morhetz/gruvbox'
+Plug 'tinted-theming/tinted-vim'
 
 call plug#end()
 
@@ -189,13 +189,19 @@ set noautoread
 "---------------------------------------
 " VIM colorscheme
 "---------------------------------------
-let &t_ut='' " fix issue with kitty
 set t_Co=256
 set background=dark
-"silent! colorscheme jay
-colorscheme gruvbox
 
-let g:lightline = {'colorscheme': 'gruvbox', 'enable':{'statusline': 1, 'tabline': 1}}
+" set termguicolors
+" let g:gruvbox_transparent_bg = '1'
+" let g:gruvbox_contrast_light = 'soft'
+" colorscheme gruvbox
+" let g:lightline = {'colorscheme': 'gruvbox', 'enable':{'statusline': 1, 'tabline': 1}}
+
+let tinted_colorspace=256
+let tinted_background_transparent=1
+set termguicolors
+colorscheme base16-gruvbox-dark-pale
 
 "---------------------------------------
 " VIM bindings
