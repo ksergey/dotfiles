@@ -17,9 +17,10 @@
     "pulseaudio#microphone",
     "pulseaudio",
     "group/power",
-    "custom/swaync",
     "tray",
-    "custom/power"
+    "bluetooth",
+    "network",
+    "custom/swaync"
   ],
 
   "custom/actions": {
@@ -93,7 +94,9 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{volume}% {icon}  {format_source}",
+    "format-bluetooth-muted": "󰝟   {format_source}",
     "format-muted": "󰝟  Muted",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol",
@@ -223,9 +226,33 @@
     "escape": true
   },
 
-  "custom/power": {
-    "format": "⏻",
-    "tooltip": false,
-    "on-click": "wlogout -p layer-shell"
+  "network": {
+    "format": "󰤭 ",
+    "format-wifi": "{icon} {essid}",
+    "format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
+    "format-disconnected": "󰤫  Disconnected",
+    "tooltip-format": "wifi <span color='#ee99a0'>off</span>",
+    "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'>{bandwidthUpBits}</span>\t<span color='#ee99a0'>{bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹{bandwidthTotalBits}</span>",
+    "tooltip-format-disconnected": "<span color='#ed8796'>disconnected</span>",
+    "on-click": "rfkill toggle wifi",
+    "on-click-right": "kitty -e 'nmtui'",
+    "max-length": 35,
+    "interval": 5
+  },
+
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱 {device_alias}",
+    "format-connected-battery": "󰂱 {device_alias} (󰥉 {device_battery_percentage}%)",
+    "tooltip-format": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected",
+    "tooltip-format-disabled": "bluetooth off",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t({device_battery_percentage}%)",
+    "on-click": "rfkill toggle bluetooth",
+    "on-click-right": "blueman-manager",
+    "max-length": 35,
+    "interval": 5
   }
 }

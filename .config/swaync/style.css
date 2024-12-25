@@ -1,4 +1,4 @@
-@define-color base01 #32302f;
+@define-color base00 #32302f;
 @define-color base01 #3c3836;
 @define-color base02 #504945;
 @define-color base03 #665c54;
@@ -14,7 +14,6 @@
 @define-color base0D #83a598;
 @define-color base0E #d3869b;
 @define-color base0F #d65d0e;
-
 
 @define-color cc-bg shade(@base01, 0.8);
 @define-color cc-border alpha(@base07, 0.7);
@@ -378,8 +377,8 @@
 }
 
 /* Mpris widget */
-@define-color mpris-album-art-overlay alpha(@base01, 0.55);
-@define-color mpris-button-hover alpha(@base06, 0.50);
+@define-color mpris-album-art-overlay alpha(@base0C, 0.2);
+@define-color mpris-button-hover alpha(@base06, 0.2);
 .widget-mpris {
   /* The parent to all players */
 }
@@ -389,7 +388,6 @@
   margin: 16px;
   background-color: @mpris-album-art-overlay;
   box-shadow: none;
-  border: 1px solid @cc-border;
 }
 
 .widget-mpris .widget-mpris-player button:hover {
@@ -433,11 +431,13 @@
   padding: 8px;
   margin: 8px;
   border-radius: 12px;
-  background-color: @noti-bg;
+  background: none;
 }
 
+@define-color buttons-grid-bg @base0B;
 .widget-buttons-grid > flowbox > flowboxchild > button {
-  background: @noti-bg;
+  background: @buttons-grid-bg;
+  color: @cc-bg;
   border-radius: 12px;
 }
 

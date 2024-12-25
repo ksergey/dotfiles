@@ -4,15 +4,15 @@
   "positionY": "top",
 	"cssPriority": "user",
 
-  "control-center-width": 380,
+  "control-center-width": 400,
   "control-center-height": 660,
-  "control-center-margin-top": 2,
-  "control-center-margin-bottom": 2,
-  "control-center-margin-right": 1,
-  "control-center-margin-left": 0,
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+  "control-center-margin-left": 10,
 
   "notification-window-width": 400,
-  "notification-icon-size": 48,
+  "notification-icon-size": 64,
   "notification-body-image-height": 160,
   "notification-body-image-width": 200,
 
@@ -43,7 +43,8 @@
   "widgets": [
     "mpris",
     "title",
-    "notifications"
+    "notifications",
+    "buttons-grid"
   ],
   "widget-config": {
     "title": {
@@ -60,7 +61,8 @@
     },
     "mpris": {
       "image-size": 96,
-      "image-radius": 12
+      "image-radius": 12,
+      "blur": false
     },
     "volume": {
       "label": "󰕾",
@@ -69,26 +71,25 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": " ",
-          "command": "amixer set Master toggle"
+          "label": "󰐥",
+          "command": "systemctl poweroff"
         },
         {
-          "label": "",
-          "command": "amixer set Capture toggle"
+          "label": "󰜉",
+          "command": "systemctl reboot"
         },
         {
-          "label": " ",
-          "command": "nm-connection-editor"
+          "label": "󰌾",
+          "command": "hyprlock"
         },
         {
-          "label": "󰂯",
-          "command": "blueman-manager"
+          "label": "󰍃",
+          "command": "hyprctl dispatch exit"
         },
         {
-          "label": "󰏘",
-          "command": "nwg-look"
+          "label": "󰤄",
+          "command": "systemctl suspend"
         }
-
       ]
     }
   }

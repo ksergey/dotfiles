@@ -21,7 +21,7 @@
 }
 
 window#waybar {
-  background: alpha(@base00, 0.8);
+  background: alpha(@base00, 1.0);
   transition: all 0.3s ease-in-out;
 }
 
@@ -140,10 +140,12 @@ window#waybar.empty #window {
   margin: 0.4rem 0.2rem;
 }
 
-#wireplumber.muted {
+/*
+#pulseaudio.muted {
   color: @base00;
   background: @base0A;
 }
+*/
 
 #battery.warning {
   color: @base00;
