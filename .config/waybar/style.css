@@ -104,21 +104,6 @@ window#waybar.empty #window {
   background: transparent;
 }
 
-#systemd-failed-units {
-  color: @base00;
-  background: @base08;
-}
-
-#mpris {
-  color: @base00;
-  background: @base0C;
-}
-
-#mpris.paused {
-  color: @base05;
-  background: @base01;
-}
-
 #custom-hyprcast {
   color: @base00;
   background: @base08;
@@ -142,10 +127,10 @@ window#waybar.empty #window {
 
 /*
 #pulseaudio.muted {
-  color: @base00;
-  background: @base0A;
+color: @base00;
+background: @base0A;
 }
-*/
+ */
 
 #battery.warning {
   color: @base00;
@@ -238,4 +223,10 @@ window#waybar.empty #window {
 #custom-swaync.inhibited-notification {
   color: @base00;
   background: @base0A;
+}
+
+#custom-playerctl {
+  background: transparent;
+  color: @base04;
+  font-size: 0.8em;
 }

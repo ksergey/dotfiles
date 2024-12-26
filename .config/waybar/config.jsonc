@@ -4,7 +4,8 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "custom/playerctl"
   ],
 
   "modules-center": [
@@ -143,8 +144,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated": "",
+      "deactivated": ""
     }
   },
 
@@ -234,8 +235,7 @@
     "tooltip-format": "wifi <span color='#ee99a0'>off</span>",
     "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'>{bandwidthUpBits}</span>\t<span color='#ee99a0'>{bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹{bandwidthTotalBits}</span>",
     "tooltip-format-disconnected": "<span color='#ed8796'>disconnected</span>",
-    "on-click": "rfkill toggle wifi",
-    "on-click-right": "kitty -e 'nmtui'",
+    "on-click": "~/.config/hypr/scripts/wifi.sh",
     "max-length": 35,
     "interval": 5
   },
@@ -250,9 +250,16 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t({device_battery_percentage}%)",
-    "on-click": "rfkill toggle bluetooth",
-    "on-click-right": "blueman-manager",
+    "on-click": "blueman-manager",
     "max-length": 35,
     "interval": 5
+  },
+
+  "custom/playerctl": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+    "max-length": 48
   }
 }

@@ -1,0 +1,9 @@
+[viewer]
+window = #000000ff
+
+[font]
+name = HarmonyOS Sans
+size = 14
+color = #ccccccff
+shadow = #00000000
+background = #00000066
