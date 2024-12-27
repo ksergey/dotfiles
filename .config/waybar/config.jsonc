@@ -134,10 +134,10 @@
       "warning": 30,
       "critical": 20
     },
-    "format": "{icon}  {capacity}%",
-    "format-charging": "󱐋  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{icon}  {time}",
+    "format": "{icon} {capacity}%",
+    "format-charging": "󱐋 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
     "format-icons": [ " ", " ", " ", " ", " " ]
   },
 
@@ -150,7 +150,7 @@
   },
 
   "power-profiles-daemon": {
-    "format": "{icon} ",
+    "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {

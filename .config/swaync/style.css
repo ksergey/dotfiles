@@ -15,8 +15,13 @@
 @define-color base0E #d485ad;
 @define-color base0F #d65d0e;
 
-.notification-row {
+* {
+  box-shadow: none;
+  text-shadow: none;
   outline: none;
+}
+
+.notification-row {
 }
 
 .notification-row:focus, .notification-row:hover {
@@ -30,19 +35,16 @@
   /* The notification Close Button */
   background: alpha(@base08, 0.5);
   color: @base06;
-  text-shadow: none;
   padding: 0;
   border-radius: 100%;
   margin-top: 5px;
   margin-right: 5px;
-  box-shadow: none;
   border: none;
   min-width: 24px;
   min-height: 24px;
 }
 
 .notification-row .notification-background .close-button:hover {
-  box-shadow: none;
   background: @base08;
   transition: background 0.15s ease-in-out;
   border: none;
@@ -53,8 +55,9 @@
   border-radius: 12px;
   border: 2px solid @base02;
   padding: 0;
+  margin: 0;
   transition: background 0.15s ease-in-out;
-  background: @base01;
+  background: @base00;
 }
 
 .notification-row .notification-background .notification.low {
@@ -70,9 +73,6 @@
 }
 
 .notification-row .notification-background .notification .notification-action, .notification-row .notification-background .notification .notification-default-action {
-  padding: 4px;
-  margin: 0;
-  box-shadow: none;
   background: transparent;
   border: none;
   color: @base06;
@@ -98,50 +98,40 @@
 .notification-row .notification-background .notification .notification-default-action .notification-content {
   background: transparent;
   border-radius: 12px;
-  padding: 4px;
+  margin: 8px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .image {
   /* Notification Primary Image */
   -gtk-icon-effect: none;
-  border-radius: 100px;
-  /* Size in px */
-  margin: 4px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .app-icon {
   /* Notification app icon (only visible when the primary image is set) */
   -gtk-icon-effect: none;
   -gtk-icon-shadow: 0 1px 4px black;
-  margin: 6px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .summary {
   /* Notification summary/title */
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1.0rem;
   background: transparent;
-  color: @base06;
-  text-shadow: none;
+  color: @base0E;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .time {
   /* Notification time-ago */
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 0.75rem;
   background: transparent;
-  color: @base06;
-  text-shadow: none;
+  color: @base03;
   margin-right: 30px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
   /* Notification body */
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 0.75rem;
   background: transparent;
   color: @base06;
-  text-shadow: none;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content progressbar {
@@ -152,6 +142,7 @@
 .notification-row .notification-background .notification .notification-default-action .notification-content .body-image {
   /* The "extra" optional bottom notification image */
   margin-top: 4px;
+
   background-color: white;
   border-radius: 12px;
   -gtk-icon-effect: none;
@@ -192,7 +183,6 @@
 .notification-row .notification-background .notification .notification-action {
   /* The alternative actions below the default action */
   border: 2px solid @base02;
-  border-radius: 0px;
 }
 
 .notification-row .notification-background .notification .notification-action:first-child {
@@ -221,25 +211,30 @@
   /* Low Priority Group */
 }
 
-.notification-group .notification-group-buttons, .notification-group .notification-group-headers {
-  margin: 0 16px;
-  color: @base06;
-}
-
 .notification-group .notification-group-headers {
   /* Notification Group Headers */
 }
 
 .notification-group .notification-group-headers .notification-group-icon {
-  color: @base06;
+  color: @base03;
 }
 
 .notification-group .notification-group-headers .notification-group-header {
-  color: @base06;
+  color: @base03;
 }
 
 .notification-group .notification-group-buttons {
   /* Notification Group Buttons */
+}
+
+.notification-group .notification-group-buttons > button {
+  /* Notification Group Buttons */
+  color: @base05;
+}
+
+.notification-group .notification-group-buttons > button:hover {
+  /* Notification Group Buttons */
+  background: @base02;
 }
 
 .notification-group.collapsed .notification-row .notification {
@@ -257,7 +252,7 @@
 }
 
 .notification-group.collapsed:hover .notification-row:not(:only-child) .notification {
-  background-color: @base02;
+  background: @base02;
 }
 
 .control-center {
@@ -265,20 +260,16 @@
   background: alpha(@base00, 0.8);
   color: @base06;
   border: 2px solid @base02;
+  padding: 0px;
 }
 
 .control-center .control-center-list-placeholder {
   /* The placeholder when there are no notifications */
-  opacity: 0.2;
+  color: @base03;
 }
 
 .control-center .control-center-list {
   /* List of notifications */
-  background: transparent;
-}
-
-.control-center .control-center-list .notification {
-  box-shadow: none;
 }
 
 .control-center .control-center-list .notification .notification-default-action,
@@ -301,62 +292,24 @@
 }
 
 .floating-notifications .notification {
-  box-shadow: none;
 }
 
 /*** Widgets ***/
 /* Title widget */
 .widget-title {
-  color: @base06;
+  color: @base03;
   font-size: 1.5rem;
   margin: 16px;
 }
 
 .widget-title > button {
-  font-size: initial;
-  color: @base06;
-  text-shadow: none;
-  background: none;
+  color: @base05;
+  background: transparent;
   border: none;
-  box-shadow: none;
-  border-radius: 12px;
 }
 
 .widget-title > button:hover {
-  background: alpha(@base01, 0.8);
-}
-
-/* DND widget */
-.widget-dnd {
-  color: @base06;
-  margin: 8px;
-  font-size: 1.1rem;
-}
-
-.widget-dnd > switch {
-  font-size: initial;
-  border-radius: 12px;
-  background: alpha(@base02, 0.8);
-  border: 2px solid @base02;
-  box-shadow: none;
-}
-
-.widget-dnd > switch:checked {
-  background: @base0E;
-}
-
-.widget-dnd > switch slider {
-  background: @base03;
-  border-radius: 12px;
-}
-
-/* Label widget */
-.widget-label {
-  margin: 8px;
-}
-
-.widget-label > label {
-  font-size: 1.1rem;
+  background: @base02;
 }
 
 /* Mpris widget */
@@ -367,8 +320,7 @@
 .widget-mpris .widget-mpris-player {
   padding: 16px;
   margin: 16px;
-  background-color: alpha(@base01, 0.8);
-  box-shadow: none;
+  background: @base01;
 }
 
 .widget-mpris .widget-mpris-player button {
@@ -382,13 +334,10 @@
 
 .widget-mpris .widget-mpris-player .widget-mpris-album-art {
   border-radius: 12px;
-  box-shadow: none;
-  border: 2px solid @base02;
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-title {
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-subtitle {
@@ -414,10 +363,18 @@
 
 /* Buttons widget */
 .widget-buttons-grid {
-  padding: 8px;
-  margin: 8px;
+  background: transparent;
   border-radius: 12px;
-  background: none;
+  margin: 8px;
+  padding: 0;
+}
+
+.widget-buttons-grid > flowbox {
+  margin: 4px;
+  padding: 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild {
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
@@ -425,6 +382,8 @@
   color: @base01;
   border-radius: 12px;
   font-weight: bold;
+  padding: 6px 16px;
+  margin: 0;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
@@ -433,33 +392,6 @@
 
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
   /* style given to the active toggle button */
-}
-
-/* Menubar widget */
-.widget-menubar > box > .menu-button-bar > button {
-  border: none;
-  background: transparent;
-}
-
-/* .AnyName { Name defined in config after #
-  background: alpha(@base02, 0.8);
-  padding: 8px;
-  margin: 8px;
-  border-radius: 12px;
-}
-
-.AnyName>button {
-  background: transparent;
-  border: none;
-}
-
-.AnyName>button:hover {
-  background: @base03;
-} */
-.topbar-buttons > button {
-  /* Name defined in config after # */
-  border: none;
-  background: transparent;
 }
 
 /* Volume and Backlight widgets */
@@ -472,9 +404,10 @@
   border-radius: 12px;
 }
 
-.widget-volume trough ,
-.widget-volume highlight,
-.widget-backlight trough,
-.widget-backlight highlight {
+trough {
+  background: @base02;
+}
+
+highlight {
   background: @base06;
 }

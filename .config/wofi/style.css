@@ -15,44 +15,48 @@
 @define-color base0E #d485ad;
 @define-color base0F #d65d0e;
 
+* {
+  font-family: HarmonyOS Sans;
+  outline-style: none;
+  box-shadow: none;
+}
+
 window {
-  margin: 0rem;
+  margin: 0;
   background: @base00;
-  border-radius: 14px;
+  border-radius: 12px;
+  border: 2px solid @base05;
 }
 
 #input {
-  background-color: @base00;
-  box-shadow: none;
-  margin: 0.25rem;
-  padding: 0.25rem;
-  border-radius: 14px;
+  color: @base04;
+  background: transparent;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 12px;
 }
 
 #inner-box {
-  border-radius: 14px;
-  margin: 0.5rem;
-  background-color: @base01;
+  border-radius: 12px;
+  margin: 8px;
+  background: @base01;
 }
 
 #outer-box {
-  margin: 0.25rem;
-  border-radius: 14px;
-  background-color: @base00;
-  margin-left: 0.25rem;
+  margin: 8px;
+  border-radius: 12px;
 }
 
 #text {
-  margin: 0.25rem;
+  margin: 8px;
   color: @base04;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 #text:selected {
-  color: @base02;
 }
 
 #entry:selected {
-  background-color: @base05;
-  border-radius: 14px;
+  background-color: @base02;
+  border-radius: 12px;
 }
