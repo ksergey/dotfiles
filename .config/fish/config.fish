@@ -8,3 +8,5 @@ alias lsblk='lsblk -o name,mountpoint,label,size,uuid'
 
 set -gx EDITOR vim
 set -gx VISUAL vim
+
+pokemon-colorscripts -r
