@@ -354,6 +354,7 @@
 
 .widget-mpris > box > button {
   /* Change player side buttons */
+  color: @base06;
 }
 
 .widget-mpris > box > button:disabled {

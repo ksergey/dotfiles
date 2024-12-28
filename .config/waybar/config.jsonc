@@ -78,15 +78,6 @@
     },
   },
 
-  "custom/hyprcast": {
-    "exec": "~/.config/hypr/scripts/hyprcast.fish -w",
-    "return-type": "json",
-    "hide-empty-text": true,
-    "on-click": "~/.config/hypr/scripts/hyprcast.fish",
-    "interval": "once",
-    "signal": 1
-  },
-
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": [ "󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 " ],
@@ -234,7 +225,8 @@
     "tooltip-format": "wifi <span color='#ee99a0'>off</span>",
     "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'>{bandwidthUpBits}</span>\t<span color='#ee99a0'>{bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹{bandwidthTotalBits}</span>",
     "tooltip-format-disconnected": "<span color='#ed8796'>disconnected</span>",
-    "on-click": "~/.config/hypr/scripts/wifi.sh",
+    "on-click": "~/.config/waybar/scripts/wifi.sh",
+    "on-click-right": "nm-connection-editor",
     "max-length": 35,
     "interval": 5
   },
