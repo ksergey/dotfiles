@@ -4,8 +4,8 @@ Just copy everything into your home. For complete vim installation run inside vi
 
 # Packages
 
-```fish
-yay -S hyprland hyprlock hypridle wl-clipboard swaync waybar swww wofi kitty wev swayimg mpv cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd network-manager blueman
+```sh
+yay -S hyprland hyprlock hypridle wl-clipboard swaync waybar swww wofi kitty fish wev swayimg mpv cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd network-manager blueman
 ```
 
 # Screenshots
