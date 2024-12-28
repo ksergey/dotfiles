@@ -104,19 +104,19 @@
 .notification-row .notification-background .notification .notification-default-action .notification-content .image {
   /* Notification Primary Image */
   -gtk-icon-effect: none;
+  margin-right: 16px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .app-icon {
   /* Notification app icon (only visible when the primary image is set) */
   -gtk-icon-effect: none;
-  -gtk-icon-shadow: 0 1px 4px black;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .summary {
   /* Notification summary/title */
-  font-size: 1.0rem;
+  font-size: 0.8rem;
   background: transparent;
-  color: @base0E;
+  color: @base05;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .time {
@@ -124,7 +124,7 @@
   font-size: 0.75rem;
   background: transparent;
   color: @base03;
-  margin-right: 30px;
+  margin-right: 16px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
@@ -142,7 +142,6 @@
 .notification-row .notification-background .notification .notification-default-action .notification-content .body-image {
   /* The "extra" optional bottom notification image */
   margin-top: 4px;
-
   background-color: white;
   border-radius: 12px;
   -gtk-icon-effect: none;
@@ -320,7 +319,7 @@
 .widget-mpris .widget-mpris-player {
   padding: 16px;
   margin: 16px;
-  background: @base01;
+  background: alpha(@base01, .5);
 }
 
 .widget-mpris .widget-mpris-player button {
