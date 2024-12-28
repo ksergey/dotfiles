@@ -32,8 +32,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'benmills/vimux'
 
 " Colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'tinted-theming/tinted-vim'
+" Plug 'morhetz/gruvbox'
+Plug 'lifepillar/vim-gruvbox8'
 
 call plug#end()
 
@@ -189,19 +189,13 @@ set noautoread
 "---------------------------------------
 " VIM colorscheme
 "---------------------------------------
-set t_Co=256
 set background=dark
-
-" set termguicolors
-" let g:gruvbox_transparent_bg = '1'
-" let g:gruvbox_contrast_light = 'soft'
-" colorscheme gruvbox
-" let g:lightline = {'colorscheme': 'gruvbox', 'enable':{'statusline': 1, 'tabline': 1}}
-
-let tinted_colorspace=256
-let tinted_background_transparent=1
-set termguicolors
-colorscheme base16-gruvbox-dark-pale
+let g:gruvbox_bold = 1
+let g:gruvbox_italics = 1
+let g:gruvbox_italicize_strings = 1
+let g:gruvbox_transp_bg = 1
+colorscheme gruvbox8
+let g:lightline = {'colorscheme': 'gruvbox8', 'enable':{'statusline': 1, 'tabline': 1}}
 
 "---------------------------------------
 " VIM bindings
