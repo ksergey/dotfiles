@@ -13,7 +13,6 @@
   ],
 
   "modules-right": [
-    "privacy",
     "backlight",
     "pulseaudio#microphone",
     "pulseaudio",
