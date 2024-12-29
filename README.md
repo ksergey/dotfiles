@@ -5,7 +5,8 @@
 ```sh
 yay -S hyprland hyprlock hypridle wl-clipboard swaync waybar swww wofi kitty fish \
     wev swayimg mpv yt-dlp cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse \
-    ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd network-manager blueman
+    ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd network-manager blueman \
+    nvtop termshark
 ```
 
 ## AmneziaVPN
