@@ -201,8 +201,8 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "up": "󱊪",
-      "down": "󰌙"
+      "up": "󰦝",
+      "down": "󰦞"
     },
     "return-type": "json",
     "on-click": "~/.config/waybar/scripts/toggle-vpn.sh ~/.config/amnezia_for_awg.conf",
