@@ -214,6 +214,10 @@ background: @base0A;
   background-color: @base0A;
 }
 
+#custom-swaync {
+  color: @base08;
+}
+
 #custom-swaync.dnd-notification,
 #custom-swaync.dnd-inhibited-notification {
   background: @base02;

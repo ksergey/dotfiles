@@ -211,17 +211,7 @@
 
   "custom/swaync": {
     "tooltip": false,
-    "format": "{} {icon}",
-    "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂚",
-      "dnd-notification": "󰂛",
-      "dnd-none": "󰂛",
-      "inhibited-notification": "󰂛",
-      "inhibited-none": "󰂛",
-      "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰂛"
-    },
+    "format": "{} ",
     "return-type": "json",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
