@@ -19,7 +19,7 @@
     "group/power",
     "tray",
     "bluetooth",
-    "network",
+    "group/network",
     "custom/swaync"
   ],
 
@@ -197,6 +197,18 @@
     "spacing": 5
   },
 
+  "custom/vpn": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "up": "󱊪",
+      "down": "󰌙"
+    },
+    "return-type": "json",
+    "on-click": "~/.config/waybar/scripts/toggle-vpn.sh ~/.config/amnezia_for_awg.conf",
+    "exec": "~/.config/waybar/scripts/interface-status.sh amnezia_for_awg"
+  },
+
   "custom/swaync": {
     "tooltip": false,
     "format": "{} {icon}",
@@ -252,5 +264,17 @@
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     "on-click": "playerctl play-pause",
     "max-length": 48
+  },
+
+  "group/network": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "network",
+      "custom/vpn"
+    ]
   }
 }

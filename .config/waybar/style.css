@@ -176,7 +176,7 @@ background: @base0A;
 }
 
 #idle_inhibitor {
-  background: @base02;
+  background: @base01;
 }
 
 #idle_inhibitor.activated {
@@ -229,4 +229,9 @@ background: @base0A;
   background: transparent;
   color: @base04;
   font-size: 0.8em;
+}
+
+#custom-vpn.up {
+  background: @base08;
+  color: @base00;
 }
