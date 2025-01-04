@@ -54,8 +54,8 @@ Just copy everything into your home. For complete vim installation run inside vi
 # Screenshots
 
 <p align="center">
-  <img src="assets/screenshot_2024-12-27_225156.png" width="512"/>
-  <img src="assets/screenshot_2024-12-27_225228.png" width="512"/>
-  <img src="assets/screenshot_2024-12-27_225312.png" width="512"/>
-  <img src="assets/screenshot_2024-12-27_225444.png" width="512"/>
+  <img src="assets/screenshot_2024-12-27_225156.png" style="border-radius: 30%"/>
+  <img src="assets/screenshot_2024-12-27_225228.png" style="border-radius: 30%"/>
+  <img src="assets/screenshot_2024-12-27_225312.png" style="border-radius: 30%"/>
+  <img src="assets/screenshot_2024-12-27_225444.png" style="border-radius: 30%"/>
 </p>
