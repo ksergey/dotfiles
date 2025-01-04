@@ -29,6 +29,23 @@ Down VPN:
 sudo awg-quick down amnezia_for_awg.conf
 ```
 
+## Heroes 3 HotA
+
+Install packages:
+
+```sh
+yay -S umu-launcher lib32-pipewire lib32-gnutls
+```
+
+Install the game:
+```sh
+GAMEID="Heroes3_HotA" umu-run <path to installer>
+```
+
+Run the game:
+```sh
+GAMEID="Heroes3_HotA" umu-run HD_Launcher.exe
+```
 
 # Vim
 
