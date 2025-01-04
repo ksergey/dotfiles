@@ -406,8 +406,13 @@
 
 trough {
   background: @base02;
+  min-height: 8px;
 }
 
 highlight {
   background: @base06;
+}
+
+slider {
+  background: transparent;
 }
