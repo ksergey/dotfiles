@@ -189,13 +189,17 @@ set noautoread
 "---------------------------------------
 " VIM colorscheme
 "---------------------------------------
+if has('termguicolors')
+    set termguicolors
+endif
 set background=dark
+
 let g:gruvbox_bold = 1
 let g:gruvbox_italics = 1
-let g:gruvbox_italicize_strings = 1
 let g:gruvbox_transp_bg = 1
 colorscheme gruvbox8
-let g:lightline = {'colorscheme': 'gruvbox8', 'enable':{'statusline': 1, 'tabline': 1}}
+
+let g:lightline = {'colorscheme' : 'gruvbox8'}
 
 "---------------------------------------
 " VIM bindings

@@ -258,7 +258,7 @@
   /* The Control Center which contains the old notifications + widgets */
   background: @base00;
   color: @base06;
-  /* border: 2px solid @base02; */
+  border: 2px solid @base02;
   padding: 0px;
 }
 
