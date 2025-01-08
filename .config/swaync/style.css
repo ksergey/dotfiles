@@ -297,18 +297,18 @@
 /* Title widget */
 .widget-title {
   color: @base03;
-  font-size: 1.5rem;
+  font-size: 1.rem;
   margin: 16px;
 }
 
 .widget-title > button {
-  color: @base05;
+  color: @base06;
   background: transparent;
   border: none;
 }
 
 .widget-title > button:hover {
-  background: @base02;
+  background: alpha(@base06, .25);
 }
 
 /* Mpris widget */
