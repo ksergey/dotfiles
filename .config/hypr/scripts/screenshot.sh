@@ -3,20 +3,19 @@
 set -e
 
 saveDir="${HOME}/Pictures/Screenshots"
-screenshotFn="$(date +'screenshot_%Y-%m-%d_%H%M%S.png')"
-screenshotFullFn="${saveDir}/${screenshotFn}"
+filename="${saveDir}/$(date +'screenshot_%Y-%m-%d_%H%M%S.png')"
 
 mkdir -p -- "${saveDir}"
 
 case "$1" in
   "region")
-    grim -g "$(slurp)" "${screenshotFullFn}"
+    grim -g "$(slurp)" "${filename}"
     ;;
   *)
-    grim "${screenshotFullFn}"
+    grim "${filename}"
     ;;
 esac
 
-if wl-copy < "${screenshotFullFn}"; then
-  notify-send "Screenshot" "File saved as <i>'${screenshotFullFn}'</i> and copied to the clipboard." -i "${screenshotFullFn}"
+if wl-copy < "${filename}"; then
+  notify-send "Screenshot" "File saved as <i>'${filename}'</i> and copied to the clipboard." -i "${filename}"
 fi
