@@ -32,8 +32,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'benmills/vimux'
 
 " Colorschemes
-" Plug 'morhetz/gruvbox'
-Plug 'lifepillar/vim-gruvbox8'
+Plug 'tinted-theming/tinted-vim'
+Plug 'daviesjamie/vim-base16-lightline'
 
 call plug#end()
 
@@ -194,12 +194,10 @@ if has('termguicolors')
 endif
 set background=dark
 
-let g:gruvbox_bold = 1
-let g:gruvbox_italics = 1
-let g:gruvbox_transp_bg = 1
-colorscheme gruvbox8
-
-let g:lightline = {'colorscheme' : 'gruvbox8'}
+let tinted_colorspace = 256
+let tinted_background_transparent = 1
+colorscheme base16-gruvbox-dark-hard
+let g:lightline = { 'colorscheme': 'base16' }
 
 "---------------------------------------
 " VIM bindings
