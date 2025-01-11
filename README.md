@@ -31,6 +31,17 @@ Down VPN:
 sudo awg-quick down amnezia_for_awg.conf
 ```
 
+## Caching DNS
+
+As described at [Systemd-resolved wiki](https://wiki.archlinux.org/title/Systemd-resolved):
+
+```sh
+sudo systemctl enable systemd-resolved.service
+sudo systemctl start systemd-resolved.service
+sudo ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+```
+
 ## Heroes 3 HotA
 
 Install packages:
