@@ -25,7 +25,7 @@ window {
   margin: 0;
   background: @base00;
   border-radius: 12px;
-  border: 2px solid @base05;
+  border: 2px solid @base01;
 }
 
 #input {
@@ -60,4 +60,13 @@ window {
 #entry:selected {
   background-color: @base02;
   border-radius: 12px;
+}
+
+#image {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#scroll {
+  margin: 0px;
 }
