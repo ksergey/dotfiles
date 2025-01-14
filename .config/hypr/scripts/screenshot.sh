@@ -17,5 +17,5 @@ case "$1" in
 esac
 
 if wl-copy < "${filename}"; then
-  notify-send "Screenshot" "File saved as <i>'${filename}'</i> and copied to the clipboard." -i "${filename}"
+  notify-send "Screenshot" "File saved as <i>'${filename}'</i> and copied to the clipboard." -i "${filename}" -u low
 fi
