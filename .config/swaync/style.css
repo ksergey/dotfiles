@@ -357,7 +357,10 @@
   font-size: x-large;
   border-radius: 12px;
   background: @base01;
-  margin: 8px 16px 8px 16px;
+  margin: 8px 16px 16px 16px;
+}
+
+.widget-buttons-grid > flowbox {
   padding: 8px;
 }
 
