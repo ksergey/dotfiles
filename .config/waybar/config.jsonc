@@ -34,11 +34,6 @@
     "special-visible-only": true,
     "format": "{icon}",
     "format-icons": {
-      "discord": "",
-      "lunatask": "",
-      "monitor": "󰍹",
-      "obsidian": "",
-      "spotify": "",
       "active": "",
       "default": "",
       "empty": "",
@@ -210,7 +205,7 @@
 
   "custom/swaync": {
     "tooltip": false,
-    "format": "{} ",
+    "format": "{} 󰮫",
     "return-type": "json",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",

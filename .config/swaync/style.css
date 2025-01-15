@@ -16,6 +16,7 @@
 @define-color base0F #d65d0e;
 
 * {
+  all: unset;
   box-shadow: none;
   text-shadow: none;
   outline: none;
@@ -259,6 +260,7 @@
   background: @base00;
   color: @base06;
   border: 2px solid @base02;
+  border-radius: 12px;
   padding: 0px;
 }
 
@@ -319,8 +321,8 @@
 .widget-mpris .widget-mpris-player {
   padding: 16px;
   margin: 16px;
-  background: alpha(@base01, .5);
-  border: 2px solid alpha(@base06, .5);
+  background: @base01;
+  border-radius: 12px;
 }
 
 .widget-mpris .widget-mpris-player button {
@@ -352,40 +354,32 @@
 
 /* Buttons widget */
 .widget-buttons-grid {
-  background: transparent;
+  font-size: x-large;
   border-radius: 12px;
-  margin: 8px;
-  padding: 0;
-}
-
-.widget-buttons-grid > flowbox {
-  margin: 4px;
-  padding: 0;
+  background: @base01;
+  margin: 8px 16px 8px 16px;
+  padding: 8px;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild {
+  padding: 8px;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
+  padding: 6px 32px;
   background: @base0B;
-  color: @base01;
   border-radius: 12px;
-  font-weight: bold;
-  padding: 6px 16px;
-  margin: 0;
+  color: @base01;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
-  background: @base07;
-}
-
-.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
-  /* style given to the active toggle button */
+  background: shade(@base0B, 1.5);
 }
 
 /* Volume and Backlight widgets */
 .widget-volume,
 .widget-backlight {
+  font-size: large;
   color: @base06;
   background: @base01;
   margin: 8px 16px 8px 16px;
@@ -404,4 +398,5 @@ highlight {
 
 slider {
   background: transparent;
+  background: red;
 }
