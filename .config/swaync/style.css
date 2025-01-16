@@ -368,7 +368,7 @@
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
-  padding: 6px 32px;
+  padding: 6px 20;
   background: @base0B;
   border-radius: 12px;
   color: @base01;

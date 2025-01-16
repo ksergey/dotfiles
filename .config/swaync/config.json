@@ -88,10 +88,6 @@
           "command": "systemctl suspend"
         },
         {
-          "label": "󱖒",
-          "command": "systemctl hibernate"
-        },
-        {
           "label": "󰐥",
           "command": "systemctl poweroff"
         },
