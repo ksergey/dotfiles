@@ -16,55 +16,53 @@
 @define-color base0F #d65d0e;
 
 * {
+  all: unset;
   font-family: HarmonyOS Sans;
-  outline-style: none;
-  box-shadow: none;
+  border: none;
 }
 
 window {
-  margin: 0;
-  background: @base00;
+  margin: 0px;
   border-radius: 12px;
-  border: 2px solid @base01;
+  background: alpha(@base00, 0.9);
 }
 
 #input {
-  color: @base04;
-  background: transparent;
   margin: 8px;
   padding: 8px;
+  color: @base05;
+  background: @base01;
   border-radius: 12px;
 }
 
 #inner-box {
-  border-radius: 12px;
   margin: 8px;
-  background: @base01;
+  background-color: transparent;
+  border-radius: 12px;
 }
 
 #outer-box {
-  margin: 16px;
-  border-radius: 12px;
-}
-
-#text {
   margin: 8px;
-  color: @base04;
+  background-color: transparent;
   border-radius: 12px;
 }
 
-#text:selected {
-  color: @base0D;
+#entry {
+  border-radius: 12px;
 }
 
 #entry:selected {
   background-color: @base02;
+}
+
+#text {
+  margin: 8px;
+  color: @base05;
   border-radius: 12px;
 }
 
-#image {
-  margin-left: 20px;
-  margin-right: 20px;
+#text:selected {
+  color: @base06;
 }
 
 #scroll {

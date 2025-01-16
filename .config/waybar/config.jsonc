@@ -145,48 +145,6 @@
     }
   },
 
-  "group/hardware": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "transition-left-to-right": false,
-    },
-    "modules": [
-      "custom/monitor",
-      "disk",
-      "cpu",
-      "temperature",
-      "memory",
-    ]
-  },
-
-  "custom/monitor":  {
-    "format": "",
-    "tooltip": false,
-    "on-click": "hyprctl dispatch workspace special:monitor"
-  },
-
-  "disk": {
-    "format": "󰋊 {percentage_free}%"
-  },
-
-  "cpu": {
-    "format": "  {usage}%",
-    "interval": 1
-  },
-
-  "temperature": {
-    "format": "  {temperatureC}°C",
-    "interval": 1,
-    "critical-format": "󰸁 {temperatureC}°C",
-    "critical-threshold": 90
-  },
-
-  "memory": {
-    "format": "  {used}/{total}GiB",
-    "interval": 1
-  },
-
   "tray": {
     "spacing": 5
   },
@@ -205,7 +163,7 @@
 
   "custom/swaync": {
     "tooltip": false,
-    "format": "{} 󰮫",
+    "format": "{} ",
     "return-type": "json",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
@@ -217,9 +175,9 @@
     "format": "󰤭 ",
     "format-wifi": "{icon} {essid}",
     "format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
-    "format-disconnected": "󰤫  Disconnected",
+    "format-disconnected": "󰤫 Disconnected",
     "tooltip-format": "wifi <span color='#ee99a0'>off</span>",
-    "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'>{bandwidthUpBits}</span>\t<span color='#ee99a0'>{bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹{bandwidthTotalBits}</span>",
+    "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'> {bandwidthUpBits}</span>\t<span color='#ee99a0'> {bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹 {bandwidthTotalBits}</span>",
     "tooltip-format-disconnected": "<span color='#ed8796'>disconnected</span>",
     "on-click": "~/.config/waybar/scripts/wifi.sh",
     "on-click-right": "nm-connection-editor",
