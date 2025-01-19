@@ -4,8 +4,7 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces",
-    "custom/playerctl"
+    "hyprland/workspaces"
   ],
 
   "modules-center": [
@@ -38,7 +37,7 @@
       "default": "",
       "empty": "",
       "persistent": "",
-      "urgent": "",
+      "urgent": ""
     },
     "persistent-workspaces": {
       "*": 5
@@ -52,7 +51,7 @@
   },
 
   "clock": {
-    "format": "  {:%H:%M}",
+    "format": " {:%H:%M}",
     "tooltip-format": "  {:%a, %d %b}",
     "calendar": {
       "mode": "month",
@@ -75,15 +74,15 @@
 
   "backlight": {
     "format": "{icon} {percent}%",
-    "format-icons": [ "󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 " ],
+    "format-icons": [ "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨" ],
     "tooltip": false
   },
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-bluetooth": "{volume}% {icon}  {format_source}",
-    "format-bluetooth-muted": "󰝟   {format_source}",
-    "format-muted": "󰝟  Muted",
+    "format-bluetooth-muted": "󰝟  {format_source}",
+    "format-muted": "󰝟 Muted",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol",
     "format-icons": [ "󰕿", "󰖀", "󰕾" ]
@@ -92,7 +91,7 @@
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "format-source": "",
-    "format-source-muted": " ",
+    "format-source-muted": "",
     "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
     "on-click-right": "pavucontrol -t 4",
     "on-scroll-up": "",
@@ -122,7 +121,7 @@
     "format-charging": "󱐋 {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [ " ", " ", " ", " ", " " ]
+    "format-icons": [ "", "", "", "", "" ]
   },
 
   "idle_inhibitor": {
@@ -163,7 +162,7 @@
 
   "custom/swaync": {
     "tooltip": false,
-    "format": "{} ",
+    "format": "",
     "return-type": "json",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
@@ -174,7 +173,7 @@
   "network": {
     "format": "󰤭 ",
     "format-wifi": "{icon} {essid}",
-    "format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
+    "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
     "format-disconnected": "󰤫 Disconnected",
     "tooltip-format": "wifi <span color='#ee99a0'>off</span>",
     "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'> {bandwidthUpBits}</span>\t<span color='#ee99a0'> {bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹 {bandwidthTotalBits}</span>",
@@ -198,14 +197,6 @@
     "on-click": "blueman-manager",
     "max-length": 35,
     "interval": 5
-  },
-
-  "custom/playerctl": {
-    "format": "{}",
-    "return-type": "json",
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-    "on-click": "playerctl play-pause",
-    "max-length": 48
   },
 
   "group/network": {

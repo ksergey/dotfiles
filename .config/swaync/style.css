@@ -1,48 +1,27 @@
-@define-color base00 #1d2021;
-@define-color base01 #3c3836;
-@define-color base02 #504945;
-@define-color base03 #665c54;
-@define-color base04 #bdae93;
-@define-color base05 #d5c4a1;
-@define-color base06 #ebdbb2;
-@define-color base07 #fbf1c7;
-@define-color base08 #fb4934;
-@define-color base09 #fe8019;
-@define-color base0A #fabd2f;
-@define-color base0B #b8bb26;
-@define-color base0C #8ec07c;
-@define-color base0D #83a598;
-@define-color base0E #d3869b;
-@define-color base0F #d65d0e;
+@import "base16-nord.css";
 
 * {
   all: unset;
   box-shadow: none;
   text-shadow: none;
   outline: none;
-}
-
-.notification-row {
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 18px;
 }
 
 .notification-row:focus, .notification-row:hover {
 }
 
 .notification-row .notification-background {
-  padding: 6px 12px;
+  padding: 8px 0;
 }
 
 .notification-row .notification-background .close-button {
   /* The notification Close Button */
-  background: alpha(@base08, 0.5);
   color: @base06;
-  padding: 0;
-  border-radius: 100%;
-  margin-top: 5px;
-  margin-right: 5px;
-  border: none;
-  min-width: 24px;
-  min-height: 24px;
+  border-radius: 12px;
+  min-width: 16px;
+  min-height: 16px;
 }
 
 .notification-row .notification-background .close-button:hover {
@@ -55,8 +34,6 @@
   /* The actual notification */
   border-radius: 12px;
   border: 2px solid @base02;
-  padding: 0;
-  margin: 0;
   transition: background 0.15s ease-in-out;
   background: @base00;
 }
@@ -75,7 +52,6 @@
 
 .notification-row .notification-background .notification .notification-action, .notification-row .notification-background .notification .notification-default-action {
   background: transparent;
-  border: none;
   color: @base06;
   transition: background 0.15s ease-in-out;
 }
@@ -97,9 +73,7 @@
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content {
-  background: transparent;
-  border-radius: 12px;
-  margin: 8px;
+  padding: 16px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .image {
@@ -125,7 +99,7 @@
   font-size: 0.75rem;
   background: transparent;
   color: @base03;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
@@ -177,7 +151,7 @@
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:hover {
-  background: @base03;
+  background: @base02;
 }
 
 .notification-row .notification-background .notification .notification-action {
@@ -197,6 +171,7 @@
 
 .notification-group {
   /* Styling only for Grouped Notifications */
+  padding: 8px 16px;
 }
 
 .notification-group.low {
@@ -230,6 +205,8 @@
 .notification-group .notification-group-buttons > button {
   /* Notification Group Buttons */
   color: @base05;
+  padding: 8px;
+  border-radius: 12px;
 }
 
 .notification-group .notification-group-buttons > button:hover {
@@ -300,17 +277,16 @@
 .widget-title {
   color: @base03;
   font-size: 1.rem;
-  margin: 16px;
+  margin: 8px 16px;
 }
 
 .widget-title > button {
   color: @base06;
-  background: transparent;
-  border: none;
+  border-radius: 12px;
 }
 
 .widget-title > button:hover {
-  background: alpha(@base06, .25);
+  background: @base02;
 }
 
 /* Mpris widget */
@@ -327,17 +303,18 @@
 
 .widget-mpris .widget-mpris-player button {
   font-weight: bold;
+  border-radius: 12px;
   color: @base06;
 }
 
 .widget-mpris .widget-mpris-player button:hover {
   /* The media player buttons (play, pause, next, etc...) */
-  background: alpha(@base06, .25);
+  background: @base03;
 }
 
 .widget-mpris .widget-mpris-player button:disabled {
   /* The media player buttons (play, pause, next, etc...) */
-  color: alpha(@base06, .5);
+  color: alpha(@base06, .25);
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-album-art {
@@ -368,7 +345,7 @@
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
-  padding: 6px 20;
+  padding: 6px 18px;
   background: @base0B;
   border-radius: 12px;
   color: @base01;
@@ -400,5 +377,4 @@ highlight {
 
 slider {
   background: transparent;
-  background: red;
 }

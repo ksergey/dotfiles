@@ -33,6 +33,8 @@ Plug 'benmills/vimux'
 
 " Colorschemes
 Plug 'lifepillar/vim-gruvbox8'
+Plug 'arcticicestudio/nord-vim'
+Plug 'tinted-theming/tinted-vim'
 
 call plug#end()
 
@@ -193,11 +195,18 @@ if has('termguicolors')
 endif
 set background=dark
 
-let g:gruvbox_bold = 1
-let g:gruvbox_italics = 1
-let g:gruvbox_transp_bg = 1
-colorscheme gruvbox8
-let g:lightline = {'colorscheme' : 'gruvbox8'}
+" let g:gruvbox_bold = 1
+" let g:gruvbox_italics = 1
+" let g:gruvbox_transp_bg = 1
+" colorscheme gruvbox8
+" let g:lightline = {'colorscheme' : 'gruvbox8'}
+
+" let tinted_colorspace = 256
+" let tinted_background_transparent = 1
+" colorscheme base16-nord
+
+colorscheme nord
+let g:lightline = {'colorscheme' : 'nord'}
 
 "---------------------------------------
 " VIM bindings
