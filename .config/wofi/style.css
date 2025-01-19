@@ -24,17 +24,17 @@ window {
 #inner-box {
   margin: 8px;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 #outer-box {
   margin: 8px;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 #entry {
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 4px;
 }
 
@@ -45,7 +45,7 @@ window {
 #text {
   margin: 8px;
   color: @base05;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 #text:selected {

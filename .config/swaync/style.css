@@ -19,7 +19,7 @@
 .notification-row .notification-background .close-button {
   /* The notification Close Button */
   color: @base06;
-  border-radius: 12px;
+  border-radius: 8px;
   min-width: 16px;
   min-height: 16px;
 }
@@ -32,7 +32,7 @@
 
 .notification-row .notification-background .notification {
   /* The actual notification */
-  border-radius: 12px;
+  border-radius: 8px;
   border: 2px solid @base02;
   transition: background 0.15s ease-in-out;
   background: @base00;
@@ -63,7 +63,7 @@
 
 .notification-row .notification-background .notification .notification-default-action {
   /* The large action that also displays the notification summary and body */
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:not(:only-child) {
@@ -118,7 +118,7 @@
   /* The "extra" optional bottom notification image */
   margin-top: 4px;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 8px;
   -gtk-icon-effect: none;
 }
 
@@ -132,14 +132,14 @@
   color: @base06;
   caret-color: @base06;
   border: 2px solid @base02;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
   background: @base01;
   border: 2px solid @base02;
-  border-radius: 12px;
+  border-radius: 8px;
   color: @base06;
 }
 
@@ -161,11 +161,11 @@
 
 .notification-row .notification-background .notification .notification-action:first-child {
   /* add bottom border radius to eliminate clipping */
-  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 8px;
 }
 
 .notification-row .notification-background .notification .notification-action:last-child {
-  border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 8px;
   border-right: none;
 }
 
@@ -206,7 +206,7 @@
   /* Notification Group Buttons */
   color: @base05;
   padding: 8px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .notification-group .notification-group-buttons > button:hover {
@@ -282,7 +282,7 @@
 
 .widget-title > button {
   color: @base06;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .widget-title > button:hover {
@@ -298,12 +298,12 @@
   padding: 16px;
   margin: 16px;
   background: @base01;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .widget-mpris .widget-mpris-player button {
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 8px;
   color: @base06;
 }
 
@@ -318,7 +318,7 @@
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-album-art {
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-title {
@@ -331,7 +331,7 @@
 
 /* Buttons widget */
 .widget-buttons-grid {
-  border-radius: 12px;
+  border-radius: 8px;
   background: @base01;
   margin: 8px 16px 16px 16px;
 }
@@ -347,7 +347,7 @@
 .widget-buttons-grid > flowbox > flowboxchild > button {
   padding: 6px 18px;
   background: @base0B;
-  border-radius: 12px;
+  border-radius: 8px;
   color: @base01;
 }
 
@@ -363,7 +363,7 @@
   background: @base01;
   margin: 8px 16px 8px 16px;
   padding: 8px 16px 8px 16px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 trough {

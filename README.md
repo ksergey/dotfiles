@@ -79,12 +79,3 @@ Also you need an icon for menu entry
 # Vim
 
 Just copy everything into your home. For complete vim installation run inside vim `:PlugInstall`
-
-# Screenshots
-
-<p align="center">
-  <img src="assets/screenshot_2024-12-27_225156.png" style="border-radius: 30%"/>
-  <img src="assets/screenshot_2024-12-27_225228.png" style="border-radius: 30%"/>
-  <img src="assets/screenshot_2024-12-27_225312.png" style="border-radius: 30%"/>
-  <img src="assets/screenshot_2024-12-27_225444.png" style="border-radius: 30%"/>
-</p>
