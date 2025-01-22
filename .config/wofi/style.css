@@ -11,7 +11,7 @@ window {
   margin: 0px;
   border-radius: 12px;
   background: @base00;
-  border: 2px solid @base04;
+  border: 2px solid @base03;
 }
 
 #input {
