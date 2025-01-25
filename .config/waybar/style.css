@@ -9,8 +9,9 @@
 }
 
 window#waybar {
-  background: alpha(@base01, 0.85);
+  /* background: alpha(@base01, 0.85); */
   transition: all 0.3s ease-in-out;
+  background: linear-gradient(@base01, alpha(@base02, 0.85));
 }
 
 .module {

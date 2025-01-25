@@ -52,24 +52,7 @@
 
   "clock": {
     "format": " {:%H:%M}",
-    "tooltip-format": "  {:%a, %d %b}",
-    "calendar": {
-      "mode": "month",
-      "weeks-pos": "left",
-      "mode-mon-col": 3,
-      "format": {
-        "months": "<span color='@base06'><b>{}</b></span>",
-        "days": "<span color='@base05'><b>{}</b></span>",
-        "weeks": "<span color='@base0E'><b>W{}</b></span>",
-        "weekdays": "<span color='@base0A'><b>{}</b></span>",
-        "today": "<span color='@base0B'><b><u>{}</u></b></span>"
-      },
-    },
-    "actions": {
-      "on-click-right": "mode",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    },
+    "tooltip-format": " {:%a, %d %b}"
   },
 
   "backlight": {
@@ -82,10 +65,18 @@
     "format": "{icon} {volume}%",
     "format-bluetooth": "{volume}% {icon}  {format_source}",
     "format-bluetooth-muted": "󰝟  {format_source}",
-    "format-muted": "󰝟 Muted",
+    "format-muted": "󰖁 Muted",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol",
-    "format-icons": [ "󰕿", "󰖀", "󰕾" ]
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["","","", "", ""]
+    }
   },
 
   "pulseaudio#microphone": {
