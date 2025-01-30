@@ -1,20 +1,14 @@
-" Crossplatform config
-if has('win32') || has ('win64')
-    let $VIMHOME=$HOME."/vimfiles"
-else
-    let $VIMHOME=$HOME."/.config/vim"
-endif
+let $VIMHOME=$HOME."/.vim"
 
 call plug#begin($VIMHOME.'/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'derekwyatt/vim-fswitch', { 'for': ['c', 'cpp'] }
-Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp'] }
+Plug 'bfrg/vim-c-cpp-modern'
 Plug 'sheerun/vim-polyglot'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown', { 'for': ['markdown'] }
 Plug 'ervandew/supertab'
-Plug 'justinmk/vim-syntax-extra'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
@@ -29,12 +23,9 @@ Plug 'google/vim-glaive'
 Plug 'junegunn/fzf', { 'dir': $VIMHOME.'/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'benmills/vimux'
-
-" Colorschemes
+" colorschemes
 Plug 'lifepillar/vim-gruvbox8'
-Plug 'arcticicestudio/nord-vim'
-Plug 'tinted-theming/tinted-vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -92,10 +83,10 @@ let g:SuperTabCrMapping=0
 let g:SuperTabDefaultCompletionType="<c-n>"
 
 "---------------------------------------
-" vim-cpp-enhanced-highlight
+" vim-c-cpp-modern
 "---------------------------------------
-let g:cpp_class_scope_highlight=1
-let g:cpp_member_variable_highlight=1
+let g:cpp_attributes_highlight = 1
+let g:cpp_operator_highlight = 1
 
 "---------------------------------------
 " ultisnips
@@ -120,12 +111,6 @@ map <leader>z :FormatCode clang-format<cr>
 let g:fzf_preview_window = ''
 map <leader>g :GFiles<cr>
 map <leader>f :Files<cr>
-
-"---------------------------------------
-" vimux
-"---------------------------------------
-map <leader>t :VimuxPromptCommand("make ")<cr>
-map <leader>r :VimuxRunLastCommand<cr>
 
 "---------------------------------------
 " vim settings
@@ -201,12 +186,16 @@ set background=dark
 " colorscheme gruvbox8
 " let g:lightline = {'colorscheme' : 'gruvbox8'}
 
-" let tinted_colorspace = 256
-" let tinted_background_transparent = 1
-" colorscheme base16-nord
+if (has("autocmd") && !has("gui_running"))
+  augroup colorset
+    autocmd!
+    let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+  augroup END
+endif
 
-colorscheme nord
-let g:lightline = {'colorscheme' : 'nord'}
+colorscheme onedark
+let g:lightline = {'colorscheme': 'onedark'}
 
 "---------------------------------------
 " VIM bindings
