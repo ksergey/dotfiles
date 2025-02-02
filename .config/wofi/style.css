@@ -1,4 +1,4 @@
-@import url('.config/wofi/base16-nord.css');
+@import url('.config/wofi/base16-gruvbox-dark-hard.css');
 
 * {
   all: unset;

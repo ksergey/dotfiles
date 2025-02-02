@@ -13,12 +13,12 @@
 
   "modules-right": [
     "backlight",
-    "pulseaudio#microphone",
     "pulseaudio",
-    "group/power",
-    "tray",
+    "pulseaudio#microphone",
     "bluetooth",
     "group/network",
+    "group/power",
+    "tray",
     "custom/swaync"
   ],
 
