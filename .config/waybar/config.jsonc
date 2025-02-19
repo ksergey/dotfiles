@@ -16,7 +16,8 @@
     "pulseaudio",
     "pulseaudio#microphone",
     "bluetooth",
-    "group/network",
+    "custom/vpn",
+    "network",
     "group/power",
     "tray",
     "custom/swaync"
@@ -185,7 +186,7 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t({device_battery_percentage}%)",
-    "on-click": "blueman-manager",
+    "on-click": "~/.config/waybar/scripts/bluetooth.sh",
     "max-length": 35,
     "interval": 5
   },

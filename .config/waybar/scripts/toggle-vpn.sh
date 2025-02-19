@@ -13,8 +13,8 @@ interface=$(basename "${amneziaConfig}" ".conf")
 
 if [ -e "/sys/class/net/${interface}" ]; then
    awg-quick down "${amneziaConfig}"
-   notify-send "AmneziaWG Down" --app-name="${app}" --icon="${icon}" -u low
+   # notify-send "AmneziaWG Down" --app-name="${app}" --icon="${icon}" -u low
 else
    awg-quick up "${amneziaConfig}"
-   notify-send "AmneziaWG Up" --app-name="${app}" --icon="${icon}" -u low
+   # notify-send "AmneziaWG Up" --app-name="${app}" --icon="${icon}" -u low
 fi
