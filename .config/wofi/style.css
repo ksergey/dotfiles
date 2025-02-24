@@ -1,16 +1,24 @@
 @import url('.config/wofi/base16-gruvbox-dark-hard.css');
 
+@keyframes fadeIn {
+  0% {
+  }
+  100% {
+  }
+}
+
 * {
   all: unset;
   border: none;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 16px;
+  background-color: transparent;
 }
 
 window {
   margin: 0px;
   border-radius: 12px;
-  background: @base00;
+  background-color: @base00;
   border: 2px solid @base03;
 }
 
