@@ -12,15 +12,26 @@
   ],
 
   "modules-right": [
-    "group/backlight",
-    "group/audio",
+    "backlight",
+    "custom/separator",
+    "wireplumber",
+    "custom/separator",
     "bluetooth",
+    "custom/separator",
+    "network",
     "custom/vpn",
-    "group/network",
-    "power-profiles-daemon",
+    "custom/separator",
     "battery",
+    "power-profiles-daemon",
+    "custom/separator",
     "custom/powermenu"
   ],
+
+  "custom/separator": {
+    "format": "|",
+    "interval": "once",
+    "tooltip": false
+  },
 
   "hyprland/workspaces": {
     "all-output": false,
@@ -45,31 +56,13 @@
   },
 
   "backlight": {
-    "format": "{icon}",
+    "format": "{icon} {percent}%",
     "format-icons": [ "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨" ],
     "tooltip": false
   },
 
-  "backlight#percent": {
-    "format": "{percent}%",
-    "tooltip": false,
-  },
-
-  "group/backlight": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "backlight-child",
-      "transition-left-to-right": false,
-    },
-    "modules": [
-      "backlight",
-      "backlight#percent"
-    ],
-  },
-
   "wireplumber": {
-    "format": "{icon}",
+    "format": "{icon} {volume}%",
     "format-icons": ["","",""],
     "format-muted": "",
     "states": {
@@ -80,25 +73,6 @@
     "tooltip": false,
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click": "pavucontrol"
-  },
-
-  "wireplumber#volume": {
-    "format": "{volume}%",
-    "format-muted": "-%",
-    "tooltip": false,
-  },
-
-  "group/audio": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "audio-child",
-      "transition-left-to-right": false,
-    },
-    "modules": [
-      "wireplumber",
-      "wireplumber#volume"
-    ],
   },
 
   "battery": {
@@ -113,17 +87,9 @@
     "format-icons": [ "", "", "", "", "" ]
   },
 
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    }
-  },
-
   "power-profiles-daemon": {
     "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip-format": "Power profile: {profile}",
     "tooltip": true,
     "format-icons": {
       "default": "",
@@ -147,30 +113,12 @@
 
   "network": {
     "format": "󰤭",
-    "format-wifi": "{icon}",
+    "format-wifi": "{icon} {essid}",
     "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
     "format-ethernet": "",
     "format-disconnected": "󰤫",
-    "tooltip": false
-  },
-
-  "network#name": {
-    "format": "{essid}",
-    "on-click": "~/.config/waybar/scripts/wifi.sh",
-    "tooltip": false
-  },
-
-  "group/network": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "network-child",
-      "transition-left-to-right": false,
-    },
-    "modules": [
-      "network",
-      "network#name",
-    ],
+    "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/wifi.sh"
   },
 
   "bluetooth": {

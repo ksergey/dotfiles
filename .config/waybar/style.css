@@ -42,6 +42,11 @@ window#waybar.battery-critical {
   background: @base08;
 }
 
+#custom-separator {
+  color: @base03;
+  padding: 0 0.1rem;
+}
+
 #workspaces {
 }
 
@@ -84,7 +89,6 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @base0D;
 }
 
 #backlight.percent {
@@ -99,11 +103,6 @@ window#waybar.empty #window {
 }
 
 #custom-vpn.up {
-  color: @base0B;
-}
-
-#network.name {
-  font-size: 0.75rem;
 }
 
 #battery {
@@ -138,5 +137,9 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.performance {
+  color: @base08;
+}
+
+#custom-powermenu {
   color: @base08;
 }
