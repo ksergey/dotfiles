@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   font-family: "JetBrainsMono Nerd Font Propo";
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -86,6 +87,25 @@ window#waybar.empty #window {
   color: @base0D;
 }
 
+#backlight.percent {
+  font-size: 0.75rem;
+}
+
+#wireplumber.volume {
+  font-size: 0.75rem;
+}
+
+#bluetooth {
+}
+
+#custom-vpn.up {
+  color: @base0B;
+}
+
+#network.name {
+  font-size: 0.75rem;
+}
+
 #battery {
 }
 
@@ -95,7 +115,7 @@ window#waybar.empty #window {
 
 #battery.charging,
 #battery.plugged {
-  color: @base0B;
+  color: @base0A;
 }
 
 @keyframes blink {
@@ -119,28 +139,4 @@ window#waybar.empty #window {
 
 #power-profiles-daemon.performance {
   color: @base08;
-}
-
-#power-profiles-daemon.balanced {
-  color: @base0B;
-}
-
-#power-profiles-daemon.power-saver {
-  color: @base0D;
-}
-
-#idle_inhibitor {
-}
-
-#idle_inhibitor.activated {
-  color: @base09;
-}
-
-#custom-separator {
-  color: @base03;
-  padding: 0.1rem 0.2rem;
-}
-
-#custom-vpn.up {
-  color: @base0B;
 }

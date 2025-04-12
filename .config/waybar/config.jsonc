@@ -12,30 +12,20 @@
   ],
 
   "modules-right": [
-    "backlight",
-    "custom/separator",
-    "pulseaudio",
-    "pulseaudio#microphone",
-    "custom/separator",
+    "group/backlight",
+    "group/audio",
     "bluetooth",
-    "custom/separator",
     "custom/vpn",
-    "network",
-    "custom/separator",
-    "group/power",
-    "custom/separator",
+    "group/network",
+    "power-profiles-daemon",
+    "battery",
     "custom/powermenu"
   ],
 
-  "custom/separator": {
-    "format": "|",
-    "interval": "once",
-    "tooltip": false
-  },
-
   "hyprland/workspaces": {
-    "show-special": true,
-    "special-visible-only": true,
+    "all-output": false,
+    "move_to_monitor": true,
+    "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
       "active": "",
@@ -55,51 +45,60 @@
   },
 
   "backlight": {
-    "format": "{icon} {percent}%",
+    "format": "{icon}",
     "format-icons": [ "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨" ],
     "tooltip": false
   },
 
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{volume}% {icon}  {format_source}",
-    "format-bluetooth-muted": "󰝟  {format_source}",
-    "format-muted": "󰖁 Muted",
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["","","", "", ""]
-    }
+  "backlight#percent": {
+    "format": "{percent}%",
+    "tooltip": false,
   },
 
-  "pulseaudio#microphone": {
-    "format": "{format_source}",
-    "format-source": "",
-    "format-source-muted": "",
-    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-    "on-click-right": "pavucontrol -t 4",
-    "on-scroll-up": "",
-    "on-scroll-down": "",
-	  "tooltip-format": "{source_desc} | {source_volume}%"
-  },
-
-  "group/power": {
+  "group/backlight": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
-      "transition-left-to-right": false
+      "transition-duration": 600,
+      "children-class": "backlight-child",
+      "transition-left-to-right": false,
     },
     "modules": [
-      "battery",
-      "idle_inhibitor",
-      "power-profiles-daemon"
-    ]
+      "backlight",
+      "backlight#percent"
+    ],
+  },
+
+  "wireplumber": {
+    "format": "{icon}",
+    "format-icons": ["","",""],
+    "format-muted": "",
+    "states": {
+      "top": 65,
+      "mid": 33,
+      "low": 0,
+    },
+    "tooltip": false,
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click": "pavucontrol"
+  },
+
+  "wireplumber#volume": {
+    "format": "{volume}%",
+    "format-muted": "-%",
+    "tooltip": false,
+  },
+
+  "group/audio": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "audio-child",
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "wireplumber",
+      "wireplumber#volume"
+    ],
   },
 
   "battery": {
@@ -147,17 +146,31 @@
   },
 
   "network": {
-    "format": "󰤭 ",
-    "format-wifi": "{icon} {essid}",
+    "format": "󰤭",
+    "format-wifi": "{icon}",
     "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
-    "format-disconnected": "󰤫 Disconnected",
-    "tooltip-format": "wifi <span color='#ee99a0'>off</span>",
-    "tooltip-format-wifi":"SSID: {essid}({signalStrength}%), {frequency} GHz\nInterface: {ifname}\nIP: {ipaddr}\nGW: {gwaddr}\n\n<span color='#a6da95'> {bandwidthUpBits}</span>\t<span color='#ee99a0'> {bandwidthDownBits}</span>\t<span color='#c6a0f6'>󰹹 {bandwidthTotalBits}</span>",
-    "tooltip-format-disconnected": "<span color='#ed8796'>disconnected</span>",
+    "format-ethernet": "",
+    "format-disconnected": "󰤫",
+    "tooltip": false
+  },
+
+  "network#name": {
+    "format": "{essid}",
     "on-click": "~/.config/waybar/scripts/wifi.sh",
-    "on-click-right": "nm-connection-editor",
-    "max-length": 35,
-    "interval": 5
+    "tooltip": false
+  },
+
+  "group/network": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "network-child",
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "network",
+      "network#name",
+    ],
   },
 
   "bluetooth": {
@@ -173,18 +186,6 @@
     "on-click": "~/.config/waybar/scripts/bluetooth.sh",
     "max-length": 35,
     "interval": 5
-  },
-
-  "group/network": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "transition-left-to-right": false
-    },
-    "modules": [
-      "network",
-      "custom/vpn"
-    ]
   },
 
   "custom/powermenu": {
