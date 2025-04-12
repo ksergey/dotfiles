@@ -5,10 +5,10 @@ Copy what you want
 # Packages
 
 ```sh
-yay -S hyprland hyprlock hypridle wl-clipboard swaync waybar swww wofi kitty fish wev swayimg mpv yt-dlp \
+yay -S hyprland hyprlock hypridle wl-clipboard dunst waybar swww rofi kitty fish wev swayimg mpv yt-dlp \
     cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse pipewire-alsa alsa-utils \
     ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd network-manager blueman \
-    nvtop termshark chafa fastfetch
+    nvtop termshark chafa fastfetch kernel-modules-hook downgrade
 ```
 
 ## AmneziaVPN
@@ -40,6 +40,12 @@ sudo systemctl enable systemd-resolved.service
 sudo systemctl start systemd-resolved.service
 sudo ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
+```
+
+## Other
+
+```sh
+sudo systemctl enable linux-modules-cleanup.service
 ```
 
 ## Heroes 3 HotA
