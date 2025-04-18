@@ -1,0 +1,18 @@
+[general]
+ bar_width = 3
+ bar_spacing = 1
+
+[input]
+ method = pipewire
+ source = auto
+
+[output]
+
+[color]
+
+ gradient = 1
+ gradient_count = 4
+ gradient_color_1 = '{{ palette.base00 }}'
+ gradient_color_2 = '{{ palette.base05 }}'
+ gradient_color_3 = '{{ palette.base09 }}'
+ gradient_color_4 = '{{ palette.base0E }}'
