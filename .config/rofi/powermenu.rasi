@@ -1,9 +1,11 @@
 configuration {
-    show-icons: false;
-		hover-select: true;
+  show-icons: false;
+	hover-select: true;
+  hide-scrollbar: true;
 }
 
-@import "colors.rasi"
+/* @import "colors.rasi" */
+@import "colors-walng.rasi"
 
 * {
   font: "JetBrainsMono Nerd Font 14";
@@ -32,7 +34,6 @@ window {
   padding: 0px;
   border: 0px solid;
   border-radius: 0px;
-  border-color: @selected;
   cursor: "default";
   background-color: @background;
 }
@@ -44,7 +45,6 @@ mainbox {
   padding: var(box-margin);
   border: 0px solid;
   border-radius: 0px;
-  border-color: @selected;
   background-color: transparent;
   children: [ "message", "listview" ];
 }
@@ -56,9 +56,8 @@ inputbar {
   padding: 0px;
   border: 0px;
   border-radius: 0px;
-  border-color: @selected;
   background-color: transparent;
-  text-color: @foreground;
+  text-color: @base05;
   children: [ "dummy", "textbox-prompt-colon", "prompt", "dummy"];
 }
 
@@ -72,16 +71,16 @@ textbox-prompt-colon {
   str: "SYSTEM";
   padding: var(general-padding);
   border-radius: var(general-radius);
-  background-color: @urgent;
-  text-color: @background;
+  background-color: @base01;
+  text-color: @base08;
 }
 
 prompt {
   enabled: true;
   padding: var(general-padding);
   border-radius: var(general-radius);
-  background-color: @active;
-  text-color: @background;
+  background-color: @background;
+  text-color: @base05;
 }
 
 message {
@@ -90,9 +89,8 @@ message {
   padding: var(general-padding);
   border: 0px;
   border-radius: var(general-radius);
-  border-color: @selected;
-  background-color: @background-alt;
-  text-color: @foreground;
+  background-color: @base01;
+  text-color: @base05;
 }
 
 textbox {
@@ -100,7 +98,7 @@ textbox {
   text-color: inherit;
   vertical-align: 0.5;
   horizontal-align: 0.5;
-  placeholder-color: @foreground;
+  placeholder-color: @base05;
   blink: true;
   markup: true;
 }
@@ -109,9 +107,8 @@ error-message {
   padding: var(general-padding);
   border: 0px solid;
   border-radius: var(general-radius);
-  border-color: @selected;
   background-color: @background;
-  text-color: @foreground;
+  text-color: @base05;
 }
 
 listview {
@@ -130,9 +127,8 @@ listview {
   padding: 0px;
   border: 0px solid;
   border-radius: 0px;
-  border-color: @selected;
   background-color: transparent;
-  text-color: @foreground;
+  text-color: @base05;
   cursor: "default";
 }
 
@@ -143,9 +139,8 @@ element {
   padding: var(element-padding);
   border: 0px solid;
   border-radius: var(element-radius);
-  border-color: @selected;
-  background-color: @background-alt;
-  text-color: @foreground;
+  background-color: @base01;
+  text-color: @base05;
   cursor: pointer;
 }
 
@@ -159,6 +154,6 @@ element-text {
 }
 
 element selected.normal {
-  background-color: var(selected);
-  text-color: var(background);
+  background-color: @base02;
+  text-color: @base05;
 }

@@ -1,0 +1,17 @@
+config:
+  shell: "sh -c '{}'"
+
+items:
+  - name: "rofi"
+    template: "~/.config/walng/templates/rofi-colors.rasi"
+    target: "~/.config/rofi/colors-walng.rasi"
+
+  - name: "waybar"
+    template: "~/.config/walng/templates/waybar-colors.css"
+    target: "~/.config/waybar/colors-walng.css"
+    hook: ""
+
+  - name: "hyprland"
+    template: "~/.config/walng/templates/hyprland-colors.conf"
+    target: "~/.config/hypr/colors-walng.conf"
+    hook: ""

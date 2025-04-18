@@ -1,0 +1,11 @@
+@define-color background #131318;
+@define-color foreground #e5e1e9;
+@define-color hover-foreground #eab9d2;
+@define-color battery-critical #ffb2b9;
+@define-color battery-warning #ffb694;
+@define-color battery-charging #95d5a7;
+@define-color vpn-up #b8cf84;
+@define-color power-profiles-daemon-performance #ffb694;
+@define-color power-profiles-daemon-power-saver #95d5a7;
+@define-color power-profiles-daemon-balanced #c0c1ff;
+@define-color power-button #ffb693;

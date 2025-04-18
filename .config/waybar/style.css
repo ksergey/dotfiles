@@ -1,4 +1,5 @@
-@import "base16-gruvbox-dark-hard.css";
+/* @import "colors.css"; */
+@import "colors-walng.css";
 
 * {
   all: unset;
@@ -10,13 +11,14 @@
 }
 
 window#waybar {
-  background: @base01;
+  background: @base00;
   transition: all 0.3s ease-in-out;
 }
 
 .module {
-  color: @base06;
+  color: @base05;
   padding: 0.1rem 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .modules-left:first-child {
@@ -28,8 +30,7 @@ window#waybar {
 }
 
 tooltip {
-  background: @base01;
-  border: 2px solid @base05;
+  background: @base00;
   border-radius: 4px;
 }
 
@@ -69,11 +70,11 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.visible {
-  color: @base0E;
+  color: @base03;
 }
 
 #workspaces button.active {
-  color: @base0D;
+  color: @base0C;
 }
 
 #workspaces button.special {
@@ -81,7 +82,7 @@ window#waybar.battery-critical {
 }
 
 #workspaces button:hover {
-  color: @base0D;
+  color: @base0C;
 }
 
 window#waybar.empty #window {
@@ -91,18 +92,20 @@ window#waybar.empty #window {
 #clock {
 }
 
-#backlight.percent {
-  font-size: 0.75rem;
+#backlight {
 }
 
-#wireplumber.volume {
-  font-size: 0.75rem;
+#wireplumber {
 }
 
 #bluetooth {
 }
 
+#network {
+}
+
 #custom-vpn.up {
+  color: @base0B;
 }
 
 #battery {
@@ -114,7 +117,7 @@ window#waybar.empty #window {
 
 #battery.charging,
 #battery.plugged {
-  color: @base0A;
+  color: @base0B;
 }
 
 @keyframes blink {
@@ -125,7 +128,7 @@ window#waybar.empty #window {
 }
 
 #battery.critical:not(.charging) {
-  background-color: @base08;
+  color: @base08;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -140,6 +143,14 @@ window#waybar.empty #window {
   color: @base08;
 }
 
+#power-profiles-daemon.power-saver {
+  color: @base0B;
+}
+
+#power-profiles-daemon.balanced {
+  color: @base0C;
+}
+
 #custom-powermenu {
-  color: @base08;
+  color: @base09;
 }
