@@ -1,5 +1,10 @@
+/*
+  name: {{ name }}
+  author: {{ author }}
+*/
+
 * {
-  background: {{ rgba(alpha(palette.base00, 0.8)) }};
+  background: rgba({{ rgb(palette.base00) }}, 0.8);
 
 {% for name, color in palette %}
   {{ name }}: {{ color }};

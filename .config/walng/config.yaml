@@ -9,13 +9,22 @@ items:
   - name: "waybar"
     template: "~/.config/walng/templates/waybar-colors.css"
     target: "~/.config/waybar/colors-walng.css"
-    hook: ""
+    hook: "killall -SIGUSR2 waybar"
 
   - name: "hyprland"
     template: "~/.config/walng/templates/hyprland-colors.conf"
     target: "~/.config/hypr/colors-walng.conf"
-    hook: ""
+    hook: "hyprctl reload"
 
   - name: "cava"
     template: "~/.config/walng/templates/cava-colors"
     target: "~/.config/cava/config"
+
+  - name: "kitty"
+    template: "~/.config/walng/templates/kitty-colors.conf"
+    target: "~/.config/kitty/colors-walng.conf"
+
+  - name: "dunst"
+    template: "~/.config/walng/templates/dunstrc-colors"
+    target: "~/.config/dunst/dunstrc"
+    hook: "dunstctl reload && notify-send 'updated'"
