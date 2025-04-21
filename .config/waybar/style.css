@@ -90,6 +90,7 @@ window#waybar.empty #window {
 }
 
 #clock {
+  color: @base07;
 }
 
 #backlight {
@@ -101,11 +102,15 @@ window#waybar.empty #window {
 #bluetooth {
 }
 
+#bluetooth.connected {
+  color: @base0A;
+}
+
 #network {
 }
 
 #custom-vpn.up {
-  color: @base0B;
+  color: @base0A;
 }
 
 #battery {
@@ -144,13 +149,11 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.power-saver {
-  color: @base0B;
 }
 
 #power-profiles-daemon.balanced {
-  color: @base0C;
 }
 
 #custom-powermenu {
-  color: @base09;
+  color: @base08;
 }
