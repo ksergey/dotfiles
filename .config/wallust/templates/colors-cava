@@ -8,8 +8,8 @@ bar_spacing = 1
 
 [color]
 gradient = 1
-gradient_color_1 = '#CC241D'
-gradient_color_2 = '#D79921'
+gradient_color_1 = '{{color1}}'
+gradient_color_2 = '{{color3}}'
 
 [output]
 #█▓▒░ Ouput method. Can be 'ncurses', 'noncurses' or 'raw'.

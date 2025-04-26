@@ -1,5 +1,4 @@
-/* @import "colors.css"; */
-@import "colors-walng.css";
+@import "colors-wallust.css";
 
 * {
   all: unset;
@@ -11,13 +10,18 @@
 }
 
 window#waybar {
-  background: @base00;
+  background: alpha(@background, 0.8);
   transition: all 0.3s ease-in-out;
 }
 
 .module {
-  color: @base05;
+  color: @foreground;
   padding: 0.1rem 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.module:hover {
+  color: @accent-hover;
   transition: all 0.3s ease-in-out;
 }
 
@@ -30,21 +34,21 @@ window#waybar {
 }
 
 tooltip {
-  background: @base00;
+  background: @background;
   border-radius: 4px;
 }
 
 tooltip label {
-  color: @base05;
+  color: @foreground;
   padding: 0.2rem 0.5rem;
 }
 
 window#waybar.battery-critical {
-  background: @base08;
+  background: @critical-background;
 }
 
 #custom-separator {
-  color: @base03;
+  color: alpha(@foreground, 0.25);
   padding: 0 0.1rem;
 }
 
@@ -55,6 +59,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
+  color: alpha(@foreground, 0.5);
 }
 
 #workspace button:first-child {
@@ -66,23 +71,17 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.empty {
-  color: @base03;
 }
 
 #workspaces button.visible {
-  color: @base03;
 }
 
 #workspaces button.active {
-  color: @base0C;
-}
-
-#workspaces button.special {
-  color: @base0B;
+  color: @accent;
 }
 
 #workspaces button:hover {
-  color: @base0C;
+  color: @accent-hover;
 }
 
 window#waybar.empty #window {
@@ -90,7 +89,6 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @base07;
 }
 
 #backlight {
@@ -102,38 +100,34 @@ window#waybar.empty #window {
 #bluetooth {
 }
 
-#bluetooth.connected {
-  color: @base0A;
-}
-
 #network {
 }
 
 #custom-vpn.up {
-  color: @base0A;
+  color: @accent;
 }
 
 #battery {
 }
 
 #battery.warning {
-  color: @base08;
+  color: @warning;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: @base0B;
+  color: @charging;
 }
 
 @keyframes blink {
   to {
-    color: @base05;
-    background: @base01;
+    color: @critical;
+    background: alpha(@background, 0.5);
   }
 }
 
 #battery.critical:not(.charging) {
-  color: @base08;
+  color: @critical;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -145,7 +139,7 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.performance {
-  color: @base08;
+  color: @accent;
 }
 
 #power-profiles-daemon.power-saver {
@@ -155,5 +149,4 @@ window#waybar.empty #window {
 }
 
 #custom-powermenu {
-  color: @base08;
 }

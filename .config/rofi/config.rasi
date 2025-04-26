@@ -10,8 +10,7 @@ configuration {
 	window-format: "{w} · {c} · {t}";
 }
 
-/* @import "colors.rasi" */
-@import "colors-walng.rasi"
+@import "colors-wallust.rasi"
 
 * {
   font: "JetBrainsMono Nerd Font 14";
@@ -35,7 +34,7 @@ window {
   border: 0px solid;
   border-radius: 0px;
   cursor: "default";
-  background-color: @background;
+  background-color: @shadow;
 }
 
 mainbox {
@@ -56,8 +55,8 @@ inputbar {
   padding: 20px;
   border: 0px;
   border-radius: 8px;
-  background-color: @base01;
-  text-color: @base05;
+  background-color: @background;
+  text-color: @foreground;
   children: [ "entry" ];
 }
 
@@ -102,7 +101,7 @@ listview {
   padding: 30px;
   border: 0px solid;
   border-radius: 8px;
-  background-color: @base01;
+  background-color: @background;
   cursor: "default";
 }
 
@@ -121,13 +120,13 @@ element alternate.normal,
 element normal.active,
 element normal.normal {
   background-color: transparent;
-  text-color: @base05;
+  text-color: @foreground;
 }
 
 element selected.active,
 element selected.normal {
-  background-color: @base02;
-  text-color: @base05;
+  background-color: @selected-background;
+  text-color: @selected-foreground;
 }
 
 element-icon {

@@ -1,0 +1,10 @@
+@define-color background {{background}};
+@define-color foreground {{foreground}};
+
+@define-color critical-background {{color1}};
+@define-color critical {{color9}};
+@define-color warning {{color4}};
+@define-color charging {{color10}};
+
+@define-color accent {{color11}};
+@define-color accent-hover {{color11 | lighten(0.5)}};

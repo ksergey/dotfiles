@@ -1,0 +1,10 @@
+@define-color background #282828;
+@define-color foreground #EBDBB2;
+
+@define-color critical-background #CC241D;
+@define-color critical #FB4934;
+@define-color warning #458588;
+@define-color charging #B8BB26;
+
+@define-color accent #FABD2F;
+@define-color accent-hover #FDDE97;

@@ -28,7 +28,7 @@
   ],
 
   "custom/separator": {
-    "format": "|",
+    "format": "\\",
     "interval": "once",
     "tooltip": false
   },

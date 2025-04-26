@@ -4,8 +4,7 @@ configuration {
   hide-scrollbar: true;
 }
 
-/* @import "colors.rasi" */
-@import "colors-walng.rasi"
+@import "colors-wallust.rasi"
 
 * {
   font: "JetBrainsMono Nerd Font 14";
@@ -35,14 +34,14 @@ window {
   border: 0px solid;
   border-radius: 0px;
   cursor: "default";
-  background-color: @background;
+  background-color: @shadow;
 }
 
 mainbox {
   enabled: true;
-  spacing: var(box-spacing);
+  spacing: @box-spacing;
   margin: 0px;
-  padding: var(box-margin);
+  padding: @box-margin;
   border: 0px solid;
   border-radius: 0px;
   background-color: transparent;
@@ -51,13 +50,13 @@ mainbox {
 
 inputbar {
   enabled: true;
-  spacing: var(inputbar-spacing);
+  spacing: @inputbar-spacing;
   margin: 0px;
   padding: 0px;
   border: 0px;
   border-radius: 0px;
   background-color: transparent;
-  text-color: @base05;
+  text-color: @foreground;
   children: [ "dummy", "textbox-prompt-colon", "prompt", "dummy"];
 }
 
@@ -69,28 +68,28 @@ textbox-prompt-colon {
   enabled: true;
   expand: false;
   str: "SYSTEM";
-  padding: var(general-padding);
-  border-radius: var(general-radius);
-  background-color: @base01;
-  text-color: @base08;
+  padding: @general-padding;
+  border-radius: @general-radius;
+  background-color: @background;
+  text-color: @foreground;
 }
 
 prompt {
   enabled: true;
-  padding: var(general-padding);
-  border-radius: var(general-radius);
+  padding: @general-padding;
+  border-radius: @general-radius;
   background-color: @background;
-  text-color: @base05;
+  text-color: @foreground;
 }
 
 message {
   enabled: true;
-  margin: var(message-margin);
-  padding: var(general-padding);
+  margin: @message-margin;
+  padding: @general-padding;
   border: 0px;
-  border-radius: var(general-radius);
-  background-color: @base01;
-  text-color: @base05;
+  border-radius: @general-radius;
+  background-color: @background;
+  text-color: @foreground;
 }
 
 textbox {
@@ -98,17 +97,17 @@ textbox {
   text-color: inherit;
   vertical-align: 0.5;
   horizontal-align: 0.5;
-  placeholder-color: @base05;
+  placeholder-color: @foreground;
   blink: true;
   markup: true;
 }
 
 error-message {
-  padding: var(general-padding);
+  padding: @general-padding;
   border: 0px solid;
-  border-radius: var(general-radius);
-  background-color: @background;
-  text-color: @base05;
+  border-radius: @general-radius;
+  background-color: @selected-background;
+  text-color: @selected-foreground;
 }
 
 listview {
@@ -122,30 +121,33 @@ listview {
   reverse: false;
   fixed-height: true;
   fixed-columns: true;
-  spacing: var(list-spacing);
+  spacing: @list-spacing;
   margin: 0px;
   padding: 0px;
   border: 0px solid;
   border-radius: 0px;
   background-color: transparent;
-  text-color: @base05;
+  text-color: @foreground;
   cursor: "default";
 }
 
-element {
+element,
+element alternate.normal,
+element normal.active,
+element normal.normal {
   enabled: true;
   spacing: 0px;
   margin: 0px;
-  padding: var(element-padding);
+  padding: @element-padding;
   border: 0px solid;
-  border-radius: var(element-radius);
-  background-color: @base01;
-  text-color: @base05;
+  border-radius: @element-radius;
+  background-color: @background;
+  text-color: @foreground;
   cursor: pointer;
 }
 
 element-text {
-  font: var(element-font);
+  font: @element-font;
   background-color: transparent;
   text-color: inherit;
   cursor: inherit;
@@ -154,6 +156,6 @@ element-text {
 }
 
 element selected.normal {
-  background-color: @base02;
-  text-color: @base05;
+  background-color: @selected-background;
+  text-color: @selected-foreground;
 }

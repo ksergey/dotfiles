@@ -1,3 +1,0 @@
-{% for name, color in palette -%}
-@define-color {{ name }} {{ color }};
-{%- endfor %}
