@@ -1,4 +1,4 @@
-@import "colors-wallust.css";
+@import "colors-walng.css";
 
 * {
   all: unset;
@@ -10,18 +10,18 @@
 }
 
 window#waybar {
-  background: alpha(@background, 0.8);
+  background: alpha(@base00, 0.8);
   transition: all 0.3s ease-in-out;
 }
 
 .module {
-  color: @foreground;
+  color: @base05;
   padding: 0.1rem 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 
 .module:hover {
-  color: @accent-hover;
+  color: @base06;
   transition: all 0.3s ease-in-out;
 }
 
@@ -34,21 +34,21 @@ window#waybar {
 }
 
 tooltip {
-  background: @background;
+  background: alpha(@base00, 0.8);
   border-radius: 4px;
 }
 
 tooltip label {
-  color: @foreground;
+  color: @base05;
   padding: 0.2rem 0.5rem;
 }
 
 window#waybar.battery-critical {
-  background: @critical-background;
+  background: @base08;
 }
 
 #custom-separator {
-  color: alpha(@foreground, 0.25);
+  color: @base03;
   padding: 0 0.1rem;
 }
 
@@ -59,7 +59,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@foreground, 0.5);
+  color: alpha(@base05, 0.5);
 }
 
 #workspace button:first-child {
@@ -77,11 +77,11 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @accent;
+  color: @base06;
 }
 
 #workspaces button:hover {
-  color: @accent-hover;
+  color: @base06;
 }
 
 window#waybar.empty #window {
@@ -104,30 +104,30 @@ window#waybar.empty #window {
 }
 
 #custom-vpn.up {
-  color: @accent;
+  color: @base0A;
 }
 
 #battery {
 }
 
 #battery.warning {
-  color: @warning;
+  color: @base08;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: @charging;
+  color: @base0B;
 }
 
 @keyframes blink {
   to {
-    color: @critical;
+    color: @base08;
     background: alpha(@background, 0.5);
   }
 }
 
 #battery.critical:not(.charging) {
-  color: @critical;
+  color: @base05;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -139,7 +139,7 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.performance {
-  color: @accent;
+  color: @base0D;
 }
 
 #power-profiles-daemon.power-saver {

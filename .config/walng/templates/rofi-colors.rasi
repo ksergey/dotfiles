@@ -1,0 +1,12 @@
+/*
+  name: {{ name }}
+  author: {{ author }}
+*/
+
+* {
+  shadow: rgba({{ rgb(palette.base01) }}, 0.8);
+
+{% for name, color in palette %}
+  {{ name }}: {{ color }};
+{% endfor %}
+}
