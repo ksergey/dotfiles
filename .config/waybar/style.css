@@ -89,6 +89,7 @@ window#waybar.empty #window {
 }
 
 #clock {
+  color: alpha(@base05, 0.5);
 }
 
 #backlight {

@@ -51,8 +51,8 @@
   },
 
   "clock": {
-    "format": " {:%H:%M}",
-    "tooltip-format": " {:%a, %d %b}"
+    "format": "{:%A    %B-%d-%Y    %H:%M:%S}",
+    "tooltip-format": "<tt>{calendar}</tt>"
   },
 
   "backlight": {
