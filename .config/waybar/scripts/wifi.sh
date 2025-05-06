@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-kitty nmtui
+kitty --override confirm_os_window_close=0 impala
