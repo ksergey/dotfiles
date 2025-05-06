@@ -8,7 +8,7 @@ Copy what you want
 yay -S hyprland hyprlock hypridle wl-clipboard dunst waybar swww rofi kitty fish wev swayimg mpv yt-dlp \
     cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse pipewire-alsa alsa-utils \
     ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd iwd impala bluetui \
-    nvtop chafa fastfetch kernel-modules-hook downgrade
+    nvtop chafa fastfetch kernel-modules-hook downgrade pulsemixer
 ```
 
 ## AmneziaVPN
