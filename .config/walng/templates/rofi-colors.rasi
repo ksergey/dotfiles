@@ -4,7 +4,7 @@
 */
 
 * {
-  shadow: rgba({{ rgb(palette.base01) }}, 0.8);
+  shadow: rgba({{ palette.base01 | rgb }}, 0.8);
 
 {% for name, color in palette %}
   {{ name }}: {{ color }};

@@ -1,25 +1,25 @@
 /*
-  name: Gruvbox dark, pale
-  author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+  name: Nord
+  author: arcticicestudio
 */
 
 * {
-  shadow: rgba(58, 58, 58, 0.8);
+  shadow: rgba(59, 66, 82, 0.8);
 
-  base00: #262626;
-  base01: #3a3a3a;
-  base02: #4e4e4e;
-  base03: #8a8a8a;
-  base04: #949494;
-  base05: #dab997;
-  base06: #d5c4a1;
-  base07: #ebdbb2;
-  base08: #d75f5f;
-  base09: #ff8700;
-  base0A: #ffaf00;
-  base0B: #afaf00;
-  base0C: #85ad85;
-  base0D: #83adad;
-  base0E: #d485ad;
-  base0F: #d65d0e;
+  base00: #2E3440;
+  base01: #3B4252;
+  base02: #434C5E;
+  base03: #4C566A;
+  base04: #D8DEE9;
+  base05: #E5E9F0;
+  base06: #ECEFF4;
+  base07: #8FBCBB;
+  base08: #BF616A;
+  base09: #D08770;
+  base0A: #EBCB8B;
+  base0B: #A3BE8C;
+  base0C: #88C0D0;
+  base0D: #81A1C1;
+  base0E: #B48EAD;
+  base0F: #5E81AC;
 }

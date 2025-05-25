@@ -1,2 +1,7 @@
 [color]
-foreground = '#{{ hex(palette.base05) }}'
+foreground = '#{{ palette.base05 | hex }}'
+
+gradient = 1
+gradient_color_1 = '#{{ palette.base0D | hex }}'
+gradient_color_2 = '#{{ palette.base0C | hex }}'
+gradient_color_3 = '#{{ palette.base0B | hex }}'

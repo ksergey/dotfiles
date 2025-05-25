@@ -1,2 +1,7 @@
 [color]
-foreground = '#dab997'
+foreground = '#e5e9f0'
+
+gradient = 1
+gradient_color_1 = '#81a1c1'
+gradient_color_2 = '#88c0d0'
+gradient_color_3 = '#a3be8c'
