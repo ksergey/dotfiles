@@ -30,3 +30,8 @@ items:
     template: "~/.config/walng/templates/dunstrc-colors"
     target: "~/.config/dunst/dunstrc"
     hook: "dunstctl reload && notify-send 'updated'"
+
+  - name: "tmux"
+    template: "~/.config/walng/templates/tmux-colors.conf"
+    target: "~/.tmux-colors.conf"
+    hook: "tmux source-file ~/.tmux.conf"
