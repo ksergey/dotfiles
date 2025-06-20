@@ -9,7 +9,7 @@ yay -S hyprland hyprlock hypridle wl-clipboard dunst waybar swww rofi kitty fish
     cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse pipewire-alsa alsa-utils \
     ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd iwd impala bluetui \
     nvtop chafa fastfetch kernel-modules-hook downgrade wiremix-git xdg-desktop-portal-wlr \
-    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-hyprland hyprshade
 ```
 
 ## AmneziaVPN
