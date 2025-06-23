@@ -15,6 +15,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 Plug 'itchyny/lightline.vim'
 Plug 'nickel-lang/vim-nickel'
+Plug 'elkowar/yuck.vim'
 
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
@@ -26,6 +27,8 @@ Plug 'junegunn/fzf.vim'
 " colorschemes
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'joshdick/onedark.vim'
+Plug 'sainnhe/edge'
+Plug 'EdenEast/nightfox.nvim'
 
 call plug#end()
 
@@ -183,19 +186,22 @@ set background=dark
 let g:gruvbox_bold = 1
 let g:gruvbox_italics = 1
 let g:gruvbox_transp_bg = 1
-colorscheme gruvbox8
+colorscheme gruvbox8_hard
 let g:lightline = {'colorscheme' : 'gruvbox8'}
 
-" if (has("autocmd") && !has("gui_running"))
-"   augroup colorset
-"     autocmd!
-"     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-"     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
-"   augroup END
-" endif
+" lua << EOF
+" require('nightfox').setup({
+" 	options = {
+" 		transparent = true,
+" 		styles = {
+" 			comments = "italic"
+" 		}
+" 	}
+" })
+" EOF
 "
-" colorscheme onedark
-" let g:lightline = {'colorscheme': 'onedark'}
+" colorscheme nightfox
+" let g:lightline = {'colorscheme' : 'nightfox'}
 
 "---------------------------------------
 " VIM bindings
