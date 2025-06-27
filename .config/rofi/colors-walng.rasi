@@ -1,25 +1,33 @@
 /*
-  name: Kanagawa Dragon
-  author: Tommaso Laurenzi (https://github.com/rebelot)
+  name: Wombat
+  author: FredHappyface (https://github.com/fredHappyface)
 */
 
 * {
-  shadow: rgba(29, 28, 25, 0.8);
+  shadow: rgba(0, 0, 0, 0.8);
 
-  base00: #0d0c0c;
-  base01: #1D1C19;
-  base02: #282727;
-  base03: #737c73;
-  base04: #a6a69c;
-  base05: #c5c9c5;
-  base06: #7a8382;
-  base07: #c5c9c5;
-  base08: #c4746e;
-  base09: #b98d7b;
-  base0A: #c4b28a;
-  base0B: #87a987;
-  base0C: #8ea4a2;
-  base0D: #8ba4b0;
-  base0E: #8992a7;
-  base0F: #a292a3;
+  base00: #171717;
+  base01: #000000;
+  base02: #313131;
+  base03: #5c5b58;
+  base04: #87857f;
+  base05: #b2afa6;
+  base06: #ded9ce;
+  base07: #fefffe;
+  base08: #ff605a;
+  base09: #ead89c;
+  base0A: #a5c7ff;
+  base0B: #b1e869;
+  base0C: #82fff6;
+  base0D: #5da9f6;
+  base0E: #e86aff;
+  base0F: #7f302d;
+  base10: #202020;
+  base11: #101010;
+  base12: #f58b7f;
+  base13: #eee5b2;
+  base14: #dcf88f;
+  base15: #b6fff9;
+  base16: #a5c7ff;
+  base17: #ddaaff;
 }
