@@ -238,8 +238,8 @@ map <leader>c :set cursorline!<cr>
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd VimResized * :wincmd =
-autocmd BufNewFile,BufRead *.ipp set syntax=cpp
-autocmd BufNewFile,BufRead *.cppm set syntax=cpp
+autocmd BufNewFile,BufRead *.ipp set filetype=cpp
+autocmd BufNewFile,BufRead *.cppm set filetype=cpp
 autocmd FileChangedRO * echohl WarningMsg | echo "File changed RO." | echohl None
 autocmd FileChangedShell * echohl WarningMsg | echo "File changed shell." | echoh
 
