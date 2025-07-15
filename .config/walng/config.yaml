@@ -35,3 +35,8 @@ items:
     template: "~/.config/walng/templates/tmux-colors.conf"
     target: "~/.tmux-colors.conf"
     hook: "tmux source-file ~/.tmux.conf"
+
+  - name: "terminal"
+    template: "~/.config/walng/templates/terminal.sh"
+    target: "~/.cache/walng/terminal.sh"
+    hook: "echo && chmod 755 ~/.cache/walng/terminal.sh && bash ~/.cache/walng/terminal.sh"

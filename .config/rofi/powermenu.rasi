@@ -7,7 +7,7 @@ configuration {
 @import "colors-walng.rasi"
 
 * {
-  font: "JetBrainsMono Nerd Font 14";
+  font: "JetBrainsMono Nerd Font 12";
   box-spacing: 50px;
   box-margin: 370px 350px;
   message-margin: 0px 350px;

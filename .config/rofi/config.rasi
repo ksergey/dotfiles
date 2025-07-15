@@ -13,7 +13,7 @@ configuration {
 @import "colors-walng.rasi"
 
 * {
-  font: "JetBrainsMono Nerd Font 14";
+  font: "JetBrainsMono Nerd Font 12";
 }
 
 window {
