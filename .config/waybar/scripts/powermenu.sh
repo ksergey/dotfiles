@@ -1,22 +1,16 @@
 #!/usr/bin/env bash
 
-# CMDs
-uptime="`uptime -p | sed -e 's/up //g'`"
-
 # Options
-shutdown='󰐥'
-reboot='󰜉'
-lock='󰌾'
-suspend='󰤄'
-logout='󰍃'
+shutdown='󰐥 Shutdown'
+reboot='󰜉 Reboot'
+lock='󰌾 Lock'
+suspend='󰤄 Suspend'
+logout='󰍃 Logout'
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu \
-		-p "Goodbye ${USER}" \
-		-mesg "Uptime: $uptime" \
-		-theme "$HOME/.config/rofi/powermenu.rasi"
-	}
+	rofi -dmenu -theme "$HOME/.config/rofi/powermenu.rasi"
+}
 
 # Pass variables to rofi dmenu
 run_rofi() {

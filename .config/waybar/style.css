@@ -6,7 +6,7 @@
   margin: 0;
   font-family: "JetBrainsMono Nerd Font Propo";
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 window#waybar {
@@ -102,10 +102,6 @@ window#waybar.empty #window {
 }
 
 #network {
-}
-
-#custom-shaders {
-  padding: 0 0.25em
 }
 
 #custom-vpn.up {

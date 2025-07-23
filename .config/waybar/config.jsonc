@@ -12,7 +12,6 @@
   ],
 
   "modules-right": [
-    "custom/shaders",
     "backlight",
     "custom/separator",
     "wireplumber",
@@ -143,12 +142,5 @@
     "tooltip-format": "Powermenu",
     "on-click": "~/.config/waybar/scripts/powermenu.sh",
     "tooltip": false
-  },
-
-  "custom/shaders": {
-    "format": "",
-    "tooltip-format": "Cycle shaders",
-    "on-click": "~/.config/waybar/scripts/shaders.sh",
-    "tooltip": true
   },
 }
