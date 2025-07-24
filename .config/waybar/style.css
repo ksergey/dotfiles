@@ -1,4 +1,4 @@
-@import "colors-walng.css";
+@import "colors.css";
 
 * {
   all: unset;
@@ -10,18 +10,18 @@
 }
 
 window#waybar {
-  background: alpha(@base00, 0.8);
+  background: alpha(@background, 0.8);
   transition: all 0.3s ease-in-out;
 }
 
 .module {
-  color: @base05;
+  color: @foreground;
   padding: 0.1rem 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 
 .module:hover {
-  color: @base06;
+  color: @cursor;
   transition: all 0.3s ease-in-out;
 }
 
@@ -34,21 +34,21 @@ window#waybar {
 }
 
 tooltip {
-  background: alpha(@base00, 0.8);
+  background: alpha(@background, 0.8);
   border-radius: 4px;
 }
 
 tooltip label {
-  color: @base05;
+  color: @foreground;
   padding: 0.2rem 0.5rem;
 }
 
 window#waybar.battery-critical {
-  background: @base08;
+  background: @background-urgent;
 }
 
 #custom-separator {
-  color: @base03;
+  color: @foreground;
   padding: 0 0.1rem;
 }
 
@@ -59,7 +59,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@base05, 0.5);
+  color: alpha(@foreground, 0.5);
 }
 
 #workspace button:first-child {
@@ -77,11 +77,11 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @base06;
+  color: @foreground;
 }
 
 #workspaces button:hover {
-  color: @base06;
+  color: @cursor;
 }
 
 window#waybar.empty #window {
@@ -89,7 +89,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: alpha(@base05, 0.5);
+  color: @accent_02;
 }
 
 #backlight {
@@ -105,30 +105,30 @@ window#waybar.empty #window {
 }
 
 #custom-vpn.up {
-  color: @base0A;
+  color: @accent_01;
 }
 
 #battery {
 }
 
 #battery.warning {
-  color: @base08;
+  color: @danger;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: @base0B;
+  color: @accent_04;
 }
 
 @keyframes blink {
   to {
-    color: @base08;
+    color: @foreground-urgent;
     background: alpha(@background, 0.5);
   }
 }
 
 #battery.critical:not(.charging) {
-  color: @base05;
+  color: @danger;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -140,14 +140,15 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.performance {
-  color: @base0D;
 }
 
 #power-profiles-daemon.power-saver {
+  color: @accent_04;
 }
 
 #power-profiles-daemon.balanced {
 }
 
 #custom-powermenu {
+  color: @accent_01;
 }

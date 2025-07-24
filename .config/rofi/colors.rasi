@@ -1,0 +1,13 @@
+/*
+  name: Default Dark
+  author: Chris Kempson (http://chriskempson.com)
+*/
+
+* {
+    background:     #181818;
+    background-alt: #282828;
+    foreground:     #d8d8d8;
+    selected:       #ba8baf;
+    active:         #383838;
+    urgent:         #a16946;
+}

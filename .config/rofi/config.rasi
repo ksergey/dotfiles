@@ -6,36 +6,36 @@ configuration {
 	window-format:              "{w} · {c} · {t}";
 }
 
-@import "colors-walng.rasi"
+@import "colors.rasi"
 
 * {
     font:                       "JetBrainsMono Nerd Font 10";
 }
 
 * {
-    border-colour:               var(base0F);
-    handle-colour:               var(base05);
-    background-colour:           var(base00);
-    foreground-colour:           var(base05);
-    alternate-background:        var(base01);
-    normal-background:           var(base00);
-    normal-foreground:           var(base05);
-    urgent-background:           var(base0F);
-    urgent-foreground:           var(base00);
-    active-background:           var(base02);
-    active-foreground:           var(base00);
-    selected-normal-background:  var(base0E);
-    selected-normal-foreground:  var(base00);
-    selected-urgent-background:  var(base02);
-    selected-urgent-foreground:  var(base00);
-    selected-active-background:  var(base0F);
-    selected-active-foreground:  var(base00);
-    alternate-normal-background: var(base00);
-    alternate-normal-foreground: var(base05);
-    alternate-urgent-background: var(base0F);
-    alternate-urgent-foreground: var(base00);
-    alternate-active-background: var(base02);
-    alternate-active-foreground: var(base00);
+    border-colour:               var(selected);
+    handle-colour:               var(foreground);
+    background-colour:           var(background);
+    foreground-colour:           var(foreground);
+    alternate-background:        var(background-alt);
+    normal-background:           var(background);
+    normal-foreground:           var(foreground);
+    urgent-background:           var(urgent);
+    urgent-foreground:           var(background);
+    active-background:           var(active);
+    active-foreground:           var(background);
+    selected-normal-background:  var(selected);
+    selected-normal-foreground:  var(background);
+    selected-urgent-background:  var(active);
+    selected-urgent-foreground:  var(background);
+    selected-active-background:  var(urgent);
+    selected-active-foreground:  var(background);
+    alternate-normal-background: var(background);
+    alternate-normal-foreground: var(foreground);
+    alternate-urgent-background: var(urgent);
+    alternate-urgent-foreground: var(background);
+    alternate-active-background: var(active);
+    alternate-active-foreground: var(background);
 }
 
 /*****----- Main Window -----*****/

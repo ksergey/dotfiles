@@ -1,0 +1,13 @@
+/*
+  name: {{ name }}
+  author: {{ author }}
+*/
+
+* {
+    background:     {{ palette.base00 }};
+    background-alt: {{ palette.base01 }};
+    foreground:     {{ palette.base05 }};
+    selected:       {{ palette.base0E }};
+    active:         {{ palette.base02 }};
+    urgent:         {{ palette.base0F }};
+}
