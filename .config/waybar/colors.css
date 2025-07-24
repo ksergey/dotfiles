@@ -1,11 +1,11 @@
-@define-color foreground #d8d8d8;
-@define-color background #181818;
-@define-color cursor #ba8baf;
-
-@define-color accent_01 #dc9656;
-@define-color accent_02 #f7ca88;
-@define-color accent_03 #a1b56c;
-@define-color accent_04 #86c1b9;
-@define-color accent_05 #7cafc2;
-@define-color danger #ab4642;
-
+@define-color background         alpha(#181818, 0.5);
+@define-color background-alt     #282828;
+@define-color foreground         #d8d8d8;
+@define-color selected           #86c1b9;
+@define-color active             #dc9656;
+@define-color urgent             #ab4642;
+@define-color focus              #f7ca88;
+@define-color highlight          #a1b56c;
+@define-color accent1            #7cafc2;
+@define-color accent2            #f7ca88;
+@define-color accent3            #ba8baf;

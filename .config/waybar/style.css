@@ -10,18 +10,13 @@
 }
 
 window#waybar {
-  background: alpha(@background, 0.8);
+  background: @background;
   transition: all 0.3s ease-in-out;
 }
 
 .module {
   color: @foreground;
   padding: 0.1rem 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.module:hover {
-  color: @cursor;
   transition: all 0.3s ease-in-out;
 }
 
@@ -44,11 +39,12 @@ tooltip label {
 }
 
 window#waybar.battery-critical {
-  background: @background-urgent;
+  /* TODO */
+  background: alpha(@urgent, 0.5);
 }
 
 #custom-separator {
-  color: @foreground;
+  color: @accent1;
   padding: 0 0.1rem;
 }
 
@@ -59,7 +55,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@foreground, 0.5);
+  color: @foreground;
 }
 
 #workspace button:first-child {
@@ -77,11 +73,11 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @foreground;
+  color: @active;
 }
 
 #workspaces button:hover {
-  color: @cursor;
+  color: @focus;
 }
 
 window#waybar.empty #window {
@@ -89,7 +85,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @accent_02;
+  color: @accent2;
 }
 
 #backlight {
@@ -105,7 +101,7 @@ window#waybar.empty #window {
 }
 
 #custom-vpn.up {
-  color: @accent_01;
+  color: @highlight;
 }
 
 #battery {
@@ -117,7 +113,7 @@ window#waybar.empty #window {
 
 #battery.charging,
 #battery.plugged {
-  color: @accent_04;
+  color: @highlight;
 }
 
 @keyframes blink {
@@ -128,7 +124,7 @@ window#waybar.empty #window {
 }
 
 #battery.critical:not(.charging) {
-  color: @danger;
+  color: @urgent;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -143,12 +139,11 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.power-saver {
-  color: @accent_04;
 }
 
 #power-profiles-daemon.balanced {
 }
 
 #custom-powermenu {
-  color: @accent_01;
+  color: @accent3;
 }
