@@ -9,7 +9,7 @@ yay -S hyprland hyprlock hypridle wl-clipboard dunst waybar swww rofi kitty fish
     cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse pipewire-alsa alsa-utils \
     ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd iwd impala bluetui \
     nvtop chafa fastfetch kernel-modules-hook downgrade wiremix-git xdg-desktop-portal-wlr \
-    xdg-desktop-portal-hyprland hyprshade imv
+    xdg-desktop-portal-hyprland hyprshade imv matugen-git
 ```
 
 ## AmneziaVPN
@@ -86,3 +86,12 @@ Also you need an icon for menu entry
 # Vim
 
 Just copy everything into your home. For complete vim installation run inside vim `:PlugInstall`
+
+# Switch colorschemes
+
+```sh
+matugen image $(swww query | sed 's/^.*image:\ //')
+# or
+walng --theme https://github.com/tinted-theming/schemes/raw/refs/heads/spec-0.11/base16/hardcore.yaml
+```
+
