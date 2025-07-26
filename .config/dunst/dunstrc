@@ -1,15 +1,3 @@
-#      _                 _
-#   __| |_   _ _ __  ___| |_
-#  / _` | | | | '_ \/ __| __|
-# | (_| | |_| | | | \__ \ |_
-#  \__,_|\__,_|_| |_|___/\__|
-#
-#
-# by Stephan Raabe (2024)
-# -----------------------------------------------------
-
-# See dunst(5) for all configuration options
-
 [global]
     ### Display ###
 
@@ -43,7 +31,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 20x20
+    offset = (20,20)
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -71,7 +59,7 @@
     progress_bar_max_width = 300
 
     # Corner radius for the progress bar. 0 disables rounded corners.
-    progress_bar_corner_radius = 10
+    progress_bar_corner_radius = 4
 
     # Corner radius for the icon image.
     icon_corner_radius = 0
@@ -208,9 +196,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = "Papirus-Dark,Adwaita"
-    # You can also set multiple icon themes, with the leftmost one being used first.
-    # icon_theme = "Adwaita, breeze"
+    icon_theme = "Crule-dark,Papirus-Dark,Adwaita"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -317,19 +303,19 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#1a110f"
-    foreground = "#f1dfda"
-    frame_color = "#53433f"
+    background = "#181215"
+    foreground = "#eddfe4"
+    frame_color = "#cebdfe"
     timeout = 6
 
 [urgency_normal]
-    background = "#53433f"
-    foreground = "#d8c2bc"
-    frame_color = "#ffb4a2"
+    background = "#181215"
+    foreground = "#eddfe4"
+    frame_color = "#b7d085"
     timeout = 6
 
 [urgency_critical]
-    background = "#93000a"
-    foreground = "#ffdad6"
+    background = "#181215"
+    foreground = "#eddfe4"
     frame_color = "#ffb4ab"
     timeout = 0

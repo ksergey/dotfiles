@@ -1,15 +1,3 @@
-#      _                 _
-#   __| |_   _ _ __  ___| |_
-#  / _` | | | | '_ \/ __| __|
-# | (_| | |_| | | | \__ \ |_
-#  \__,_|\__,_|_| |_|___/\__|
-#
-#
-# by Stephan Raabe (2024)
-# -----------------------------------------------------
-
-# See dunst(5) for all configuration options
-
 [global]
     ### Display ###
 
@@ -43,7 +31,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 20x20
+    offset = (20,20)
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -71,7 +59,7 @@
     progress_bar_max_width = 300
 
     # Corner radius for the progress bar. 0 disables rounded corners.
-    progress_bar_corner_radius = 10
+    progress_bar_corner_radius = 4
 
     # Corner radius for the icon image.
     icon_corner_radius = 0
@@ -208,9 +196,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = "Papirus-Dark,Adwaita"
-    # You can also set multiple icon themes, with the leftmost one being used first.
-    # icon_theme = "Adwaita, breeze"
+    icon_theme = "Crule-dark,Papirus-Dark,Adwaita"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -317,19 +303,19 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "{{colors.surface.default.hex}}"
-    foreground = "{{colors.on_surface.default.hex}}"
-    frame_color = "{{colors.outline_variant.default.hex}}"
+    background = "{{ colors.background.default.hex }}"
+    foreground = "{{ colors.on_background.default.hex }}"
+    frame_color = "{{ colors.blue.default.hex }}"
     timeout = 6
 
 [urgency_normal]
-    background = "{{colors.surface_variant.default.hex}}"
-    foreground = "{{colors.on_surface_variant.default.hex}}"
-    frame_color = "{{colors.primary.default.hex}}"
+    background = "{{ colors.background.default.hex }}"
+    foreground = "{{ colors.on_background.default.hex }}"
+    frame_color = "{{ colors.green.default.hex }}"
     timeout = 6
 
 [urgency_critical]
-    background = "{{colors.error_container.default.hex}}"
-    foreground = "{{colors.on_error_container.default.hex}}"
-    frame_color = "{{colors.error.default.hex}}"
+    background = "{{ colors.background.default.hex }}"
+    foreground = "{{ colors.on_background.default.hex }}"
+    frame_color = "{{ colors.error.default.hex }}"
     timeout = 0
