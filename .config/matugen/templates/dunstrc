@@ -317,19 +317,19 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#1a110f"
-    foreground = "#f1dfda"
-    frame_color = "#53433f"
+    background = "{{colors.surface.default.hex}}"
+    foreground = "{{colors.on_surface.default.hex}}"
+    frame_color = "{{colors.outline_variant.default.hex}}"
     timeout = 6
 
 [urgency_normal]
-    background = "#53433f"
-    foreground = "#d8c2bc"
-    frame_color = "#ffb4a2"
+    background = "{{colors.surface_variant.default.hex}}"
+    foreground = "{{colors.on_surface_variant.default.hex}}"
+    frame_color = "{{colors.primary.default.hex}}"
     timeout = 6
 
 [urgency_critical]
-    background = "#93000a"
-    foreground = "#ffdad6"
-    frame_color = "#ffb4ab"
+    background = "{{colors.error_container.default.hex}}"
+    foreground = "{{colors.on_error_container.default.hex}}"
+    frame_color = "{{colors.error.default.hex}}"
     timeout = 0

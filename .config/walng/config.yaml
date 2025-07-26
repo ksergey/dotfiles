@@ -9,7 +9,7 @@ items:
   - name: "waybar"
     template: "~/.config/walng/templates/waybar.css"
     target: "~/.config/waybar/colors.css"
-    hook: "killall -SIGUSR2 waybar"
+    hook: "killall -SIGUSR2 waybar || true"
 
   - name: "hyprland"
     template: "~/.config/walng/templates/hyprland.conf"
@@ -19,12 +19,12 @@ items:
   - name: "cava"
     template: "~/.config/walng/templates/cava"
     target: "~/.config/cava/config"
-    hook: "killall -SIGUSR1 cava"
+    hook: "killall -SIGUSR1 cava || true"
 
   - name: "kitty"
     template: "~/.config/walng/templates/kitty.conf"
     target: "~/.config/kitty/colors.conf"
-    hook: "killall -SIGUSR1 kitty"
+    hook: "killall -SIGUSR1 kitty || true"
 
   - name: "dunst"
     template: "~/.config/walng/templates/dunstrc"

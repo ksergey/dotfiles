@@ -10,12 +10,12 @@
 }
 
 window#waybar {
-  background: @background;
+  background: alpha(@background, 0.8);
+  color: @foreground;
   transition: all 0.3s ease-in-out;
 }
 
 .module {
-  color: @foreground;
   padding: 0.1rem 0.5rem;
   transition: all 0.3s ease-in-out;
 }
@@ -29,8 +29,9 @@ window#waybar {
 }
 
 tooltip {
-  background: alpha(@background, 0.8);
+  background: @background;
   border-radius: 4px;
+  border: 1px solid darker(@foreground);
 }
 
 tooltip label {
@@ -39,12 +40,11 @@ tooltip label {
 }
 
 window#waybar.battery-critical {
-  /* TODO */
-  background: alpha(@urgent, 0.5);
+  background: #993333;
 }
 
 #custom-separator {
-  color: @accent1;
+  color: @accent3;
   padding: 0 0.1rem;
 }
 
@@ -55,7 +55,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: @foreground;
+  color: alpha(@foreground, 0.9);
 }
 
 #workspace button:first-child {
@@ -73,11 +73,11 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @active;
+  color: @accent6;
 }
 
 #workspaces button:hover {
-  color: @focus;
+  color: lighter(@foreground);
 }
 
 window#waybar.empty #window {
@@ -85,65 +85,66 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @accent2;
+  color: alpha(@foreground, 0.5);
 }
 
 #backlight {
+  color: @accent3;
 }
 
 #wireplumber {
+  color: @accent3;
 }
 
 #bluetooth {
+  color: @accent4;
 }
 
 #network {
+  color: @accent5;
+}
+
+#custom-vpn {
+  color: @accent5;
 }
 
 #custom-vpn.up {
-  color: @highlight;
+  color: @accent1;
 }
 
 #battery {
+  color: @accent2;
 }
 
 #battery.warning {
-  color: @danger;
+  color: @accent3;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: @highlight;
+  color: @accent2;
 }
 
-@keyframes blink {
-  to {
-    color: @foreground-urgent;
-    background: alpha(@background, 0.5);
-  }
-}
-
-#battery.critical:not(.charging) {
-  color: @urgent;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#battery.critical{
+  color: @accent1;
 }
 
 #power-profiles-daemon {
+  color: @accent2;
 }
 
 #power-profiles-daemon.performance {
+  color: @accent1;
 }
 
 #power-profiles-daemon.power-saver {
+  color: @accent2;
 }
 
 #power-profiles-daemon.balanced {
+  color: @accent3;
 }
 
 #custom-powermenu {
-  color: @accent3;
+  color: @accent1;
 }

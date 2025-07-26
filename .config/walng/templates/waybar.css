@@ -1,11 +1,9 @@
-@define-color background         alpha({{ palette.base00 }}, 0.5);
-@define-color background-alt     {{ palette.base01 }};
-@define-color foreground         {{ palette.base05 }};
-@define-color selected           {{ palette.base0C }};
-@define-color active             {{ palette.base09 }};
-@define-color urgent             {{ palette.base08 }};
-@define-color focus              {{ palette.base0A }};
-@define-color highlight          {{ palette.base0B }};
-@define-color accent1            {{ palette.base0D }};
-@define-color accent2            {{ palette.base0A }};
-@define-color accent3            {{ palette.base0E }};
+@define-color background {{ palette.base00 }};
+@define-color foreground {{ palette.base05 }};
+
+@define-color accent1 {{ palette.base08 }};
+@define-color accent2 {{ palette.base09 }};
+@define-color accent3 {{ palette.base0A }};
+@define-color accent4 {{ palette.base0B }};
+@define-color accent5 {{ palette.base0C }};
+@define-color accent6 {{ palette.base0D }};
