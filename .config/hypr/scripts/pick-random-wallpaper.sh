@@ -9,3 +9,5 @@ swww img \
   --transition-fps 60 \
   --transition-duration 1 \
   "${wallpaper}"
+
+matugen image "${wallpaper}"
