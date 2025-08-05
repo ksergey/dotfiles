@@ -55,7 +55,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@foreground, 0.9);
+  color: alpha(@accent4, 0.5);
 }
 
 #workspace button:first-child {
@@ -73,7 +73,7 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @accent6;
+  color: @accent4;
 }
 
 #workspaces button:hover {

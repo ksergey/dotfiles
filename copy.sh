@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+src="${HOME}/.config"
+dest="$(realpath $(dirname $0))/.config"
+
+entities=(
+  FreeCAD
+  cava/config
+  dunst
+  fastfetch
+  hypr
+  kitty
+  matugen
+  rofi
+  walng
+  waybar
+  yt-dlp
+  locale.conf
+  user-dirs.dirs
+  user-dirs.locale
+)
+
+for entity in ${entities[@]}; do
+  echo "<${entity}>"
+
+  if [[ -e "${dest}/${entity}" ]]; then
+    echo " * removing dest..."
+    rm -r "${dest}/${entity}"
+  fi
+
+  echo " * copying to dest..."
+  cp -r "${src}/${entity}" "${dest}/${entity}"
+done
