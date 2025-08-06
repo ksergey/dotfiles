@@ -14,6 +14,7 @@ entities=(
   rofi
   walng
   waybar
+  wallust
   yt-dlp
   locale.conf
   user-dirs.dirs

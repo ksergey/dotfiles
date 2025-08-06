@@ -1,0 +1,12 @@
+backend = "fastresize"
+color_space = "lch"
+palette = "dark"
+
+[templates]
+
+rofi.template = 'rofi.rasi'
+rofi.target = "~/.config/rofi/colors.rasi"
+
+waybar.template = 'waybar.css'
+waybar.target = "~/.config/waybar/colors.css"
+
