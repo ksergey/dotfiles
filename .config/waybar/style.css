@@ -44,7 +44,7 @@ window#waybar.battery-critical {
 }
 
 #custom-separator {
-  color: @accent3;
+  color: darker(@accent3);
   padding: 0 0.1rem;
 }
 
@@ -73,7 +73,7 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @accent4;
+  color: @accent5;
 }
 
 #workspaces button:hover {
@@ -97,15 +97,15 @@ window#waybar.empty #window {
 }
 
 #bluetooth {
-  color: @accent4;
+  color: @accent5;
 }
 
 #network {
-  color: @accent5;
+  color: @accent6;
 }
 
 #custom-vpn {
-  color: @accent5;
+  color: @accent6;
 }
 
 #custom-vpn.up {
@@ -113,16 +113,16 @@ window#waybar.empty #window {
 }
 
 #battery {
-  color: @accent2;
+  color: @accent4;
 }
 
 #battery.warning {
-  color: @accent3;
+  color: @accent1;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: @accent2;
+  color: @accent4;
 }
 
 #battery.critical{
@@ -130,7 +130,7 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon {
-  color: @accent2;
+  color: @accent4;
 }
 
 #power-profiles-daemon.performance {

@@ -1,12 +1,26 @@
 backend = "fastresize"
-color_space = "lch"
-palette = "dark"
+color_space = "lab"
+palette = "dark16"
 
 [templates]
 
-rofi.template = 'rofi.rasi'
+rofi.template = "rofi.rasi"
 rofi.target = "~/.config/rofi/colors.rasi"
 
-waybar.template = 'waybar.css'
+waybar.template = "waybar.css"
 waybar.target = "~/.config/waybar/colors.css"
 
+hyprland.template = "hyprland.conf"
+hyprland.target = "~/.config/hypr/colors.conf"
+
+cava.template = "cava"
+cava.target = "~/.config/cava/config"
+
+kitty.template = "kitty.conf"
+kitty.target = "~/.config/kitty/colors.conf"
+
+dunst.template = "dunstrc"
+dunst.target = "~/.config/dunst/dunstrc"
+
+tmux.template = "tmux.conf"
+tmux.target = "~/.tmux-colors.conf"
