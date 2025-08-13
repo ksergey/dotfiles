@@ -44,7 +44,7 @@ window#waybar.battery-critical {
 }
 
 #custom-separator {
-  color: darker(@accent3);
+  color: darker(@foreground);
   padding: 0 0.1rem;
 }
 
@@ -55,7 +55,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@accent4, 0.5);
+  color: alpha(@foreground, 0.5);
 }
 
 #workspace button:first-child {
@@ -73,7 +73,7 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @accent5;
+  color: @foreground;
 }
 
 #workspaces button:hover {
@@ -101,11 +101,11 @@ window#waybar.empty #window {
 }
 
 #network {
-  color: @accent6;
+  color: @accent2;
 }
 
 #custom-vpn {
-  color: @accent6;
+  color: @accent2;
 }
 
 #custom-vpn.up {
