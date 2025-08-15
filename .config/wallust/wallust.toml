@@ -1,5 +1,5 @@
 backend = "fastresize"
-color_space = "lch-ansi"
+color_space = "lch-mixed"
 palette = "dark16"
 saturation = 10
 threshold = 16

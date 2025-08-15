@@ -85,66 +85,31 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: alpha(@foreground, 0.5);
+  color: @foreground;
 }
 
-#backlight {
-  color: @accent3;
-}
-
-#wireplumber {
-  color: @accent3;
-}
-
-#bluetooth {
-  color: @accent5;
-}
-
-#network {
-  color: @accent2;
-}
-
-#custom-vpn {
-  color: @accent2;
+#backlight,
+#wireplumber,
+#bluetooth,
+#network,
+#custom-vpn,
+#battery,
+#power-profiles-daemon,
+#custom-powermenu {
+  color: @foreground;
 }
 
 #custom-vpn.up {
   color: @accent1;
 }
 
-#battery {
-  color: @accent4;
-}
-
 #battery.warning {
   color: @accent1;
 }
-
 #battery.charging,
 #battery.plugged {
   color: @accent4;
 }
-
 #battery.critical{
-  color: @accent1;
-}
-
-#power-profiles-daemon {
-  color: @accent4;
-}
-
-#power-profiles-daemon.performance {
-  color: @accent1;
-}
-
-#power-profiles-daemon.power-saver {
-  color: @accent2;
-}
-
-#power-profiles-daemon.balanced {
-  color: @accent3;
-}
-
-#custom-powermenu {
   color: @accent1;
 }
