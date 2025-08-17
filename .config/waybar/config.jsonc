@@ -4,11 +4,11 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "clock"
   ],
 
   "modules-center": [
-    "clock"
   ],
 
   "modules-right": [

@@ -55,7 +55,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@foreground, 0.5);
+  color: alpha(@foreground, 0.6);
 }
 
 #workspace button:first-child {
@@ -85,7 +85,8 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @foreground;
+  font-size: 10px;
+  color: alpha(@foreground, 0.8);
 }
 
 #backlight,
@@ -108,8 +109,7 @@ window#waybar.empty #window {
 }
 #battery.charging,
 #battery.plugged {
-  color: @accent4;
 }
-#battery.critical{
+#battery.critical {
   color: @accent1;
 }
