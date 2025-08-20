@@ -1,0 +1,115 @@
+@import "colors.css";
+
+* {
+  all: unset;
+  padding: 0;
+  margin: 0;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  background: alpha(@background, 0.8);
+  color: @foreground;
+  transition: all 0.3s ease-in-out;
+}
+
+.module {
+  padding: 0.1rem 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.modules-left:first-child {
+  margin-left: 0.2em;
+}
+
+.modules-right:last-child {
+  margin-right: 0.2em;
+}
+
+tooltip {
+  background: @background;
+  border-radius: 4px;
+  border: 1px solid darker(@foreground);
+}
+
+tooltip label {
+  color: @foreground;
+  padding: 0.2rem 0.5rem;
+}
+
+window#waybar.battery-critical {
+  background: #993333;
+}
+
+#custom-separator {
+  color: darker(@foreground);
+  padding: 0 0.1rem;
+}
+
+#workspaces {
+}
+
+#workspaces button {
+  padding: 0.05rem;
+  margin: 0.2rem 0.2rem;
+  transition: all 0.3s ease-in-out;
+  color: alpha(@foreground, 0.6);
+}
+
+#workspace button:first-child {
+  margin: 0.2rem 0.3rem 0.2rem 0px;
+}
+
+#workspace button:last-child {
+  margin: 0.2rem 0px 0.2rem 0.3rem;
+}
+
+#workspaces button.empty {
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+  color: @foreground;
+}
+
+#workspaces button:hover {
+  color: lighter(@foreground);
+}
+
+window#waybar.empty #window {
+  background: transparent;
+}
+
+#clock {
+  font-size: 10px;
+  color: alpha(@foreground, 0.8);
+}
+
+#backlight,
+#wireplumber,
+#bluetooth,
+#network,
+#custom-vpn,
+#battery,
+#power-profiles-daemon,
+#custom-powermenu {
+  color: @foreground;
+}
+
+#custom-vpn.up {
+  color: @accent1;
+}
+
+#battery.warning {
+  color: @accent1;
+}
+#battery.charging,
+#battery.plugged {
+}
+#battery.critical {
+  color: @accent1;
+}

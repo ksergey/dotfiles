@@ -1,8 +1,7 @@
-backend = "fastresize"
-color_space = "lch-ansi"
+backend = "kmeans"
+color_space = "lab-mixed"
 palette = "dark16"
-saturation = 75
-threshold = 8
+threshold = 10
 check_contrast = true
 
 [templates]
