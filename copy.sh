@@ -16,6 +16,7 @@ entities=(
   waybar
   wallust
   yt-dlp
+  mpv
   locale.conf
   user-dirs.dirs
   user-dirs.locale

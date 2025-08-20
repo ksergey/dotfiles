@@ -93,7 +93,6 @@ window#waybar.empty #window {
 #network,
 #custom-vpn,
 #battery,
-#power-profiles-daemon,
 #custom-powermenu {
   color: @foreground;
 }

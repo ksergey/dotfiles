@@ -22,7 +22,6 @@
     "custom/vpn",
     "custom/separator",
     "battery",
-    "power-profiles-daemon",
     "custom/separator",
     "custom/powermenu"
   ],
@@ -86,18 +85,6 @@
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
     "format-icons": [ "", "", "", "", "" ]
-  },
-
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
   },
 
   "custom/vpn": {
