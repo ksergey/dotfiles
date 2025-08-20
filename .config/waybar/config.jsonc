@@ -22,6 +22,7 @@
     "custom/vpn",
     "custom/separator",
     "battery",
+    "custom/battery-extra",
     "custom/separator",
     "custom/powermenu"
   ],
@@ -85,6 +86,15 @@
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
     "format-icons": [ "", "", "", "", "" ]
+  },
+
+  "custom/battery-extra": {
+    "tooltip": true,
+    "tooltip-format": "battery degradation",
+    "format": " {}%",
+    "interval": "once",
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/battery-extra.sh"
   },
 
   "custom/vpn": {
