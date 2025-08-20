@@ -1,1 +1,3 @@
-style1.css
+@import "colors.css";
+@import "styles/boxed.css";
+

@@ -1,5 +1,3 @@
-@import "colors.css";
-
 * {
   all: unset;
   padding: 0;
@@ -10,6 +8,8 @@
 }
 
 window#waybar {
+  background: alpha(@background, 0.8);
+  color: @foreground;
   transition: all 0.3s ease-in-out;
 }
 
@@ -19,23 +19,11 @@ window#waybar {
 }
 
 .modules-left:first-child {
-  margin-left: 4px;
-
-  margin-top: 4px;
-  margin-bottom: 2px;
-  background: alpha(@background, 0.6);
-  color: @foreground;
-  border-radius: 8px;
+  margin-left: 0.2em;
 }
 
 .modules-right:last-child {
-  margin-right: 4px;
-
-  margin-top: 4px;
-  margin-bottom: 2px;
-  background: alpha(@background, 0.6);
-  color: @foreground;
-  border-radius: 8px;
+  margin-right: 0.2em;
 }
 
 tooltip {
