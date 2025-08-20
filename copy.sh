@@ -33,3 +33,10 @@ for entity in ${entities[@]}; do
   echo " * copying to dest..."
   cp -r "${src}/${entity}" "${dest}/${entity}"
 done
+
+# keep arch packages
+mkdir -p arch
+pacman -Qqen > arch/pkglist.txt
+pacman -Qqem > arch/aurlist.txt
+
+git add arch .config
