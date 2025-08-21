@@ -34,7 +34,7 @@ for entity in ${entities[@]}; do
   cp -r "${src}/${entity}" "${dest}/${entity}"
 done
 
-# keep arch packages
+echo " * dumping installed packages list"
 mkdir -p arch
 pacman -Qqen > arch/pkglist.txt
 pacman -Qqem > arch/aurlist.txt

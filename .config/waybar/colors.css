@@ -1,9 +1,9 @@
-@define-color background #1D1D19;
-@define-color foreground #F3DAA6;
+@define-color background #000003;
+@define-color foreground #D9E9EC;
 
-@define-color accent1 #826E41;
-@define-color accent2 #A18031;
-@define-color accent3 #C17824;
-@define-color accent4 #D18D01;
-@define-color accent5 #DD9401;
-@define-color accent6 #DD9401;
+@define-color accent1 #5E636B;
+@define-color accent2 #616771;
+@define-color accent3 #697690;
+@define-color accent4 #BF616A;
+@define-color accent5 #7385AD;
+@define-color accent6 #93C1C8;
