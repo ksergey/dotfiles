@@ -311,7 +311,7 @@
 [urgency_normal]
     background = "{{ background }}"
     foreground = "{{ foreground }}"
-    frame_color = "{{ color13 }}"
+    frame_color = "{{ foreground }}"
     timeout = 6
 
 [urgency_critical]
