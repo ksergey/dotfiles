@@ -107,6 +107,7 @@ powertop
 pwgen
 python-mutagen
 python-websockets
+qmk
 qt5-wayland
 qt5ct
 qt6ct

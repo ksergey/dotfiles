@@ -19,24 +19,22 @@ window#waybar {
 
 .modules-left:first-child {
   margin-left: 4px;
-
   margin-top: 4px;
   margin-bottom: 2px;
   background: alpha(@background, 0.8);
   color: @foreground;
   border-radius: 8px;
-  border: 1px solid @accent1;
+  border: 1px solid alpha(@foreground, 0.8);
 }
 
 .modules-right:last-child {
   margin-right: 4px;
-
   margin-top: 4px;
   margin-bottom: 2px;
   background: alpha(@background, 0.8);
   color: @foreground;
   border-radius: 8px;
-  border: 1px solid @accent1;
+  border: 1px solid alpha(@foreground, 0.8);
 }
 
 tooltip {
