@@ -1,6 +1,5 @@
 amneziawg-go
 amneziawg-tools
-appimagelauncher
 bibata-cursor-theme
 catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-mocha

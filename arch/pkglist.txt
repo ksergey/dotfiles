@@ -37,6 +37,7 @@ firefox
 fish
 fprintd
 freecad
+fuse2
 fwupd
 fwupd-efi
 fzf
