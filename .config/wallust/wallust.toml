@@ -1,5 +1,5 @@
 backend = "kmeans"
-color_space = "lab-mixed"
+color_space = "lch-ansi"
 palette = "dark16"
 threshold = 10
 check_contrast = true
