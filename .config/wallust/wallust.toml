@@ -1,8 +1,12 @@
-backend = "kmeans"
-color_space = "lch-ansi"
-palette = "dark16"
-threshold = 10
+backend = "wal"
+color_space = "lchmixed"
+env_vars = true
 check_contrast = true
+threshold = 10
+palette = "dark16"
+generation = "interpolate"
+alpha = 100
+saturation = 20
 
 [templates]
 

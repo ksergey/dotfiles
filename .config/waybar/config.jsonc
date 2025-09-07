@@ -58,14 +58,14 @@
 
   "backlight": {
     "format": "{icon} {percent}%",
-    "format-icons": [ "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨" ],
+    "format-icons": [ "󰃞", "󰃟", "󰃠" ],
     "tooltip": false
   },
 
   "wireplumber": {
     "format": "{icon} {volume}%",
-    "format-icons": ["","",""],
-    "format-muted": "",
+    "format-icons": [ "", "", "" ],
+    "format-muted": " Muted",
     "states": {
       "top": 65,
       "mid": 33,
@@ -85,7 +85,7 @@
     "format-charging": "󱐋 {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [ "", "", "", "", "" ]
+    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ]
   },
 
   "custom/battery-extra": {
@@ -101,8 +101,8 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "up": "󰦝",
-      "down": "󰦞"
+      "up": "󰯄",
+      "down": "󰒙"
     },
     "return-type": "json",
     "on-click": "~/.config/waybar/scripts/toggle-vpn.sh ~/.config/amnezia_for_awg.conf",
@@ -120,7 +120,7 @@
   },
 
   "bluetooth": {
-    "format": "󰂯 (no conn)",
+    "format": "󰂯 {status}",
     "format-disabled": "󰂲 (disabled)",
     "format-connected": "󰂱 {device_alias}",
     "format-connected-battery": "󰂱 {device_alias} (󰥉 {device_battery_percentage}%)",

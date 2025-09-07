@@ -75,7 +75,6 @@ lib32-libpulse
 lib32-libxfixes
 lib32-pipewire
 lib32-vulkan-radeon
-libgepub
 libmad
 libva-utils
 linux
@@ -112,7 +111,7 @@ qmk
 qt5-wayland
 qt5ct
 qt6ct
-rofi-wayland
+rofi
 rpi-imager
 rtmpdump
 sassc
@@ -125,6 +124,7 @@ socat
 strace
 swww
 systemd-resolvconf
+tcpdump
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -143,7 +143,6 @@ vim
 vulkan-radeon
 vulkan-tools
 waybar
-webkit2gtk
 wev
 wf-recorder
 woff2-font-awesome
