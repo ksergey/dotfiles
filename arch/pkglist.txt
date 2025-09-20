@@ -44,7 +44,6 @@ fwupd-efi
 fzf
 gdb
 git
-gnu-netcat
 grim
 grub
 gst-plugins-base
@@ -102,6 +101,8 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 pkgfile
+platformio-core
+platformio-core-udev
 polkit-gnome
 powertop
 pwgen
@@ -143,6 +144,7 @@ vim
 vulkan-radeon
 vulkan-tools
 waybar
+webkit2gtk-4.1
 wev
 wf-recorder
 woff2-font-awesome

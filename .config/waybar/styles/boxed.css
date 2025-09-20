@@ -108,6 +108,10 @@ window#waybar.empty #window {
   color: @foreground;
 }
 
+#custom-battery-extra {
+  color: alpha(@foreground, 0.5);
+}
+
 #battery.warning {
   color: @accent1;
 }

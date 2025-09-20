@@ -6,6 +6,7 @@ catppuccin-gtk-theme-mocha
 downgrade
 dracula-gtk-theme
 everforest-gtk-theme-git
+gnu-netcat
 graphite-gtk-theme-git
 gruvbox-dark-gtk
 matugen-git

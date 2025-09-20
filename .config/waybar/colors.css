@@ -1,10 +1,10 @@
-@define-color background #252318;
-@define-color foreground #E8EAD6;
-@define-color cursor #B9BBA6;
+@define-color background #000104;
+@define-color foreground #F2F0E4;
+@define-color cursor #CAAA90;
 
-@define-color accent1 #968F34;
-@define-color accent2 #898C5E;
-@define-color accent3 #858C65;
-@define-color accent4 #889066;
-@define-color accent5 #B3BD6D;
-@define-color accent6 #BAC46E;
+@define-color accent1 #597974;
+@define-color accent2 #A76438;
+@define-color accent3 #85916A;
+@define-color accent4 #659886;
+@define-color accent5 #D0C48A;
+@define-color accent6 #DBCE8F;
