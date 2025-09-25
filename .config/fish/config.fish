@@ -8,4 +8,6 @@ if status is-interactive
 
     set -gx EDITOR vim
     set -gx VISUAL vim
+
+    starship init fish | source
 end

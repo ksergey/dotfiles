@@ -117,11 +117,13 @@ rpi-imager
 rtmpdump
 sassc
 scrcpy
+screen
 sddm
 sdl2-compat
 slurp
 smartmontools
 socat
+starship
 strace
 swww
 systemd-resolvconf

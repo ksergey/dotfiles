@@ -207,7 +207,7 @@
     min_icon_size = 32
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 48
+    max_icon_size = 32
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -303,22 +303,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#000104"
-    foreground = "#F2F0E4"
-    frame_color = "#F2F0E4"
+    background = "#000004"
+    foreground = "#FCEAB6"
+    frame_color = "#FCEAB6"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#000104"
-    foreground = "#F2F0E4"
-    frame_color = "#F2F0E4"
+    background = "#000004"
+    foreground = "#FCEAB6"
+    frame_color = "#FCEAB6"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#000104"
-    foreground = "#F2F0E4"
-    frame_color = "#A76438"
+    background = "#000004"
+    foreground = "#FCEAB6"
+    frame_color = "#8A5975"
     timeout = 0
     default_icon = dialog-warning

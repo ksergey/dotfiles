@@ -20,6 +20,7 @@ entities=(
   locale.conf
   user-dirs.dirs
   user-dirs.locale
+  fish/config.fish
 )
 
 for entity in ${entities[@]}; do

@@ -1,9 +1,9 @@
 backend = "wal"
-color_space = "lchmixed"
+color_space = "LchAnsi"
 env_vars = true
 check_contrast = true
 threshold = 10
-palette = "dark16"
+palette = "AnsiDark16"
 generation = "interpolate"
 alpha = 100
 saturation = 20
