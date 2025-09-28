@@ -196,7 +196,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = "Crule-dark,Papirus-Dark,Adwaita"
+    icon_theme = "Zafiro-icons-Dark,Crule-dark,Papirus-Dark,Adwaita"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -207,7 +207,7 @@
     min_icon_size = 32
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 128
+    max_icon_size = 32
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -307,15 +307,18 @@
     foreground = "{{ colors.on_background.default.hex }}"
     frame_color = "{{ colors.blue.default.hex }}"
     timeout = 6
+    default_icon = dialog-information
 
 [urgency_normal]
     background = "{{ colors.background.default.hex }}"
     foreground = "{{ colors.on_background.default.hex }}"
     frame_color = "{{ colors.green.default.hex }}"
     timeout = 6
+    default_icon = dialog-information
 
 [urgency_critical]
     background = "{{ colors.background.default.hex }}"
     foreground = "{{ colors.on_background.default.hex }}"
     frame_color = "{{ colors.error.default.hex }}"
     timeout = 0
+    default_icon = dialog-warning

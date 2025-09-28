@@ -1,5 +1,6 @@
 @define-color background {{ colors.background.default.hex }};
 @define-color foreground {{ colors.on_background.default.hex }};
+@define-color cursor {{ colors.primary.default.hex }};
 
 @define-color accent1 {{ colors.red.default.hex }};
 @define-color accent2 {{ colors.green.default.hex }};

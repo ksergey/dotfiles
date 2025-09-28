@@ -100,12 +100,21 @@ window#waybar.empty #window {
 
 #backlight,
 #wireplumber,
-#bluetooth,
-#network,
-#custom-vpn,
-#battery,
 #custom-powermenu {
   color: @foreground;
+}
+
+#network,
+#custom-vpn {
+  color: @accent2;
+}
+
+#bluetooth {
+  color: @accent4;
+}
+
+#battery {
+  color: @accent3;
 }
 
 #custom-battery-extra {

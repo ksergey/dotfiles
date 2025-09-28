@@ -2,7 +2,6 @@
 
 wallust run $(swww query | sed 's/^.*image:\ //')
 
-
 # reload waybar
 killall -q -SIGUSR2 waybar || true
 
