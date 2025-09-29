@@ -305,14 +305,14 @@
 [urgency_low]
     background = "{{ colors.background.default.hex }}"
     foreground = "{{ colors.on_background.default.hex }}"
-    frame_color = "{{ colors.blue.default.hex }}"
+    frame_color = "{{ colors.outline.default.hex_stripped }}"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
     background = "{{ colors.background.default.hex }}"
     foreground = "{{ colors.on_background.default.hex }}"
-    frame_color = "{{ colors.green.default.hex }}"
+    frame_color = "{{ colors.outline.default.hex_stripped }}"
     timeout = 6
     default_icon = dialog-information
 

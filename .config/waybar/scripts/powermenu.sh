@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 # Options
-shutdown='󰐥 Shutdown'
-reboot='󰜉 Reboot'
-lock='󰌾 Lock'
-suspend='󰤄 Suspend'
-logout='󰍃 Logout'
+lock='Lock'
+suspend='Suspend'
+logout='Logout'
+reboot='Reboot'
+shutdown='Shutdown'
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu -theme "$HOME/.config/rofi/powermenu.rasi"
+	rofi -dmenu -theme "$HOME/.config/rofi/powermenu.rasi" -sync
 }
 
 # Pass variables to rofi dmenu
