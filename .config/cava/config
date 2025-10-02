@@ -1,8 +1,8 @@
 [color]
 background = 'default'
-foreground = '#a6d394'
+foreground = '#84d6c3'
 
 gradient = 1
-gradient_color_1 = '#a6d394'
-gradient_color_2 = '#bccbb1'
-gradient_color_3 = '#a0cfd1'
+gradient_color_1 = '#84d6c3'
+gradient_color_2 = '#b1ccc4'
+gradient_color_3 = '#abcae4'
