@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: alpha(@background, 0.8);
+  background: @background;
   color: @foreground;
   transition: all 0.3s ease-in-out;
 }
@@ -53,7 +53,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: alpha(@foreground, 0.6);
+  color: @foreground;
 }
 
 #workspace button:first-child {
@@ -71,11 +71,11 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.active {
-  color: @foreground;
+  color: @cursor;
 }
 
 #workspaces button:hover {
-  color: lighter(@foreground);
+  color: lighter(@cursor);
 }
 
 window#waybar.empty #window {
@@ -83,8 +83,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-  font-size: 10px;
-  color: alpha(@foreground, 0.8);
+  color: @foreground;
 }
 
 #backlight,

@@ -63,3 +63,11 @@ post_hook = "dunstctl reload && notify-send 'updated'"
 input_path = "~/.config/matugen/templates/tmux.conf"
 output_path = "~/.tmux-colors.conf"
 post_hook = "tmux source-file ~/.tmux.conf"
+
+# [templates.gtk3]
+# input_path = '~/.config/matugen/templates/gtk-colors.css'
+# output_path = '~/.config/gtk-3.0/gtk.css'
+#
+# [templates.gtk4]
+# input_path = '~/.config/matugen/templates/gtk-colors.css'
+# output_path = '~/.config/gtk-4.0/gtk.css'

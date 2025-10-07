@@ -4,11 +4,11 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces",
-    "clock"
+    "hyprland/workspaces"
   ],
 
   "modules-center": [
+    "clock"
   ],
 
   "modules-right": [
@@ -28,7 +28,7 @@
   ],
 
   "custom/separator": {
-    "format": "\\",
+    "format": "|",
     "interval": "once",
     "tooltip": false
   },
@@ -51,9 +51,9 @@
   },
 
   "clock": {
-    "format": "{:%A   %B-%d-%Y   %H:%M}",
+    "format": " {:%H:%M}",
     "tooltip-format": "<tt>{calendar}</tt>",
-    "tooltip": false
+    "tooltip": true
   },
 
   "backlight": {

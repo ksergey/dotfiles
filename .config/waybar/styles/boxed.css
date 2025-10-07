@@ -23,7 +23,7 @@ window#waybar {
   margin-bottom: 2px;
   background: alpha(@background, 0.8);
   color: @foreground;
-  border-radius: 8px;
+  border-radius: 0px;
   border: 1px solid alpha(@foreground, .5);
 }
 
@@ -33,7 +33,7 @@ window#waybar {
   margin-bottom: 2px;
   background: alpha(@background, 0.8);
   color: @foreground;
-  border-radius: 8px;
+  border-radius: 0px;
   border: 1px solid alpha(@foreground, .5);
 }
 

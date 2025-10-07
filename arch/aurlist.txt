@@ -3,9 +3,11 @@ amneziawg-tools
 bibata-cursor-theme
 catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-mocha
+chroma-visualizer-git
+colloid-gtk-theme-git
+colloid-icon-theme-git
 downgrade
 dracula-gtk-theme
-everforest-gtk-theme-git
 gnu-netcat
 graphite-gtk-theme-git
 gruvbox-dark-gtk
