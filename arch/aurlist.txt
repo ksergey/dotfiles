@@ -24,4 +24,3 @@ walng
 whitesur-gtk-theme
 wiremix-git
 yay
-zafiro-icon-theme
