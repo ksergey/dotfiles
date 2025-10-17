@@ -4,7 +4,8 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "custom/cliphist"
   ],
 
   "modules-center": [
@@ -73,7 +74,7 @@
     },
     "tooltip": false,
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click": "~/.config/waybar/scripts/mixer.sh"
+    "on-click": "~/.config/hypr/scripts/mixer.sh"
   },
 
   "battery": {
@@ -116,7 +117,7 @@
     "format-ethernet": "",
     "format-disconnected": "󰤫",
     "tooltip": false,
-    "on-click": "~/.config/waybar/scripts/wifi.sh"
+    "on-click": "~/.config/hypr/scripts/wifi.sh"
   },
 
   "bluetooth": {
@@ -129,7 +130,7 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t({device_battery_percentage}%)",
-    "on-click": "~/.config/waybar/scripts/bluetooth.sh",
+    "on-click": "~/.config/hypr/scripts/bluetooth.sh",
     "max-length": 35,
     "interval": 5
   },
@@ -137,7 +138,15 @@
   "custom/powermenu": {
     "format": "",
     "tooltip-format": "Powermenu",
-    "on-click": "~/.config/waybar/scripts/powermenu.sh",
+    "on-click": "~/.config/hypr/scripts/powermenu.sh",
+    "tooltip": false
+  },
+
+  "custom/cliphist": {
+    "format": "",
+    "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
     "tooltip": false
   },
 }
