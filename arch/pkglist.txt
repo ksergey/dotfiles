@@ -14,6 +14,7 @@ bettercap
 bluetui
 bluez-utils
 brightnessctl
+btop
 capitaine-cursors
 cava
 chafa
@@ -83,6 +84,7 @@ libva-utils
 linux
 linux-firmware
 linux-headers
+lsd
 man-db
 man-pages
 mc
@@ -117,6 +119,7 @@ qmk
 qt5-wayland
 qt5ct
 qt6ct
+rocm-smi-lib
 rofi
 rpi-imager
 rtmpdump

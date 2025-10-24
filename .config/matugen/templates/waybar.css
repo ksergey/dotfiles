@@ -8,3 +8,4 @@
 @define-color accent4 {{ colors.blue.default.hex }};
 @define-color accent5 {{ colors.magenta.default.hex }};
 @define-color accent6 {{ colors.cyan.default.hex }};
+@define-color accent7 {{ colors.orange.default.hex }};

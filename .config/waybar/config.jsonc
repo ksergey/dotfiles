@@ -52,6 +52,16 @@
     }
   },
 
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": "",
+      "empty": "",
+      "urgent": ""
+    }
+  },
+
   "clock": {
     "format": " {:%H:%M}",
     "tooltip-format": "<tt>{calendar}</tt>",
@@ -75,7 +85,7 @@
     },
     "tooltip": false,
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click": "~/.config/hypr/scripts/mixer.sh"
+    "on-click": "~/.config/scripts/mixer.sh"
   },
 
   "battery": {
@@ -118,7 +128,7 @@
     "format-ethernet": "",
     "format-disconnected": "󰤫",
     "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/wifi.sh"
+    "on-click": "~/.config/scripts/wifi.sh"
   },
 
   "bluetooth": {
@@ -131,7 +141,7 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t({device_battery_percentage}%)",
-    "on-click": "~/.config/hypr/scripts/bluetooth.sh",
+    "on-click": "~/.config/scripts/bluetooth.sh",
     "max-length": 35,
     "interval": 5
   },
@@ -139,15 +149,15 @@
   "custom/powermenu": {
     "format": "",
     "tooltip-format": "Powermenu",
-    "on-click": "~/.config/hypr/scripts/powermenu.sh",
+    "on-click": "~/.config/scripts/powermenu.sh",
     "tooltip": false
   },
 
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh",
-    "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
+    "on-click": "sleep 0.1 && ~/.config/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist.sh w",
     "tooltip": false
   },
 }

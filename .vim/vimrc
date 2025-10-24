@@ -16,6 +16,7 @@ Plug 'majutsushi/tagbar'
 Plug 'itchyny/lightline.vim'
 Plug 'nickel-lang/vim-nickel'
 Plug 'elkowar/yuck.vim'
+Plug 'imsnif/kdl.vim'
 
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'

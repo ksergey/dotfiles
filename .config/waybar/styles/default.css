@@ -2,14 +2,13 @@
   all: unset;
   padding: 0;
   margin: 0;
-  /* font-family: "JetBrainsMono Nerd Font Propo"; */
-  font-family: "0xProto Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font Propo";
   font-weight: bold;
   font-size: 12px;
 }
 
 window#waybar {
-  background: @background;
+  background: alpha(@background, 0.8);
   color: @foreground;
   transition: all 0.3s ease-in-out;
 }
@@ -84,15 +83,10 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @foreground;
+  color: @accent2;
 }
 
-#backlight,
-#wireplumber,
-#bluetooth,
-#network,
 #custom-vpn,
-#battery,
 #custom-powermenu {
   color: @foreground;
 }
@@ -101,6 +95,25 @@ window#waybar.empty #window {
   color: @accent1;
 }
 
+#wireplumber {
+  color: @accent4;
+}
+
+#network {
+  color: @accent5;
+}
+
+#bluetooth {
+  color: @accent6;
+}
+
+#backlight {
+  color: @accent7;
+}
+
+#battery {
+  color: @accent3;
+}
 #battery.warning {
   color: @accent1;
 }
@@ -109,4 +122,7 @@ window#waybar.empty #window {
 }
 #battery.critical {
   color: @accent1;
+}
+#custom-battery-extra {
+  color: darker(@accent3);
 }
