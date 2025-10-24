@@ -3,6 +3,7 @@ adapta-gtk-theme
 adw-gtk-theme
 alsa-utils
 amd-ucode
+amdgpu_top
 aria2
 awesome-terminal-fonts
 base
@@ -68,6 +69,9 @@ iwd
 jq
 kernel-modules-hook
 kitty
+kvantum
+kvantum-qt5
+kvantum-theme-materia
 ldns
 lib32-gnutls
 lib32-libpulse
@@ -135,6 +139,7 @@ thunar-media-tags-plugin
 thunar-volman
 tlp
 tmux
+ttf-0xproto-nerd
 ttf-firacode-nerd
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd

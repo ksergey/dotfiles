@@ -33,6 +33,12 @@ case ${chosen} in
 		systemctl suspend
 		;;
 	$logout)
-    hyprctl dispatch exit
+		case "${XDG_CURRENT_DESKTOP}" in
+			niri)
+				niri msg action quit
+				;;
+			hyprland)
+				hyprctl dispatch exit
+		esac
 		;;
 esac

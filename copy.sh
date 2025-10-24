@@ -12,11 +12,13 @@ entities=(
   kitty
   matugen
   rofi
+  niri
   walng
   waybar
   wallust
   yt-dlp
   mpv
+  scripts
   locale.conf
   user-dirs.dirs
   user-dirs.locale

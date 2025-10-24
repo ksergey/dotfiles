@@ -5,6 +5,7 @@
 
   "modules-left": [
     "hyprland/workspaces",
+    "niri/workspaces",
     "custom/cliphist"
   ],
 
@@ -29,7 +30,7 @@
   ],
 
   "custom/separator": {
-    "format": "|",
+    "format": "󰇙",
     "interval": "once",
     "tooltip": false
   },
