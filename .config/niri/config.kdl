@@ -4,12 +4,10 @@
 
 spawn-at-startup "waybar"
 spawn-at-startup "dunst"
-spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "sh -c ~/.config/scripts/pick-random-wallpaper.sh"
-spawn-at-startup "wl-paste --type text --watch cliphist store"
-spawn-at-startup "wl-paste --type image --watch cliphist store"
-spawn-at-startup "hypridle -q"
+spawn-sh-at-startup "~/.config/scripts/pick-random-wallpaper.sh"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
+spawn-sh-at-startup "hypridle -q"
 
 // -------------------------------------------------------------
 //  Client side rendering
@@ -22,7 +20,6 @@ prefer-no-csd
 // -------------------------------------------------------------
 
 environment {
-    DISPLAY ":0"
 }
 
 cursor {
@@ -35,7 +32,7 @@ cursor {
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 overview {
-    zoom 0.35
+    zoom 0.25
     backdrop-color "#01090e"
 
     workspace-shadow {
@@ -136,6 +133,11 @@ window-rule {
     draw-border-with-background false
 }
 
+window-rule {
+    match is-active=false
+    opacity 0.8
+}
+
 // -------------------------------------------------------------
 //  Window rules
 // -------------------------------------------------------------
@@ -148,6 +150,35 @@ window-rule {
 window-rule {
     match app-id="firefox"
     default-column-width { proportion 1.0; }
+}
+
+// window-rule {
+//     match app-id="FreeCAD"
+//     default-column-width { proportion 1.0; }
+// }
+//
+// window-rule {
+//     match app-id="OrcaSlicer"
+//     default-column-width { proportion 1.0; }
+// }
+
+// -------------------------------------------------------------
+//  Layer rules
+// -------------------------------------------------------------
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="rofi"
+    shadow {
+        on
+        softness 1
+        spread 1000
+        draw-behind-window true
+    }
 }
 
 // -------------------------------------------------------------
