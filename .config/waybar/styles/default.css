@@ -114,15 +114,23 @@ window#waybar.empty #window {
 #battery {
   color: @accent3;
 }
+
 #battery.warning {
   color: @accent1;
 }
+
 #battery.charging,
 #battery.plugged {
 }
+
 #battery.critical {
   color: @accent1;
 }
+
 #custom-battery-extra {
   color: darker(@accent3);
+}
+
+#custom-niri-windows-count {
+  color: darker(@foreground);
 }

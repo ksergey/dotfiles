@@ -7,6 +7,7 @@
     /* "hyprland/workspaces", */
     "niri/workspaces",
     "custom/separator",
+    "custom/niri-windows-count"
   ],
 
   "modules-center": [
@@ -165,4 +166,9 @@
     "tooltip": false
   },
 
+  "custom/niri-windows-count": {
+    "exec": "~/.config/waybar/scripts/niri-windows-count.sh",
+    "format": "{}",
+    "tooltip": false
+  },
 }
