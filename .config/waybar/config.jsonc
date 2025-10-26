@@ -4,9 +4,9 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces",
+    /* "hyprland/workspaces", */
     "niri/workspaces",
-    "custom/cliphist"
+    "custom/separator",
   ],
 
   "modules-center": [
@@ -14,6 +14,8 @@
   ],
 
   "modules-right": [
+    "custom/cliphist",
+    "custom/separator",
     "backlight",
     "custom/separator",
     "wireplumber",
@@ -53,6 +55,8 @@
   },
 
   "niri/workspaces": {
+    "all-outputs": true,
+    "active-only": false,
     "format": "{icon}",
     "format-icons": {
       "default": "",
@@ -160,4 +164,5 @@
     "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist.sh w",
     "tooltip": false
   },
+
 }

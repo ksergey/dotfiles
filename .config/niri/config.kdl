@@ -5,9 +5,11 @@
 spawn-at-startup "waybar"
 spawn-at-startup "dunst"
 spawn-at-startup "swww-daemon"
+spawn-sh-at-startup "swww-daemon --namespace overview"
 spawn-sh-at-startup "~/.config/scripts/pick-random-wallpaper.sh"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "hypridle -q"
+spawn-sh-at-startup "swww img --namespace overview $HOME/Pictures/Wallpapers/flower.jpg"
 
 // -------------------------------------------------------------
 //  Client side rendering
@@ -20,6 +22,24 @@ prefer-no-csd
 // -------------------------------------------------------------
 
 environment {
+    SDL_VIDEODRIVER "wayland"
+    CLUTTER_BACKEND "wayland"
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+    OZONE_PLATFORM "wayland"
+
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
+    XDG_SESSION_DESKTOP "niri"
+
+    // QT stuff
+    QT_AUTO_SCREEN_SCALE_FACTOR "1"
+    QT_QPA_PLATFORM "wayland;xcb"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+
+    GDK_BACKEND "wayland,x11,*"
+    GDK_SCALE "1"
+    GDK_DPI_SCALE "1.0"
 }
 
 cursor {
@@ -32,7 +52,7 @@ cursor {
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 overview {
-    zoom 0.25
+    zoom 0.5
     backdrop-color "#01090e"
 
     workspace-shadow {
@@ -120,7 +140,6 @@ layout {
 // -------------------------------------------------------------
 
 animations {
-    slowdown 0.4
 }
 
 // -------------------------------------------------------------
@@ -172,12 +191,31 @@ layer-rule {
 }
 
 layer-rule {
+    match namespace="^swww-daemonoverview$"
+    place-within-backdrop true
+}
+
+layer-rule {
     match namespace="rofi"
     shadow {
         on
         softness 1
         spread 1000
         draw-behind-window true
+    }
+}
+
+layer-rule {
+    match namespace="waybar"
+    match at-startup=true
+
+    shadow {
+        on
+        softness 40
+        spread 5
+        offset x=0 y=5
+        draw-behind-window true
+        color "#00000064"
     }
 }
 
@@ -213,7 +251,7 @@ binds {
     Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
-    Mod+O repeat=false { toggle-overview; }
+    Mod+Escape repeat=false { toggle-overview; }
     Mod+C repeat=false { close-window; }
 
     Mod+Left { focus-column-left; }
