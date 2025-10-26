@@ -1,7 +1,8 @@
 #!/bin/bash
 
 wallpapersDir=${HOME}/Pictures/Wallpapers
-wallpaper=$(find "${wallpapersDir}" -type f | shuf -n 1)
+wallpapers=( $(find "${wallpapersDir}" -type f) )
+wallpaper=${wallpapers[$RANDOM % ${#wallpapers[@]}]}
 
 swww img \
   --transition-type wave \

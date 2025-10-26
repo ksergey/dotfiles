@@ -18,6 +18,17 @@ spawn-sh-at-startup "swww img --namespace overview $HOME/Pictures/Wallpapers/flo
 prefer-no-csd
 
 // -------------------------------------------------------------
+//  Workspaces
+// -------------------------------------------------------------
+
+workspace "1"
+workspace "2"
+workspace "3"
+workspace "4"
+workspace "5"
+workspace "6"
+
+// -------------------------------------------------------------
 //  Override environment vars
 // -------------------------------------------------------------
 
@@ -52,7 +63,7 @@ cursor {
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 overview {
-    zoom 0.5
+    zoom 0.4
     backdrop-color "#01090e"
 
     workspace-shadow {
@@ -180,6 +191,11 @@ window-rule {
 //     match app-id="OrcaSlicer"
 //     default-column-width { proportion 1.0; }
 // }
+
+window-rule {
+    match title="Heroes of Might and Magic III: Horn of the Abyss"
+    open-on-workspace "4"
+}
 
 // -------------------------------------------------------------
 //  Layer rules
