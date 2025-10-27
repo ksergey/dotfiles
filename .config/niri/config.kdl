@@ -9,7 +9,6 @@ spawn-sh-at-startup "swww-daemon --namespace overview"
 spawn-sh-at-startup "~/.config/scripts/pick-random-wallpaper.sh"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "hypridle -q"
-spawn-sh-at-startup "swww img --namespace overview $HOME/Pictures/Wallpapers/flower.jpg"
 
 // -------------------------------------------------------------
 //  Client side rendering
@@ -249,7 +248,7 @@ binds {
     Mod+E hotkey-overlay-title="Run a File Browser: thunar" { spawn "thunar"; }
     Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+K hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar && exec waybar"; }
-    Mod+W hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-matugen.sh"; }
+    Mod+P hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-matugen.sh"; }
     Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/hypr/scripts/cliphist.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
@@ -269,6 +268,17 @@ binds {
 
     Mod+Escape repeat=false { toggle-overview; }
     Mod+C repeat=false { close-window; }
+
+    // -----------------------------------------------
+    Mod+A { focus-column-left; }
+    Mod+D { focus-column-right; }
+    Mod+W { focus-workspace-up; }
+    Mod+S { focus-workspace-down; }
+    Mod+Shift+A { move-column-left; }
+    Mod+Shift+D { move-column-right; }
+    Mod+Shift+W { move-column-to-workspace-up; }
+    Mod+Shift+S { move-column-to-workspace-down; }
+    // -----------------------------------------------
 
     Mod+Left { focus-column-left; }
     Mod+Down { focus-window-down; }
