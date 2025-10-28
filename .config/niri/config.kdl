@@ -5,10 +5,10 @@
 spawn-at-startup "waybar"
 spawn-at-startup "dunst"
 spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "swww-daemon --namespace overview"
+spawn-at-startup "swww-daemon" "--namespace" "overview"
 spawn-sh-at-startup "~/.config/scripts/pick-random-wallpaper.sh"
-spawn-sh-at-startup "wl-paste --watch cliphist store"
-spawn-sh-at-startup "hypridle -q"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "hypridle" "-q"
 
 // -------------------------------------------------------------
 //  Client side rendering
@@ -126,6 +126,11 @@ layout {
         proportion 0.5
         proportion 0.66667
     }
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
 
     focus-ring {
         width 1
@@ -174,6 +179,10 @@ window-rule {
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+    open-focused false
+    default-floating-position x=32 y=32 relative-to="bottom-right"
+    default-column-width { proportion 0.3; }
+    default-window-height { proportion 0.3; }
 }
 
 window-rule {
@@ -249,7 +258,7 @@ binds {
     Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+K hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar && exec waybar"; }
     Mod+P hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-matugen.sh"; }
-    Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/hypr/scripts/cliphist.sh"; }
+    Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/scripts/cliphist.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
@@ -270,24 +279,24 @@ binds {
     Mod+C repeat=false { close-window; }
 
     // -----------------------------------------------
+    Mod+W { focus-window-or-workspace-up; }
+    Mod+S { focus-window-or-workspace-down; }
     Mod+A { focus-column-left; }
     Mod+D { focus-column-right; }
-    Mod+W { focus-workspace-up; }
-    Mod+S { focus-workspace-down; }
+    Mod+Shift+W { move-window-up-or-to-workspace-up; }
+    Mod+Shift+S { move-window-down-or-to-workspace-down; }
     Mod+Shift+A { move-column-left; }
     Mod+Shift+D { move-column-right; }
-    Mod+Shift+W { move-column-to-workspace-up; }
-    Mod+Shift+S { move-column-to-workspace-down; }
     // -----------------------------------------------
 
     Mod+Left { focus-column-left; }
-    Mod+Down { focus-window-down; }
-    Mod+Up { focus-window-up; }
+    Mod+Down { focus-window-or-workspace-down; }
+    Mod+Up { focus-window-or-workspace-up; }
     Mod+Right { focus-column-right; }
 
     Mod+Ctrl+Left { move-column-left; }
-    Mod+Ctrl+Down { move-window-down; }
-    Mod+Ctrl+Up { move-window-up; }
+    Mod+Ctrl+Down { move-window-down-or-to-workspace-down; }
+    Mod+Ctrl+Up { move-window-up-or-to-workspace-up; }
     Mod+Ctrl+Right { move-column-right; }
 
     Mod+Home { focus-column-first; }

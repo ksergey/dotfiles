@@ -132,7 +132,9 @@
     "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
     "format-ethernet": "",
     "format-disconnected": "󰤫",
-    "tooltip": false,
+    "tooltip": true,
+    "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
+    "format-alt": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
     "on-click": "~/.config/scripts/wifi.sh"
   },
 
