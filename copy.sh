@@ -36,6 +36,11 @@ PREFIX_LENGTH=$(expr ${#HOME} + 1)
 for ENTRY_SRC in ${ENTRIES[@]}; do
   ENTRY_DST="${DEST}/${ENTRY_SRC:$PREFIX_LENGTH}"
 
+  if [[ "${HOME}/" != "${ENTRY_SRC:0:$PREFIX_LENGTH}" ]]; then
+    printf "skipping ${ENTRY_SRC}\n"
+    continue
+  fi
+
   if [[ -e "${ENTRY_DST}" ]]; then
     printf " * removing %b%s%b\n" "${C_RED}" "${ENTRY_DST}" "${C_RESET}"
     rm -r "${ENTRY_DST}"
