@@ -117,15 +117,21 @@ input {
 
 layout {
     gaps 6
+
     background-color "transparent"
+
     center-focused-column "never"
+
     always-center-single-column
+
     default-column-width { proportion 0.66667; }
+
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
+
     preset-window-heights {
         proportion 0.33333
         proportion 0.5
@@ -210,16 +216,19 @@ window-rule {
 
 layer-rule {
     match namespace="^wallpaper$"
+
     place-within-backdrop true
 }
 
 layer-rule {
     match namespace="^swww-daemonoverview$"
+
     place-within-backdrop true
 }
 
 layer-rule {
     match namespace="rofi"
+
     shadow {
         on
         softness 1
@@ -252,10 +261,10 @@ binds {
     Mod+M hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show drun"; }
     Mod+B hotkey-overlay-title="Run a Browser: firefox" { spawn "firefox"; }
     Mod+E hotkey-overlay-title="Run a File Browser: thunar" { spawn "thunar"; }
-    Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+K hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar && exec waybar"; }
-    Mod+P hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-matugen.sh"; }
+    Mod+0 hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar && exec waybar"; }
+    Mod+W hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-matugen.sh"; }
     Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/scripts/cliphist.sh"; }
+    Ctrl+Alt+Delete hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
@@ -276,26 +285,23 @@ binds {
     Mod+Escape repeat=false { toggle-overview; }
     Mod+C repeat=false { close-window; }
 
-    // -----------------------------------------------
-    Mod+W { focus-window-or-workspace-up; }
-    Mod+S { focus-window-or-workspace-down; }
-    Mod+A { focus-column-left; }
-    Mod+D { focus-column-right; }
-    Mod+Shift+W { move-window-up-or-to-workspace-up; }
-    Mod+Shift+S { move-window-down-or-to-workspace-down; }
-    Mod+Shift+A { move-column-left; }
-    Mod+Shift+D { move-column-right; }
-    // -----------------------------------------------
-
-    Mod+Left { focus-column-left; }
-    Mod+Down { focus-window-or-workspace-down; }
-    Mod+Up { focus-window-or-workspace-up; }
+    Mod+Left  { focus-column-left; }
+    Mod+Down  { focus-window-or-workspace-down; }
+    Mod+Up    { focus-window-or-workspace-up; }
     Mod+Right { focus-column-right; }
+    Mod+H     { focus-column-left; }
+    Mod+J     { focus-window-or-workspace-down; }
+    Mod+K     { focus-window-or-workspace-up; }
+    Mod+L     { focus-column-right; }
 
-    Mod+Ctrl+Left { move-column-left; }
-    Mod+Ctrl+Down { move-window-down-or-to-workspace-down; }
-    Mod+Ctrl+Up { move-window-up-or-to-workspace-up; }
+    Mod+Ctrl+Left  { move-column-left; }
+    Mod+Ctrl+Down  { move-window-down-or-to-workspace-down; }
+    Mod+Ctrl+Up    { move-window-up-or-to-workspace-up; }
     Mod+Ctrl+Right { move-column-right; }
+    Mod+Ctrl+H     { move-column-left; }
+    Mod+Ctrl+J     { move-window-down-or-to-workspace-down; }
+    Mod+Ctrl+K     { move-window-up-or-to-workspace-up; }
+    Mod+Ctrl+L     { move-column-right; }
 
     Mod+Home { focus-column-first; }
     Mod+End { focus-column-last; }

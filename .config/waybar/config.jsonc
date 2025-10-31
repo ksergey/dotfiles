@@ -4,14 +4,15 @@
   "spacing": 0,
 
   "modules-left": [
-    /* "hyprland/workspaces", */
+    "hyprland/workspaces"
+    /*
     "niri/workspaces",
     "custom/separator",
     "custom/niri-windows-count"
+    */
   ],
 
   "modules-center": [
-    "clock"
   ],
 
   "modules-right": [
@@ -29,6 +30,8 @@
     "battery",
     "custom/battery-extra",
     "custom/separator",
+    "clock",
+    "custom/separator",
     "custom/powermenu"
   ],
 
@@ -44,11 +47,10 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "active": "",
-      "default": "",
+      "active": "",
+      "default": "",
       "empty": "",
-      "persistent": "",
-      "urgent": ""
+      "persistent": ""
     },
     "persistent-workspaces": {
       "*": 5
@@ -58,17 +60,11 @@
   "niri/workspaces": {
     "all-outputs": true,
     "active-only": false,
-    "format": "{icon}",
-    "format-icons": {
-      "default": "",
-      "active": "",
-      "empty": "",
-      "urgent": ""
-    }
+    "format": "{icon}"
   },
 
   "clock": {
-    "format": " {:%H:%M}",
+    "format": "{:%H:%M}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "tooltip": true
   },
