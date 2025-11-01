@@ -2,7 +2,7 @@
 @define-color foreground {{ foreground }};
 @define-color cursor {{ cursor }};
 
-@define-color accent1 {{ color9 }};
+@define-color accent1 {{ color9 | blend("#ef233c") | lighten(0.4) }};
 @define-color accent2 {{ color10 }};
 @define-color accent3 {{ color11 }};
 @define-color accent4 {{ color12 }};

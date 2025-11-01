@@ -93,27 +93,27 @@ window#waybar.empty #window {
 }
 
 #custom-vpn.up {
-  color: @accent1;
+  color: @foreground;
 }
 
 #wireplumber {
-  color: @accent4;
+  color: @foreground;
 }
 
 #network {
-  color: @accent5;
+  color: @foreground;
 }
 
 #bluetooth {
-  color: @accent6;
+  color: @foreground;
 }
 
 #backlight {
-  color: @accent7;
+  color: @foreground;
 }
 
 #battery {
-  color: @accent3;
+  color: @accent1;
 }
 
 #battery.warning {
@@ -129,13 +129,13 @@ window#waybar.empty #window {
 }
 
 #custom-battery-extra {
-  color: darker(@accent3);
+  color: darker(@foreground);
 }
 
 #custom-niri-windows-count {
   border-radius: 4px;
   margin: 4px;
   font-size: 10px;
-  color: @accent5;
-  background: alpha(@accent5, 0.25);
+  color: @cursor;
+  background: alpha(@cursor, 0.25);
 }

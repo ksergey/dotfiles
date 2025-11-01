@@ -196,7 +196,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = "Colloid-Dark,Papirus-Dark,Adwaita"
+    icon_theme = "Zafiro-icons-Dark,Crule-dark,Papirus-Dark,Adwaita"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -204,7 +204,7 @@
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
     # max_icon_size takes precedence over this.
-    min_icon_size = 22
+    min_icon_size = 32
 
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 32
@@ -303,22 +303,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#12140e"
-    foreground = "#e2e3d8"
-    frame_color = "8e9285"
+    background = "#282828"
+    foreground = "#D7D7D4"
+    frame_color = "#D7D7D4"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#12140e"
-    foreground = "#e2e3d8"
-    frame_color = "8e9285"
+    background = "#282828"
+    foreground = "#D7D7D4"
+    frame_color = "#D7D7D4"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#12140e"
-    foreground = "#e2e3d8"
-    frame_color = "#ffb4ab"
+    background = "#282828"
+    foreground = "#D7D7D4"
+    frame_color = "#282828"
     timeout = 0
     default_icon = dialog-warning

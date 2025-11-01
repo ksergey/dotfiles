@@ -4,12 +4,12 @@
   "spacing": 0,
 
   "modules-left": [
-    "hyprland/workspaces"
     /*
+    "hyprland/workspaces"
+    */
     "niri/workspaces",
     "custom/separator",
     "custom/niri-windows-count"
-    */
   ],
 
   "modules-center": [
@@ -28,7 +28,6 @@
     "custom/vpn",
     "custom/separator",
     "battery",
-    "custom/battery-extra",
     "custom/separator",
     "clock",
     "custom/separator",
@@ -60,7 +59,13 @@
   "niri/workspaces": {
     "all-outputs": true,
     "active-only": false,
-    "format": "{icon}"
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": "",
+      "persistent": ""
+    },
   },
 
   "clock": {

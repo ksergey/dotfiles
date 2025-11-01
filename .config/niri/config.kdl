@@ -24,8 +24,6 @@ workspace "1"
 workspace "2"
 workspace "3"
 workspace "4"
-workspace "5"
-workspace "6"
 
 // -------------------------------------------------------------
 //  Override environment vars
@@ -176,7 +174,7 @@ window-rule {
 
 window-rule {
     match is-active=false
-    opacity 0.9
+    opacity 0.95
 }
 
 // -------------------------------------------------------------
@@ -262,7 +260,7 @@ binds {
     Mod+B hotkey-overlay-title="Run a Browser: firefox" { spawn "firefox"; }
     Mod+E hotkey-overlay-title="Run a File Browser: thunar" { spawn "thunar"; }
     Mod+0 hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar && exec waybar"; }
-    Mod+W hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-matugen.sh"; }
+    Mod+W hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-wallust.sh"; }
     Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/scripts/cliphist.sh"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
@@ -348,6 +346,7 @@ binds {
 
     Mod+Return { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    // Ctrl+Alt+Escape { toggle-keyboard-shortcuts-inhibit; }
 }
 
 switch-events {
