@@ -113,7 +113,7 @@ window#waybar.empty #window {
 }
 
 #battery {
-  color: @accent1;
+  color: @foreground;
 }
 
 #battery.warning {

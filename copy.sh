@@ -28,6 +28,9 @@ ENTRIES=(
   "${HOME}/.config/user-dirs.dirs"
   "${HOME}/.config/user-dirs.locale"
   "${HOME}/.config/fish/config.fish"
+  "${HOME}/.local/share/applications/Heroes3HotA-launcher.desktop"
+  "${HOME}/.local/share/applications/Heroes3HotA.desktop"
+  "${HOME}/.local/share/applications/OrcaSlicer.desktop"
 )
 
 # prefix_length -> length of $HOME + length of /
@@ -45,6 +48,10 @@ for ENTRY_SRC in ${ENTRIES[@]}; do
     printf " * removing %b%s%b\n" "${C_RED}" "${ENTRY_DST}" "${C_RESET}"
     rm -r "${ENTRY_DST}"
   fi
+
+  # create dst dir if not exists
+  ENTRY_DST_DIR="$(dirname "${ENTRY_DST}")"
+  mkdir -p "${ENTRY_DST_DIR}"
 
   printf " * copying %s -> %b%s%b\n" "${ENTRY_SRC}" "${C_GREEN}" "${ENTRY_DST}" "${C_RESET}"
   cp -r "${ENTRY_SRC}" "${ENTRY_DST}"

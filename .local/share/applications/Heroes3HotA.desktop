@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Heroes 3
+Path=/home/ksergey/Games/umu/Heroes3_HotA/drive_c/Games/Heroes3_HotA
+Exec=env GAMEID="Heroes3_HotA" UMU_RUNTIME_UPDATE=0 umu-run "/home/ksergey/Games/umu/Heroes3_HotA/drive_c/Games/Heroes3_HotA/h3hota HD.exe"
+StartupNotify=true
+Icon=/home/ksergey/Games/umu/Heroes3_HotA/drive_c/Games/Heroes3_HotA/icon.png
+Categories=Game

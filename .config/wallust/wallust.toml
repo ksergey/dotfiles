@@ -1,6 +1,7 @@
 backend = "kmeans"
+# backend = "wal"
 color_space = "labmixed"
-palette = "dark16"
+palette = "ansidark16"
 generation = "interpolate"
 threshold = 11
 
@@ -18,8 +19,8 @@ hyprland.target = "~/.config/hypr/colors.conf"
 cava.template = "cava"
 cava.target = "~/.config/cava/config"
 
-kitty.template = "kitty.conf"
-kitty.target = "~/.config/kitty/colors.conf"
+# kitty.template = "kitty.conf"
+# kitty.target = "~/.config/kitty/colors.conf"
 
 dunst.template = "dunstrc"
 dunst.target = "~/.config/dunst/dunstrc"
