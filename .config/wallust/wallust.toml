@@ -1,7 +1,7 @@
 backend = "kmeans"
 # backend = "wal"
 color_space = "labmixed"
-palette = "ansidark16"
+palette = "dark16"
 generation = "interpolate"
 threshold = 11
 

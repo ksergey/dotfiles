@@ -157,15 +157,15 @@
   "custom/powermenu": {
     "format": "",
     "tooltip-format": "Powermenu",
-    "on-click": "~/.config/scripts/powermenu.sh",
+    "on-click": "~/.config/scripts/power-menu.sh",
     "tooltip": false
   },
 
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && ~/.config/scripts/cliphist.sh",
-    "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist.sh w",
+    "on-click": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh w",
     "tooltip": false
   },
 
