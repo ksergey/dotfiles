@@ -34,17 +34,19 @@ rofi_cmd() {
 wallpaper=$(echo -e "${input}" | rofi_cmd)
 wallpaper_overview="${HOME}/.cache/wallpaper-overview.png"
 
-if [ -f "${wallpaper}" ]; then
-  swww img \
-    --transition-type wave \
-    --transition-step 10 \
-    --transition-fps 60 \
-    --transition-duration 1 \
-    "${wallpaper}"
+if [ ! -f "${wallpaper}" ]; then
+  exit 1
+fi
 
-  magick ${wallpaper} -modulate 60,105 -filter Gaussian -resize 20% -blur 0x3.5 "${wallpaper_overview}"
+swww img \
+  --transition-type wave \
+  --transition-step 10 \
+  --transition-fps 60 \
+  --transition-duration 1 \
+  "${wallpaper}"
 
-  if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
-    swww img --namespace overview "${wallpaper_overview}"
-  fi
+magick ${wallpaper} -modulate 60,105 -filter Gaussian -resize 20% -blur 0x3.5 "${wallpaper_overview}"
+
+if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
+  swww img --namespace overview "${wallpaper_overview}"
 fi

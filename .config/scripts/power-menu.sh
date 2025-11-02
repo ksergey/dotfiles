@@ -25,7 +25,7 @@ done
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu -theme "$HOME/.config/rofi/powermenu.rasi" -sync -show-icons
+	rofi -dmenu -theme "$HOME/.config/rofi/power-menu.rasi" -sync -show-icons
 }
 
 # Pass variables to rofi dmenu
