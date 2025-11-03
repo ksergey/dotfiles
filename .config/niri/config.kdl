@@ -6,7 +6,6 @@ spawn-at-startup "waybar"
 spawn-at-startup "dunst"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww-daemon" "--namespace" "overview"
-// spawn-sh-at-startup "~/.config/scripts/pick-random-wallpaper.sh"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "hypridle" "-q"
 
@@ -147,8 +146,8 @@ layout {
     }
 
     struts {
-        left 0
-        right 0
+        left 6
+        right 6
         top 0
         bottom 0
     }
@@ -206,6 +205,7 @@ window-rule {
 window-rule {
     match title="Heroes of Might and Magic III: Horn of the Abyss"
     open-on-workspace "4"
+    open-focused false
 }
 
 // -------------------------------------------------------------
