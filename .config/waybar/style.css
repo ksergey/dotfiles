@@ -55,7 +55,7 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: @foreground;
+  color: @ghost;
 }
 
 #workspace button:first-child {
@@ -67,17 +67,19 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.empty {
+  color: @fruits;
 }
 
 #workspaces button.visible {
+  color: @fruits;
 }
 
 #workspaces button.active {
-  color: @accent1;
+  color: @pacman;
 }
 
 #workspaces button:hover {
-  color: @accent1;
+  color: @pacman;
 }
 
 window#waybar.empty #window {

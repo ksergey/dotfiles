@@ -4,6 +4,12 @@
   "spacing": 0,
 
   "modules-left": [
+    "clock",
+    "custom/separator",
+    "custom/cliphist"
+  ],
+
+  "modules-center": [
     /*
     "hyprland/workspaces"
     */
@@ -12,12 +18,7 @@
     "custom/niri-windows-count"
   ],
 
-  "modules-center": [
-  ],
-
   "modules-right": [
-    "custom/cliphist",
-    "custom/separator",
     "backlight",
     "custom/separator",
     "wireplumber",
@@ -28,8 +29,6 @@
     "custom/vpn",
     "custom/separator",
     "battery",
-    "custom/separator",
-    "clock",
     "custom/separator",
     "custom/powermenu"
   ],

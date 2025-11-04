@@ -7,4 +7,7 @@
 @define-color accent3 {{ color11 }};
 @define-color accent4 {{ color12 }};
 @define-color accent5 {{ color13 }};
-@define-color accent6 {{ color14 }};
+
+@define-color fruits {{ foreground | blend("#8338ec") }};
+@define-color pacman {{ foreground | blend("#ffd60a") }};
+@define-color ghost {{ foreground | blend("#eeeeee") }};

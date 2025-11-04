@@ -204,7 +204,7 @@ window-rule {
 
 window-rule {
     match title="Heroes of Might and Magic III: Horn of the Abyss"
-    open-on-workspace "4"
+    open-on-workspace "3"
     open-focused false
 }
 
