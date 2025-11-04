@@ -1,16 +1,19 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-idfocused="$(niri msg -j workspaces | jq ".[] | select(.is_focused == true ) | .id")"
-num="$(niri msg -j windows | jq "[.[] | select(.workspace_id == $idfocused)] | length")"
-printf "%d\n" "$num"
+set -euo pipefail
+
+focused_id="$(niri msg -j workspaces | jq ".[] | select(.is_focused == true ) | .id")"
+count="$(niri msg -j windows | jq "[.[] | select(.workspace_id == ${focused_id})] | length")"
+
+printf "%d\n" "$count"
 
 niri msg event-stream |
   while read -r line; do
-    case "$line" in
+    case "${line}" in
       "Window opened"* | "Window closed"* | "Workspace focused"*)
-        idfocused="$(niri msg -j workspaces | jq ".[] | select(.is_focused == true ) | .id")"
-        num="$(niri msg -j windows | jq "[.[] | select(.workspace_id == $idfocused)] | length")"
-        printf "%d\n" "$num"
+        focused_id="$(niri msg -j workspaces | jq ".[] | select(.is_focused == true ) | .id")"
+        count="$(niri msg -j windows | jq "[.[] | select(.workspace_id == ${focused_id})] | length")"
+        printf "%d\n" "$count"
         ;;
     esac
   done
