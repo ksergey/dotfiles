@@ -32,8 +32,9 @@ ENTRIES=(
   "${HOME}/.config/fish/config.fish"
   "${HOME}/.local/share/applications/Heroes3HotA-launcher.desktop"
   "${HOME}/.local/share/applications/Heroes3HotA.desktop"
-  # "${HOME}/.local/share/applications/OrcaSlicer.desktop"
-  "~/.local/share/applications/OrcaSlicer.desktop"
+  "${HOME}/.local/share/applications/OrcaSlicer.desktop"
+  "/etc/iwd/main.conf"
+  "/etc/sysctl.d/99_default_ttl.conf"
   "/etc/tlp.d/01-bluetooth.conf"
 )
 
@@ -54,19 +55,23 @@ for ENTRY_SRC in ${ENTRIES[@]}; do
 
   if starts_with "${ENTRY_SRC}" "${HOME}"; then
     ENTRY_DST="${GIT_HOME}/$(remove_home_prefix "${ENTRY_SRC}")"
-    SOURCE="home"
   elif starts_with "${ENTRY_SRC}" "/"; then
     ENTRY_DST="${GIT_HOME}/system${ENTRY_SRC}"
-    SOURCE="system"
   else
     printf " * skiping entry \"%s\": %b%s%b\n" "${ENTRY_SRC}" "${C_RED}" "relative path" "${C_RESET}"
     continue
   fi
 
-  printf " * (%s) copying %b\"%s\"%b -> %b\"%s\"%b\n" "${SOURCE}" "${C_GREEN}" "${ENTRY_SRC}" "${C_RESET}" "${C_CYAN}" "${ENTRY_DST}" "${C_RESET}"
+  if [ ! -e "${ENTRY_SRC}" ]; then
+    printf " * skiping entry \"%s\": %b%s%b\n" "${ENTRY_SRC}" "${C_RED}" "not found" "${C_RESET}"
+    continue
+  fi
+
+  printf " * source: %b\"%s\"%b\n" "${C_GREEN}" "${ENTRY_SRC}" "${C_RESET}"
+  printf "   dest:   %b\"%s\"%b\n" "${C_CYAN}" "${ENTRY_DST}" "${C_RESET}"
 
   if [[ -e "${ENTRY_DST}" ]]; then
-    printf "     removing %b%s%b\n" "${C_RED}" "${ENTRY_DST}" "${C_RESET}"
+    printf "     removing previous version from dst\n"
     rm -r "${ENTRY_DST}"
   fi
 
@@ -74,7 +79,7 @@ for ENTRY_SRC in ${ENTRIES[@]}; do
   ENTRY_DST_DIR="$(dirname "${ENTRY_DST}")"
   mkdir -p "${ENTRY_DST_DIR}"
 
-  printf "     copying \"%s\" -> %b\"%s\"%b\n" "${ENTRY_SRC}" "${C_GREEN}" "${ENTRY_DST}" "${C_RESET}"
+  printf "     copying to dst\n"
   cp -r "${ENTRY_SRC}" "${ENTRY_DST}"
 done
 
