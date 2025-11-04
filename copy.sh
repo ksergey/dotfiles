@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
+set -e
+
 C_RED="\e[0;31;1m"
 C_GREEN="\e[0;32;1m"
 C_CYAN="\e[0;36;1m"
 C_RESET="\e[0m"
 
 # script path
-DEST="$(realpath $(dirname $0))"
+GIT_HOME="$(realpath $(dirname $0))"
 
 ENTRIES=(
   "${HOME}/.config/FreeCAD"
@@ -30,22 +32,41 @@ ENTRIES=(
   "${HOME}/.config/fish/config.fish"
   "${HOME}/.local/share/applications/Heroes3HotA-launcher.desktop"
   "${HOME}/.local/share/applications/Heroes3HotA.desktop"
-  "${HOME}/.local/share/applications/OrcaSlicer.desktop"
+  # "${HOME}/.local/share/applications/OrcaSlicer.desktop"
+  "~/.local/share/applications/OrcaSlicer.desktop"
+  "/etc/tlp.d/01-bluetooth.conf"
 )
 
 # prefix_length -> length of $HOME + length of /
-PREFIX_LENGTH=$(expr ${#HOME} + 1)
+HOME_PREFIX_LENGTH=$(expr ${#HOME} + 1)
+
+function starts_with() {
+  [[ "$1" == "$2"* ]]
+}
+
+function remove_home_prefix() {
+  local STR="$1"
+  echo "${STR##${HOME}/}"
+}
 
 for ENTRY_SRC in ${ENTRIES[@]}; do
-  ENTRY_DST="${DEST}/${ENTRY_SRC:$PREFIX_LENGTH}"
+  ENTRY_SRC="${ENTRY_SRC/#\~/$HOME}"
 
-  if [[ "${HOME}/" != "${ENTRY_SRC:0:$PREFIX_LENGTH}" ]]; then
-    printf "skipping ${ENTRY_SRC}\n"
+  if starts_with "${ENTRY_SRC}" "${HOME}"; then
+    ENTRY_DST="${GIT_HOME}/$(remove_home_prefix "${ENTRY_SRC}")"
+    SOURCE="home"
+  elif starts_with "${ENTRY_SRC}" "/"; then
+    ENTRY_DST="${GIT_HOME}/system${ENTRY_SRC}"
+    SOURCE="system"
+  else
+    printf " * skiping entry \"%s\": %b%s%b\n" "${ENTRY_SRC}" "${C_RED}" "relative path" "${C_RESET}"
     continue
   fi
 
+  printf " * (%s) copying %b\"%s\"%b -> %b\"%s\"%b\n" "${SOURCE}" "${C_GREEN}" "${ENTRY_SRC}" "${C_RESET}" "${C_CYAN}" "${ENTRY_DST}" "${C_RESET}"
+
   if [[ -e "${ENTRY_DST}" ]]; then
-    printf " * removing %b%s%b\n" "${C_RED}" "${ENTRY_DST}" "${C_RESET}"
+    printf "     removing %b%s%b\n" "${C_RED}" "${ENTRY_DST}" "${C_RESET}"
     rm -r "${ENTRY_DST}"
   fi
 
@@ -53,14 +74,13 @@ for ENTRY_SRC in ${ENTRIES[@]}; do
   ENTRY_DST_DIR="$(dirname "${ENTRY_DST}")"
   mkdir -p "${ENTRY_DST_DIR}"
 
-  printf " * copying %s -> %b%s%b\n" "${ENTRY_SRC}" "${C_GREEN}" "${ENTRY_DST}" "${C_RESET}"
+  printf "     copying \"%s\" -> %b\"%s\"%b\n" "${ENTRY_SRC}" "${C_GREEN}" "${ENTRY_DST}" "${C_RESET}"
   cp -r "${ENTRY_SRC}" "${ENTRY_DST}"
 done
 
-# echo " * dumping installed packages list"
 printf " * %bdumping installed packages list%b\n" "${C_CYAN}" "${C_RESET}"
-mkdir -p arch
-pacman -Qqen > arch/pkglist.txt
-pacman -Qqem > arch/aurlist.txt
+mkdir -p "${GIT_HOME}/arch"
+pacman -Qqen > "${GIT_HOME}/arch/pkglist.txt"
+pacman -Qqem > "${GIT_HOME}/arch/aurlist.txt"
 
-git add arch .config
+git add ${GIT_HOME}/{arch,.config,system}

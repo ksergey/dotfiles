@@ -146,8 +146,8 @@ layout {
     }
 
     struts {
-        left 6
-        right 6
+        left 12
+        right 12
         top 0
         bottom 0
     }
@@ -263,7 +263,7 @@ binds {
     // Mod+W hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/pick-random-wallpaper.sh && sleep 0.5s && ~/.config/scripts/make-theme-wallust.sh"; }
     Mod+N hotkey-overlay-title="Set random wallpaper" { spawn-sh "~/.config/scripts/wallpapers-menu.sh && sleep 0.5s && ~/.config/scripts/make-theme-wallust.sh"; }
     Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/scripts/cliphist-menu.sh"; }
-    Ctrl+Alt+Delete hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+    Ctrl+Alt+Delete hotkey-overlay-title="Power menu" { spawn-sh "$HOME/.config/scripts/power-menu.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
