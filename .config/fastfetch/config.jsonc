@@ -17,6 +17,8 @@
     },
     "modules": [
         "break",
+        "break",
+        "break",
         "host",
         "kernel",
         "uptime",

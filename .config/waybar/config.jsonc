@@ -58,13 +58,12 @@
 
   "niri/workspaces": {
     "all-outputs": true,
-    "active-only": false,
+    "active-only": true,
     "format": "{icon}",
     "format-icons": {
-      "active": "",
-      "default": "",
-      "empty": "",
-      "persistent": ""
+      "focused": "󰮯",
+      "default": "󰊠",
+      "empty": "",
     },
   },
 
@@ -89,9 +88,10 @@
       "mid": 33,
       "low": 0,
     },
-    "tooltip": false,
+    "tooltip": true,
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click": "~/.config/scripts/mixer.sh"
+    "on-click": "~/.config/scripts/mixer.sh",
+    "tooltip-format": "{node_name}\t{volume}%\t{icon}"
   },
 
   "battery": {
