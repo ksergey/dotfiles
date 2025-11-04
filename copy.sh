@@ -35,7 +35,6 @@ ENTRIES=(
   "${HOME}/.local/share/applications/OrcaSlicer.desktop"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
-  "/etc/tlp.d/01-bluetooth.conf"
 )
 
 # prefix_length -> length of $HOME + length of /
