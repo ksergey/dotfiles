@@ -87,10 +87,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-  margin: 2px;
   color: @accent4;
-  border-radius: 5px;
-  background: alpha(@accent2, 0.2);
 }
 
 #custom-vpn,
