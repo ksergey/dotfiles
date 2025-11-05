@@ -303,22 +303,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#131517"
-    foreground = "#E1C4C8"
-    frame_color = "#E1C4C8"
+    background = "#262629"
+    foreground = "#F7EAE6"
+    frame_color = "#F7EAE6"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#131517"
-    foreground = "#E1C4C8"
-    frame_color = "#E1C4C8"
+    background = "#262629"
+    foreground = "#F7EAE6"
+    frame_color = "#F7EAE6"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#131517"
-    foreground = "#E1C4C8"
-    frame_color = "#402933"
+    background = "#262629"
+    foreground = "#F7EAE6"
+    frame_color = "#292A39"
     timeout = 0
     default_icon = dialog-warning

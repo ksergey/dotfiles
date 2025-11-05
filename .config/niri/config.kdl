@@ -198,10 +198,12 @@ window-rule {
 }
 
 // window-rule {
-//     match app-id="FreeCAD"
+//     match at-startup=true
+//     match app-id="org.freecad.FreeCAD"
+//
 //     default-column-width { proportion 1.0; }
 // }
-//
+
 // window-rule {
 //     match app-id="OrcaSlicer"
 //     default-column-width { proportion 1.0; }

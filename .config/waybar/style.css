@@ -134,6 +134,13 @@ window#waybar.empty #window {
   color: @accent1;
 }
 
+#idle_inhibitor {
+  color: @foreground;
+}
+#idle_inhibitor.activated {
+  color: @accent3;
+}
+
 #custom-battery-extra {
   color: darker(@foreground);
 }

@@ -5,9 +5,9 @@ wallpapers=( $(find "${wallpapers_dir}" -type f \( -iname "*.jpg" -o -iname "*.j
 
 # Set some variables
 script_dir=$(dirname "$(realpath "$0")")
-rasi_file="$script_dir/wallpaper.rasi"
-wall_dir="$HOME/Pictures/Wallpapers"
-cache_dir="$HOME/.cache/rofi-wallpaper-choose"
+rasi_file="${script_dir}/wallpaper.rasi"
+wall_dir="${HOME}/Pictures/Wallpapers"
+cache_dir="${HOME}/.cache/rofi-wallpaper-choose"
 
 # Create cache dir if not exists
 mkdir -p "${cache_dir}"
@@ -49,4 +49,8 @@ magick ${wallpaper} -modulate 60,105 -filter Gaussian -resize 20% -blur 0x3.5 "$
 
 if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
   swww img --namespace overview "${wallpaper_overview}"
+fi
+
+if [ -f "${script_dir}/make-theme-matugen.sh" ]; then
+  ${script_dir}/make-theme-matugen.sh
 fi

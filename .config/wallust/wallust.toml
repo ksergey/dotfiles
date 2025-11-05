@@ -1,9 +1,8 @@
-backend = "kmeans"
+backend = "resized"
 # backend = "wal"
 color_space = "labmixed"
-palette = "dark16"
-generation = "interpolate"
-threshold = 11
+palette = "dark"
+threshold = 20
 
 [templates]
 

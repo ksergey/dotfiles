@@ -29,6 +29,7 @@
     "custom/vpn",
     "custom/separator",
     "battery",
+	"idle_inhibitor",
     "custom/separator",
     "custom/powermenu"
   ],
@@ -68,8 +69,12 @@
 
   "clock": {
     "format": "{:%H:%M}",
+    "format-alt": "{:%A, %B %d, %Y (%R)}",
     "tooltip-format": "<tt>{calendar}</tt>",
-    "tooltip": true
+    "tooltip": true,
+    "actions":  {
+      "on-click-right": "mode"
+    }
   },
 
   "backlight": {
@@ -102,7 +107,8 @@
     "format-charging": "󱐋 {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ]
+    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+    "tooltip-format": "{capacity}% {power}W\n{timeTo}"
   },
 
   "custom/battery-extra": {
@@ -172,5 +178,14 @@
     "exec": "~/.config/waybar/scripts/niri-windows-count.sh",
     "format": "{}",
     "tooltip": false
+  },
+
+  "idle_inhibitor": {
+	"tooltip": true,
+	"format": "{icon}",
+	"format-icons": {
+	  "activated": "󰈈",
+	  "deactivated": "󰈉"
+	}
   },
 }

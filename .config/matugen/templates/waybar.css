@@ -9,3 +9,7 @@
 @define-color accent5 {{ colors.magenta.default.hex }};
 @define-color accent6 {{ colors.cyan.default.hex }};
 @define-color accent7 {{ colors.orange.default.hex }};
+
+@define-color fruits {{ colors.magenta.default.hex }};
+@define-color pacman {{ colors.yellow.default.hex }};
+@define-color ghost {{ colors.white.default.hex }};
