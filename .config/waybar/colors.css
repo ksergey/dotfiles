@@ -1,8 +1,8 @@
-@define-color background rgba(19, 20, 13, 1.0);
-@define-color foreground #e3e3d7;
-@define-color cursor #bbcf81;
+@define-color background rgba(15, 21, 18, 1.0);
+@define-color foreground #dee4df;
+@define-color cursor #8ad6b7;
 @define-color urgent #ffb4ab;
 
-@define-color pacman #bbcf81;
-@define-color fruits #a1d0c6;
-@define-color ghost #c3caa9;
+@define-color pacman #8ad6b7;
+@define-color fruits #a7cce0;
+@define-color ghost #b3ccbf;

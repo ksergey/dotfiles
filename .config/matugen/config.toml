@@ -2,38 +2,6 @@
 reload_apps = false
 set_wallpaper = false
 
-[config.custom_colors.red]
-color = "#FF0000"
-blend = true
-
-[config.custom_colors.green]
-color = "#00FF00"
-blend = true
-
-[config.custom_colors.yellow]
-color = "#FFFF00"
-blend = true
-
-[config.custom_colors.blue]
-color = "#0000FF"
-blend = true
-
-[config.custom_colors.magenta]
-color = "#FF00FF"
-blend = true
-
-[config.custom_colors.cyan]
-color = "#00FFFF"
-blend = true
-
-[config.custom_colors.white]
-color = "#FFFFFF"
-blend = true
-
-[config.custom_colors.orange]
-color = "#FF5800"
-blend = true
-
 [templates.rofi]
 input_path = "~/.config/matugen/templates/rofi.rasi"
 output_path = "~/.config/rofi/colors.rasi"
@@ -51,7 +19,7 @@ post_hook = "hyprctl reload"
 [templates.niri]
 input_path = "~/.config/matugen/templates/niri.kdl"
 output_path = "~/.config/niri/colors.kdl"
-post_hook = "niri msg action load-config-file"
+post_hook = "~/.config/matugen/update-niri.sh"
 
 [templates.cava]
 input_path = "~/.config/matugen/templates/cava"
