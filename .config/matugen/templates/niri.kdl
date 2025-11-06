@@ -2,6 +2,6 @@ layout {
     focus-ring {
         width 1
         active-color "{{colors.primary.default.hex}}"
-        inactive-color "{{colors.surface_container_highest.default.hex}}"
+        inactive-color "{{colors.surface.default.hex}}"
     }
 }

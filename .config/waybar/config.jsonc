@@ -14,7 +14,6 @@
     "hyprland/workspaces"
     */
     "niri/workspaces",
-    "custom/separator",
     "custom/niri-windows-count"
   ],
 
@@ -29,7 +28,6 @@
     "custom/vpn",
     "custom/separator",
     "battery",
-	"idle_inhibitor",
     "custom/separator",
     "custom/powermenu"
   ],
@@ -178,14 +176,5 @@
     "exec": "~/.config/waybar/scripts/niri-windows-count.sh",
     "format": "{}",
     "tooltip": false
-  },
-
-  "idle_inhibitor": {
-	"tooltip": true,
-	"format": "{icon}",
-	"format-icons": {
-	  "activated": "󰈈",
-	  "deactivated": "󰈉"
-	}
   },
 }

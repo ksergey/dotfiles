@@ -9,6 +9,10 @@
   font-size: 12px;
 }
 
+#window {
+  background: @background;
+}
+
 window#waybar {
   background: alpha(@background, 0.8);
   color: @foreground;
@@ -41,11 +45,6 @@ tooltip label {
 
 window#waybar.battery-critical {
   background: #993333;
-}
-
-#custom-separator {
-  color: darker(@foreground);
-  padding: 0 0.1rem;
 }
 
 #workspaces {
@@ -86,66 +85,42 @@ window#waybar.empty #window {
   background: transparent;
 }
 
-#clock {
-  color: @accent4;
+#clock,
+#custom-vpn,
+#custom-powermenu,
+#custom-battery-extra,
+#custom-niri-windows-count,
+#wireplumber,
+#network,
+#bluetooth,
+#backlight,
+#battery {
+  border-radius: 4px;
+  margin: 4px 0px;
+  color: @foreground;
 }
 
-#custom-vpn,
-#custom-powermenu {
-  color: @foreground;
+#clock {
+  color: @pacman;
 }
 
 #custom-vpn.up {
-  color: @foreground;
+  color: @fruits;
+  background: alpha(@fruits, 0.25);
 }
 
-#wireplumber {
-  color: @foreground;
-}
-
-#network {
-  color: @foreground;
-}
-
-#bluetooth {
-  color: @foreground;
-}
-
-#backlight {
-  color: @foreground;
-}
-
-#battery {
-  color: @foreground;
-}
-
-#battery.warning {
-  color: @accent1;
-}
-
-#battery.charging,
-#battery.plugged {
-}
-
+#battery.warning,
 #battery.critical {
-  color: @accent1;
-}
-
-#idle_inhibitor {
-  color: @foreground;
-}
-#idle_inhibitor.activated {
-  color: @accent3;
-}
-
-#custom-battery-extra {
-  color: darker(@foreground);
+  color: @urgent;
 }
 
 #custom-niri-windows-count {
-  border-radius: 4px;
-  margin: 4px;
   font-size: 10px;
-  color: @cursor;
-  background: alpha(@cursor, 0.25);
+  color: @pacman;
+  background: alpha(@pacman, 0.25);
+}
+
+#custom-separator {
+  color: alpha(@foreground, 0.5);
+  padding: 0 0.1rem;
 }
