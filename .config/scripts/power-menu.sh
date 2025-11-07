@@ -1,26 +1,21 @@
 #!/usr/bin/env bash
 
-declare -A entries=(
-	[lock]='Lock'
-	[suspend]='Suspend'
-	[logout]='Logout'
-	[reboot]='Reboot'
-	[shutdown]='Shutdown'
-)
+all=(Lock Suspend Logout Reboot Shutdown)
 
 declare -A icons=(
-	[lock]=${HOME}/.config/rofi/icons/lock.png
-	[suspend]=${HOME}/.config/rofi/icons/sleep.png
-	[logout]=${HOME}/.config/rofi/icons/logout.png
-	[reboot]=${HOME}/.config/rofi/icons/restart.png
-	[shutdown]=${HOME}/.config/rofi/icons/power.png
+	[Lock]=${HOME}/.config/rofi/icons/lock.png
+	[Suspend]=${HOME}/.config/rofi/icons/sleep.png
+	[Logout]=${HOME}/.config/rofi/icons/logout.png
+	[Reboot]=${HOME}/.config/rofi/icons/restart.png
+	[Shutdown]=${HOME}/.config/rofi/icons/power.png
 )
 
-for entry in "${!entries[@]}"; do
+for entry in ${all[@]}; do
+	icon="${icons[$entry]}"
 	if [ ! -z "${input}" ]; then
 		input="${input}\n"
 	fi
-	input="${input}${entries[$entry]}\0icon\x1f${icons[$entry]}"
+	input="${input}${entry}\0icon\x1f${icon}"
 done
 
 # Rofi CMD
@@ -36,13 +31,13 @@ run_rofi() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
-	${entries[lock]})
+	Lock)
 		hyprlock
 		;;
-	${entries[suspend]})
+	Suspend)
 		systemctl suspend
 		;;
-	${entries[logout]})
+	Logout)
 		case "${XDG_CURRENT_DESKTOP}" in
 			niri)
 				niri msg action quit
@@ -51,10 +46,10 @@ case ${chosen} in
 				hyprctl dispatch exit
 		esac
 		;;
-	${entries[reboot]})
+	Reboot)
 		systemctl reboot
 		;;
-	${entries[shutdown]})
+	Shutdown)
 		systemctl poweroff
 		;;
 esac
