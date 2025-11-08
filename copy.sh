@@ -33,6 +33,8 @@ ENTRIES=(
   "${HOME}/.local/share/applications/Heroes3HotA-launcher.desktop"
   "${HOME}/.local/share/applications/Heroes3HotA.desktop"
   "${HOME}/.local/share/applications/OrcaSlicer.desktop"
+  "${HOME}/.config/gtk-3.0"
+  "${HOME}/.config/gtk-4.0"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
 )

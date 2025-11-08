@@ -94,6 +94,7 @@ window#waybar.empty #window {
 #network,
 #bluetooth,
 #backlight,
+#temperature,
 #battery {
   border-radius: 4px;
   margin: 4px 0px;
@@ -123,4 +124,8 @@ window#waybar.empty #window {
 #custom-separator {
   color: alpha(@foreground, 0.5);
   padding: 0 0.1rem;
+}
+
+#temperature.critical {
+  color: @urgent;
 }

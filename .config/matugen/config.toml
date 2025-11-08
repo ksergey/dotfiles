@@ -9,7 +9,7 @@ output_path = "~/.config/rofi/colors.rasi"
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
 output_path = "~/.config/waybar/colors.css"
-post_hook = "killall -q -SIGUSR2 waybar || true"
+post_hook = 'pkill -SIGUSR2 waybar'
 
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland.conf"
@@ -43,8 +43,10 @@ post_hook = "tmux source-file ~/.tmux.conf"
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-3.0/gtk.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+pre_hook = 'gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-Dark"'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"'
 
-# [templates.gtk4]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.config/gtk-4.0/gtk.css'
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
