@@ -122,7 +122,7 @@ layout {
 
     always-center-single-column
 
-    default-column-width { proportion 0.66667; }
+    default-column-width { proportion 0.5; }
 
     preset-column-widths {
         proportion 0.33333
@@ -138,8 +138,8 @@ layout {
 
     focus-ring {
         width 1
-        active-color "#f5bc6f"
-        inactive-color "#18120b"
+        active-color "#add28e"
+        inactive-color "#11140e"
     }
 
     border {

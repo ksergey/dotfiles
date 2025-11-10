@@ -37,6 +37,7 @@ ENTRIES=(
   "${HOME}/.config/gtk-4.0"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
+  "/etc/systemd/logind.conf"
 )
 
 # prefix_length -> length of $HOME + length of /
