@@ -95,3 +95,10 @@ matugen image $(swww query | sed 's/^.*image:\ //')
 walng --theme https://github.com/tinted-theming/schemes/raw/refs/heads/spec-0.11/base16/hardcore.yaml
 ```
 
+# Theming
+
+[matugen](https://github.com/InioX/matugen)
+[wallust](https://codeberg.org/explosion-mental/wallust)
+[cwal](https://github.com/nitinbhat972/cwal)
+[rong](https://github.com/Nadim147c/rong)
+[gowall](https://github.com/Achno/gowall)
