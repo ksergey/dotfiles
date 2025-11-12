@@ -16,6 +16,7 @@ matugen-git
 mpv-thumbfast-git
 nordic-darker-theme
 nordic-theme
+rong
 rose-pine-gtk-theme
 sddm-astronaut-theme
 tinty-git

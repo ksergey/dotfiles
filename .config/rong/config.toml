@@ -1,0 +1,17 @@
+dark = true
+
+[material]
+variant = "tonal_spot"
+version = "2025"
+
+[base16]
+method = "dynamic"
+
+[links]
+"kitty.conf" = "~/.config/kitty/colors.conf"
+"rofi.rasi" = "~/.config/rofi/colors.rasi"
+"tmux.conf" = "~/.tmux-colors.conf"
+"cava" = "~/.config/cava/config"
+"niri.kdl" = "~/.config/niri/colors.kdl"
+"waybar.css" = "~/.config/waybar/colors.css"
+

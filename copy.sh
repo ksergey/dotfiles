@@ -22,6 +22,7 @@ ENTRIES=(
   "${HOME}/.config/niri"
   "${HOME}/.config/walng"
   "${HOME}/.config/waybar"
+  "${HOME}/.config/rong"
   "${HOME}/.config/yt-dlp"
   "${HOME}/.config/mpv"
   "${HOME}/.config/scripts"
