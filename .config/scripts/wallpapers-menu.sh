@@ -51,6 +51,8 @@ if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
   swww img --namespace overview "${wallpaper_overview}"
 fi
 
-if [ -f "${script_dir}/make-theme-matugen.sh" ]; then
+if [ -f "${script_dir}/make-theme-rong.sh" ]; then
+  ${script_dir}/make-theme-rong.sh
+elif [ -f "${script_dir}/make-theme-matugen.sh" ]; then
   ${script_dir}/make-theme-matugen.sh
 fi
