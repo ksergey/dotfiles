@@ -9,12 +9,12 @@ output_path = "~/.config/rofi/colors.rasi"
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
 output_path = "~/.config/waybar/colors.css"
-post_hook = 'pkill -SIGUSR2 waybar'
+post_hook = 'killall -USR2 waybar'
 
-[templates.hyprland]
-input_path = "~/.config/matugen/templates/hyprland.conf"
-output_path = "~/.config/hypr/colors.conf"
-post_hook = "hyprctl reload"
+# [templates.hyprland]
+# input_path = "~/.config/matugen/templates/hyprland.conf"
+# output_path = "~/.config/hypr/colors.conf"
+# post_hook = "hyprctl reload"
 
 [templates.niri]
 input_path = "~/.config/matugen/templates/niri.kdl"
@@ -24,12 +24,12 @@ post_hook = "~/.config/matugen/update-niri.sh"
 [templates.cava]
 input_path = "~/.config/matugen/templates/cava"
 output_path = "~/.config/cava/config"
-post_hook = "killall -q -SIGUSR1 cava || true"
+post_hook = "killall -0 cava && killall -USR1 cava"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty.conf"
 output_path = "~/.config/kitty/colors.conf"
-post_hook = "killall -q -SIGUSR1 kitty || true"
+post_hook = "killall -0 kitty && killall -USR1 kitty"
 
 [templates.dunst]
 input_path = "~/.config/matugen/templates/dunstrc"

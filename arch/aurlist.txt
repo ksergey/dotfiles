@@ -9,6 +9,7 @@ colloid-icon-theme-git
 downgrade
 dracula-gtk-theme
 gnu-netcat
+gowall
 graphite-gtk-theme-git
 gruvbox-dark-gtk
 matugen-git

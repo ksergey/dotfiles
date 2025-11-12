@@ -84,7 +84,6 @@ libva-utils
 linux
 linux-firmware
 linux-headers
-lsd
 man-db
 man-pages
 mc
@@ -143,6 +142,7 @@ thunar-media-tags-plugin
 thunar-volman
 tlp
 tmux
+tree
 ttf-0xproto-nerd
 ttf-firacode-nerd
 ttf-jetbrains-mono
