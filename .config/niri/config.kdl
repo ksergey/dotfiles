@@ -138,19 +138,26 @@ layout {
 
     focus-ring {
         width 1
-        active-color "#8CA5C6"
-        inactive-color "#0C0E11"
+        active-color "#CA996E"
+        inactive-color "#130D09"
     }
 
     border {
         off
     }
 
+    // struts {
+    //     left 12
+    //     right 12
+    //     top 0
+    //     bottom 0
+    // }
+
     struts {
-        left 12
-        right 12
-        top 0
-        bottom 0
+        left 24
+        right 24
+        top 24
+        bottom 24
     }
 }
 
@@ -247,12 +254,7 @@ layer-rule {
     match at-startup=true
 
     shadow {
-        on
-        softness 40
-        spread 5
-        offset x=0 y=5
-        draw-behind-window true
-        color "#00000064"
+        off
     }
 }
 
@@ -282,6 +284,9 @@ binds {
     XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+    // copilot key
+    Super+Shift+XF86TouchpadOff repeat=false { reset-window-height; }
 
     XF86SelectiveScreenshot { screenshot; }
     Print { screenshot-screen; }

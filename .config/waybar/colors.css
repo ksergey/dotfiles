@@ -1,8 +1,8 @@
-@define-color background #0C0E11;
-@define-color foreground #FAFAFF;
-@define-color cursor #8CA5C6;
+@define-color background #130D09;
+@define-color foreground #FFFAF8;
+@define-color cursor #CA996E;
 @define-color urgent #FF7B6E;
 
-@define-color pacman #61A7F2;
-@define-color fruits #E6DEFF;
-@define-color ghost #A1C9FF;
+@define-color pacman #CA996E;
+@define-color fruits #FFFCC0;
+@define-color ghost #E2C0A5;

@@ -5,9 +5,7 @@ wallpapers=( $(find "${wallpapers_dir}" -type f \( -iname "*.jpg" -o -iname "*.j
 
 # Set some variables
 script_dir=$(dirname "$(realpath "$0")")
-rasi_file="${script_dir}/wallpaper.rasi"
-wall_dir="${HOME}/Pictures/Wallpapers"
-cache_dir="${HOME}/.cache/rofi-wallpaper-choose"
+cache_dir="${HOME}/.cache/wallpapers-menu"
 
 # Create cache dir if not exists
 mkdir -p "${cache_dir}"
@@ -32,18 +30,26 @@ rofi_cmd() {
 }
 
 wallpaper=$(echo -e "${input}" | rofi_cmd)
-wallpaper_overview="${HOME}/.cache/wallpaper-overview.png"
 
 if [ ! -f "${wallpaper}" ]; then
   exit 1
 fi
 
+if command -v gowall &> /dev/null; then
+  wallpaper_gowall="${HOME}/.cache/wallpaper-gowall-processed.png"
+  # gowall convert "${wallpaper}" -t tokyo-dark --output "${wallpaper_gowall}"
+  # wallpaper="${wallpaper_gowall}"
+fi
+
 swww img \
   --transition-type wave \
+  --transition-bezier ".09,.91,.52,.93" \
   --transition-step 10 \
   --transition-fps 60 \
   --transition-duration 1 \
   "${wallpaper}"
+
+wallpaper_overview="${HOME}/.cache/wallpaper-overview.png"
 
 magick "${wallpaper}" -modulate 100,50 -filter Gaussian -resize 20% -blur 0x3.5 "${wallpaper_overview}"
 

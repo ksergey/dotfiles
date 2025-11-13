@@ -303,22 +303,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#18120D"
-    foreground = "#EDE0D7"
-    frame_color = "#CA996E"
+    background = "{{ .Background }}"
+    foreground = "{{ .OnBackground }}"
+    frame_color = "{{ .Primary }}"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#18120D"
-    foreground = "#EDE0D7"
-    frame_color = "#CA996E"
+    background = "{{ .Background }}"
+    foreground = "{{ .OnBackground }}"
+    frame_color = "{{ .Primary }}"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#FF7B6E"
-    foreground = "#A4020D"
-    frame_color = "#FF7B6E"
+    background = "{{ .Error }}"
+    foreground = "{{ .ErrorContainer }}"
+    frame_color = "{{ .Error }}"
     timeout = 0
     default_icon = dialog-warning

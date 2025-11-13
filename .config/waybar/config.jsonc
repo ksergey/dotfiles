@@ -141,7 +141,7 @@
     "tooltip": true,
     "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
     "format-alt": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
-    "on-click": "~/.config/scripts/wifi.sh"
+    "on-click-right": "~/.config/scripts/wifi.sh"
   },
 
   "bluetooth": {
@@ -154,7 +154,7 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address} ({status})\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t({device_battery_percentage}%)",
-    "on-click": "~/.config/scripts/bluetooth.sh",
+    "on-click-right": "~/.config/scripts/bluetooth.sh",
     "max-length": 35,
     "interval": 5
   },

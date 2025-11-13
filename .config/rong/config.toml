@@ -6,12 +6,17 @@ version = "2025"
 
 [base16]
 method = "dynamic"
+blend = 0.7
 
 [links]
 "kitty.conf" = "~/.config/kitty/colors.conf"
 "rofi.rasi" = "~/.config/rofi/colors.rasi"
 "tmux.conf" = "~/.tmux-colors.conf"
 "cava" = "~/.config/cava/config"
+"dunstrc" = "~/.config/dunst/dunstrc"
 "niri.kdl" = "~/.config/niri/colors.kdl"
 "waybar.css" = "~/.config/waybar/colors.css"
-
+"gtk.css" = [
+  "~/.config/gtk-3.0/gtk.css",
+  "~/.config/gtk-4.0/gtk.css",
+]

@@ -1,1 +1,73 @@
-/usr/share/themes/adw-gtk3-dark/gtk-4.0/gtk.css
+@define-color accent_color #CA996E;
+@define-color accent_bg_color #704A25;
+@define-color accent_fg_color #FFDDC1;
+
+@define-color window_bg_color #150C05;
+@define-color window_fg_color #FFFAF8;
+
+@define-color headerbar_bg_color #201811;
+@define-color headerbar_fg_color #FFFAF8;
+@define-color headerbar_border_color #918074;
+@define-color headerbar_shade_color #271E16;
+
+@define-color popover_bg_color #201811;
+@define-color popover_fg_color #FFFAF8;
+
+@define-color view_bg_color #130D09;
+@define-color view_fg_color #FFFAF8;
+
+@define-color card_bg_color #19120C;
+@define-color card_fg_color #FFFAF8;
+@define-color card_shade_color #000000;
+
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
+
+@define-color bg_color #130D09;
+@define-color fg_color #FFFAF8;
+@define-color text_color #FFFAF8;
+@define-color text_color_disabled #FFFAF8;
+
+@define-color button_bg_color #201811;
+@define-color button_fg_color #FFFAF8;
+@define-color button_hover_color #CA996E;
+@define-color button_active_color #CA996E;
+@define-color button_checked_bg_color #704A25;
+@define-color button_checked_fg_color #FFDDC1;
+
+@define-color borders #918074;
+@define-color outline_color #918074;
+@define-color outline_variant_color #605146;
+
+@define-color link_color #FFFCC0;
+@define-color link_visited_color #F1EEAA;
+
+@define-color warning_color #FF7B6E;
+@define-color warning_bg_color #A4020D;
+@define-color warning_fg_color #FFAEA4;
+@define-color error_color #FF7B6E;
+@define-color error_bg_color #A4020D;
+@define-color error_fg_color #FFAEA4;
+@define-color success_color #FFFCC0;
+@define-color success_bg_color #F1EEAA;
+@define-color success_fg_color #5A5924;
+
+@define-color selected_bg_color #704A25;
+@define-color selected_fg_color #FFDDC1;
+@define-color selected_text_color #FFDDC1;
+
+@define-color hover_color #CA996E;
+@define-color focus_color #CA996E;
+
+@define-color dark_fill_color #2F241A;
+@define-color light_fill_color #352A20;
+
+@define-color info_color #E2C0A5;
+@define-color info_bg_color #4D3723;
+@define-color info_fg_color #DAB99E;
+
+@define-color shade_color #000000;
+@define-color backdrop_color #52443A;
+@define-color overlay_color #000000;
