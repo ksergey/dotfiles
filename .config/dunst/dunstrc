@@ -303,16 +303,16 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#18120D"
-    foreground = "#EDE0D7"
-    frame_color = "#CA996E"
+    background = "#121317"
+    foreground = "#E3E2E7"
+    frame_color = "#96A2C9"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#18120D"
-    foreground = "#EDE0D7"
-    frame_color = "#CA996E"
+    background = "#121317"
+    foreground = "#E3E2E7"
+    frame_color = "#96A2C9"
     timeout = 6
     default_icon = dialog-information
 

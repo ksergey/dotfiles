@@ -4,7 +4,7 @@
   all: unset;
   padding: 0;
   margin: 0;
-  font-family: "JetBrainsMono Nerd Font Propo";
+  font-family: "Caskaydia Cove Nerd Font", "JetBrainsMono Nerd Font Propo";
   font-weight: bold;
   font-size: 12px;
 }
@@ -101,10 +101,6 @@ window#waybar.empty #window {
   color: @foreground;
 }
 
-#clock {
-  color: @pacman;
-}
-
 #custom-vpn.up {
   color: @fruits;
   background: alpha(@fruits, 0.25);
@@ -116,9 +112,7 @@ window#waybar.empty #window {
 }
 
 #custom-niri-windows-count {
-  font-size: 10px;
-  color: @pacman;
-  background: alpha(@pacman, 0.25);
+  color: alpha(@pacman, 0.5);
 }
 
 #custom-separator {

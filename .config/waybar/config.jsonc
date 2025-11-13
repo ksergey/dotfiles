@@ -10,11 +10,9 @@
   ],
 
   "modules-center": [
-    /*
-    "hyprland/workspaces"
-    */
-    "niri/workspaces",
-    "custom/niri-windows-count"
+    // "hyprland/workspaces"
+    "niri/workspaces"
+    // "custom/niri-windows-count"
   ],
 
   "modules-right": [
@@ -176,7 +174,7 @@
 
   "custom/niri-windows-count": {
     "exec": "~/.config/waybar/scripts/niri-windows-count.sh",
-    "format": "{}",
+    "format": "({})",
     "tooltip": false
   },
 
