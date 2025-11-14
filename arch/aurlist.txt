@@ -19,7 +19,7 @@ nordic-theme
 rong
 rose-pine-gtk-theme
 sddm-astronaut-theme
-tinty-git
+sunsetr
 ttf-harmonyos-sans
 wallust
 walng

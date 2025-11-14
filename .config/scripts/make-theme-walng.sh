@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER=$1
+SCHEME="$1"
 
 spawn() {
   case "${XDG_CURRENT_DESKTOP}" in
@@ -62,17 +62,13 @@ post_hook() {
   update_dunst
 }
 
-if [ -z "${WALLPAPER}" ]; then
-  WALLPAPER=$(swww query | sed 's/^.*image:\ //')
-fi
-
-if [ -z "${WALLPAPER}" ]; then
-  echo "ERROR: wallpaper not found"
+if [ -z "${SCHEME}" ]; then
+  echo "usage: $(basename ${BASH_SOURCE[0]}) <theme url>"
   exit 1
 fi
 
 # generate colors
-rong image "${WALLPAPER}"
+walng --theme "${SCHEME}"
 
 post_hook
 

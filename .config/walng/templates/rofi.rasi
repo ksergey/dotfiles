@@ -7,7 +7,7 @@
     background:     {{ palette.base00 }};
     background-alt: {{ palette.base01 }};
     foreground:     {{ palette.base05 }};
-    selected:       {{ palette.base0E }};
+    selected:       {{ palette.base02 }};
     active:         {{ palette.base02 }};
     urgent:         {{ palette.base0F }};
 }
