@@ -4,6 +4,7 @@ bibata-cursor-theme
 catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-mocha
 chroma-visualizer-git
+cmatrix-git
 colloid-gtk-theme-git
 colloid-icon-theme-git
 downgrade

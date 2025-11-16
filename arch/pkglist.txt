@@ -22,7 +22,6 @@ chromium
 clang
 cliphist
 cmake
-cmatrix
 cmus
 ctags
 cups

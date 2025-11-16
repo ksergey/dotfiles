@@ -1,13 +1,8 @@
-/*
-  name: Everforest
-  author: Sainnhe Park (https://github.com/sainnhe)
-*/
-
 * {
-    background:     #2d353b;
-    background-alt: #343f44;
-    foreground:     #d3c6aa;
-    selected:       #475258;
-    active:         #475258;
-    urgent:         #9da9a0;
+    background:     #11140F;
+    background-alt: #0C0F0A;
+    foreground:     #E1E3DB;
+    selected:       #8DAB82;
+    active:         #8DAB82;
+    urgent:         #FF7B6E;
 }

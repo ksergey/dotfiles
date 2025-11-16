@@ -26,7 +26,7 @@ for wallpaper in "${wallpapers[@]}"; do
 done
 
 rofi_cmd() {
-	rofi -dmenu -theme "$HOME/.config/rofi/wallpapers-menu.rasi" -sync
+	rofi -i -show -dmenu -theme "$HOME/.config/rofi/wallpapers-menu.rasi" -sync
 }
 
 wallpaper=$(echo -e "${input}" | rofi_cmd)

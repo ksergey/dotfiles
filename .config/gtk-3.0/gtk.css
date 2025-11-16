@@ -1,5 +1,73 @@
-@define-color window_bg_color #2d353b;
-@define-color window_fg_color #d3c6aa;
+@define-color accent_color #8DAB82;
+@define-color accent_bg_color #3E5937;
+@define-color accent_fg_color #CCECBF;
 
-@define-color selected_bg_color #475258;
-@define-color selected_fg_color #d3c6aa;
+@define-color window_bg_color #0A1008;
+@define-color window_fg_color #F6FDEE;
+
+@define-color headerbar_bg_color #161B14;
+@define-color headerbar_fg_color #F6FDEE;
+@define-color headerbar_border_color #7E8579;
+@define-color headerbar_shade_color #1C2119;
+
+@define-color popover_bg_color #161B14;
+@define-color popover_fg_color #F6FDEE;
+
+@define-color view_bg_color #0C0F0A;
+@define-color view_fg_color #F6FDEE;
+
+@define-color card_bg_color #10150E;
+@define-color card_fg_color #F6FDEE;
+@define-color card_shade_color #000000;
+
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
+
+@define-color bg_color #0C0F0A;
+@define-color fg_color #F6FDEE;
+@define-color text_color #F6FDEE;
+@define-color text_color_disabled #F6FDEE;
+
+@define-color button_bg_color #161B14;
+@define-color button_fg_color #F6FDEE;
+@define-color button_hover_color #8DAB82;
+@define-color button_active_color #8DAB82;
+@define-color button_checked_bg_color #3E5937;
+@define-color button_checked_fg_color #CCECBF;
+
+@define-color borders #7E8579;
+@define-color outline_color #7E8579;
+@define-color outline_variant_color #4F564B;
+
+@define-color link_color #FFFCC0;
+@define-color link_visited_color #F1EEAA;
+
+@define-color warning_color #FF7B6E;
+@define-color warning_bg_color #A4020D;
+@define-color warning_fg_color #FFAEA4;
+@define-color error_color #FF7B6E;
+@define-color error_bg_color #A4020D;
+@define-color error_fg_color #FFAEA4;
+@define-color success_color #FFFCC0;
+@define-color success_bg_color #F1EEAA;
+@define-color success_fg_color #5A5924;
+
+@define-color selected_bg_color #3E5937;
+@define-color selected_fg_color #CCECBF;
+@define-color selected_text_color #CCECBF;
+
+@define-color hover_color #8DAB82;
+@define-color focus_color #8DAB82;
+
+@define-color dark_fill_color #21281E;
+@define-color light_fill_color #272E24;
+
+@define-color info_color #BACCB1;
+@define-color info_bg_color #313F2C;
+@define-color info_fg_color #B3C4AA;
+
+@define-color shade_color #000000;
+@define-color backdrop_color #42493F;
+@define-color overlay_color #000000;
