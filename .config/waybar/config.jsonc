@@ -13,7 +13,6 @@
   "modules-center": [
     // "hyprland/workspaces"
     "niri/workspaces"
-    // "custom/niri-windows-count"
   ],
 
   "modules-right": [
@@ -175,7 +174,7 @@
   },
 
   "custom/cava": {
-    "format": "󱃤",
+    "format": "󰺢",
     "tooltip-format": "launch cava",
     "on-click": "niri msg action spawn -- kitty --title cava --app-id cava cava && sleep 0.3 && niri msg action consume-or-expel-window-left && niri msg action set-window-height '12%'",
     "tooltip": true
