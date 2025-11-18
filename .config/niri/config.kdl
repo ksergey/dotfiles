@@ -117,6 +117,13 @@ input {
 layout {
     gaps 8
 
+    struts {
+        left 8
+        right 8
+        top 8
+        bottom 8
+    }
+
     background-color "transparent"
 
     center-focused-column "never"
@@ -139,26 +146,12 @@ layout {
 
     focus-ring {
         width 1
-        active-color "#E1E3DB"
-        inactive-color "#0C0F0A"
+        active-color "#E1E2E7"
+        inactive-color "#0C0E11"
     }
 
     border {
         off
-    }
-
-    // struts {
-    //     left 12
-    //     right 12
-    //     top 0
-    //     bottom 0
-    // }
-
-    struts {
-        left 24
-        right 24
-        top 24
-        bottom 24
     }
 }
 
@@ -167,7 +160,7 @@ layout {
 // -------------------------------------------------------------
 
 animations {
-    slowdown 1.5
+    slowdown 0.5
 }
 
 // -------------------------------------------------------------
@@ -247,6 +240,7 @@ layer-rule {
         softness 1
         spread 1000
         draw-behind-window true
+        color "#000a"
     }
 }
 

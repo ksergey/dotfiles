@@ -4,9 +4,10 @@
   "spacing": 0,
 
   "modules-left": [
-    "clock",
+    "temperature",
     "custom/separator",
-    "custom/cliphist"
+    "custom/cliphist",
+    "custom/cava"
   ],
 
   "modules-center": [
@@ -16,18 +17,18 @@
   ],
 
   "modules-right": [
-    "temperature",
-    "custom/separator",
-    "backlight",
-    "custom/separator",
-    "wireplumber",
-    "custom/separator",
+    // "backlight",
+    // "custom/separator",
+    // "wireplumber",
+    // "custom/separator",
     "bluetooth",
     "custom/separator",
     "network",
     "custom/vpn",
     "custom/separator",
     "battery",
+    "custom/separator",
+    "clock",
     "custom/separator",
     "custom/powermenu"
   ],
@@ -166,16 +167,18 @@
 
   "custom/cliphist": {
     "format": "",
+    "tooltip-format": "launch cliphist menu",
     "on-click": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh",
     "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh d",
     "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh w",
-    "tooltip": false
+    "tooltip": true
   },
 
-  "custom/niri-windows-count": {
-    "exec": "~/.config/waybar/scripts/niri-windows-count.sh",
-    "format": "({})",
-    "tooltip": false
+  "custom/cava": {
+    "format": "󱃤",
+    "tooltip-format": "launch cava",
+    "on-click": "niri msg action spawn -- kitty --title cava --app-id cava cava && sleep 0.3 && niri msg action consume-or-expel-window-left && niri msg action set-window-height '12%'",
+    "tooltip": true
   },
 
   "temperature": {

@@ -78,7 +78,7 @@ window#waybar.battery-critical {
 }
 
 #workspaces button:hover {
-  color: @pacman;
+  color: @foreground-hover;
 }
 
 window#waybar.empty #window {
@@ -89,7 +89,8 @@ window#waybar.empty #window {
 #custom-vpn,
 #custom-powermenu,
 #custom-battery-extra,
-#custom-niri-windows-count,
+#custom-cliphist,
+#custom-cava,
 #wireplumber,
 #network,
 #bluetooth,
@@ -101,9 +102,29 @@ window#waybar.empty #window {
   color: @foreground;
 }
 
+#clock:hover,
+#custom-vpn:hover,
+#custom-powermenu:hover,
+#custom-battery-extra:hover,
+#custom-cliphist:hover,
+#custom-cava:hover,
+#wireplumber:hover,
+#network:hover,
+#bluetooth:hover,
+#backlight:hover,
+#temperature:hover,
+#battery:hover {
+  color: @foreground-hover;
+}
+
 #custom-vpn.up {
   color: @fruits;
   background: alpha(@fruits, 0.25);
+}
+
+#custom-vpn.up:hover {
+  color: @foreground-hover;
+  background: alpha(@foreground-hover, 0.25);
 }
 
 #battery.warning,
