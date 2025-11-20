@@ -9,27 +9,27 @@ configuration {
 @import "options.rasi"
 
 * {
-    font:                       "JetBrainsMono Nerd Font 10";
+    font: "JetBrainsMono Nerd Font 10";
 }
 
 * {
-    border-colour:               var(selected);
-    handle-colour:               var(foreground);
-    background-colour:           var(background);
-    foreground-colour:           var(foreground);
-    alternate-background:        var(background-alt);
-    normal-background:           var(background);
-    normal-foreground:           var(foreground);
-    urgent-background:           var(urgent);
-    urgent-foreground:           var(background);
-    active-background:           var(active);
-    active-foreground:           var(background);
-    selected-normal-background:  var(selected);
-    selected-normal-foreground:  var(background);
-    selected-urgent-background:  var(active);
-    selected-urgent-foreground:  var(background);
-    selected-active-background:  var(urgent);
-    selected-active-foreground:  var(background);
+    border-colour: var(selected);
+    handle-colour: var(foreground);
+    background-colour: var(background);
+    foreground-colour: var(foreground);
+    alternate-background: var(background-alt);
+    normal-background: var(background);
+    normal-foreground: var(foreground);
+    urgent-background: var(urgent);
+    urgent-foreground: var(background);
+    active-background: var(active);
+    active-foreground: var(background);
+    selected-normal-background: var(selected);
+    selected-normal-foreground: var(background);
+    selected-urgent-background: var(active);
+    selected-urgent-foreground: var(background);
+    selected-active-background: var(urgent);
+    selected-active-foreground: var(background);
     alternate-normal-background: var(background);
     alternate-normal-foreground: var(foreground);
     alternate-urgent-background: var(urgent);
@@ -39,65 +39,46 @@ configuration {
 }
 
 window {
-    enabled:                     true;
-    fullscreen:                  false;
-    transparency:                "real";
-    width:                       95%;
-    border-color:                @border-colour;
-    background-color:            @background-colour;
-    border:                      1px solid;
-    border-color:                @border-colour;
+    background-color: @background-colour;
+    border: 1px solid;
+    border-color: @border-colour;
+    width: 75%;
 }
 
 mainbox {
-    enabled:                     true;
-    background-color:            transparent;
-    children:                    [ "listview" ];
+    background-color: transparent;
+    children: [ "listview" ];
 }
 
 listview {
-    enabled:                     true;
-    layout:                      vertical;
-    spacing:                     30px;
-    padding:                     20px 30px;
-    columns:                     6;
-    lines:                       1;
-    cycle:                       true;
-    dynamic:                     false;
-    scrollbar:                   false;
-    fixed-height:                true;
-    fixed-columns:               true;
-    cursor:                      "default";
-    reverse:                     false;
-    background-color:            transparent;
-    text-color:                  @foreground-colour;
+    background-color: transparent;
+    spacing: 20px;
+    padding: 20px 20px;
+    columns: 4;
+    lines: 2;
+    fixed-height: false;
 }
 
 element {
-    enabled:                     true;
-    orientation:                 horizontal;
-    spacing:                     0px;
-    padding:                     1px;
-    border-radius:               20px;
-    cursor:                      pointer;
-    background-color:            transparent;
-    children:                    [ element-icon ];
-}
-
-@media(max-aspect-ratio: 1.8) {
-    element {
-        orientation:             vertical;
-    }
+    background-color: transparent;
+    orientation: vertical;
+    spacing: 0;
+    padding: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    children: [ element-icon ];
 }
 
 element selected.normal {
-    background-color:            var(normal-foreground);
-    text-color:                  var(normal-background);
+    background-color: var(normal-foreground);
+    text-color: var(normal-background);
 }
 
 element-icon {
-    border-radius:				       20px;
-    margin:                      0;
-    padding:                     0;
-    size:                        26.5em;
+    background-color: @background-colour;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    size: 15em;
+    horizontal-align: 0.5;
 }

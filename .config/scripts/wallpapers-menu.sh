@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 wallpapers_dir="${HOME}/Pictures/Wallpapers"
-wallpapers=( $(find "${wallpapers_dir}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \)) )
+wallpapers=( $(find "${wallpapers_dir}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) | sort) )
 
 # Set some variables
 script_dir=$(dirname "$(realpath "$0")")
@@ -13,10 +13,10 @@ mkdir -p "${cache_dir}"
 input=""
 for wallpaper in "${wallpapers[@]}"; do
   filename=$(basename "${wallpaper}")
-  cache_file="${cache_dir}/${filename}"
+  cache_file="${cache_dir}/${filename%.*}.png"
   if [ ! -f "${cache_file}" ]; then
     echo "make cache for wallpaper ${wallpaper} -> $cache_file"
-    magick "${wallpaper}" -resize 500x500^ -gravity center -extent 500x500 "${cache_file}"
+    magick "${wallpaper}" -resize 200x200^ -gravity center -extent 200x200 +adjoin "${cache_file}"
   fi
 
   if [ ! -z "${input}" ]; then
@@ -26,7 +26,7 @@ for wallpaper in "${wallpapers[@]}"; do
 done
 
 rofi_cmd() {
-	rofi -i -show -dmenu -theme "$HOME/.config/rofi/wallpapers-menu.rasi" -sync
+	rofi -dmenu -i -p "Wallpaper" -show -theme "$HOME/.config/rofi/wallpapers-menu.rasi" -sync
 }
 
 wallpaper=$(echo -e "${input}" | rofi_cmd)

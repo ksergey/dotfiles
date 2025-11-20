@@ -113,6 +113,7 @@ polkit-gnome
 powertop
 pwgen
 python-mutagen
+python-virtualenv
 python-websockets
 qmk
 qt5-wayland

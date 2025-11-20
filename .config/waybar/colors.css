@@ -1,10 +1,10 @@
-@define-color background #0C0F0A;
-@define-color foreground #F6FDEE;
-@define-color cursor #8EAB82;
+@define-color background #0B0F0C;
+@define-color foreground #F4FDF2;
+@define-color cursor #86AC8A;
 @define-color urgent #FF7B6E;
 
-@define-color foreground-hover #8FAB83;
+@define-color foreground-hover #88AC8B;
 
-@define-color pacman #8EAB82;
-@define-color fruits #FFFBD8;
-@define-color ghost #BBCBB2;
+@define-color pacman #88AC8B;
+@define-color fruits #F5FFC5;
+@define-color ghost #ABD0AD;
