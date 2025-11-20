@@ -2,6 +2,8 @@
 
 Copy what you want
 
+`hyprland` input broken so `niri` FTW!
+
 ## Showcase
 
 ![fastfetch](.github/assets/screenshot_1.png)
@@ -88,11 +90,7 @@ Just copy everything into your home. For complete vim installation run inside vi
 
 # Switch colorschemes
 
-```sh
-matugen image $(swww query | sed 's/^.*image:\ //')
-# or
-walng --theme https://github.com/tinted-theming/schemes/raw/refs/heads/spec-0.11/base16/hardcore.yaml
-```
+see `.config/scripts/make-theme-rong.sh`
 
 # Theming
 
