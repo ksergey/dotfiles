@@ -2,15 +2,14 @@
 
 Copy what you want
 
-# Packages
+## Showcase
 
-```sh
-yay -S hyprland hyprlock hypridle wl-clipboard dunst waybar swww rofi kitty fish wev mpv yt-dlp \
-    cmus thunar thunar-volman gvfs htop pipewire pipewire-pulse pipewire-alsa alsa-utils \
-    ttf-harmonyos-sans ttf-jetbrains-mono ttf-jetbrains-mono-nerd iwd impala bluetui \
-    nvtop chafa fastfetch kernel-modules-hook downgrade wiremix-git xdg-desktop-portal-wlr \
-    xdg-desktop-portal-hyprland hyprshade imv matugen-git
-```
+![fastfetch](.github/assets/screenshot_1.png)
+![wallpapers menu](.github/assets/screenshot_2.png)
+![apps menu](.github/assets/screenshot_3.png)
+![ff+cava](.github/assets/screenshot_4.png)
+![wifi+bt](.github/assets/screenshot_5.png)
+
 
 ## AmneziaVPN
 
