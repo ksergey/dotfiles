@@ -146,8 +146,8 @@ layout {
 
     focus-ring {
         width 1
-        active-color "#E0E3DD"
-        inactive-color "#0B0F0C"
+        active-color "#ECDFE2"
+        inactive-color "#120D0F"
     }
 
     border {
@@ -198,17 +198,12 @@ window-rule {
     default-column-width { proportion 1.0; }
 }
 
-// window-rule {
-//     match at-startup=true
-//     match app-id="org.freecad.FreeCAD"
-//
-//     default-column-width { proportion 1.0; }
-// }
-
-// window-rule {
-//     match app-id="OrcaSlicer"
-//     default-column-width { proportion 1.0; }
-// }
+window-rule {
+    match app-id="mixer"
+    default-column-width { proportion 0.4; }
+    default-window-height { proportion 0.4; }
+    // open-floating true
+}
 
 window-rule {
     match title="Heroes of Might and Magic III: Horn of the Abyss"

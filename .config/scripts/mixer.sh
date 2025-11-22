@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
-kitty --override confirm_os_window_close=0 --class cli-tool -e wiremix
+kitty \
+  --override confirm_os_window_close=0 \
+  --override background_image=~/.config/kitty/music.png \
+  --class mixer \
+  -e wiremix

@@ -18,8 +18,8 @@
   "modules-right": [
     // "backlight",
     // "custom/separator",
-    // "wireplumber",
-    // "custom/separator",
+    "wireplumber",
+    "custom/separator",
     "bluetooth",
     "custom/separator",
     "network",
