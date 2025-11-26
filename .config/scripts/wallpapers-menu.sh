@@ -30,15 +30,20 @@ rofi_cmd() {
 }
 
 wallpaper=$(echo -e "${input}" | rofi_cmd)
-
 if [ ! -f "${wallpaper}" ]; then
   exit 1
 fi
 
-if command -v gowall &> /dev/null; then
-  wallpaper_gowall="${HOME}/.cache/wallpaper-gowall-processed.png"
-  # gowall convert "${wallpaper}" -t tokyo-dark --output "${wallpaper_gowall}"
-  # wallpaper="${wallpaper_gowall}"
+# if command -v gowall &> /dev/null; then
+#   wallpaper_gowall="${HOME}/.cache/wallpaper-gowall-processed.png"
+#   gowall convert "${wallpaper}" -t Everforest --output "${wallpaper_gowall}"
+#   wallpaper="${wallpaper_gowall}"
+# fi
+
+wallpaper_overview="${HOME}/.cache/wallpaper-overview.png"
+magick "${wallpaper}" -modulate 100,50 -filter Gaussian -resize 20% -blur 0x3.5 "${wallpaper_overview}"
+if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
+  swww img --namespace overview "${wallpaper_overview}"
 fi
 
 swww img \
@@ -48,14 +53,6 @@ swww img \
   --transition-fps 60 \
   --transition-duration 1 \
   "${wallpaper}"
-
-wallpaper_overview="${HOME}/.cache/wallpaper-overview.png"
-
-magick "${wallpaper}" -modulate 100,50 -filter Gaussian -resize 20% -blur 0x3.5 "${wallpaper_overview}"
-
-if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
-  swww img --namespace overview "${wallpaper_overview}"
-fi
 
 if [ -f "${script_dir}/make-theme-rong.sh" ]; then
   ${script_dir}/make-theme-rong.sh

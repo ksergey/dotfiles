@@ -19,7 +19,6 @@ nordic-darker-theme
 nordic-theme
 rong
 rose-pine-gtk-theme
-sddm-astronaut-theme
 sunsetr
 ttf-harmonyos-sans
 wallust

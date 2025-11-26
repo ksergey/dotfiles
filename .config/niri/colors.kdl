@@ -1,6 +1,6 @@
 layout {
     focus-ring {
-        active-color "#ECDFE2"
-        inactive-color "#120D0F"
+        active-color "#78ABB1"
+        inactive-color "#0A0F0F"
     }
 }

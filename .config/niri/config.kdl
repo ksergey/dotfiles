@@ -115,39 +115,35 @@ input {
 // -------------------------------------------------------------
 
 layout {
-    gaps 8
+    gaps 10
 
     struts {
-        left 8
-        right 8
-        top 8
-        bottom 8
+        left 10
+        right 10
+        top 10
+        bottom 10
     }
 
     background-color "transparent"
 
     center-focused-column "never"
 
-    always-center-single-column
-
     default-column-width { proportion 0.5; }
 
     preset-column-widths {
-        proportion 0.33333
         proportion 0.5
-        proportion 0.66667
+        proportion 1.0
     }
 
     preset-window-heights {
-        proportion 0.33333
         proportion 0.5
-        proportion 0.66667
+        proportion 1.0
     }
 
     focus-ring {
-        width 1
-        active-color "#ECDFE2"
-        inactive-color "#120D0F"
+        width 5
+        active-color "#78ABB1"
+        inactive-color "#0A0F0F"
     }
 
     border {
@@ -175,7 +171,7 @@ window-rule {
 
 window-rule {
     match is-active=false
-    opacity 0.95
+    // opacity 0.95
 }
 
 // -------------------------------------------------------------

@@ -5,12 +5,13 @@ end
 set -gx EDITOR vim
 set -gx VISUAL vim
 
-if test -f /usr/bin/lsd
-    alias ls "/usr/bin/lsd -l --group-directories-first -h "
-else
-    alias ls "/usr/bin/ls -l --group-directories-first --color=auto -h "
+if status is-interactive
+    if test $TMUX # could be "set -q TMUX"
+        alias fzf="fzf --tmux"
+    end
 end
 
+alias ls="/usr/bin/ls -l --group-directories-first --color=auto -h "
 alias grep='grep --color=auto'
 alias lsblk='lsblk -o name,mountpoint,label,size,uuid'
 alias ncdu='ncdu --color=dark'
