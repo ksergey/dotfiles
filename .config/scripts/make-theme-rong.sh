@@ -12,22 +12,6 @@ spawn() {
   esac
 }
 
-update_niri() {
-  local PATCH="${HOME}/.config/niri/colors.kdl"
-  local CONFIG="${HOME}/.config/niri/config.kdl"
-
-  if [ ! -f "${PATCH}" ] || [ ! -f "${CONFIG}" ]; then
-    echo "nothing to update"
-    return
-  fi
-
-  local ACTIVE_COLOR=$(sed -n 's/.*\ active-color\ \(.*\)/\1/p ' < "${PATCH}")
-  local INACTIVE_COLOR=$(sed -n 's/.*\ inactive-color\ \(.*\)/\1/p ' < "${PATCH}")
-
-  sed -i "s/\(^ *active-color\)\(.*\)$/\1 ${ACTIVE_COLOR}/" "${CONFIG}"
-  sed -i "s/\(^ *inactive-color\)\(.*\)$/\1 ${INACTIVE_COLOR}/" "${CONFIG}"
-}
-
 update_gtk() {
   gsettings set org.gnome.desktop.interface gtk-theme ""
   sleep 0.5s
@@ -48,9 +32,6 @@ post_hook() {
 
   # reload cava
   pidof cava | xargs -r kill -USR1
-
-  # niri
-  update_niri
 
   # gtk3
   update_gtk

@@ -142,8 +142,6 @@ layout {
 
     focus-ring {
         width 5
-        active-color "#78ABB1"
-        inactive-color "#0A0F0F"
     }
 
     border {
@@ -192,6 +190,7 @@ window-rule {
 window-rule {
     match app-id="firefox"
     default-column-width { proportion 1.0; }
+    // open-maximized-to-edges true
 }
 
 window-rule {
@@ -334,7 +333,7 @@ binds {
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
-    XF86FullScreen { fullscreen-window; } // Fn+Tab
+    XF86FullScreen { maximize-window-to-edges; } // Fn+Tab
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
@@ -357,9 +356,12 @@ gestures {
     }
 }
 
+recent-windows {
+    off
+}
+
 // -------------------------------------------------------------
 //  Colors
 // -------------------------------------------------------------
 
-// TODO: next version niri
-// include "colors.kdl"
+include "colors.kdl"

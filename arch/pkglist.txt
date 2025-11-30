@@ -104,6 +104,7 @@ openttd-opensfx
 orchis-theme
 otf-font-awesome
 papirus-icon-theme
+perf
 pipewire
 pipewire-alsa
 pipewire-pulse
