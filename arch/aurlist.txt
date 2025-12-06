@@ -20,7 +20,6 @@ rong
 rose-pine-gtk-theme
 sunsetr
 ttf-harmonyos-sans
-wallust
 walng
 whitesur-gtk-theme
 wiremix-git

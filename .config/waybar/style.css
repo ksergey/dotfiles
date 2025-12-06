@@ -1,5 +1,21 @@
 @import "colors.css";
 
+@define-color accent0-hover shade(@accent0, 1.2);
+@define-color accent1-hover shade(@accent1, 1.2);
+@define-color accent2-hover shade(@accent2, 1.2);
+@define-color accent3-hover shade(@accent3, 1.2);
+@define-color accent4-hover shade(@accent4, 1.2);
+@define-color accent5-hover shade(@accent5, 1.2);
+@define-color accent6-hover shade(@accent6, 1.2);
+
+@define-color accent0-active-bg shade(@accent0, 0.4);
+@define-color accent1-active-bg shade(@accent1, 0.4);
+@define-color accent2-active-bg shade(@accent2, 0.4);
+@define-color accent3-active-bg shade(@accent3, 0.4);
+@define-color accent4-active-bg shade(@accent4, 0.4);
+@define-color accent5-active-bg shade(@accent5, 0.4);
+@define-color accent6-active-bg shade(@accent6, 0.4);
+
 * {
   all: unset;
   padding: 0;
@@ -43,10 +59,6 @@ tooltip label {
   padding: 0.2rem 0.5rem;
 }
 
-window#waybar.battery-critical {
-  background: #993333;
-}
-
 #workspaces {
 }
 
@@ -54,7 +66,10 @@ window#waybar.battery-critical {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: @ghost;
+  color: @accent6;
+}
+#workspaces button:hover {
+  color: shade(@accent6, 1.1);
 }
 
 #workspace button:first-child {
@@ -66,19 +81,24 @@ window#waybar.battery-critical {
 }
 
 #workspaces button.empty {
-  color: @fruits;
+  color: @accent4;
+}
+#workspaces button.empty:hover {
+  color: shade(@accent4, 1.1);
 }
 
 #workspaces button.visible {
-  color: @fruits;
+  color: @accent4;
+}
+#workspaces button.visible:hover {
+  color: shade(@accent4, 1.1);
 }
 
 #workspaces button.active {
-  color: @pacman;
+  color: @accent2;
 }
-
-#workspaces button:hover {
-  color: @foreground-hover;
+#workspaces button.active:hover {
+  color: shade(@accent2, 1.1);
 }
 
 window#waybar.empty #window {
@@ -88,7 +108,6 @@ window#waybar.empty #window {
 #clock,
 #custom-vpn,
 #custom-powermenu,
-#custom-battery-extra,
 #custom-cliphist,
 #custom-cava,
 #wireplumber,
@@ -99,45 +118,61 @@ window#waybar.empty #window {
 #battery {
   border-radius: 4px;
   margin: 4px 0px;
-  color: @foreground;
 }
 
 #clock {
-  color: @matrix;
+  color: @foreground;
 }
 
-#clock:hover,
-#custom-vpn:hover,
-#custom-powermenu:hover,
-#custom-battery-extra:hover,
-#custom-cliphist:hover,
-#custom-cava:hover,
-#wireplumber:hover,
-#network:hover,
-#bluetooth:hover,
-#backlight:hover,
-#temperature:hover,
-#battery:hover {
-  color: @foreground-hover;
+#custom-vpn {
+  color: @accent5;
 }
-
+#custom-vpn:hover {
+  color: @accent5-hover;
+}
 #custom-vpn.up {
-  color: @fruits;
-  background: alpha(@fruits, 0.25);
+  background: @accent5-active-bg;
 }
-
 #custom-vpn.up:hover {
-  color: @foreground-hover;
-  background: alpha(@foreground-hover, 0.25);
+  color: shade(@accent5, 1.1);
 }
 
+#temperature {
+  color: shade(@accent6, 0.5);
+}
+#temperature.critical {
+  color: @accent2;
+  background: @accent2-active-bg;
+}
+
+#wireplumber {
+  color: @accent5;
+}
+#wireplumber:hover {
+  color: @accent5-hover;
+}
+
+#network {
+  color: @accent4;
+}
+#network:hover {
+  color: @accent4-hover;
+}
+
+#bluetooth {
+  color: @accent3;
+}
+#bluetooth:hover {
+  color: @accent3-hover;
+}
+
+#battery {
+  color: @accent6;
+}
 #battery.warning,
 #battery.critical {
   color: @urgent;
-}
-
-#custom-niri-windows-count {
-  color: alpha(@pacman, 0.5);
+  background: shade(@urgent, 0.4);
 }
 
 #custom-separator {
@@ -145,6 +180,23 @@ window#waybar.empty #window {
   padding: 0 0.1rem;
 }
 
-#temperature.critical {
-  color: @urgent;
+#custom-powermenu {
+  color: @accent0;
+}
+#custom-powermenu:hover {
+  color: @accent0-hover;
+}
+
+#custom-cava {
+  color: @accent3;
+}
+#custom-cava:hover {
+  color: @accent3-hover;
+}
+
+#custom-cliphist {
+  color: @accent4;
+}
+#custom-cliphist:hover {
+  color: @accent4-hover;
 }

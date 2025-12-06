@@ -1,7 +1,7 @@
 layout {
-    // Colors from /home/ksergey/Pictures/Wallpapers/wallhaven-k881zd.jpg
+    // Colors from /home/ksergey/Pictures/Wallpapers/1345266.png
     focus-ring {
-        active-gradient from="#D588D6cc" to="#FFF8F7cc"
+        active-gradient from="#DD9327cc" to="#FFF8F6cc"
         urgent-color "#FF7B6E"
     }
 }

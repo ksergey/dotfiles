@@ -1,12 +1,14 @@
-@define-color background #110D11;
-@define-color foreground #FFF9FA;
-@define-color cursor #BD97BA;
+@define-color background #120D08;
+@define-color foreground #FFFAF7;
+@define-color cursor #C59B69;
 @define-color urgent #FF7B6E;
 
-@define-color foreground-hover #BC97B9;
+@define-color foreground-hover #C49B6C;
 
-@define-color pacman #BD97BA;
-@define-color fruits #C139C8;
-@define-color ghost #FDECF9;
-
-@define-color matrix #8EB855;
+@define-color accent0 #FF8D3F;
+@define-color accent1 #B8AF00;
+@define-color accent2 #D7A300;
+@define-color accent3 #A4A2FF;
+@define-color accent4 #FF888B;
+@define-color accent5 #BEAD00;
+@define-color accent6 #FFFFFF;
