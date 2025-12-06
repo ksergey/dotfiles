@@ -1,6 +1,7 @@
 layout {
+    // Colors from /home/ksergey/Pictures/Wallpapers/wallhaven-k881zd.jpg
     focus-ring {
-        active-color "#C59B69"
-        inactive-color "#120D08"
+        active-gradient from="#D588D6cc" to="#FFF8F7cc"
+        urgent-color "#FF7B6E"
     }
 }

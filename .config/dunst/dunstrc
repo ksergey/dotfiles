@@ -31,7 +31,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = (20,20)
+    offset = (10,10)
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -303,16 +303,16 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#17130C"
-    foreground = "#ECE1D6"
-    frame_color = "#C59B69"
+    background = "#161216"
+    foreground = "#E9E0E5"
+    frame_color = "#BD97BA"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#17130C"
-    foreground = "#ECE1D6"
-    frame_color = "#C59B69"
+    background = "#161216"
+    foreground = "#E9E0E5"
+    frame_color = "#BD97BA"
     timeout = 6
     default_icon = dialog-information
 

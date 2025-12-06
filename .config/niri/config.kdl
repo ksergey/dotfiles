@@ -118,10 +118,10 @@ layout {
     gaps 10
 
     struts {
-        left 10
-        right 10
-        top 10
-        bottom 10
+        left 5
+        right 5
+        top 5
+        bottom 5
     }
 
     background-color "transparent"
@@ -141,7 +141,7 @@ layout {
     }
 
     focus-ring {
-        width 5
+        width 2
     }
 
     border {

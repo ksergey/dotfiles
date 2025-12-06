@@ -102,6 +102,10 @@ window#waybar.empty #window {
   color: @foreground;
 }
 
+#clock {
+  color: @matrix;
+}
+
 #clock:hover,
 #custom-vpn:hover,
 #custom-powermenu:hover,

@@ -13,7 +13,6 @@ gnu-netcat
 gowall
 graphite-gtk-theme-git
 gruvbox-dark-gtk
-matugen-git
 mpv-thumbfast-git
 nordic-darker-theme
 nordic-theme

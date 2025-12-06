@@ -1,6 +1,7 @@
 layout {
+    // Colors from {{ .Image }}
     focus-ring {
-        active-color "{{ .Primary }}"
-        inactive-color "{{ .Surface }}"
+        active-gradient from="{{ chroma .Primary 50 }}cc" to="{{ .Tertiary }}cc"
+        urgent-color "{{ .Error }}"
     }
 }
