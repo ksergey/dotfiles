@@ -1,14 +1,14 @@
-@define-color background #120D08;
-@define-color foreground #FFFAF7;
-@define-color cursor #C59B69;
+@define-color background #120D0F;
+@define-color foreground #FFF9F9;
+@define-color cursor #C894AD;
 @define-color urgent #FF7B6E;
 
-@define-color foreground-hover #C49B6C;
+@define-color foreground-hover #C695AC;
 
-@define-color accent0 #FF8D3F;
-@define-color accent1 #B8AF00;
-@define-color accent2 #D7A300;
-@define-color accent3 #A4A2FF;
-@define-color accent4 #FF888B;
-@define-color accent5 #BEAD00;
+@define-color accent0 #FF869E;
+@define-color accent1 #E29F00;
+@define-color accent2 #FF8B6B;
+@define-color accent3 #B19DFF;
+@define-color accent4 #FF7AE3;
+@define-color accent5 #DA8CFF;
 @define-color accent6 #FFFFFF;

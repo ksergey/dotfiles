@@ -5,38 +5,23 @@
 
   "modules-left": [
     "temperature",
-    "custom/separator",
     "custom/cliphist",
     "custom/cava"
   ],
 
   "modules-center": [
-    // "hyprland/workspaces"
     "niri/workspaces"
   ],
 
   "modules-right": [
     // "backlight",
-    // "custom/separator",
     "wireplumber",
-    "custom/separator",
     "bluetooth",
-    "custom/separator",
     "network",
     "custom/vpn",
-    "custom/separator",
     "battery",
-    "custom/separator",
-    "clock",
-    "custom/separator",
-    "custom/powermenu"
+    "clock"
   ],
-
-  "custom/separator": {
-    "format": "󰇙",
-    "interval": "once",
-    "tooltip": false
-  },
 
   "hyprland/workspaces": {
     "all-output": false,
@@ -101,11 +86,11 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󱐋 {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format": "{icon}",
+    "format-charging": "󱐋",
+    "format-plugged": "",
     "format-alt": "{icon} {time}",
-    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+    "format-icons": [ "", "", "", "", "" ],
     "tooltip-format": "{capacity}% {power}W\n{timeTo}"
   },
 
@@ -132,12 +117,12 @@
 
   "network": {
     "format": "󰤭",
-    "format-wifi": "{icon} {essid}",
+    "format-wifi": "{icon}",
     "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
     "format-ethernet": "",
     "format-disconnected": "󰤫",
     "tooltip": true,
-    "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
+    "tooltip-format": "Wireless: {essid} ({frequency}GHz)\nStrength: {signalStrengthApp}\n{ifname} {ipaddr}/{cidr} via {gwaddr}",
     "format-alt": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
     "on-click-right": "~/.config/scripts/wifi.sh"
   },

@@ -107,7 +107,6 @@ window#waybar.empty #window {
 
 #clock,
 #custom-vpn,
-#custom-powermenu,
 #custom-cliphist,
 #custom-cava,
 #wireplumber,
@@ -173,18 +172,6 @@ window#waybar.empty #window {
 #battery.critical {
   color: @urgent;
   background: shade(@urgent, 0.4);
-}
-
-#custom-separator {
-  color: alpha(@foreground, 0.5);
-  padding: 0 0.1rem;
-}
-
-#custom-powermenu {
-  color: @accent0;
-}
-#custom-powermenu:hover {
-  color: @accent0-hover;
 }
 
 #custom-cava {
