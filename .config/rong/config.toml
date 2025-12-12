@@ -6,7 +6,6 @@ version = "2025"
 
 [base16]
 method = "static"
-blend = 0.7
 
 [links]
 "kitty.conf" = "~/.config/kitty/colors.conf"

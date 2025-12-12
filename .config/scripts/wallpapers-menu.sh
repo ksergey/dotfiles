@@ -54,8 +54,10 @@ swww img \
   --transition-duration 1 \
   "${wallpaper}"
 
-if [ -f "${script_dir}/make-theme-rong.sh" ]; then
-  ${script_dir}/make-theme-rong.sh
-elif [ -f "${script_dir}/make-theme-matugen.sh" ]; then
-  ${script_dir}/make-theme-matugen.sh
-fi
+# if [ -f "${script_dir}/make-theme-wallust.sh" ]; then
+#   ${script_dir}/make-theme-wallust.sh
+# elif [ -f "${script_dir}/make-theme-rong.sh" ]; then
+#   ${script_dir}/make-theme-rong.sh
+# elif [ -f "${script_dir}/make-theme-matugen.sh" ]; then
+#   ${script_dir}/make-theme-matugen.sh
+# fi

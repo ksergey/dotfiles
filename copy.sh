@@ -23,6 +23,7 @@ ENTRIES=(
   "${HOME}/.config/walng"
   "${HOME}/.config/waybar"
   "${HOME}/.config/rong"
+  "${HOME}/.config/wallust"
   "${HOME}/.config/yt-dlp"
   "${HOME}/.config/mpv"
   "${HOME}/.config/scripts"

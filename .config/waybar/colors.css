@@ -1,14 +1,44 @@
-@define-color background #120D0F;
-@define-color foreground #FFF9F9;
-@define-color cursor #C894AD;
-@define-color urgent #FF7B6E;
+@define-color foreground #DCD7BA;
+@define-color background #1F1F28;
+@define-color cursor #DCD7BA;
 
-@define-color foreground-hover #C695AC;
+@define-color base #1F1F28;
+@define-color surface #101014;
+@define-color text #DCD7BA;
 
-@define-color accent0 #FF869E;
-@define-color accent1 #E29F00;
-@define-color accent2 #FF8B6B;
-@define-color accent3 #B19DFF;
-@define-color accent4 #FF7AE3;
-@define-color accent5 #DA8CFF;
-@define-color accent6 #FFFFFF;
+@define-color warning #D27072;
+@define-color critical #E82424;
+@define-color charging #98BB6C;
+
+/* Black */
+@define-color color0 #090618;
+/* Red */
+@define-color color1 #C34043;
+/* Green */
+@define-color color2 #76946A;
+/* Yellow */
+@define-color color3 #C0A36E;
+/* Blue */
+@define-color color4 #7E9CD8;
+/* Magenta */
+@define-color color5 #957FB8;
+/* Cyan */
+@define-color color6 #6A9589;
+/* White */
+@define-color color7 #C8C093;
+/* Black */
+@define-color color8 #727169;
+/* Light Red */
+@define-color color9 #E82424;
+/* Light Green */
+@define-color color10 #98BB6C;
+/* Light Yellow */
+@define-color color11 #E6C384;
+/* Light Blue */
+@define-color color12 #7FB4CA;
+/* Light Magenta */
+@define-color color13 #938AA9;
+/* Light Cyan */
+@define-color color14 #7AA89F;
+/* Light Black */
+@define-color color15 #DCD7BA;

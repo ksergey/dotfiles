@@ -1,8 +1,8 @@
 * {
-    background:     {{ background }};
-    background-alt: {{ color6 }};
-    foreground:     {{ foreground }};
-    selected:       {{ color7 }};
-    active:         {{ color0 }};
-    urgent:         {{ color7 }};
+    base: {{ background }};
+    highlight-medium: {{ background | lighten(0.1) }};
+    highlight-high: {{ background | lighten(0.2) }};
+    text: {{ foreground }};
+    muted: {{ foreground | darken(0.4) }};
+    warning: {{ color1 | saturate(0.5) }};
 }

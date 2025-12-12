@@ -1,13 +1,44 @@
-@define-color background {{ background }};
 @define-color foreground {{ foreground }};
+@define-color background {{ background }};
 @define-color cursor {{ cursor }};
 
-@define-color accent1 {{ color9 | blend("#ef233c") | lighten(0.4) }};
-@define-color accent2 {{ color10 }};
-@define-color accent3 {{ color11 }};
-@define-color accent4 {{ color12 }};
-@define-color accent5 {{ color13 }};
+@define-color base {{ background }};
+@define-color surface {{ background | darken(0.5) }};
+@define-color text {{ foreground }};
 
-@define-color fruits {{ foreground | blend("#8338ec") }};
-@define-color pacman {{ foreground | blend("#ffd60a") }};
-@define-color ghost {{ foreground | blend("#eeeeee") }};
+@define-color warning {{ color1 | lighten(0.25) }};
+@define-color critical {{ color9 }};
+@define-color charging {{ color10 }};
+
+/* Black */
+@define-color color0 {{ color0 }};
+/* Red */
+@define-color color1 {{ color1 }};
+/* Green */
+@define-color color2 {{ color2 }};
+/* Yellow */
+@define-color color3 {{ color3 }};
+/* Blue */
+@define-color color4 {{ color4 }};
+/* Magenta */
+@define-color color5 {{ color5 }};
+/* Cyan */
+@define-color color6 {{ color6 }};
+/* White */
+@define-color color7 {{ color7 }};
+/* Black */
+@define-color color8 {{ color8 }};
+/* Light Red */
+@define-color color9 {{ color9 }};
+/* Light Green */
+@define-color color10 {{ color10 }};
+/* Light Yellow */
+@define-color color11 {{ color11 }};
+/* Light Blue */
+@define-color color12 {{ color12 }};
+/* Light Magenta */
+@define-color color13 {{ color13 }};
+/* Light Cyan */
+@define-color color14 {{ color14 }};
+/* Light Black */
+@define-color color15 {{ color15 }};

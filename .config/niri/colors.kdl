@@ -1,7 +1,6 @@
 layout {
-    // Colors from /home/ksergey/Pictures/Wallpapers/deer_and_sunset.jpg
     focus-ring {
-        active-gradient from="#E683B9cc" to="#F8E0FFcc"
-        urgent-color "#FF7B6E"
+        active-gradient from="#C0A36Ecc" to="#C34043cc"
+        urgent-color "#6E6C5D"
     }
 }

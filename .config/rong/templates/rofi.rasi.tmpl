@@ -1,8 +1,17 @@
 * {
-    background:     {{ .Background }};
-    background-alt: {{ .Surface }};
-    foreground:     {{ .OnBackground }};
-    selected:       {{ .Primary }};
-    active:         {{ .Primary }};
-    urgent:         {{ .Error }};
+    base: {{ .Background }};
+    surface: {{ tone .Background 0.2 }};
+    overlay: {{ tone .Background 0.4 }};
+    muted: {{ tone .OnBackground 0.4 }};
+    subtle: {{ tone .OnBackground 0.2 }};
+    text: {{ .OnBackground }};
+    love: {{ chroma .Color1 50 }};
+    gold: {{ chroma .Color3 50 }};
+    rose: {{ chroma .Color6 50 }};
+    pine: {{ chroma .Color2 50 }};
+    foam: {{ chroma .Color4 50 }};
+    iris: {{ chroma .Color5 50 }};
+    highlight-low: {{ .Color0 }};
+    highlight-med: {{ tone .Color0 0.4 }};
+    highlight-high: {{ .Color8 }};
 }

@@ -96,7 +96,7 @@
 
   "custom/battery-extra": {
     "tooltip": true,
-    "tooltip-format": "battery degradation",
+    "tooltip-format": "Battery degradation",
     "format": " {}%",
     "interval": "once",
     "return-type": "json",
@@ -104,7 +104,8 @@
   },
 
   "custom/vpn": {
-    "tooltip": false,
+    "tooltip": true,
+    "tooltip-format": "Toggle VPN",
     "format": "{icon}",
     "format-icons": {
       "up": "󰯄",
@@ -177,5 +178,5 @@
       ""  // Icon: temperature-full
     ],
     "tooltip": true
-  }
+  },
 }

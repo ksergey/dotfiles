@@ -1,0 +1,6 @@
+layout {
+    focus-ring {
+        active-gradient from="{{ color3 }}cc" to="{{ color1 }}cc"
+        urgent-color "{{ foreground | darken(0.5) }}"
+    }
+}

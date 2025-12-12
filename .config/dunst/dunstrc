@@ -261,18 +261,6 @@
     # Set this to true to use X11 output on Wayland.
     force_xwayland = false
 
-    ### Legacy
-
-    # Use the Xinerama extension instead of RandR for multi-monitor support.
-    # This setting is provided for compatibility with older nVidia drivers that
-    # do not support RandR and using it on systems that support RandR is highly
-    # discouraged.
-    #
-    # By enabling this setting dunst will not be able to detect when a monitor
-    # is connected or disconnected which might break follow mode if the screen
-    # layout changes.
-    force_xinerama = false
-
     ### mouse
 
     # Defines list of actions for each mouse event
@@ -292,33 +280,23 @@
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
 
-# Experimental features that may or may not work correctly. Do not expect them
-# to have a consistent behaviour across releases.
-[experimental]
-    # Calculate the dpi to use on a per-monitor basis.
-    # If this setting is enabled the Xft.dpi value will be ignored and instead
-    # dunst will attempt to calculate an appropriate dpi value for each monitor
-    # using the resolution and physical size. This might be useful in setups
-    # where there are multiple screens with very different dpi values.
-    per_monitor_dpi = false
-
 [urgency_low]
-    background = "#171214"
-    foreground = "#EBDFE3"
-    frame_color = "#C894AD"
+    background = "#1F1F28"
+    foreground = "#DCD7BA"
+    frame_color = "#A5A18C"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#171214"
-    foreground = "#EBDFE3"
-    frame_color = "#C894AD"
+    background = "#1F1F28"
+    foreground = "#DCD7BA"
+    frame_color = "#A5A18C"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#FF7B6E"
-    foreground = "#A4020D"
-    frame_color = "#FF7B6E"
+    background = "#1F1F28"
+    foreground = "#D08C7E"
+    frame_color = "#D08C7E"
     timeout = 0
     default_icon = dialog-warning

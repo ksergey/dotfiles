@@ -12,36 +12,10 @@ configuration {
     font: "JetBrainsMono Nerd Font 10";
 }
 
-* {
-    border-colour: var(selected);
-    handle-colour: var(foreground);
-    background-colour: var(background);
-    foreground-colour: var(foreground);
-    alternate-background: var(background-alt);
-    normal-background: var(background);
-    normal-foreground: var(foreground);
-    urgent-background: var(urgent);
-    urgent-foreground: var(background);
-    active-background: var(active);
-    active-foreground: var(background);
-    selected-normal-background: var(selected);
-    selected-normal-foreground: var(background);
-    selected-urgent-background: var(active);
-    selected-urgent-foreground: var(background);
-    selected-active-background: var(urgent);
-    selected-active-foreground: var(background);
-    alternate-normal-background: var(background);
-    alternate-normal-foreground: var(foreground);
-    alternate-urgent-background: var(urgent);
-    alternate-urgent-foreground: var(background);
-    alternate-active-background: var(active);
-    alternate-active-foreground: var(background);
-}
-
 window {
-    background-color: @background-colour;
+    background-color: @base;
     border: 1px solid;
-    border-color: @border-colour;
+    border-color: @highlight-high;
     width: 75%;
 }
 
@@ -63,19 +37,19 @@ element {
     background-color: transparent;
     orientation: vertical;
     spacing: 0;
-    padding: 1px;
+    padding: 8px;
     border-radius: 20px;
     cursor: pointer;
     children: [ element-icon ];
 }
 
 element selected.normal {
-    background-color: var(normal-foreground);
-    text-color: var(normal-background);
+    background-color: @highlight-medium;
+    text-color: @text;
 }
 
 element-icon {
-    background-color: @background-colour;
+    background-color: @base;
     border-radius: 20px;
     margin: 0;
     padding: 0;

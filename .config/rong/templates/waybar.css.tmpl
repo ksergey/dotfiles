@@ -1,14 +1,16 @@
-@define-color background {{ .Surface }};
-@define-color foreground {{ .OnSurface }};
-@define-color cursor {{ .Primary }};
-@define-color urgent {{ .Error }};
-
-@define-color foreground-hover {{ chroma .Primary 25 }};
-
-@define-color accent0 {{ .Color9 }};
-@define-color accent1 {{ .ColorA }};
-@define-color accent2 {{ .ColorB }};
-@define-color accent3 {{ .ColorC }};
-@define-color accent4 {{ .ColorD }};
-@define-color accent5 {{ .ColorE }};
-@define-color accent6 {{ .ColorF }};
+/* Rose Pine like palette */
+@define-color base {{ .Background }};
+@define-color surface {{ tone .Background 0.2 }};
+@define-color overlay {{ tone .Background 0.4 }};
+@define-color muted {{ tone .OnBackground 0.4 }};
+@define-color subtle {{ tone .OnBackground 0.2 }};
+@define-color text {{ .OnBackground }};
+@define-color love {{ .Color1 }};
+@define-color gold {{ .Color3 }};
+@define-color rose {{ .Color6 }};
+@define-color pine {{ .Color2 }};
+@define-color foam {{ .Color4 }};
+@define-color iris {{ .Color5 }};
+@define-color highlight-low {{ .Color0 }};
+@define-color highlight-med {{ tone .Color0 0.4 }};
+@define-color highlight-high {{ .Color8 }};

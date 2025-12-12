@@ -13,6 +13,7 @@ gnu-netcat
 gowall
 graphite-gtk-theme-git
 gruvbox-dark-gtk
+kew
 mpv-thumbfast-git
 nordic-darker-theme
 nordic-theme
@@ -20,6 +21,7 @@ rong
 rose-pine-gtk-theme
 sunsetr
 ttf-harmonyos-sans
+wallust
 walng
 whitesur-gtk-theme
 wiremix-git

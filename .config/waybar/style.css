@@ -1,21 +1,5 @@
 @import "colors.css";
 
-@define-color accent0-hover shade(@accent0, 1.2);
-@define-color accent1-hover shade(@accent1, 1.2);
-@define-color accent2-hover shade(@accent2, 1.2);
-@define-color accent3-hover shade(@accent3, 1.2);
-@define-color accent4-hover shade(@accent4, 1.2);
-@define-color accent5-hover shade(@accent5, 1.2);
-@define-color accent6-hover shade(@accent6, 1.2);
-
-@define-color accent0-active-bg shade(@accent0, 0.4);
-@define-color accent1-active-bg shade(@accent1, 0.4);
-@define-color accent2-active-bg shade(@accent2, 0.4);
-@define-color accent3-active-bg shade(@accent3, 0.4);
-@define-color accent4-active-bg shade(@accent4, 0.4);
-@define-color accent5-active-bg shade(@accent5, 0.4);
-@define-color accent6-active-bg shade(@accent6, 0.4);
-
 * {
   all: unset;
   padding: 0;
@@ -25,13 +9,11 @@
   font-size: 12px;
 }
 
-#window {
-  background: @background;
-}
+#window {}
 
 window#waybar {
-  background: @background;
-  color: @foreground;
+  background: alpha(@base, 0.75);
+  color: @text;
   transition: all 0.3s ease-in-out;
 }
 
@@ -49,27 +31,22 @@ window#waybar {
 }
 
 tooltip {
-  background: @background;
-  border-radius: 4px;
-  border: 1px solid darker(@foreground);
+  background: @base;
+  border: 1px solid @text;
 }
 
 tooltip label {
-  color: @foreground;
+  color: @text;
   padding: 0.2rem 0.5rem;
 }
 
-#workspaces {
-}
+#workspaces {}
 
 #workspaces button {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: @accent6;
-}
-#workspaces button:hover {
-  color: shade(@accent6, 1.1);
+  color: @text;
 }
 
 #workspace button:first-child {
@@ -81,24 +58,15 @@ tooltip label {
 }
 
 #workspaces button.empty {
-  color: @accent4;
-}
-#workspaces button.empty:hover {
-  color: shade(@accent4, 1.1);
+  color: @color13;
 }
 
 #workspaces button.visible {
-  color: @accent4;
-}
-#workspaces button.visible:hover {
-  color: shade(@accent4, 1.1);
+  color: @color11;
 }
 
 #workspaces button.active {
-  color: @accent2;
-}
-#workspaces button.active:hover {
-  color: shade(@accent2, 1.1);
+  color: @color11;
 }
 
 window#waybar.empty #window {
@@ -116,74 +84,56 @@ window#waybar.empty #window {
 #temperature,
 #battery {
   border-radius: 4px;
-  margin: 4px 0px;
-}
-
-#clock {
-  color: @foreground;
-}
-
-#custom-vpn {
-  color: @accent5;
-}
-#custom-vpn:hover {
-  color: @accent5-hover;
-}
-#custom-vpn.up {
-  background: @accent5-active-bg;
-}
-#custom-vpn.up:hover {
-  color: shade(@accent5, 1.1);
-}
-
-#temperature {
-  color: shade(@accent6, 0.5);
-}
-#temperature.critical {
-  color: @accent2;
-  background: @accent2-active-bg;
+  margin: 4px 1px;
+  background: @surface;
 }
 
 #wireplumber {
-  color: @accent5;
-}
-#wireplumber:hover {
-  color: @accent5-hover;
-}
-
-#network {
-  color: @accent4;
-}
-#network:hover {
-  color: @accent4-hover;
+  color: @color11;
 }
 
 #bluetooth {
-  color: @accent3;
+  color: @color13;
 }
-#bluetooth:hover {
-  color: @accent3-hover;
+
+#network {
+  color: @color14;
+}
+
+#custom-vpn {
+  color: @color9;
+}
+#custom-vpn.up {
+  background: shade(@color9, 0.4);
 }
 
 #battery {
-  color: @accent6;
+  color: @text;
 }
-#battery.warning,
+#battery.warning {
+  color: @warning;
+}
 #battery.critical {
-  color: @urgent;
-  background: shade(@urgent, 0.4);
+  color: @critical;
+  background: shade(@critical, 0.4);
+}
+
+#clock {
+  color: shade(@color13, 1.2);
+}
+
+#temperature {
+  color: shade(@color14, 1.2);
+}
+#temperature.critical {
+  color: @warning;
+  background: shade(@warning, 0.4);
 }
 
 #custom-cava {
-  color: @accent3;
-}
-#custom-cava:hover {
-  color: @accent3-hover;
+  color: shade(@color4, 1.2);
 }
 
 #custom-cliphist {
-  color: @accent4;
-}
-#custom-cliphist:hover {
-  color: @accent4-hover;
+  color: shade(@color4, 1.2);
 }
