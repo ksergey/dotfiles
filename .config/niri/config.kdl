@@ -6,8 +6,8 @@ spawn-at-startup "waybar"
 spawn-at-startup "dunst"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww-daemon" "--namespace" "overview"
-spawn-at-startup "wl-paste" "--type" "text" "--watch" "store"
-spawn-at-startup "wl-paste" "--type" "image" "--watch" "store"
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
 spawn-at-startup "hypridle" "-q"
 spawn-at-startup "sunsetr"
 
@@ -185,6 +185,11 @@ window-rule {
     default-floating-position x=32 y=32 relative-to="bottom-right"
     default-column-width { proportion 0.4; }
     default-window-height { proportion 0.4; }
+}
+
+window-rule {
+    match app-id="youtube"
+    default-column-width { proportion 1.0; }
 }
 
 window-rule {

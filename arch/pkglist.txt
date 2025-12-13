@@ -170,6 +170,7 @@ xdg-desktop-portal-wlr
 xwayland-satellite
 yazi
 yt-dlp
+yt-dlp-ejs
 zathura
 zathura-cb
 zathura-djvu

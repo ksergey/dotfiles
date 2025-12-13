@@ -5,6 +5,7 @@
 @define-color base {{ background }};
 @define-color surface {{ background | darken(0.5) }};
 @define-color text {{ foreground }};
+@define-color muted {{ foreground | darken(0.5) }};
 
 @define-color warning {{ color1 | lighten(0.25) }};
 @define-color critical {{ color9 }};

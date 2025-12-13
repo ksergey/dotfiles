@@ -76,6 +76,7 @@ window#waybar.empty #window {
 #clock,
 #custom-vpn,
 #custom-cliphist,
+#custom-youtube,
 #custom-cava,
 #wireplumber,
 #network,
@@ -85,6 +86,18 @@ window#waybar.empty #window {
 #battery {
   border-radius: 4px;
   margin: 4px 1px;
+  background: alpha(@surface, 0.25);
+}
+
+#custom-vpn:hover,
+#custom-cliphist:hover,
+#custom-youtube:hover,
+#custom-cava:hover,
+#wireplumber:hover,
+#network:hover,
+#bluetooth:hover,
+#backlight:hover,
+#battery:hover {
   background: @surface;
 }
 
@@ -130,10 +143,17 @@ window#waybar.empty #window {
   background: shade(@warning, 0.4);
 }
 
-#custom-cava {
+#custom-cliphist {
   color: shade(@color4, 1.2);
 }
 
-#custom-cliphist {
-  color: shade(@color4, 1.2);
+#custom-youtube {
+  color: shade(@muted, 1.2);
+}
+#custom-youtube.ready {
+  color: shade(@color9, 1.2);
+}
+
+#custom-cava {
+  color: shade(@color15, 1.2);
 }

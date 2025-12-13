@@ -6,6 +6,7 @@
   "modules-left": [
     "temperature",
     "custom/cliphist",
+    "custom/youtube",
     "custom/cava"
   ],
 
@@ -118,7 +119,7 @@
 
   "network": {
     "format": "󰤭",
-    "format-wifi": "{icon}",
+    "format-wifi": "{icon} {essid}",
     "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
     "format-ethernet": "",
     "format-disconnected": "󰤫",
@@ -159,10 +160,19 @@
     "tooltip": true
   },
 
+  "custom/youtube": {
+    "tooltip": true,
+    "tooltip-format": "{text}",
+    "format": "",
+    "return-type": "json",
+    "on-click": "~/.config/waybar/scripts/youtube-clipboard.sh launch",
+    "exec": "~/.config/waybar/scripts/youtube-clipboard.sh watch"
+  },
+
   "custom/cava": {
     "format": "󰺢",
-    "tooltip-format": "launch cava",
-    "on-click": "niri msg action spawn -- kitty --title cava --app-id cava cava && sleep 0.3 && niri msg action consume-or-expel-window-left && niri msg action set-window-height '12%'",
+    "tooltip-format": "Launch cava",
+    "on-click": "niri msg action spawn -- ~/.config/scripts/cava.sh && sleep 0.3 && niri msg action consume-or-expel-window-left && niri msg action set-window-height '12%'",
     "tooltip": true
   },
 

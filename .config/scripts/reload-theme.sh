@@ -32,7 +32,7 @@ post_hook() {
   pidof cava | xargs -r kill -USR1
 
   # gtk3
-  update_gtk
+  # update_gtk
 
   # waybar
   pidof waybar | xargs -r kill -USR2

@@ -1,6 +1,10 @@
+[output]
+mode = 'noncurses'
+orientation = bottom
+
 [color]
 background = 'default'
 
 gradient = 1
-gradient_color_1 = '#DCD7BA'
-gradient_color_2 = '#C34043'
+gradient_color_1 = '#C8C093'
+gradient_color_2 = '#DCD7BA'
