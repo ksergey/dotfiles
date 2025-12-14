@@ -8,3 +8,8 @@ background = 'default'
 gradient = 1
 gradient_color_1 = '#C8C093'
 gradient_color_2 = '#DCD7BA'
+
+# gradient_color_1 = '#957FB8'
+# gradient_color_2 = '#7E9CD8'
+# gradient_color_3 = '#C0A36E'
+# gradient_color_4 = '#C34043'

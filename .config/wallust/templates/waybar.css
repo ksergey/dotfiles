@@ -3,7 +3,7 @@
 @define-color cursor {{ cursor }};
 
 @define-color base {{ background }};
-@define-color surface {{ background | darken(0.5) }};
+@define-color surface {{ background | darken(0.2) }};
 @define-color text {{ foreground }};
 @define-color muted {{ foreground | darken(0.5) }};
 

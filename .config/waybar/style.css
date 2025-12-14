@@ -12,7 +12,7 @@
 #window {}
 
 window#waybar {
-  background: alpha(@base, 0.75);
+  background: alpha(@base, 0.5);
   color: @text;
   transition: all 0.3s ease-in-out;
 }
@@ -76,6 +76,7 @@ window#waybar.empty #window {
 #clock,
 #custom-vpn,
 #custom-cliphist,
+#custom-music,
 #custom-youtube,
 #custom-cava,
 #wireplumber,
@@ -86,7 +87,7 @@ window#waybar.empty #window {
 #battery {
   border-radius: 4px;
   margin: 4px 1px;
-  background: alpha(@surface, 0.25);
+  background: @surface;
 }
 
 #custom-vpn:hover,
@@ -114,10 +115,10 @@ window#waybar.empty #window {
 }
 
 #custom-vpn {
-  color: @color9;
+  color: @color12;
 }
 #custom-vpn.up {
-  background: shade(@color9, 0.4);
+  background: shade(@color12, 0.4);
 }
 
 #battery {
@@ -145,6 +146,10 @@ window#waybar.empty #window {
 
 #custom-cliphist {
   color: shade(@color4, 1.2);
+}
+
+#custom-music {
+  color: shade(@color13, 1.2);
 }
 
 #custom-youtube {

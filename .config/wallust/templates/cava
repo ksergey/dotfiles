@@ -8,3 +8,8 @@ background = 'default'
 gradient = 1
 gradient_color_1 = '{{ color7 }}'
 gradient_color_2 = '{{ color15 }}'
+
+# gradient_color_1 = '{{ color5 }}'
+# gradient_color_2 = '{{ color4 }}'
+# gradient_color_3 = '{{ color3 }}'
+# gradient_color_4 = '{{ color1 }}'
