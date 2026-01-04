@@ -27,11 +27,13 @@ ctags
 cups
 cups-pdf
 cutefish-icons
+dhclient
 dosfstools
 dunst
 efibootmgr
 esptool
 ethtool
+exfatprogs
 f3d
 fastfetch
 ffmpegthumbnailer
@@ -89,8 +91,10 @@ man-pages
 mc
 mesa-utils
 meson
+minidlna
 mpv
 ncdu
+net-tools
 ninja
 niri
 nm-connection-editor
@@ -137,6 +141,7 @@ strace
 swww
 systemd-resolvconf
 tcpdump
+tela-circle-icon-theme-nord
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin

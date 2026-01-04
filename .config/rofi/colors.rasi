@@ -1,8 +1,8 @@
 * {
-    base: #1F1F28;
-    highlight-medium: #35353E;
-    highlight-high: #4C4C53;
-    text: #DCD7BA;
-    muted: #848170;
-    warning: #C32024;
+    base: #2E3440;
+    highlight-medium: #434853;
+    highlight-high: #585D66;
+    text: #D8DEE9;
+    muted: #82858C;
+    warning: #BF313E;
 }

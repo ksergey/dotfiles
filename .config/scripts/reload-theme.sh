@@ -41,6 +41,11 @@ post_hook() {
   update_dunst
 }
 
+theme="$1"
+if [ ! -z "${theme}" ]; then
+  wallust theme ${theme}
+fi
+
 post_hook
 
 notify-send 'Theme applied'

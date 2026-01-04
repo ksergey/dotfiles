@@ -1,6 +1,13 @@
 layout {
     focus-ring {
-        active-gradient from="{{ color3 }}cc" to="{{ color1 }}cc"
+        active-gradient from="{{ color3 }}99" to="{{ color6 }}99"
         urgent-color "{{ foreground | darken(0.5) }}"
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "{{ color3 }}99"
+        urgent-color "{{ color5 }}99"
     }
 }

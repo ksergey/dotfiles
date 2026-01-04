@@ -6,7 +6,6 @@
   "modules-left": [
     "temperature",
     "custom/cliphist",
-    "custom/music",
     "custom/youtube",
     "custom/cava"
   ],
@@ -126,8 +125,7 @@
     "format-disconnected": "󰤫",
     "tooltip": true,
     "tooltip-format": "Wireless: {essid} ({frequency}GHz)\nStrength: {signalStrengthApp}\n{ifname} {ipaddr}/{cidr} via {gwaddr}",
-    "format-alt": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
-    "on-click-right": "~/.config/scripts/wifi.sh"
+    "on-click": "~/.config/scripts/wifi.sh"
   },
 
   "bluetooth": {
@@ -158,13 +156,6 @@
     "on-click": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh",
     "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh d",
     "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist-menu.sh w",
-    "tooltip": true
-  },
-
-  "custom/music": {
-    "format": "󰲸",
-    "tooltip-format": "Youtube music menu",
-    "on-click": "sleep 0.1 && ~/.config/scripts/youtube-menu.sh",
     "tooltip": true
   },
 

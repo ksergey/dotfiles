@@ -115,13 +115,13 @@ input {
 // -------------------------------------------------------------
 
 layout {
-    gaps 10
+    gaps 6
 
     struts {
-        left 5
-        right 5
-        top 5
-        bottom 5
+        left 0
+        right 0
+        top 0
+        bottom 0
     }
 
     background-color "transparent"
@@ -131,7 +131,9 @@ layout {
     default-column-width { proportion 0.5; }
 
     preset-column-widths {
+        proportion 0.33333334
         proportion 0.5
+        proportion 0.66666666
         proportion 1.0
     }
 
@@ -211,7 +213,7 @@ window-rule {
 
 window-rule {
     match title="Heroes of Might and Magic III: Horn of the Abyss"
-    open-on-workspace "3"
+    open-on-workspace "5"
     open-focused false
 }
 
@@ -265,6 +267,7 @@ binds {
     Mod+0 hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar; exec waybar"; }
     Mod+N hotkey-overlay-title="Wallpaper menu" { spawn-sh "~/.config/scripts/wallpapers-menu.sh"; }
     Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/scripts/cliphist-menu.sh"; }
+    Mod+Y hotkey-overlay-title="Youtube Misoc" { spawn-sh "$HOME/.config/scripts/youtube-menu.sh"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Power menu" { spawn-sh "$HOME/.config/scripts/power-menu.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
@@ -366,7 +369,25 @@ gestures {
 }
 
 recent-windows {
-    off
+    // off
+
+    debounce-ms 500
+    open-delay-ms 50
+
+    highlight {
+        padding 30
+        corner-radius 10
+    }
+
+    previews {
+        max-height 480
+        max-scale 0.5
+    }
+
+    binds {
+        Mod+Tab         { next-window; }
+        Mod+Shift+Tab   { previous-window; }
+    }
 }
 
 // -------------------------------------------------------------

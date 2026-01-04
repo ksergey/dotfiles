@@ -76,7 +76,6 @@ window#waybar.empty #window {
 #clock,
 #custom-vpn,
 #custom-cliphist,
-#custom-music,
 #custom-youtube,
 #custom-cava,
 #wireplumber,
@@ -146,10 +145,6 @@ window#waybar.empty #window {
 
 #custom-cliphist {
   color: shade(@color4, 1.2);
-}
-
-#custom-music {
-  color: shade(@color13, 1.2);
 }
 
 #custom-youtube {
