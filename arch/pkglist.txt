@@ -69,6 +69,7 @@ imv
 inetutils
 iwd
 jq
+jre-openjdk-headless
 kernel-modules-hook
 kitty
 kvantum
@@ -163,11 +164,13 @@ valgrind
 vim
 vulkan-radeon
 vulkan-tools
+wavemon
 waybar
 webkit2gtk-4.1
 wev
 wf-recorder
 woff2-font-awesome
+wpa_supplicant
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
