@@ -1,8 +1,8 @@
 * {
     base: {{ .Background }};
-    highlight-medium: {{ tone .Background 0.1 }};
-    highlight-high: {{ tone .Background 0.2 }};
+    highlight-medium: {{ tone .Background 30 }};
+    highlight-high: {{ tone .Background 60 }};
     text: {{ .OnBackground }};
-    muted: {{ tone .OnBackground 0.4 }};
+    muted: {{ tone .OnBackground 10 }};
     warning: {{ chroma .Color1 50 }};
 }

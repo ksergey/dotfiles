@@ -5,7 +5,7 @@ variant = "tonal_spot"
 version = "2025"
 
 [base16]
-blend = 0.5
+blend = 0.1
 method = "static"
 
 [links]

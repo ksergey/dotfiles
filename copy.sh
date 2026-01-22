@@ -37,6 +37,8 @@ ENTRIES=(
   "${HOME}/.config/gtk-3.0"
   "${HOME}/.config/gtk-4.0"
   "${HOME}/.config/sunsetr/sunsetr.toml"
+  "${HOME}/.config/nvim/init.lua"
+  "${HOME}/.config/nvim/lua"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
   "/etc/systemd/logind.conf"

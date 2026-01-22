@@ -18,6 +18,7 @@ btop
 capitaine-cursors
 cava
 chafa
+chawan
 chromium
 clang
 cliphist
@@ -89,12 +90,14 @@ linux-headers
 ly
 man-db
 man-pages
+materia-gtk-theme
 mc
 mesa-utils
 meson
 minidlna
 mpv
 ncdu
+neovim
 net-tools
 ninja
 niri
@@ -147,7 +150,6 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
-tlp
 tmux
 tree
 ttf-0xproto-nerd

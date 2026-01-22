@@ -1,5 +1,6 @@
 amneziawg-go
 amneziawg-tools
+auto-cpufreq
 bibata-cursor-theme
 catppuccin-gtk-theme-mocha
 chroma-visualizer-git
@@ -7,7 +8,6 @@ cmatrix-git
 downgrade
 dracula-gtk-theme
 gnu-netcat
-gowall
 gruvbox-dark-gtk
 mpv-thumbfast-git
 nordic-bluish-accent-theme
@@ -18,8 +18,10 @@ rose-pine-gtk-theme
 sunsetr
 tokyonight-gtk-theme-git
 ttf-harmonyos-sans
+vimix-gtk-themes
 wallust
 walng
 whitesur-gtk-theme
+winbox
 wiremix-git
 yay

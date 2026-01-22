@@ -281,22 +281,22 @@
     mouse_right_click = close_all
 
 [urgency_low]
-    background = "#2E3440"
-    foreground = "#D8DEE9"
-    frame_color = "#A2A7AF"
+    background = "#282A36"
+    foreground = "#F8F8F2"
+    frame_color = "#BABAB6"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#2E3440"
-    foreground = "#D8DEE9"
-    frame_color = "#A2A7AF"
+    background = "#282A36"
+    foreground = "#F8F8F2"
+    frame_color = "#BABAB6"
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#2E3440"
-    foreground = "#CCA0AA"
-    frame_color = "#CCA0AA"
+    background = "#282A36"
+    foreground = "#EFA09D"
+    frame_color = "#EFA09D"
     timeout = 0
     default_icon = dialog-warning

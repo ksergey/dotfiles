@@ -171,7 +171,7 @@ window-rule {
 
 window-rule {
     match is-active=false
-    // opacity 0.95
+    opacity 0.80
 }
 
 // -------------------------------------------------------------
@@ -201,7 +201,16 @@ window-rule {
 window-rule {
     match app-id="firefox"
     default-column-width { proportion 1.0; }
-    // open-maximized-to-edges true
+}
+
+window-rule {
+    match app-id="kitty"
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="thunar"
+    default-column-width { proportion 1.0; }
 }
 
 window-rule {
@@ -223,19 +232,16 @@ window-rule {
 
 layer-rule {
     match namespace="^wallpaper$"
-
     place-within-backdrop true
 }
 
 layer-rule {
     match namespace="^swww-daemonoverview$"
-
     place-within-backdrop true
 }
 
 layer-rule {
     match namespace="rofi"
-
     shadow {
         on
         softness 1
@@ -248,7 +254,6 @@ layer-rule {
 layer-rule {
     match namespace="waybar"
     match at-startup=true
-
     shadow {
         off
     }

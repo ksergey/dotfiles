@@ -6,10 +6,10 @@ orientation = bottom
 background = 'default'
 
 gradient = 1
-gradient_color_1 = '#E5E9F0'
-gradient_color_2 = '#ECEFF4'
+gradient_color_1 = '#F8F8F2'
+gradient_color_2 = '#F9F9FB'
 
-# gradient_color_1 = '#B48EAD'
-# gradient_color_2 = '#81A1C1'
-# gradient_color_3 = '#EBCB8B'
-# gradient_color_4 = '#BF616A'
+# gradient_color_1 = '#E356A7'
+# gradient_color_2 = '#9B6BDF'
+# gradient_color_3 = '#E4F34A'
+# gradient_color_4 = '#E64747'

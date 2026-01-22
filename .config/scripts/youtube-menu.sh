@@ -3,6 +3,7 @@
 declare -A PLAYLIST=(
   ["TRAPPIN IN ＰＡＲＡＤＩＳＥ 148"]="https://www.youtube.com/watch?v=Ywq__5C9glQ"
   ["KATO feat. Jon - Turn The Lights Off"]="https://www.youtube.com/watch?v=rE_BxN7LWO4"
+  [" 🔥 Vintage Soul-Funk Grooves You’ve been Wanting for | ep10 | Minimal Soul Funk Playlist "]="https://www.youtube.com/watch?v=gfPlWZ9mmxY"
 )
 
 INPUT=""
