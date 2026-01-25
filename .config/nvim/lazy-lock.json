@@ -1,0 +1,10 @@
+{
+  "auto-pairs": { "branch": "master", "commit": "39f06b873a8449af8ff6a3eee716d3da14d63a76" },
+  "guard-collection": { "branch": "main", "commit": "411971cb8b4eadfa8a4d5a64edbfda606ab30002" },
+  "guard.nvim": { "branch": "main", "commit": "8e72406479681db9e347d951759c7a14e7937e31" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "nvim-treesitter": { "branch": "main", "commit": "568ede7e79172a0fe7c9d631454a97ad968deaf2" },
+  "supertab": { "branch": "main", "commit": "8705ae0e43b34339c06328fa6dab24ecaf21aab6" },
+  "tokyonight.nvim": { "branch": "main", "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd" },
+  "vim-fswitch": { "branch": "master", "commit": "94acdd8bc92458d3bf7e6557df8d93b533564491" }
+}

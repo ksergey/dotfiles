@@ -1,4 +1,4 @@
-local plugged_root = vim.fn.glob("~") .. "/.config/nvim/plugged"
+local plugged_root = vim.fn.glob("~") .. "/.config/nvim.plugged"
 
 -- Bootstrap lazy.nvim
 local lazypath = plugged_root .. "/lazy.nvim"

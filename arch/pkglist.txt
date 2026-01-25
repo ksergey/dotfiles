@@ -18,7 +18,6 @@ btop
 capitaine-cursors
 cava
 chafa
-chawan
 chromium
 clang
 cliphist

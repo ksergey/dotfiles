@@ -7,6 +7,7 @@ chroma-visualizer-git
 cmatrix-git
 downgrade
 dracula-gtk-theme
+etcher-bin
 gnu-netcat
 gruvbox-dark-gtk
 mpv-thumbfast-git
