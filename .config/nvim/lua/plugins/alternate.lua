@@ -6,10 +6,9 @@ return {
   opts = {
     filetypes = {
       c = { "h" },
-      h = { "c", "cpp" },
+      h = { "cpp", "c" },
       cpp = { "h", "hpp" },
-      hpp = { "cpp", "cc" },
-      cc = { "hh", "h" },
+      hpp = { "cpp" },
     },
     search_dirs = {
       ".",

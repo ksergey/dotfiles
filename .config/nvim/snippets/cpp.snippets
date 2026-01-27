@@ -1,0 +1,27 @@
+snippet cl "class .. (class)"
+	class ${1}
+	{
+	private:
+		${0}
+	public:
+		$1($1 const&) = delete;
+		$1& operator=($1 const&) = delete;
+		$1() = default;
+	};
+snippet main
+	#include <fmt/format.h>
+
+	int main([[maybe_unused]] int argc, [[maybe_unused]] char* argv[])
+	{
+		try {
+			${0}
+		} catch (std::exception const& e) {
+			fmt::print(stderr, "ERROR: {}\n", e.what());
+			return EXIT_FAILURE;
+		}
+		return EXIT_SUCCESS;
+	}
+snippet ns
+	namespace ${1} {
+		${0}
+	} // namespace $1
