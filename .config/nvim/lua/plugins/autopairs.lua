@@ -1,6 +1,7 @@
 return {
 	{
-		"jiangmiao/auto-pairs",
-		event = { "BufReadPre", "BufNewFile" },
+		'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
 	},
 }

@@ -12,7 +12,8 @@
 #window {}
 
 window#waybar {
-  background: alpha(@base, 0.8);
+  /* background: alpha(@base, 0.8); */
+  background: none;
   color: @text;
   transition: all 0.3s ease-in-out;
 }

@@ -25,3 +25,6 @@ vim.keymap.set("n", "<leader>q", ":q!<CR>", opts)
 vim.keymap.set("n", "1", ":tabprevious<CR>", opts)
 vim.keymap.set("n", "3", ":tabnext<CR>", opts)
 vim.keymap.set("n", "2", ":tabnew<CR>", opts)
+
+-- @see plugins/format.lua
+vim.keymap.set("n", "<leader>z", ":Format<CR>", opts)
