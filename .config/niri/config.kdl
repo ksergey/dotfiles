@@ -304,6 +304,8 @@ binds {
     Mod+Y hotkey-overlay-title="Youtube Misoc" { spawn-sh "$HOME/.config/scripts/youtube-menu.sh"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Power menu" { spawn-sh "$HOME/.config/scripts/power-menu.sh"; }
 
+    Mod+F10 hotkey-overlay-title="Toggle Screen Recording" { spawn-sh "$HOME/.config/scripts/record-screen.sh"; }
+
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }

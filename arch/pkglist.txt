@@ -96,7 +96,6 @@ meson
 minidlna
 mpv
 ncdu
-neovim
 net-tools
 ninja
 niri
