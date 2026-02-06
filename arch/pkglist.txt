@@ -36,6 +36,7 @@ ethtool
 exfatprogs
 f3d
 fastfetch
+fd
 ffmpegthumbnailer
 firefox
 fish
@@ -96,6 +97,7 @@ meson
 minidlna
 mpv
 ncdu
+neovim
 net-tools
 ninja
 niri
@@ -110,6 +112,7 @@ openttd-opensfx
 orchis-theme
 otf-font-awesome
 papirus-icon-theme
+parallel
 perf
 pipewire
 pipewire-alsa
@@ -127,6 +130,7 @@ qmk
 qt5-wayland
 qt5ct
 qt6ct
+ripgrep
 rocm-smi-lib
 rofi
 rpi-imager
