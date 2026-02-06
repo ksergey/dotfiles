@@ -4,28 +4,26 @@ local builtin_plugins = {
     -- Lightweight yet powerful formatter plugin for Neovim
     {
         "stevearc/conform.nvim",
-        opts = {
-            formatters_by_ft = {
-                c = { "clang-format" },
-                cpp = { "clang-format" },
-                lua = { "stylua" },
-            },
-        },
+        event = { "BufReadPre", "BufNewFile" },
         config = function()
-            vim.api.nvim_create_user_command("CodeFormat", function(args)
-                local range = nil
-                if args.count ~= -1 then
-                    local end_line = vim.api.nvim_buf_get_lines(0, args.line2 - 1, args.line2, true)[1]
-                    range = {
-                        start = { args.line1, 0 },
-                        ["end"] = { args.line2, end_line:len() },
-                    }
-                end
-                -- require("conform").format({ async = true, lsp_format = "fallback", range = range })
-                require("conform").format({ async = true, range = range })
-            end, { range = true })
+            local conform = require("conform")
 
-            vim.keymap.set("n", "<leader>z", "<cmd>CodeFormat<cr>", { desc = "Format code", remap = true })
+            conform.setup({
+                formatters_by_ft = {
+                    cpp = { "clang-format" },
+                    c = { "clang-format" },
+                },
+            })
+
+            local function format()
+                require("conform").format {
+                    lsp_fallback = true,
+                }
+            end
+
+            vim.keymap.set({ "n", "i" }, "<leader>z", format, { desc = "Format", silent = true })
+
+            vim.api.nvim_create_user_command("Format", format, { desc = "Format current buffer with LSP" })
         end,
     },
     -- Code completion
@@ -114,13 +112,13 @@ local builtin_plugins = {
         config = true
     },
     -- Git integration for buffers
-    {
-        "lewis6991/gitsigns.nvim",
-        event = { "BufReadPost", "BufNewFile", "BufWritePost" },
-        opts = function()
-            require("plugins.configs.gitsigns")
-        end,
-    },
+    -- {
+    --     "lewis6991/gitsigns.nvim",
+    --     event = { "BufReadPost", "BufNewFile", "BufWritePost" },
+    --     opts = function()
+    --         require("plugins.configs.gitsigns")
+    --     end,
+    -- },
     -- Treesitter interface
     {
         "nvim-treesitter/nvim-treesitter",
@@ -147,12 +145,18 @@ local builtin_plugins = {
     {
         -- Rose-pine - Soho vibes for Neovim
         "rose-pine/neovim",
-        priority = 1000,
         name = "rose-pine",
         opts = {
             dark_variant = "main",
+            extend_background_behind_borders = true,
+            styles = {
+                bold = true,
+                italic = true,
+                transparency = false,
+            },
         },
     },
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     {
         "junegunn/fzf.vim",
         dependencies = {

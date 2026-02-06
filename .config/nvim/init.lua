@@ -28,4 +28,4 @@ for _, source in ipairs({
     end
 end
 
-vim.cmd.colorscheme 'rose-pine'
+vim.cmd.colorscheme 'catppuccin-mocha'
