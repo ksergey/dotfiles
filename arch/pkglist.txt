@@ -154,6 +154,7 @@ thunar-media-tags-plugin
 thunar-volman
 tmux
 tree
+tree-sitter-cli
 ttf-0xproto-nerd
 ttf-cascadia-mono-nerd
 ttf-firacode-nerd

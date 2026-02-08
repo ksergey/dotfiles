@@ -21,6 +21,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.api.nvim_create_autocmd("Filetype", {
+    pattern = { "lua", },
+    command = "set shiftwidth=2 tabstop=2",
+})
+
+vim.api.nvim_create_autocmd("Filetype", {
     pattern = { "c", "cpp" },
     command = "set textwidth=120",
 })

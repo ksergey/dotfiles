@@ -4,6 +4,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.deprecate = function() end -- Disable annoying deprecated message
+
 vim.cmd([[ filetype plugin indent on ]])
 
 -- Enable break indent
@@ -57,6 +59,7 @@ vim.opt.listchars = {
     precedes = "«",
     nbsp = "×",
 }
+vim.opt.termguicolors = true -- enable 24-bit RGB colors
 
 -- Hide cmd line
 vim.opt.cmdheight = 0 -- more space in the neovim command line for displaying messages
