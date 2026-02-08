@@ -16,6 +16,7 @@ require("lazy").setup({
     require("plugins.alternate"),
     require("plugins.treesitter"),
     require("plugins.lualine"),
+    require("plugins.fzf"),
     require("plugins.colorscheme"),
 })
 
