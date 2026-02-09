@@ -15,6 +15,7 @@ require("lazy").setup({
   require("plugins.autopairs"),
   require("plugins.alternate"),
   require("plugins.treesitter"),
+  require("plugins.indent"),
   require("plugins.lualine"),
   require("plugins.fzf"),
   require("plugins.tree"),
