@@ -19,5 +19,3 @@ require("lazy").setup({
     require("plugins.fzf"),
     require("plugins.colorscheme"),
 })
-
-vim.cmd.colorscheme 'tokyonight'

@@ -1,6 +1,31 @@
 return {
-  "folke/tokyonight.nvim",
+  "EdenEast/nightfox.nvim",
   priority = 1000,
+  config = function(_, opts)
+    require("nightfox").setup({
+      options = {
+        transparent = true,
+        dim_inactive = true,
+        styles = {
+          comments = "italic",
+          keywords = "bold",
+          functions = "italic,bold",
+        },
+        inverse = {
+          search = true,
+          match_paren = true,
+        },
+      },
+      groups = {
+        all = {
+          CursorLine = { bg = "#353A54" },
+          CursorColumn = { bg = "#353A54" },
+        },
+      },
+    })
+
+    vim.cmd.colorscheme 'duskfox'
+  end,
 }
 
 -- return {
