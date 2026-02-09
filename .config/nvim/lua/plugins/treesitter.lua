@@ -1,3 +1,10 @@
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'c', 'cpp', 'lua', 'py' },
+  callback = function()
+    vim.treesitter.start()
+  end,
+})
+
 return {
   "nvim-treesitter/nvim-treesitter",
   version = false, -- last release is way too old and doesn't work on Windows

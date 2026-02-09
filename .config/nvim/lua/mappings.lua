@@ -22,3 +22,9 @@ vim.keymap.set("n", "<leader>n", "<cmd>set invnumber<cr>", { desc = "Toggle show
 vim.keymap.set("n", "<leader>w", "<cmd>set wrap!<cr>", { desc = "Toggle wrap lines", remap = true })
 vim.keymap.set("n", "<leader>h", "<cmd>set hlsearch!<cr>", { desc = "Toggle search highlight", remap = true })
 vim.keymap.set("n", "<leader>p", "<cmd>set paste!<cr>", { desc = "Toggle paste mode", remap = true })
+
+-- Move around panes Alt+h/j/k/l
+vim.keymap.set("", "<A-h>", "<C-w>h", { remap = true })
+vim.keymap.set("", "<A-j>", "<C-w>j", { remap = true })
+vim.keymap.set("", "<A-k>", "<C-w>k", { remap = true })
+vim.keymap.set("", "<A-l>", "<C-w>l", { remap = true })

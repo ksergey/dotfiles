@@ -7,7 +7,7 @@ return {
     { "junegunn/fzf", build = "./install --all", }
   },
   event = { "VeryLazy" },
-  config = function()
+  config = function(_, opts)
     vim.cmd([[ let g:fzf_preview_window = '' ]])
   end
 }

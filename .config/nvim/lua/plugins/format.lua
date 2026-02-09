@@ -2,6 +2,7 @@ local function format()
   require("conform").format {
     lsp_fallback = true,
   }
+  print("formatting done")
 end
 
 vim.keymap.set("n", "<leader>z", format, { desc = "Format", silent = true })

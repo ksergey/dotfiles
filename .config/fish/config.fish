@@ -5,6 +5,8 @@ end
 set -gx EDITOR vim
 set -gx VISUAL vim
 
+fish_add_path $HOME/.local/bin
+
 if status is-interactive
     if test $TMUX # could be "set -q TMUX"
         alias fzf="fzf --tmux"
