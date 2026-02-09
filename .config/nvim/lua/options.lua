@@ -39,7 +39,7 @@ vim.opt.wildmenu = true -- make tab completion for files/buffers act like bash
 vim.opt.inccommand = "split" -- review substitutions live, as you type
 
 -- ui
-vim.opt.cursorline = true -- highlight the current line
+vim.opt.cursorline = false -- highlight the current line
 vim.opt.laststatus = 2 -- only the last window will always have a status line
 vim.opt.lazyredraw = true -- don"t update the display while executing macros
 -- Sets how neovim will display certain whitespace characters in the editor.

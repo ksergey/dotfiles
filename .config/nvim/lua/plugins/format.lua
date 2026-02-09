@@ -4,7 +4,7 @@ local function format()
   }
 end
 
-vim.keymap.set({ "n", "i" }, "<leader>z", format, { desc = "Format", silent = true })
+vim.keymap.set("n", "<leader>z", format, { desc = "Format", silent = true })
 
 vim.api.nvim_create_user_command("Format", format, { desc = "Format current buffer with LSP" })
 
