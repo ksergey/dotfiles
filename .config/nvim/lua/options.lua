@@ -4,6 +4,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Enable Doxygen highlighting
+vim.g.load_doxygen_syntax = 1
+
 vim.deprecate = function() end -- Disable annoying deprecated message
 
 vim.cmd([[ filetype plugin indent on ]])
