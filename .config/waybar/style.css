@@ -47,7 +47,7 @@ tooltip label {
   padding: 0.05rem;
   margin: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
-  color: @text;
+  color: alpha(@text, 0.2);
 }
 
 #workspace button:first-child {
@@ -59,15 +59,15 @@ tooltip label {
 }
 
 #workspaces button.empty {
-  color: @color13;
+  color: alpha(@text, 0.2);
 }
 
 #workspaces button.visible {
-  color: @color11;
+  color: alpha(@text, 0.2);
 }
 
 #workspaces button.active {
-  color: @color11;
+  color: alpha(@text, 0.6);
 }
 
 window#waybar.empty #window {
@@ -87,9 +87,11 @@ window#waybar.empty #window {
 #battery {
   border-radius: 4px;
   margin: 4px 1px;
+  color: @text;
   background: @surface;
 }
 
+#clock:hover,
 #custom-vpn:hover,
 #custom-cliphist:hover,
 #custom-youtube:hover,
@@ -99,26 +101,12 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #backlight:hover,
 #battery:hover {
-  background: @surface;
+  background: alpha(@text, 0.2);
 }
 
-#wireplumber {
-  color: @color11;
-}
-
-#bluetooth {
-  color: @color13;
-}
-
-#network {
-  color: @color14;
-}
-
-#custom-vpn {
-  color: @color12;
-}
 #custom-vpn.up {
-  background: shade(@color12, 0.4);
+  color: @surface;
+  background: alpha(@text, 0.8);
 }
 
 #battery {
@@ -132,29 +120,14 @@ window#waybar.empty #window {
   background: shade(@critical, 0.4);
 }
 
-#clock {
-  color: shade(@color13, 1.2);
-}
-
-#temperature {
-  color: shade(@color14, 1.2);
-}
 #temperature.critical {
   color: @warning;
   background: shade(@warning, 0.4);
-}
-
-#custom-cliphist {
-  color: shade(@color4, 1.2);
 }
 
 #custom-youtube {
   color: shade(@muted, 1.2);
 }
 #custom-youtube.ready {
-  color: shade(@color9, 1.2);
-}
-
-#custom-cava {
-  color: shade(@color15, 1.2);
+  color: @text;
 }
