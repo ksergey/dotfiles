@@ -4,9 +4,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Enable Doxygen highlighting
-vim.g.load_doxygen_syntax = 1
-
 vim.deprecate = function() end -- Disable annoying deprecated message
 
 vim.cmd([[ filetype plugin indent on ]])
@@ -72,10 +69,10 @@ vim.opt.number = true -- set numbered lines
 -- opt.relativenumber = true -- set relative numbered lines, to help with jumping.
 vim.opt.scrolloff = 18 -- minimal number of screen lines to keep above and below the cursor
 vim.opt.sidescrolloff = 3 -- minimal number of screen columns to keep to the left and right (horizontal) of the cursor if wrap is `false`
-vim.opt.signcolumn = "yes" -- always show the sign column, otherwise it would shift the text each time
 vim.opt.splitbelow = true -- open new split below
 vim.opt.splitright = true -- open new split to the right
 vim.opt.wrap = true -- display a wrapped line
+vim.opt.signcolumn = "auto"
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)

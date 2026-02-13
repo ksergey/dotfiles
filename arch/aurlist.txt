@@ -1,8 +1,8 @@
 amneziawg-go
 amneziawg-tools
+arc-gtk-theme
 auto-cpufreq
 bibata-cursor-theme
-catppuccin-gtk-theme-mocha
 chroma-visualizer-git
 cmatrix-git
 downgrade
@@ -15,11 +15,9 @@ nordic-bluish-accent-theme
 nordic-darker-theme
 nordic-theme
 rong
-rose-pine-gtk-theme
 sunsetr
 tokyonight-gtk-theme-git
 ttf-harmonyos-sans
-vimix-gtk-themes
 wallust
 walng
 whitesur-gtk-theme

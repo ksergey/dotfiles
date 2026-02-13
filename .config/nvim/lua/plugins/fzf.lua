@@ -13,7 +13,7 @@ return {
       },
     },
     fzf_opts = {
-      ["--layout"] = "reverse-list",
+      ["--layout"] = "default",
     },
     files = {
       git_icons = false,

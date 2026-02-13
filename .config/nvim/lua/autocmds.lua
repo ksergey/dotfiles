@@ -31,6 +31,14 @@ vim.api.nvim_create_autocmd("Filetype", {
 })
 
 vim.api.nvim_create_autocmd("Filetype", {
+  pattern = { "c", "cpp" },
+  callback = function()
+    -- Enable Doxygen highlighting
+    vim.g.load_doxygen_syntax = 1
+  end
+})
+
+vim.api.nvim_create_autocmd("Filetype", {
     pattern = { "gitcommit", "markdown", "text" },
     callback = function()
         vim.opt_local.wrap = true
