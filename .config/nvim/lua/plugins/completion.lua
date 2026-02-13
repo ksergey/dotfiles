@@ -35,6 +35,7 @@ return {
     cmp.setup({
       completion = {
         keyword_length = 4,
+        autocomplete = false,
       },
       snippets = {
         expand = function(args)

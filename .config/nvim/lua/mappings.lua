@@ -1,6 +1,9 @@
 -- <leader> is a space now
 local map = vim.keymap.set
 
+-- Fuck F1
+vim.keymap.set({ "n", "i", "v", "x" }, "<F1>", "<esc>")
+
 -- Comment
 vim.keymap.set("n", "mm", "gcc", { desc = "Toggle comment", remap = true })
 vim.keymap.set("v", "mm", "gc", { desc = "Toggle comment", remap = true })
@@ -28,3 +31,13 @@ vim.keymap.set("", "<A-h>", "<C-w>h", { remap = true })
 vim.keymap.set("", "<A-j>", "<C-w>j", { remap = true })
 vim.keymap.set("", "<A-k>", "<C-w>k", { remap = true })
 vim.keymap.set("", "<A-l>", "<C-w>l", { remap = true })
+
+-- Moving
+vim.keymap.set("n", "<PageUp>", "<C-u><C-u>")
+vim.keymap.set("i", "<PageUp>", "<C-o><C-u><C-o><C-u>")
+vim.keymap.set("n", "<PageDown>", "<C-d><C-d>")
+vim.keymap.set("i", "<PageDown>", "<C-o><C-d><C-o><C-d>")
+vim.keymap.set("n", "<Up>", "gk")
+vim.keymap.set("i", "<Up>", "<C-o>gk")
+vim.keymap.set("n", "<Down>", "gj")
+vim.keymap.set("i", "<Down>", "<C-o>gj")
