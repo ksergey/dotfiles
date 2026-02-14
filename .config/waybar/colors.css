@@ -1,41 +1,41 @@
-@define-color base #292D3E;
-@define-color surface #212432;
-@define-color text #BFC7D5;
-@define-color muted #60646B;
+@define-color base #1F1F28;
+@define-color surface #191920;
+@define-color text #DCD7BA;
+@define-color muted #6E6C5D;
 
-@define-color warning #F4959A;
-@define-color critical #F07178;
-@define-color charging #C3E88D;
+@define-color warning #D27072;
+@define-color critical #E82424;
+@define-color charging #98BB6C;
 
 /* Black */
-@define-color color0 #292D3E;
+@define-color color0 #090618;
 /* Red */
-@define-color color1 #F07178;
+@define-color color1 #C34043;
 /* Green */
-@define-color color2 #C3E88D;
+@define-color color2 #76946A;
 /* Yellow */
-@define-color color3 #FFCB6B;
+@define-color color3 #C0A36E;
 /* Blue */
-@define-color color4 #82AAFF;
+@define-color color4 #7E9CD8;
 /* Magenta */
-@define-color color5 #C792EA;
+@define-color color5 #957FB8;
 /* Cyan */
-@define-color color6 #60ADEC;
+@define-color color6 #6A9589;
 /* White */
-@define-color color7 #ABB2BF;
+@define-color color7 #C8C093;
 /* Black */
-@define-color color8 #959DCB;
+@define-color color8 #727169;
 /* Light Red */
-@define-color color9 #F07178;
+@define-color color9 #E82424;
 /* Light Green */
-@define-color color10 #C3E88D;
+@define-color color10 #98BB6C;
 /* Light Yellow */
-@define-color color11 #FF5572;
+@define-color color11 #E6C384;
 /* Light Blue */
-@define-color color12 #82AAFF;
+@define-color color12 #7FB4CA;
 /* Light Magenta */
-@define-color color13 #FFCB6B;
+@define-color color13 #938AA9;
 /* Light Cyan */
-@define-color color14 #676E95;
+@define-color color14 #7AA89F;
 /* Light Black */
-@define-color color15 #FFFEFE;
+@define-color color15 #DCD7BA;

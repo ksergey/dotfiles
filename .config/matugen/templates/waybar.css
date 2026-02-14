@@ -1,8 +1,0 @@
-@define-color background {{colors.surface.default.rgba}};
-@define-color foreground {{colors.on_surface.default.hex}};
-@define-color cursor {{ colors.primary.default.hex }};
-@define-color urgent {{colors.error.default.hex}};
-
-@define-color pacman {{colors.primary.default.hex}};
-@define-color fruits {{colors.tertiary.default.hex}};
-@define-color ghost {{colors.secondary.default.hex}};

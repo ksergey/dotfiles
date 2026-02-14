@@ -4,12 +4,4 @@ orientation = bottom
 
 [color]
 background = 'default'
-
-gradient = 1
-gradient_color_1 = '#ABB2BF'
-gradient_color_2 = '#FFFEFE'
-
-# gradient_color_1 = '#C792EA'
-# gradient_color_2 = '#82AAFF'
-# gradient_color_3 = '#FFCB6B'
-# gradient_color_4 = '#F07178'
+foreground = '#DCD7BA'

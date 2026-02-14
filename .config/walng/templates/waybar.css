@@ -1,8 +1,0 @@
-@define-color background {{ palette.base00 }};
-@define-color foreground {{ palette.base05 }};
-@define-color cursor {{ palette.base09 }};
-@define-color urgent {{ palette.base08 }};
-
-@define-color pacman {{ palette.base0A }};
-@define-color fruits {{ palette.base0E }};
-@define-color ghost {{ palette.base07 }};

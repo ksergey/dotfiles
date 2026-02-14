@@ -1,6 +1,0 @@
-layout {
-    focus-ring {
-        active-color "{{ palette.base05 }}"
-        inactive-color "{{ palette.base03 }}"
-    }
-}
