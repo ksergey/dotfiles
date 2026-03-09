@@ -1,7 +1,17 @@
-[output]
-mode = 'noncurses'
-orientation = bottom
-
 [color]
 background = 'default'
-foreground = '#DCD7BA'
+foreground = '#89d6b8'
+
+; gradient = 0
+gradient = 1
+gradient_color_1 = '#00513d'
+gradient_color_2 = '#89d6b8'
+gradient_color_3 = '#a5f2d3'
+
+horizontal_gradient = 0
+; horizontal_gradient = 1
+horizontal_gradient_color_1 = '#00513d'
+horizontal_gradient_color_2 = '#89d6b8'
+horizontal_gradient_color_3 = '#a5f2d3'
+horizontal_gradient_color_4 = '#89d6b8'
+horizontal_gradient_color_5 = '#00513d'

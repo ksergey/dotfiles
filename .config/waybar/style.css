@@ -32,8 +32,8 @@ window#waybar {
 }
 
 tooltip {
-  background: @base;
-  border: 1px solid @text;
+  background: @background;
+  border: 1px solid @borders;
 }
 
 tooltip label {
@@ -77,8 +77,8 @@ window#waybar.empty #window {
 #clock,
 #custom-vpn,
 #custom-cliphist,
-#custom-youtube,
 #custom-cava,
+#custom-tesseract,
 #wireplumber,
 #network,
 #bluetooth,
@@ -88,46 +88,38 @@ window#waybar.empty #window {
   border-radius: 4px;
   margin: 4px 1px;
   color: @text;
-  background: @surface;
+  background: @second-background;
 }
 
 #clock:hover,
 #custom-vpn:hover,
 #custom-cliphist:hover,
-#custom-youtube:hover,
 #custom-cava:hover,
+#custom-tesseract:hover,
 #wireplumber:hover,
 #network:hover,
 #bluetooth:hover,
 #backlight:hover,
 #battery:hover {
-  background: alpha(@text, 0.2);
+  color: @focused;
 }
 
 #custom-vpn.up {
-  color: @surface;
-  background: alpha(@text, 0.8);
+  color: @color2;
 }
 
 #battery {
   color: @text;
 }
 #battery.warning {
-  color: @warning;
+  color: @urgent;
 }
 #battery.critical {
-  color: @critical;
-  background: shade(@critical, 0.4);
+  color: @urgent;
+  background: shade(@urgent, 0.4);
 }
 
 #temperature.critical {
-  color: @warning;
-  background: shade(@warning, 0.4);
-}
-
-#custom-youtube {
-  color: shade(@muted, 1.2);
-}
-#custom-youtube.ready {
-  color: @text;
+  color: @urgent;
+  background: shade(@urgent, 0.4);
 }

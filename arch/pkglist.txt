@@ -4,6 +4,7 @@ adw-gtk-theme
 alsa-utils
 amd-ucode
 amdgpu_top
+arduino-cli
 aria2
 awesome-terminal-fonts
 base
@@ -87,10 +88,10 @@ libva-utils
 linux
 linux-firmware
 linux-headers
-ly
 man-db
 man-pages
 materia-gtk-theme
+matugen
 mc
 mesa-utils
 meson
@@ -148,6 +149,9 @@ swww
 systemd-resolvconf
 tcpdump
 tela-circle-icon-theme-nord
+tesseract
+tesseract-data-eng
+tesseract-data-rus
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin

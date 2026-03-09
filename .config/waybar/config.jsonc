@@ -6,8 +6,8 @@
   "modules-left": [
     "temperature",
     "custom/cliphist",
-    "custom/youtube",
-    "custom/cava"
+    "custom/cava",
+    "custom/tesseract"
   ],
 
   "modules-center": [
@@ -159,19 +159,17 @@
     "tooltip": true
   },
 
-  "custom/youtube": {
-    "tooltip": true,
-    "tooltip-format": "{text}",
-    "format": "",
-    "return-type": "json",
-    "on-click": "~/.config/waybar/scripts/youtube-clipboard.sh launch",
-    "exec": "~/.config/waybar/scripts/youtube-clipboard.sh watch"
-  },
-
   "custom/cava": {
     "format": "󰺢",
-    "tooltip-format": "Launch cava",
+    "tooltip-format": "launch cava",
     "on-click": "niri msg action spawn -- ~/.config/scripts/cava.sh && sleep 0.3 && niri msg action consume-or-expel-window-left && niri msg action set-window-height '12%'",
+    "tooltip": true
+  },
+
+  "custom/tesseract": {
+    "format": "󰧶",
+    "tooltip-format": "copy via tesseract (ctrl-v after)",
+    "on-click": "grim -g \"$(slurp)\" - | tesseract - - | wl-copy",
     "tooltip": true
   },
 

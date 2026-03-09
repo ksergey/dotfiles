@@ -26,15 +26,11 @@ vim.api.nvim_create_autocmd("Filetype", {
 })
 
 vim.api.nvim_create_autocmd("Filetype", {
-    pattern = { "c", "cpp" },
-    command = "set textwidth=120",
-})
-
-vim.api.nvim_create_autocmd("Filetype", {
-  pattern = { "c", "cpp" },
+  pattern = { "c", "cpp", "h", "hpp" },
   callback = function()
     -- Enable Doxygen highlighting
     vim.g.load_doxygen_syntax = 1
+    vim.opt.textwidth = 120
   end
 })
 

@@ -49,7 +49,7 @@ return {
       sources = cmp.config.sources({
         { name = 'luasnip', keyword_length = 2 },
         { name = "nvim_lsp" },
-        { name = "buffer" },
+        { name = "buffer", option = { get_bufnrs = vim.api.nvim_list_bufs } },
       }),
     })
   end,
