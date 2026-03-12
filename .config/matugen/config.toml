@@ -1,0 +1,37 @@
+[config]
+reload_apps = true
+scheme = "vibrant"
+contrast = "high"
+
+[overrides.primary]
+saturation = 3
+
+[overrides.secondary]
+saturation = 2
+
+[overrides.tertiary]
+saturation = 1.4
+
+[templates.niri]
+input_path = "~/.config/matugen/templates/niri-colors.kdl"
+output_path = "~/.config/niri/colors.kdl"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/colors.conf"
+post_hook = 'pidof kitty | xargs -r kill -USR1'
+
+[templates.waybar_colors]
+input_path = "~/.config/matugen/templates/waybar-colors.css"
+output_path = "~/.config/waybar/colors.css"
+post_hook = 'pidof waybar | xargs -r kill -USR2'
+
+[templates.cava]
+input_path = '~/.config/matugen/templates/cava-colors.ini'
+output_path = '~/.config/cava/config'
+post_hook = 'pidof cava | xargs -r kill -USR1'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+post_hook = 'pidof cava | xargs -r kill -USR1'

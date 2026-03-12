@@ -1,0 +1,9 @@
+
+* {
+    base: {{colors.background.default.hex}};
+    highlight-medium: {{colors.secondary_container.default.hex}};
+    highlight-high: {{colors.outline.default.hex}}; // border
+    text: {{colors.on_background.default.hex}};
+    muted: {{colors.on_background.default.hex}};
+    warning: {{colors.error.default.hex}};
+}

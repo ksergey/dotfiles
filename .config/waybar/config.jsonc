@@ -169,7 +169,7 @@
   "custom/tesseract": {
     "format": "󰧶",
     "tooltip-format": "copy via tesseract (ctrl-v after)",
-    "on-click": "grim -g \"$(slurp)\" - | tesseract - - | wl-copy",
+    "on-click": "grim -g \"$(slurp)\" - | tesseract -l rus+eng - - | wl-copy",
     "tooltip": true
   },
 
