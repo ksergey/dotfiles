@@ -1,5 +1,5 @@
 @define-color background {{colors.background.default.hex}};
-@define-color second-background {{colors.surface.default.hex}};
+@define-color module-background {{colors.secondary.default.hex}};
 @define-color text {{colors.on_background.default.hex}};
 @define-color borders {{colors.outline.default.hex}};
 @define-color focused {{colors.primary.default.hex}};

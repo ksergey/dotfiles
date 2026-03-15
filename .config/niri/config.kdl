@@ -143,7 +143,7 @@ layout {
     }
 
     focus-ring {
-        width 2
+        width 1
     }
 
     border {
@@ -193,14 +193,14 @@ animations {
 // -------------------------------------------------------------
 
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 6
     clip-to-geometry true
     draw-border-with-background false
 }
 
 window-rule {
     match is-active=false
-    opacity 0.80
+    opacity 0.90
 }
 
 // -------------------------------------------------------------
@@ -229,16 +229,6 @@ window-rule {
 
 window-rule {
     match app-id="firefox"
-    default-column-width { proportion 1.0; }
-}
-
-window-rule {
-    match app-id="kitty"
-    default-column-width { proportion 1.0; }
-}
-
-window-rule {
-    match app-id="thunar"
     default-column-width { proportion 1.0; }
 }
 

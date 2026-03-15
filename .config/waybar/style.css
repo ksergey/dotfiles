@@ -1,77 +1,84 @@
 @import "colors.css";
 
 * {
-  all: unset;
-  padding: 0;
-  margin: 0;
-  font-family: "Caskaydia Cove Nerd Font", "JetBrainsMono Nerd Font Propo";
-  font-weight: bold;
-  font-size: 12px;
+    all: unset;
+    padding: 0;
+    margin: 0;
+    font-family: "Caskaydia Cove Nerd Font", "JetBrainsMono Nerd Font Propo";
+    font-weight: bold;
+    font-size: 12px;
 }
 
 #window {}
 
 window#waybar {
-  /* background: alpha(@base, 0.8); */
-  background: none;
-  color: @text;
-  transition: all 0.3s ease-in-out;
+    /* background: alpha(@base, 0.8); */
+    background: none;
+    color: @text;
+    transition: all 0.3s ease-in-out;
 }
 
 .module {
-  padding: 0.1rem 0.5rem;
-  transition: all 0.3s ease-in-out;
+    padding: 0.1rem 0.5rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .modules-left:first-child {
-  margin-left: 0.2em;
+    margin-top: 6px;
+    margin-left: 6px;
+    background: alpha(@module-background, 0.25);
+    border-radius: 6px;
 }
 
 .modules-right:last-child {
-  margin-right: 0.2em;
+    margin-top: 6px;
+    margin-right: 6px;
+    background: alpha(@module-background, 0.25);
+    border-radius: 6px;
 }
 
 tooltip {
-  background: @background;
-  border: 1px solid @borders;
+    background: @background;
+    border: 1px solid @borders;
+    border-radius: 4px;
 }
 
 tooltip label {
-  color: @text;
-  padding: 0.2rem 0.5rem;
+    color: @text;
+    padding: 0.2rem 0.5rem;
 }
 
 #workspaces {}
 
 #workspaces button {
-  padding: 0.05rem;
-  margin: 0.2rem 0.2rem;
-  transition: all 0.3s ease-in-out;
-  color: alpha(@text, 0.2);
+    padding: 0.05rem;
+    margin: 0.2rem 0.2rem;
+    transition: all 0.3s ease-in-out;
+    color: alpha(@text, 0.2);
 }
 
 #workspace button:first-child {
-  margin: 0.2rem 0.3rem 0.2rem 0px;
+    margin: 0.2rem 0.3rem 0.2rem 0px;
 }
 
 #workspace button:last-child {
-  margin: 0.2rem 0px 0.2rem 0.3rem;
+    margin: 0.2rem 0px 0.2rem 0.3rem;
 }
 
 #workspaces button.empty {
-  color: alpha(@text, 0.2);
+    color: alpha(@text, 0.2);
 }
 
 #workspaces button.visible {
-  color: alpha(@text, 0.2);
+    color: alpha(@text, 0.2);
 }
 
 #workspaces button.active {
-  color: alpha(@text, 0.6);
+    color: alpha(@text, 0.6);
 }
 
 window#waybar.empty #window {
-  background: transparent;
+    background: transparent;
 }
 
 #clock,
@@ -85,10 +92,9 @@ window#waybar.empty #window {
 #backlight,
 #temperature,
 #battery {
-  border-radius: 4px;
-  margin: 4px 1px;
-  color: @text;
-  background: @second-background;
+    border-radius: 4px;
+    margin: 4px 1px;
+    color: @text;
 }
 
 #clock:hover,
@@ -101,25 +107,25 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #backlight:hover,
 #battery:hover {
-  color: @focused;
+    color: @focused;
 }
 
 #custom-vpn.up {
-  color: @color2;
+    color: @color2;
 }
 
 #battery {
-  color: @text;
+    color: @text;
 }
 #battery.warning {
-  color: @urgent;
+    color: @urgent;
 }
 #battery.critical {
-  color: @urgent;
-  background: shade(@urgent, 0.4);
+    color: @urgent;
+    background: shade(@urgent, 0.4);
 }
 
 #temperature.critical {
-  color: @urgent;
-  background: shade(@urgent, 0.4);
+    color: @urgent;
+    background: shade(@urgent, 0.4);
 }

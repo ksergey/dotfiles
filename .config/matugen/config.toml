@@ -35,3 +35,13 @@ post_hook = 'pidof cava | xargs -r kill -USR1'
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'
 output_path = '~/.config/rofi/colors.rasi'
 post_hook = 'pidof cava | xargs -r kill -USR1'
+
+# GTK4/libadwaita theme (Nautilus, GNOME apps)
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-4.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+# GTK3 theme (legacy apps)
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-3.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
