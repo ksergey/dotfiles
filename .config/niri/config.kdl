@@ -193,7 +193,7 @@ animations {
 // -------------------------------------------------------------
 
 window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 0
     clip-to-geometry true
     draw-border-with-background false
 }
@@ -289,7 +289,6 @@ binds {
     Mod+B hotkey-overlay-title="Run a Browser: firefox" { spawn "firefox"; }
     Mod+E hotkey-overlay-title="Run a File Browser: thunar" { spawn "thunar"; }
     Mod+0 hotkey-overlay-title="Restart waybar" { spawn-sh "pkill waybar; exec waybar"; }
-    Mod+N hotkey-overlay-title="Wallpaper menu" { spawn-sh "~/.config/scripts/wallpapers-menu.sh"; }
     Mod+V hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.config/scripts/cliphist-menu.sh"; }
     Mod+Y hotkey-overlay-title="Youtube Misoc" { spawn-sh "$HOME/.config/scripts/youtube-menu.sh"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Power menu" { spawn-sh "$HOME/.config/scripts/power-menu.sh"; }

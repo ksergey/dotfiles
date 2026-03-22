@@ -17,7 +17,6 @@ nordic-theme
 sunsetr
 tokyonight-gtk-theme-git
 ttf-harmonyos-sans
-wallust
 whitesur-gtk-theme
 whitesur-icon-theme
 winbox

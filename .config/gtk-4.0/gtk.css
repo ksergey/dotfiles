@@ -6,72 +6,72 @@
  */
 
 /* Default: dark Material You palette (always applied) */
-@define-color accent_color #80d4d9;
-@define-color accent_fg_color #003739;
-@define-color accent_bg_color #80d4d9;
+@define-color accent_color #c1c1ff;
+@define-color accent_fg_color #2a2a60;
+@define-color accent_bg_color #c1c1ff;
 
-@define-color window_bg_color #0e1415;
-@define-color window_fg_color #dde4e4;
+@define-color window_bg_color #131318;
+@define-color window_fg_color #e4e1e9;
 
-@define-color headerbar_bg_color #0e1415;
-@define-color headerbar_fg_color #dde4e4;
+@define-color headerbar_bg_color #131318;
+@define-color headerbar_fg_color #e4e1e9;
 
-@define-color popover_bg_color #1a2121;
-@define-color popover_fg_color #dde4e4;
+@define-color popover_bg_color #1f1f25;
+@define-color popover_fg_color #e4e1e9;
 
-@define-color dialog_bg_color #252b2b;
-@define-color dialog_fg_color #dde4e4;
+@define-color dialog_bg_color #2a292f;
+@define-color dialog_fg_color #e4e1e9;
 
-@define-color view_bg_color #0e1415;
-@define-color view_fg_color #dde4e4;
+@define-color view_bg_color #131318;
+@define-color view_fg_color #e4e1e9;
 
-@define-color card_bg_color #161d1d;
-@define-color card_fg_color #dde4e4;
+@define-color card_bg_color #1b1b21;
+@define-color card_fg_color #e4e1e9;
 @define-color card_shade_color alpha(black, 0.15);
 
-@define-color sidebar_bg_color #161d1d;
-@define-color sidebar_fg_color #dde4e4;
-@define-color sidebar_border_color #3f4949;
-@define-color sidebar_backdrop_color #161d1d;
+@define-color sidebar_bg_color #1b1b21;
+@define-color sidebar_fg_color #e4e1e9;
+@define-color sidebar_border_color #47464f;
+@define-color sidebar_backdrop_color #1b1b21;
 
-@define-color thumbnail_bg_color #303636;
-@define-color thumbnail_fg_color #dde4e4;
+@define-color thumbnail_bg_color #35343a;
+@define-color thumbnail_fg_color #e4e1e9;
 
 @define-color shade_color alpha(black, 0.36);
 @define-color scrollbar_outline_color alpha(white, 0.1);
 
 /* Light mode override (when portal reports light preference) */
 @media (prefers-color-scheme: light) {
-    @define-color accent_color #00696e;
+    @define-color accent_color #585992;
     @define-color accent_fg_color #ffffff;
-    @define-color accent_bg_color #00696e;
+    @define-color accent_bg_color #585992;
 
-    @define-color window_bg_color #f4fafa;
-    @define-color window_fg_color #161d1d;
+    @define-color window_bg_color #fcf8ff;
+    @define-color window_fg_color #1b1b21;
 
-    @define-color headerbar_bg_color #d5dbdb;
-    @define-color headerbar_fg_color #161d1d;
+    @define-color headerbar_bg_color #dcd9e0;
+    @define-color headerbar_fg_color #1b1b21;
 
-    @define-color popover_bg_color #e9efef;
-    @define-color popover_fg_color #161d1d;
+    @define-color popover_bg_color #f0ecf4;
+    @define-color popover_fg_color #1b1b21;
 
-    @define-color dialog_bg_color #e3e9e9;
-    @define-color dialog_fg_color #161d1d;
+    @define-color dialog_bg_color #eae7ef;
+    @define-color dialog_fg_color #1b1b21;
 
-    @define-color view_bg_color #f4fafa;
-    @define-color view_fg_color #161d1d;
+    @define-color view_bg_color #fcf8ff;
+    @define-color view_fg_color #1b1b21;
 
-    @define-color card_bg_color #eff5f5;
-    @define-color card_fg_color #161d1d;
+    @define-color card_bg_color #f6f2fa;
+    @define-color card_fg_color #1b1b21;
     @define-color card_shade_color alpha(black, 0.07);
 
-    @define-color sidebar_bg_color #eff5f5;
-    @define-color sidebar_fg_color #161d1d;
-    @define-color sidebar_border_color #bec8c9;
-    @define-color sidebar_backdrop_color #eff5f5;
+    @define-color sidebar_bg_color #f6f2fa;
+    @define-color sidebar_fg_color #1b1b21;
+    @define-color sidebar_border_color #c8c5d0;
+    @define-color sidebar_backdrop_color #f6f2fa;
 
-    @define-color thumbnail_bg_color #dde4e4;
-    @define-color thumbnail_fg_color #161d1d;
+    @define-color thumbnail_bg_color #e4e1e9;
+    @define-color thumbnail_fg_color #1b1b21;
 
     @define-color shade_color alpha(black, 0.18);
     @define-color scrollbar_outline_color alpha(black, 0.1);
@@ -84,39 +84,39 @@
 .nautilus-window placessidebar list,
 placessidebar,
 placessidebar list {
-    background-color: #0e1415 !important;
-    color: #dde4e4 !important;
+    background-color: #131318 !important;
+    color: #e4e1e9 !important;
 }
 
 placessidebar row {
     background-color: transparent !important;
-    color: #dde4e4 !important;
+    color: #e4e1e9 !important;
 }
 
 placessidebar row:hover {
-    background-color: alpha(#80d4d9, 0.1) !important;
+    background-color: alpha(#c1c1ff, 0.1) !important;
 }
 
 placessidebar row:selected,
 placessidebar row:selected:hover {
-    background-color: #80d4d9 !important;
-    color: #003739 !important;
+    background-color: #c1c1ff !important;
+    color: #2a2a60 !important;
 }
 
 .nautilus-window headerbar {
-    background-color: #0e1415 !important;
-    color: #dde4e4 !important;
+    background-color: #131318 !important;
+    color: #e4e1e9 !important;
 }
 
 .nautilus-window .view {
-    background-color: #0e1415 !important;
-    color: #dde4e4 !important;
+    background-color: #131318 !important;
+    color: #e4e1e9 !important;
 }
 
 placessidebar image {
-    color: #dde4e4 !important;
+    color: #e4e1e9 !important;
 }
 
 placessidebar row:selected image {
-    color: #003739 !important;
+    color: #2a2a60 !important;
 }

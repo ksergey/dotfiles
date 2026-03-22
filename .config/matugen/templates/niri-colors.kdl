@@ -1,7 +1,7 @@
 layout {
     focus-ring {
-        active-color "{{colors.primary.default.hex}}"
-        urgent-color "{{colors.error.default.hex}}"
+        active-color "{{colors.primary.default.hex}}66"
+        urgent-color "{{colors.error.default.hex}}66"
     }
 }
 

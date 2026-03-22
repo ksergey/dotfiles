@@ -45,3 +45,8 @@ output_path = '~/.config/gtk-4.0/gtk.css'
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-3.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.tmux]
+input_path = "~/.config/matugen/templates/tmux.conf"
+output_path = "~/.tmux-colors.conf"
+post_hook = 'tmux source-file ~/.tmux.conf'

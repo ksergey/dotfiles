@@ -20,7 +20,6 @@ ENTRIES=(
   "${HOME}/.config/rofi"
   "${HOME}/.config/niri"
   "${HOME}/.config/waybar"
-  "${HOME}/.config/wallust"
   "${HOME}/.config/yt-dlp"
   "${HOME}/.config/mpv"
   "${HOME}/.config/scripts"

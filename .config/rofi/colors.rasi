@@ -1,9 +1,9 @@
 
 * {
-    base: #0e1415;
-    highlight-medium: #324b4d;
-    highlight-high: #899393; // border
-    text: #dde4e4;
-    muted: #dde4e4;
+    base: #131318;
+    highlight-medium: #454559;
+    highlight-high: #918f9a; // border
+    text: #e4e1e9;
+    muted: #e4e1e9;
     warning: #ffb4ab;
 }

@@ -26,15 +26,15 @@ window#waybar {
 .modules-left:first-child {
     margin-top: 6px;
     margin-left: 6px;
-    background: alpha(@module-background, 0.25);
-    border-radius: 6px;
+    background: alpha(@module-background, 0.6);
+    border-radius: 4px;
 }
 
 .modules-right:last-child {
     margin-top: 6px;
     margin-right: 6px;
-    background: alpha(@module-background, 0.25);
-    border-radius: 6px;
+    background: alpha(@module-background, 0.6);
+    border-radius: 4px;
 }
 
 tooltip {
