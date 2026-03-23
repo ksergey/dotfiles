@@ -1,9 +1,8 @@
-
 * {
-    base: #131318;
-    highlight-medium: #454559;
-    highlight-high: #918f9a; // border
-    text: #e4e1e9;
-    muted: #e4e1e9;
-    warning: #ffb4ab;
+    background:      #303036;
+    background-alt:  #3b3b41;
+    foreground:      #ffffff;
+    selected:        #c4c1cc;
+    active:          #504f56;
+    comment:         #666666;
 }

@@ -1,7 +1,7 @@
 [config]
 reload_apps = true
 scheme = "vibrant"
-contrast = "high"
+contrast = 1.0
 
 [overrides.primary]
 saturation = 3

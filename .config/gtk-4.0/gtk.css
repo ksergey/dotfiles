@@ -6,72 +6,72 @@
  */
 
 /* Default: dark Material You palette (always applied) */
-@define-color accent_color #c1c1ff;
-@define-color accent_fg_color #2a2a60;
-@define-color accent_bg_color #c1c1ff;
+@define-color accent_color #f1eeff;
+@define-color accent_fg_color #000000;
+@define-color accent_bg_color #f1eeff;
 
 @define-color window_bg_color #131318;
 @define-color window_fg_color #e4e1e9;
 
 @define-color headerbar_bg_color #131318;
-@define-color headerbar_fg_color #e4e1e9;
+@define-color headerbar_fg_color #ffffff;
 
-@define-color popover_bg_color #1f1f25;
-@define-color popover_fg_color #e4e1e9;
+@define-color popover_bg_color #303036;
+@define-color popover_fg_color #ffffff;
 
-@define-color dialog_bg_color #2a292f;
-@define-color dialog_fg_color #e4e1e9;
+@define-color dialog_bg_color #3b3b41;
+@define-color dialog_fg_color #ffffff;
 
 @define-color view_bg_color #131318;
-@define-color view_fg_color #e4e1e9;
+@define-color view_fg_color #ffffff;
 
-@define-color card_bg_color #1b1b21;
-@define-color card_fg_color #e4e1e9;
+@define-color card_bg_color #1f1f25;
+@define-color card_fg_color #ffffff;
 @define-color card_shade_color alpha(black, 0.15);
 
-@define-color sidebar_bg_color #1b1b21;
-@define-color sidebar_fg_color #e4e1e9;
-@define-color sidebar_border_color #47464f;
-@define-color sidebar_backdrop_color #1b1b21;
+@define-color sidebar_bg_color #1f1f25;
+@define-color sidebar_fg_color #ffffff;
+@define-color sidebar_border_color #c4c1cc;
+@define-color sidebar_backdrop_color #1f1f25;
 
-@define-color thumbnail_bg_color #35343a;
-@define-color thumbnail_fg_color #e4e1e9;
+@define-color thumbnail_bg_color #47464c;
+@define-color thumbnail_fg_color #ffffff;
 
 @define-color shade_color alpha(black, 0.36);
 @define-color scrollbar_outline_color alpha(white, 0.1);
 
 /* Light mode override (when portal reports light preference) */
 @media (prefers-color-scheme: light) {
-    @define-color accent_color #585992;
+    @define-color accent_color #25265c;
     @define-color accent_fg_color #ffffff;
-    @define-color accent_bg_color #585992;
+    @define-color accent_bg_color #25265c;
 
     @define-color window_bg_color #fcf8ff;
     @define-color window_fg_color #1b1b21;
 
-    @define-color headerbar_bg_color #dcd9e0;
-    @define-color headerbar_fg_color #1b1b21;
+    @define-color headerbar_bg_color #bab7bf;
+    @define-color headerbar_fg_color #000000;
 
-    @define-color popover_bg_color #f0ecf4;
-    @define-color popover_fg_color #1b1b21;
+    @define-color popover_bg_color #e4e1e9;
+    @define-color popover_fg_color #000000;
 
-    @define-color dialog_bg_color #eae7ef;
-    @define-color dialog_fg_color #1b1b21;
+    @define-color dialog_bg_color #d6d3db;
+    @define-color dialog_fg_color #000000;
 
     @define-color view_bg_color #fcf8ff;
-    @define-color view_fg_color #1b1b21;
+    @define-color view_fg_color #000000;
 
-    @define-color card_bg_color #f6f2fa;
-    @define-color card_fg_color #1b1b21;
+    @define-color card_bg_color #f3eff7;
+    @define-color card_fg_color #000000;
     @define-color card_shade_color alpha(black, 0.07);
 
-    @define-color sidebar_bg_color #f6f2fa;
-    @define-color sidebar_fg_color #1b1b21;
-    @define-color sidebar_border_color #c8c5d0;
-    @define-color sidebar_backdrop_color #f6f2fa;
+    @define-color sidebar_bg_color #f3eff7;
+    @define-color sidebar_fg_color #000000;
+    @define-color sidebar_border_color #494851;
+    @define-color sidebar_backdrop_color #f3eff7;
 
-    @define-color thumbnail_bg_color #e4e1e9;
-    @define-color thumbnail_fg_color #1b1b21;
+    @define-color thumbnail_bg_color #c8c5cd;
+    @define-color thumbnail_fg_color #000000;
 
     @define-color shade_color alpha(black, 0.18);
     @define-color scrollbar_outline_color alpha(black, 0.1);
@@ -94,13 +94,13 @@ placessidebar row {
 }
 
 placessidebar row:hover {
-    background-color: alpha(#c1c1ff, 0.1) !important;
+    background-color: alpha(#f1eeff, 0.1) !important;
 }
 
 placessidebar row:selected,
 placessidebar row:selected:hover {
-    background-color: #c1c1ff !important;
-    color: #2a2a60 !important;
+    background-color: #f1eeff !important;
+    color: #000000 !important;
 }
 
 .nautilus-window headerbar {
@@ -118,5 +118,5 @@ placessidebar image {
 }
 
 placessidebar row:selected image {
-    color: #2a2a60 !important;
+    color: #000000 !important;
 }

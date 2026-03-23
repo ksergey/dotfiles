@@ -24,9 +24,9 @@ window {
     margin: 0px;
     padding: 0px;
     border: 1px solid;
-    border-color: @highlight-high;
     cursor: "default";
-    background-color: @base;
+    border-color: @selected;
+    background-color: @background;
 }
 
 /*****----- Main Box -----*****/
@@ -59,7 +59,7 @@ listview {
     border: 0px solid;
     border-radius: 0px;
     background-color: transparent;
-    text-color: @text;
+    text-color: @foreground;
     cursor: "default";
 }
 
@@ -72,20 +72,20 @@ element {
     border: 0px solid;
     border-radius: 4px;
     background-color: transparent;
-    text-color: @text;
+    text-color: @foreground;
     cursor: pointer;
 }
 element normal.normal {
     background-color: inherit;
-    text-color: inherit;
+    text-color: @foreground;
 }
 element alternate.normal {
     background-color: inherit;
     text-color: inherit;
 }
 element selected.normal {
-    background-color: @highlight-medium;
-    text-color: @text;
+    background-color: @background-alt;
+    text-color: @foreground;
 }
 element-icon {
     background-color: transparent;
@@ -109,13 +109,13 @@ message {
     padding: 0px;
     border: 0px solid;
     border-radius: 0px 0px 0px 0px;
-    background-color: transparent;
-    text-color: @text;
+    background-color: black / 10%;
+    text-color: @foreground;
 }
 error-message {
     padding: 10px;
     border: 0px solid;
     border-radius: 4px;
     background-color: inherit;
-    text-color: @warning;
+    text-color: @foreground;
 }

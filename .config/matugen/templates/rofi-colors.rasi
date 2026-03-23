@@ -1,9 +1,8 @@
-
 * {
-    base: {{colors.background.default.hex}};
-    highlight-medium: {{colors.secondary_container.default.hex}};
-    highlight-high: {{colors.outline.default.hex}}; // border
-    text: {{colors.on_background.default.hex}};
-    muted: {{colors.on_background.default.hex}};
-    warning: {{colors.error.default.hex}};
+    background:      {{colors.surface_container.default.hex}};
+    background-alt:  {{colors.surface_container_high.default.hex}};
+    foreground:      {{colors.on_surface_variant.default.hex}};
+    selected:        {{colors.outline_variant.default.hex}};
+    active:          {{colors.surface_bright.default.hex}};
+    comment:         {{colors.on_surface_variant.default.hex | set_lightness: 40}};
 }
