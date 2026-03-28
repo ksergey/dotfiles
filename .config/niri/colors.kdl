@@ -1,13 +1,13 @@
 layout {
     focus-ring {
-        active-color "#f1eeff66"
+        active-color "#e2f2ff66"
         urgent-color "#ffece966"
     }
 }
 
 recent-windows {
     highlight {
-        active-color "#131318"
+        active-color "#0f1417"
         urgent-color "#ffece9"
     }
 }

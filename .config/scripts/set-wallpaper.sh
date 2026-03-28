@@ -18,10 +18,10 @@ overview="${HOME}/.cache/overview.png"
 
 magick "${wallpaper}" -modulate 100,50 -filter Gaussian -resize 20% -blur 0x3.5 "${overview}"
 if [ "${XDG_CURRENT_DESKTOP}" == "niri" ]; then
-  swww img --namespace overview "${overview}"
+  awww img --namespace overview "${overview}"
 fi
 
-swww img \
+awww img \
   --transition-type wave \
   --transition-bezier ".09,.91,.52,.93" \
   --transition-step 10 \

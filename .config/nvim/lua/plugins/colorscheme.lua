@@ -2,10 +2,10 @@ return {
   "rebelot/kanagawa.nvim",
   config = function()
     require("kanagawa").setup({
-      transparent = false,
+      transparent = true,
     })
 
-    vim.cmd("colorscheme kanagawa-dragon")
+    vim.cmd("colorscheme kanagawa-wave")
   end,
 }
 

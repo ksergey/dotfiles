@@ -4,8 +4,8 @@
 
 spawn-at-startup "waybar"
 spawn-at-startup "dunst"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swww-daemon" "--namespace" "overview"
+spawn-at-startup "awww-daemon"
+spawn-at-startup "awww-daemon" "--namespace" "overview"
 spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
 spawn-at-startup "hypridle" "-q"
@@ -193,7 +193,7 @@ animations {
 // -------------------------------------------------------------
 
 window-rule {
-    geometry-corner-radius 0
+    geometry-corner-radius 4
     clip-to-geometry true
     draw-border-with-background false
 }
@@ -255,7 +255,7 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="^swww-daemonoverview$"
+    match namespace="^awww-daemonoverview$"
     place-within-backdrop true
 }
 

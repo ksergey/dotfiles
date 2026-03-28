@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "nord.css";
 
 * {
     all: unset;
@@ -28,6 +28,7 @@ window#waybar {
     margin-left: 6px;
     background: alpha(@module-background, 0.6);
     border-radius: 4px;
+    border: 1px solid @borders;
 }
 
 .modules-right:last-child {
@@ -35,10 +36,11 @@ window#waybar {
     margin-right: 6px;
     background: alpha(@module-background, 0.6);
     border-radius: 4px;
+    border: 1px solid @borders;
 }
 
 tooltip {
-    background: @background;
+    background: alpha(@background, 0.99);
     border: 1px solid @borders;
     border-radius: 4px;
 }

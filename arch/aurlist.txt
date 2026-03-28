@@ -3,6 +3,7 @@ amneziawg-tools
 auto-cpufreq
 bibata-cursor-theme
 chroma-visualizer-git
+cliamp
 cmatrix-git
 downgrade
 dracula-gtk-theme
