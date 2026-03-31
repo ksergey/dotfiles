@@ -1,0 +1,13 @@
+layout {
+    focus-ring {
+        active-color "#6272a4" // base03
+        urgent-color "#ff5555" // base08
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "#6272a466" // base03
+        urgent-color "#ff555566" // base08
+    }
+}

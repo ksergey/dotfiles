@@ -28,7 +28,3 @@ awww img \
   --transition-fps 60 \
   --transition-duration 1 \
   "${wallpaper}"
-
-if command -v matugen &> /dev/null; then
-    matugen image "${wallpaper}"
-fi

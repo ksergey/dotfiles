@@ -198,10 +198,10 @@ window-rule {
     draw-border-with-background false
 }
 
-window-rule {
-    match is-active=false
-    opacity 0.90
-}
+// window-rule {
+//     match is-active=false
+//     opacity 0.90
+// }
 
 // -------------------------------------------------------------
 //  Window rules
@@ -416,7 +416,7 @@ recent-windows {
 }
 
 // -------------------------------------------------------------
-//  Colors
+//  Theme
 // -------------------------------------------------------------
 
-include "colors.kdl"
+include "theme.kdl"

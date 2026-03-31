@@ -3,7 +3,6 @@ amneziawg-tools
 auto-cpufreq
 bibata-cursor-theme
 chroma-visualizer-git
-cliamp
 cmatrix-git
 downgrade
 dracula-gtk-theme
@@ -18,7 +17,6 @@ nordic-theme
 sunsetr
 tokyonight-gtk-theme-git
 ttf-harmonyos-sans
-whitesur-gtk-theme
 whitesur-icon-theme
 winbox
 wiremix-git

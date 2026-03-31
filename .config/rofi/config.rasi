@@ -6,7 +6,7 @@ configuration {
 	window-format: "{w} · {c} · {t}";
 }
 
-@import "colors.rasi"
+@import "theme.rasi"
 @import "options.rasi"
 
 * {
@@ -29,8 +29,8 @@ window {
     padding: 0px;
     cursor: "default";
     border: 1px solid;
-    border-color: @selected;
-    background-color: @background;
+    border-color: @base03;
+    background-color: @base00;
 }
 
 /*****----- Main Box -----*****/
@@ -53,7 +53,7 @@ inputbar {
     border: 0px solid;
     border-radius: 0px;
     background-color: transparent;
-    text-color: @foreground;
+    text-color: @base05;
     children: [ "prompt", "entry" ];
 }
 
@@ -75,7 +75,7 @@ entry {
     text-color: inherit;
     cursor: text;
     placeholder: "search...";
-    placeholder-color: @comment;
+    placeholder-color: @base03;
 }
 num-filtered-rows {
     enabled: true;
@@ -120,7 +120,7 @@ listview {
     border: 0px solid;
     border-radius: 0px;
     background-color: transparent;
-    text-color: @foreground;
+    text-color: @base05;
     cursor: "default";
 }
 
@@ -133,20 +133,20 @@ element {
     border: 0px solid;
     border-radius: 4px;
     background-color: transparent;
-    text-color: @foreground;
+    text-color: @base05;
     cursor: pointer;
 }
 element normal.normal {
     background-color: inherit;
-    text-color: @foreground;
+    text-color: @base05;
 }
 element alternate.normal {
     background-color: inherit;
     text-color: inherit;
 }
 element selected.normal {
-    background-color: @background-alt;
-    text-color: @foreground;
+    background-color: @base02;
+    text-color: @base05;
 }
 element-icon {
     background-color: transparent;
@@ -171,12 +171,12 @@ message {
     border: 0px solid;
     border-radius: 0px 0px 0px 0px;
     background-color: black / 10%;
-    text-color: @foreground;
+    text-color: @base05;
 }
 error-message {
     padding: 10px;
     border: 0px solid;
     border-radius: 4px;
     background-color: inherit;
-    text-color: @foreground;
+    text-color: @base05;
 }

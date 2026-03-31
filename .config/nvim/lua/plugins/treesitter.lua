@@ -20,6 +20,7 @@ return {
       "markdown",
       "vim",
       "lua",
+      "doxygen"
     },
     highlight = {
       enable = true,
