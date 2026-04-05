@@ -11,6 +11,7 @@ gnu-netcat
 gruvbox-dark-gtk
 lidm
 mpv-thumbfast-git
+netwatch-tui
 nordic-bluish-accent-theme
 nordic-darker-theme
 nordic-theme

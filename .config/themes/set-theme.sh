@@ -43,9 +43,9 @@ fi
 # tmux
 if [ -f "${themeRoot}/tmux-theme.conf" ]; then
     echo "Updating tmux"
-    cp "${themeRoot}/tmux-theme.conf" "${HOME}/.tmux-theme.conf"
+    cp "${themeRoot}/tmux-theme.conf" "${HOME}/.config/tmux/theme.conf"
     if tmux -q has-session &>/dev/null; then
-        tmux source ~/.tmux.conf
+        tmux source ~/.config/tmux/tmux.conf
     fi
 fi
 
