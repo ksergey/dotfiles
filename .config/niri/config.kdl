@@ -143,11 +143,11 @@ layout {
     }
 
     focus-ring {
-        width 1
+        off
     }
 
     border {
-        off
+        width 2
     }
 }
 
@@ -185,7 +185,7 @@ animations {
 // -------------------------------------------------------------
 
 window-rule {
-    geometry-corner-radius 4
+    geometry-corner-radius 8
     clip-to-geometry true
     draw-border-with-background false
 }
@@ -213,10 +213,6 @@ window-rule {
 window-rule {
     match app-id="youtube"
     default-column-width { proportion 1.0; }
-}
-
-window-rule {
-    match app-id="cava"
 }
 
 window-rule {

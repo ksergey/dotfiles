@@ -15,6 +15,7 @@ window#waybar {
     background: @base00;
     color: @base05;
     transition: all 0.3s ease-in-out;
+    border-radius: 0 0 8px 8px;
 }
 
 .module {

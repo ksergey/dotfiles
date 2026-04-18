@@ -1,5 +1,4 @@
 7zip
-adapta-gtk-theme
 adw-gtk-theme
 alsa-utils
 amd-ucode
@@ -28,7 +27,6 @@ cmus
 ctags
 cups
 cups-pdf
-cutefish-icons
 dhclient
 dosfstools
 dunst
@@ -124,6 +122,7 @@ platformio-core
 platformio-core-udev
 polkit-gnome
 powertop
+pv
 pwgen
 python-mutagen
 python-virtualenv
@@ -160,6 +159,7 @@ tmux
 tree
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols
 tumbler
 umu-launcher
 unrar

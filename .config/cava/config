@@ -17,7 +17,7 @@ orientation = bottom
 
 [color]
 background = default
-foreground = '#DCD7BA'
+foreground = '#eeffff'
 
 [smoothing]
 monstercat    = 1
