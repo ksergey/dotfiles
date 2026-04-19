@@ -21,17 +21,12 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.api.nvim_create_autocmd("Filetype", {
-    pattern = { "lua", },
-    command = "set sw=2 ts=2",
-})
-
-vim.api.nvim_create_autocmd("Filetype", {
-  pattern = { "c", "cpp", "h", "hpp" },
-  callback = function()
-    -- Enable Doxygen highlighting
-    vim.g.load_doxygen_syntax = 1
-    vim.opt.textwidth = 120
-  end
+    pattern = { "c", "cpp", "h", "hpp" },
+    callback = function()
+        -- Enable Doxygen highlighting
+        vim.g.load_doxygen_syntax = 1
+        vim.opt.textwidth = 120
+    end
 })
 
 vim.api.nvim_create_autocmd("Filetype", {
