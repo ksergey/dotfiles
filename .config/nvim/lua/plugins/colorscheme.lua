@@ -1,49 +1,64 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "thesimonho/kanagawa-paper.nvim",
+  lazy = false,
+  priority = 1000,
   config = function()
-    require("kanagawa").setup({
-      transparent = true,
+    require("kanagawa-paper").setup({
+      -- enable undercurls for underlined text
+      undercurl = true,
+      -- transparent background
+      transparent = false,
+      -- highlight background for the left gutter
+      gutter = false,
+      -- background for diagnostic virtual text
+      diag_background = true,
+      -- dim inactive windows. Disabled when transparent
+      dim_inactive = false,
+      -- set colors for terminal buffers
+      terminal_colors = true,
+      -- cache highlights and colors for faster startup.
+      -- see Cache section for more details.
+      cache = false,
+
+      styles = {
+        -- style for comments
+        comment = { italic = true },
+        -- style for functions
+        functions = { italic = false },
+        -- style for keywords
+        keyword = { italic = false, bold = false },
+        -- style for statements
+        statement = { italic = false, bold = false },
+        -- style for types
+        type = { italic = false },
+      },
     })
 
-    vim.cmd("colorscheme kanagawa-wave")
+    vim.cmd.colorscheme("kanagawa-paper-ink")
   end,
+  opts = {},
 }
 
 -- return {
---   "EdenEast/nightfox.nvim",
---   priority = 1000,
---   config = function(_, opts)
---     require("nightfox").setup({
---       options = {
---         transparent = true,
---         dim_inactive = true,
---         styles = {
---           comments = "italic",
---           keywords = "bold",
---           functions = "italic,bold",
---         },
---         inverse = {
---           search = true,
---           match_paren = true,
---         },
---       },
---       groups = {
---         all = {
---           CursorLine = { bg = "#353A54" },
---           CursorColumn = { bg = "#353A54" },
---         },
---       },
+--   "https://github.com/vague-theme/vague.nvim",
+--   config = function()
+--     require('vague').setup({
+--       transparent = true,
+--       bold = true,
+--       italic = true,
 --     })
 --
---     vim.cmd.colorscheme 'duskfox'
+--     vim.cmd("colorscheme vague")
 --   end,
 -- }
 
 -- return {
---   "ellisonleao/gruvbox.nvim",
---   priority = 1000 ,
---   config = true,
---   opts = {
---     terminal_colors = true,
---   }
+--   "rebelot/kanagawa.nvim",
+--   config = function()
+--     require("kanagawa").setup({
+--       transparent = true,
+--     })
+--
+--     vim.cmd("colorscheme kanagawa-wave")
+--   end,
 -- }
