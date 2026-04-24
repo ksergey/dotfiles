@@ -1,4 +1,4 @@
-amneziawg-go
+amneziawg-dkms
 amneziawg-tools
 auto-cpufreq
 bibata-cursor-theme
@@ -10,6 +10,7 @@ dracula-gtk-theme
 etcher-bin
 gnu-netcat
 gruvbox-dark-gtk
+helium-gtk-theme
 lidm
 mpv-thumbfast-git
 netwatch-tui

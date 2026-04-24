@@ -3,5 +3,5 @@
 kitty \
   --override confirm_os_window_close=0 \
   --override background_image=~/.config/kitty/network.png \
-  --class wifi \
+  --class impala \
   -e impala
