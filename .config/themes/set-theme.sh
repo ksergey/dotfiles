@@ -55,3 +55,12 @@ if [ -f "${themeRoot}/waybar-theme.css" ]; then
     cp "${themeRoot}/waybar-theme.css" "${HOME}/.config/waybar/theme.css"
     pkill -SIGUSR2 waybar
 fi
+
+# dunst
+if [ -f "${themeRoot}/dunst-theme" ]; then
+    echo "Updating dunst"
+    cp "${themeRoot}/dunst-theme" "${HOME}/.config/dunst/dunstrc"
+    dunstctl reload
+fi
+
+notify-send "theme updated"

@@ -255,7 +255,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 6
+    corner_radius = 12
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -329,7 +329,7 @@
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#282c3466" # base00
+    background = "#282c34" # base00
     foreground = "#e06c75" # base08
     timeout = 0
     default_icon = dialog-warning

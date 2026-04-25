@@ -243,7 +243,39 @@ window-rule {
 
 window-rule {
     match app-id="cava"
+
     opacity 0.5
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="[tT]hunar"
+    match app-id="kitty"
+
+    opacity 0.8
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="Loupe"
+
+    popups {
+        // Matches the default libadwaita pop-up corner radius.
+        geometry-corner-radius 15
+
+        // Note: it'll look better to set background opacity
+        // through your GTK theme CSS and not here.
+        // This is just an example that makes it look obvious.
+        opacity 0.5
+
+        background-effect {
+            blur true
+        }
+    }
 }
 
 // -------------------------------------------------------------
@@ -267,10 +299,11 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="waybar"
-    match at-startup=true
-    shadow {
-        off
+    match namespace="^waybar$|^notifications$"
+    opacity 0.75
+    background-effect {
+        blur true
+        xray false
     }
 }
 

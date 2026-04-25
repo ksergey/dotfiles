@@ -1,6 +1,6 @@
 layout {
     border {
-        active-color "#545862"      // base03
-        inactive-color "#3e4451"    // base02
+        active-color "#a7adba"      // base04
+        inactive-color "#4f5b66"    // base02
     }
 }
