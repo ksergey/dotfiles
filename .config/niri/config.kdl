@@ -254,7 +254,7 @@ window-rule {
     match app-id="[tT]hunar"
     match app-id="kitty"
 
-    opacity 0.8
+    opacity 0.9
     background-effect {
         blur true
     }
@@ -265,7 +265,7 @@ window-rule {
 
     popups {
         // Matches the default libadwaita pop-up corner radius.
-        geometry-corner-radius 15
+        geometry-corner-radius 12
 
         // Note: it'll look better to set background opacity
         // through your GTK theme CSS and not here.
@@ -299,7 +299,8 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="^waybar$|^notifications$"
+    // match namespace="^waybar$|^notifications$"
+    match namespace="^waybar$"
     opacity 0.75
     background-effect {
         blur true
@@ -431,12 +432,12 @@ recent-windows {
 
     highlight {
         padding 30
-        corner-radius 8
+        corner-radius 24
     }
 
     previews {
         max-height 480
-        max-scale 0.5
+        max-scale 0.25
     }
 
     binds {
@@ -450,4 +451,4 @@ recent-windows {
 // -------------------------------------------------------------
 
 include "theme.kdl"
-include "animations.kdl"
+// include "animations.kdl"
