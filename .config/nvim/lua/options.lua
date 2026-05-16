@@ -40,7 +40,7 @@ vim.opt.inccommand = "split" -- review substitutions live, as you type
 
 -- ui
 vim.opt.cursorline = false -- highlight the current line
-vim.opt.laststatus = 2 -- only the last window will always have a status line
+vim.opt.laststatus = 0 -- only the last window will always have a status line
 vim.opt.lazyredraw = true -- don"t update the display while executing macros
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
@@ -117,31 +117,31 @@ vim.opt.foldlevel = 99
 
 -- Disable builtin plugins
 local disabled_built_ins = {
-    "2html_plugin",
-    "getscript",
-    "getscriptPlugin",
-    "gzip",
-    "logipat",
-    "netrw",
-    "netrwPlugin",
-    "netrwSettings",
-    "netrwFileHandlers",
-    "matchit",
-    "tar",
-    "tarPlugin",
-    "rrhelper",
-    "spellfile_plugin",
-    "vimball",
-    "vimballPlugin",
-    "zip",
-    "zipPlugin",
-    "tutor",
-    "rplugin",
-    "synmenu",
-    "optwin",
-    "compiler",
-    "bugreport",
-    "ftplugin",
+  "2html_plugin",
+  "getscript",
+  "getscriptPlugin",
+  "gzip",
+  "logipat",
+  "netrw",
+  "netrwPlugin",
+  "netrwSettings",
+  "netrwFileHandlers",
+  "matchit",
+  "tar",
+  "tarPlugin",
+  "rrhelper",
+  "spellfile_plugin",
+  "vimball",
+  "vimballPlugin",
+  "zip",
+  "zipPlugin",
+  "tutor",
+  "rplugin",
+  "synmenu",
+  "optwin",
+  "compiler",
+  "bugreport",
+  "ftplugin",
 }
 
 for _, plugin in pairs(disabled_built_ins) do

@@ -86,7 +86,6 @@ libva-utils
 linux
 linux-firmware
 linux-headers
-loupe
 man-db
 man-pages
 materia-gtk-theme
@@ -95,6 +94,7 @@ mc
 mesa-utils
 meson
 minidlna
+mosquitto
 mpv
 ncdu
 neovim
@@ -131,6 +131,7 @@ qmk
 qt5-wayland
 qt5ct
 qt6ct
+quickshell
 ripgrep
 rocm-smi-lib
 rofi
@@ -145,6 +146,7 @@ smartmontools
 socat
 starship
 strace
+swayimg
 systemd-resolvconf
 tcpdump
 tela-circle-icon-theme-nord
@@ -157,6 +159,7 @@ thunar-media-tags-plugin
 thunar-volman
 tmux
 tree
+ttf-cascadia-mono-nerd
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols

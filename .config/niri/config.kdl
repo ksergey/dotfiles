@@ -143,11 +143,20 @@ layout {
     }
 
     focus-ring {
-        off
+        on
+        width 2
     }
 
     border {
-        width 2
+        off
+    }
+
+    shadow {
+        on
+        softness 10
+        spread 3
+        offset x=0 y=5
+        color "#0007"
     }
 }
 
@@ -236,8 +245,8 @@ window-rule {
 // }
 
 window-rule {
-    match title="Heroes of Might and Magic III: Horn of the Abyss"
-    open-on-workspace "5"
+    match title="^Heroes of Might and Magic III: Horn of the Abyss$"
+    open-on-workspace "4"
     open-focused false
 }
 
@@ -257,24 +266,6 @@ window-rule {
     opacity 0.9
     background-effect {
         blur true
-    }
-}
-
-window-rule {
-    match app-id="Loupe"
-
-    popups {
-        // Matches the default libadwaita pop-up corner radius.
-        geometry-corner-radius 12
-
-        // Note: it'll look better to set background opacity
-        // through your GTK theme CSS and not here.
-        // This is just an example that makes it look obvious.
-        opacity 0.5
-
-        background-effect {
-            blur true
-        }
     }
 }
 
@@ -301,7 +292,7 @@ layer-rule {
 layer-rule {
     // match namespace="^waybar$|^notifications$"
     match namespace="^waybar$"
-    opacity 0.75
+    opacity 0.9
     background-effect {
         blur true
         xray false

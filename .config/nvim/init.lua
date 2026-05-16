@@ -17,7 +17,7 @@ require("lazy").setup({
     require("plugins.treesitter"),
     -- require("plugins.polyglot"),
     require("plugins.indent"),
-    require("plugins.lualine"),
+    -- require("plugins.lualine"),
     require("plugins.fzf"),
     require("plugins.tree"),
     require("plugins.neogen"),

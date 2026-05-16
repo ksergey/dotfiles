@@ -43,13 +43,13 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 20x20
+    offset = 10x10
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 20
+    notification_limit = 5
 
     ### Progress bar ###
 
@@ -102,7 +102,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 1
+    frame_width = 2
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -255,7 +255,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 12
+    corner_radius = 8
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -317,19 +317,22 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282c34" # base00
-    foreground = "#abb2bf" # base05
+    background = "#3b4252"  # base01
+    foreground = "#e5e9f0"  # base05
+    frame_color = "#e5e9f0" # base05
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#282c34" # base00
-    foreground = "#abb2bf" # base05
+    background = "#3b4252"  # base01
+    foreground = "#e5e9f0"  # base05
+    frame_color = "#e5e9f0" # base05
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#282c34" # base00
-    foreground = "#e06c75" # base08
+    background = "#3b4252"  # base01
+    foreground = "#bf616a"  # base08
+    frame_color = "#bf616a" # base08
     timeout = 0
     default_icon = dialog-warning

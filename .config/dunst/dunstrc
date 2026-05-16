@@ -317,22 +317,22 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#313235" # base01
-    foreground = "#afb2b5" # base05
-    frame_color = "#caccce"
+    background = "#3b4252"  # base01
+    foreground = "#e5e9f0"  # base05
+    frame_color = "#e5e9f0" # base05
     timeout = 6
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#313235" # base01
-    foreground = "#afb2b5" # base05
-    frame_color = "#caccce"
+    background = "#3b4252"  # base01
+    foreground = "#e5e9f0"  # base05
+    frame_color = "#e5e9f0" # base05
     timeout = 6
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#313235" # base01
-    foreground = "#e77171" # base08
-    frame_color = "#e77171"
+    background = "#3b4252"  # base01
+    foreground = "#bf616a"  # base08
+    frame_color = "#bf616a" # base08
     timeout = 0
     default_icon = dialog-warning
