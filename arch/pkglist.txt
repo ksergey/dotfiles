@@ -121,6 +121,7 @@ pkgfile
 platformio-core
 platformio-core-udev
 polkit-gnome
+pop-gtk-theme
 powertop
 pv
 pwgen

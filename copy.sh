@@ -38,6 +38,7 @@ ENTRIES=(
   "${HOME}/.config/matugen"
   "${HOME}/.config/themes"
   "${HOME}/.config/swayimg"
+  "${HOME}/.config/Thunar"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
   "/etc/systemd/logind.conf"

@@ -1,7 +1,5 @@
 [global]
-    width = 300
-    offset = 5x5
-    frame_width = 1
+    frame_width = 2
     corner_radius = 8
     font = "JetBrainsMono Nerd Font Propo" 10
     icon_theme = "Colloid-Dark,Papirus-Dark,Adwaita"
@@ -10,20 +8,20 @@
     max_icon_size = 128
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 [urgency_low]
-    background = "#141414"
-    foreground = "#c8c8a7"
-    frame_color = "#92927c"
+    background = "#30363d"
+    foreground = "#c9d1d9"
+    frame_color = "#c9d1d9"
     timeout = 6
     default_icon = dialog-information
 [urgency_normal]
-    background = "#141414"
-    foreground = "#c8c8a7"
-    frame_color = "#92927c"
+    background = "#30363d"
+    foreground = "#c9d1d9"
+    frame_color = "#c9d1d9"
     timeout = 6
     default_icon = dialog-information
 [urgency_critical]
-    background = "#141414"
-    foreground = "#c06c43"
-    frame_color = "#c06c43"
+    background = "#30363d"
+    foreground = "#f85149"
+    frame_color = "#f85149"
     timeout = 0
     default_icon = dialog-warning
