@@ -81,7 +81,10 @@ lib32-libpulse
 lib32-libxfixes
 lib32-pipewire
 lib32-vulkan-radeon
+libgepub
+libgsf
 libmad
+libopenraw
 libva-utils
 linux
 linux-firmware
