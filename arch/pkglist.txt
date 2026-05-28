@@ -180,6 +180,7 @@ waybar
 webkit2gtk-4.1
 wev
 wf-recorder
+wlr-randr
 woff2-font-awesome
 wpa_supplicant
 xdg-desktop-portal

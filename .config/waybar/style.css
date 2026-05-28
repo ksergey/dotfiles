@@ -12,26 +12,27 @@
 #window {}
 
 window#waybar {
-    background: alpha(@base00, 0.6);
+    /* background: alpha(@base00, 0.6); */
+    background: @base00;
     color: @base05;
     transition: all 0.3s ease-in-out;
 }
 
 .module {
-    padding: 0.1rem 0.5rem;
+    padding: 0.3rem 0.5rem;
     transition: all 0.3s ease-in-out;
 }
 
 .modules-left:first-child {
-    margin-left: 6px;
+    margin-left: 8px;
 }
 
 .modules-right:last-child {
-    margin-right: 6px;
+    margin-right: 8px;
 }
 
 tooltip {
-    background: alpha(@base00, 0.99);
+    background: alpha(@base00, 0.9);
     color: @base05;
     border: 1px solid @base03;
     border-radius: 6px;

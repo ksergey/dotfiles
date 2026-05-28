@@ -6,12 +6,12 @@
   "modules-left": [
     "temperature",
     "custom/cliphist",
-    "custom/cava",
     "custom/tesseract"
   ],
 
   "modules-center": [
     "niri/workspaces"
+  //   // "ext/workspaces"
   ],
 
   "modules-right": [
@@ -159,13 +159,6 @@
     "tooltip": true
   },
 
-  "custom/cava": {
-    "format": "󰺢",
-    "tooltip-format": "launch cava",
-    "on-click": "niri msg action spawn -- ~/.config/scripts/cava.sh && sleep 0.3 && niri msg action consume-or-expel-window-left && niri msg action set-window-height '12%'",
-    "tooltip": true
-  },
-
   "custom/tesseract": {
     "format": "󰧶",
     "tooltip-format": "copy via tesseract (ctrl-v after)",
@@ -185,5 +178,5 @@
       ""  // Icon: temperature-full
     ],
     "tooltip": true
-  },
+  }
 }

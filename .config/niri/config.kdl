@@ -115,7 +115,7 @@ input {
 // -------------------------------------------------------------
 
 layout {
-    gaps 16
+    gaps 8
 
     struts {
         left 0
@@ -261,9 +261,16 @@ window-rule {
 
 window-rule {
     match app-id="[tT]hunar"
+
+    opacity 0.8
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
     match app-id="kitty"
 
-    opacity 0.9
     background-effect {
         blur true
     }

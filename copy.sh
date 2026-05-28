@@ -39,6 +39,8 @@ ENTRIES=(
   "${HOME}/.config/themes"
   "${HOME}/.config/swayimg"
   "${HOME}/.config/Thunar"
+  "${HOME}/.config/xdg-desktop-portal/mango-portals.conf"
+  "${HOME}/.config/mango"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
   "/etc/systemd/logind.conf"
