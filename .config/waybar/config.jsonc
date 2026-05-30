@@ -10,8 +10,8 @@
   ],
 
   "modules-center": [
-    "niri/workspaces"
-  //   // "ext/workspaces"
+    //"niri/workspaces"
+    "ext/workspaces"
   ],
 
   "modules-right": [

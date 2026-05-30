@@ -13,13 +13,18 @@
 
 window#waybar {
     /* background: alpha(@base00, 0.6); */
-    background: @base00;
     color: @base05;
+    text-shadow:
+        1px 0px 0px @base00,
+        -1px 0px 0px @base00,
+        0px 1px 0px @base00,
+        0px -1px 0px @base00;
+
     transition: all 0.3s ease-in-out;
 }
 
 .module {
-    padding: 0.3rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     transition: all 0.3s ease-in-out;
 }
 
