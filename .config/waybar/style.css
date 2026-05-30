@@ -1,5 +1,19 @@
 @import "theme.css";
 
+@define-color background @base00;
+@define-color surface @base01;
+
+@define-color shadow @base03;
+
+@define-color text @base05;
+@define-color text-hover @base0B;
+@define-color text-muted @base03;
+@define-color text-active @base0A;
+@define-color text-warning @base09;
+@define-color text-critical @base08;
+@define-color text-accent @base0A;
+
+
 * {
     all: unset;
     padding: 0;
@@ -13,12 +27,8 @@
 
 window#waybar {
     /* background: alpha(@base00, 0.6); */
-    color: @base05;
-    text-shadow:
-        1px 0px 0px @base00,
-        -1px 0px 0px @base00,
-        0px 1px 0px @base00,
-        0px -1px 0px @base00;
+    color: @text;
+    text-shadow: 1px 0px 0px @shadow, -1px 0px 0px @shadow, 0px 1px 0px @shadow, 0px -1px 0px @shadow;
 
     transition: all 0.3s ease-in-out;
 }
@@ -37,9 +47,8 @@ window#waybar {
 }
 
 tooltip {
-    background: alpha(@base00, 0.9);
-    color: @base05;
-    border: 1px solid @base03;
+    background: alpha(@surface, 0.9);
+    color: @text;
     border-radius: 6px;
 }
 
@@ -53,7 +62,7 @@ tooltip label {
     padding: 0.05rem;
     margin: 0.2rem 0.2rem;
     transition: all 0.3s ease-in-out;
-    color: @base05;
+    color: @text;
 }
 
 #workspace button:first-child {
@@ -65,15 +74,15 @@ tooltip label {
 }
 
 #workspaces button.empty {
-    color: alpha(@base05, 0.4);
+    color: alpha(@text, 0.4);
 }
 
 #workspaces button.visible {
-    color: alpha(@base05, 0.4);
+    color: alpha(@text, 0.4);
 }
 
 #workspaces button.active {
-    color: @base0A;
+    color: @text-active;
 }
 
 window#waybar.empty #window {
@@ -103,22 +112,25 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #backlight:hover,
 #battery:hover {
-    background: @base02;
+    color: @text-hover;
 }
 
 #custom-vpn.up {
-    color: @base0C;
+    color: @text-accent;
+}
+#custom-vpn.up:hover {
+    color: @text-hover;
 }
 
 #battery.warning {
-    color: @base09;
+    color: @text-warning;
 }
 #battery.critical {
-    color: @base08;
-    background: shade(@base08, 0.4);
+    color: @text-critical;
+    background: shade(@text-critical, 0.4);
 }
 
 #temperature.critical {
-    color: @base08;
+    color: @danger;
     background: shade(@base08, 0.4);
 }

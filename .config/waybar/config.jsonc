@@ -51,6 +51,18 @@
     },
   },
 
+  "ext/workspaces": {
+    "format": "{icon}",
+    "ignore-hidden": true,
+    "sort-by-id": true,
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "active": "󰮯",
+      "default": "󰊠",
+	},
+  },
+
   "clock": {
     "format": "{:%H:%M}",
     "format-alt": "{:%A, %B %d, %Y (%R)}",
