@@ -2,15 +2,14 @@
 
 Copy what you want
 
-`hyprland` input broken so `niri` FTW!
+`hyprland` input broken so ~~`niri`~~ `mangowm` FTW!
 
 ## Showcase
 
-![fastfetch](.github/assets/screenshot_1.png)
-![wallpapers menu](.github/assets/screenshot_2.png)
-![apps menu](.github/assets/screenshot_3.png)
-![ff+cava](.github/assets/screenshot_4.png)
-![wifi+bt](.github/assets/screenshot_5.png)
+![screenshot 1](.github/assets/screenshot_1.png)
+![screenshot 2](.github/assets/screenshot_2.png)
+![screenshot 3](.github/assets/screenshot_3.png)
+![screenshot 4](.github/assets/screenshot_4.png)
 
 
 ## AmneziaVPN
@@ -84,13 +83,13 @@ EOF
 ```
 Also you need an icon for menu entry
 
-# Vim
+# ~~Vim~~
 
-Just copy everything into your home. For complete vim installation run inside vim `:PlugInstall`
+~~Just copy everything into your home. For complete vim installation run inside vim `:PlugInstall`~~
 
-# Switch colorschemes
+# NVim
 
-see `.config/scripts/make-theme-rong.sh`
+Just copy
 
 # Theming
 
