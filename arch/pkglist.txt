@@ -96,7 +96,6 @@ mc
 mesa-utils
 meson
 minidlna
-mosquitto
 mpv
 ncdu
 neovim
@@ -134,7 +133,6 @@ qmk
 qt5-wayland
 qt5ct
 qt6ct
-quickshell
 ripgrep
 rocm-smi-lib
 rofi

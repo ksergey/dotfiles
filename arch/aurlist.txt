@@ -2,7 +2,6 @@ amneziawg-dkms
 amneziawg-tools
 auto-cpufreq
 bibata-cursor-theme
-cava-bg
 chroma-visualizer-git
 cmatrix-git
 downgrade
