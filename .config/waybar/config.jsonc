@@ -15,7 +15,7 @@
   ],
 
   "modules-right": [
-    // "backlight",
+    "backlight",
     "wireplumber",
     "bluetooth",
     "network",
