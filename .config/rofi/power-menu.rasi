@@ -1,121 +1,13 @@
-configuration {
-  show-icons: false;
-}
+@import "base.rasi"
 
-@import "theme.rasi"
-@import "options.rasi"
-
-* {
-    font: "JetBrainsMono Nerd Font 10";
-}
-
-/*****----- Main Window -----*****/
 window {
-    /* properties for window widget */
-    transparency: "real";
-    location: center;
-    anchor: center;
-    fullscreen: false;
-    width: 200px;
-    x-offset: 0px;
-    y-offset: 0px;
-    /* properties for all widgets */
-    enabled: true;
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid;
-    cursor: "default";
-    border-color: @base03;
-    background-color: @base00;
+    width: 160px;
 }
 
-/*****----- Main Box -----*****/
 mainbox {
-    enabled: true;
-    spacing: 10px;
-    margin: 0px;
-    padding: 30px;
-    border: 0px solid;
-    border-radius: 0px 0px 0px 0px;
-    background-color: transparent;
-    children: [ "message", "listview" ];
+    children: [ listview ];
 }
 
-/*****----- Listview -----*****/
 listview {
-    enabled: true;
-    columns: 1;
-    lines: 6;
-    cycle: true;
-    dynamic: true;
-    scrollbar: false;
-    layout: vertical;
-    reverse: false;
-    fixed-height: false;
-    fixed-columns: true;
-    spacing: 5px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px solid;
-    border-radius: 0px;
-    background-color: transparent;
-    text-color: @base05;
-    cursor: "default";
-}
-
-/*****----- Elements -----*****/
-element {
-    enabled: true;
-    spacing: 8px;
-    margin: 0px;
-    padding: 8px;
-    border: 0px solid;
-    border-radius: 4px;
-    background-color: transparent;
-    text-color: @base05;
-    cursor: pointer;
-}
-element normal.normal {
-    background-color: inherit;
-    text-color: @base05;
-}
-element alternate.normal {
-    background-color: inherit;
-    text-color: inherit;
-}
-element selected.normal {
-    background-color: @base02;
-    text-color: @base05;
-}
-element-icon {
-    background-color: transparent;
-    text-color: inherit;
-    size: 24px;
-    cursor: inherit;
-}
-element-text {
-    background-color: transparent;
-    text-color: inherit;
-    highlight: inherit;
-    cursor: inherit;
-    vertical-align: 0.5;
-    horizontal-align: 0.0;
-}
-
-/*****----- Message -----*****/
-message {
-    enabled: true;
-    margin: 0px;
-    padding: 0px;
-    border: 0px solid;
-    border-radius: 0px 0px 0px 0px;
-    background-color: black / 10%;
-    text-color: @base05;
-}
-error-message {
-    padding: 10px;
-    border: 0px solid;
-    border-radius: 4px;
-    background-color: inherit;
-    text-color: @base08;
+    lines: 5;
 }

@@ -16,6 +16,7 @@ mpv-thumbfast-git
 nordic-bluish-accent-theme
 nordic-darker-theme
 nordic-theme
+python-adafruit-nrfutil
 solarust
 sunsetr
 tokyonight-gtk-theme-git

@@ -1,0 +1,94 @@
+@import "theme.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: false;
+    display-drun: ">";
+	drun-display-format: "{name}";
+	window-format: "{w} · {c} · {t}";
+}
+
+window {
+    transparency: "real";
+    width: 320px;
+    cursor: "default";
+    border: 2px solid;
+    border-radius: 16px;
+    border-color: @border;
+    background-color: @base;
+}
+
+mainbox {
+    padding: 16px;
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    spacing: 8px;
+    border-radius: @border-radius-elem;
+    background-color: transparent;
+    text-color: @text;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @text-muted;
+}
+
+entry {
+    background-color: inherit;
+    text-color: inherit;
+    cursor: text;
+    placeholder: "search...";
+    placeholder-color: @text-muted;
+}
+
+listview {
+    columns: 1;
+    lines: 6;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    fixed-height: true;
+    fixed-columns: true;
+    border: 0px solid;
+    background-color: transparent;
+    text-color: @text;
+    cursor: "default";
+}
+
+element {
+    padding: 8px;
+    border-radius: @border-radius-elem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: inherit;
+    text-color: @text-muted;
+}
+
+element selected.normal {
+    background-color: @surface;
+    text-color: @text;
+}
+
+element-icon {
+    background-color: transparent;
+    text-color: inherit;
+    size: 24px;
+    cursor: inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    highlight: inherit;
+    cursor: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
