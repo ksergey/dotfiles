@@ -66,14 +66,12 @@ hyprlock
 imagemagick
 impala
 inetutils
+iw
 iwd
 jq
 jre-openjdk-headless
 kernel-modules-hook
 kitty
-kvantum
-kvantum-qt5
-kvantum-theme-materia
 ldns
 lib32-gnutls
 lib32-libpulse

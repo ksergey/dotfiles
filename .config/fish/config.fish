@@ -17,6 +17,7 @@ alias ls="/usr/bin/ls -l --group-directories-first --color=auto -h "
 alias grep='grep --color=auto'
 alias lsblk='lsblk -o name,mountpoint,label,size,uuid'
 alias ncdu='ncdu --color=dark'
-alias myip='curl https://ipapi.co/json'
+alias myip0='curl https://icanhazip.com'
+alias myip1='curl https://ipapi.co/json'
 
 starship init fish | source
