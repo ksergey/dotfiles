@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/ksergey/dev/fugo/deps/turboq'
+let g:netrw_dirhist_0='/home/ksergey/.config/matugen/templates'
+let g:netrw_dirhist_9='/home/ksergey/dev/fugo/deps/simple-binary-encoding'
+let g:netrw_dirhist_8='/home/ksergey/dev/roq-cpp-samples/src/roq/samples/io-context'
+let g:netrw_dirhist_7='/home/ksergey/.config/nvim/snippets'
+let g:netrw_dirhist_6='/home/ksergey/.config/nvim_/lua/plugins'
+let g:netrw_dirhist_5='/home/ksergey/minidlna'
+let g:netrw_dirhist_4='/home/ksergey/.config/nvim_/lua/plugins'
+let g:netrw_dirhist_3='/home/ksergey'
+let g:netrw_dirhist_2='/home/ksergey/.config'

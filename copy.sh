@@ -34,6 +34,7 @@ ENTRIES=(
   "${HOME}/.config/gtk-4.0"
   "${HOME}/.config/sunsetr/sunsetr.toml"
   "${HOME}/.config/nvim"
+  "${HOME}/.config/vim"
   "${HOME}/.config/tmux"
   "${HOME}/.config/matugen"
   "${HOME}/.config/themes"

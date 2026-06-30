@@ -1,4 +1,4 @@
-let $VIMHOME=$HOME."/.vim"
+let $VIMHOME=$HOME."/.config/vim"
 
 call plug#begin($VIMHOME.'/plugged')
 
@@ -30,6 +30,7 @@ Plug 'lifepillar/vim-gruvbox8'
 Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/edge'
 Plug 'EdenEast/nightfox.nvim'
+Plug 'menisadi/kanagawa.vim'
 
 call plug#end()
 
@@ -144,7 +145,7 @@ set showmatch
 set matchpairs+=<:>
 set ruler
 set showcmd
-set laststatus=2
+set laststatus=0
 set cmdheight=1
 set noshowmode
 set wildmenu
@@ -184,25 +185,8 @@ if has('termguicolors')
 endif
 set background=dark
 
-let g:gruvbox_bold = 1
-let g:gruvbox_italics = 1
-let g:gruvbox_transp_bg = 1
-colorscheme gruvbox8_hard
+colorscheme gruvbox8
 let g:lightline = {'colorscheme' : 'gruvbox8'}
-
-" lua << EOF
-" require('nightfox').setup({
-" 	options = {
-" 		transparent = true,
-" 		styles = {
-" 			comments = "italic"
-" 		}
-" 	}
-" })
-" EOF
-"
-" colorscheme nightfox
-" let g:lightline = {'colorscheme' : 'nightfox'}
 
 "---------------------------------------
 " VIM bindings
