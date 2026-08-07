@@ -21,3 +21,6 @@ alias myip0='curl https://icanhazip.com'
 alias myip1='curl https://ipapi.co/json'
 
 starship init fish | source
+
+# opencode
+fish_add_path /home/ksergey/.opencode/bin

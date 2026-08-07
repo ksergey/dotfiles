@@ -21,5 +21,8 @@ require("lazy").setup({
     require("plugins.fzf"),
     require("plugins.tree"),
     require("plugins.neogen"),
-    require("plugins.colorscheme"),
+    require("plugins.colorscheme_nordic"),
+    require("plugins.colorscheme_luna"),
 })
+
+vim.cmd.colorscheme("luna")

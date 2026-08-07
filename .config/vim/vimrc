@@ -31,6 +31,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/edge'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'menisadi/kanagawa.vim'
+Plug 'nordtheme/vim'
 
 call plug#end()
 

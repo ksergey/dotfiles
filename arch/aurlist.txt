@@ -23,7 +23,6 @@ solarust
 sunsetr
 tokyonight-gtk-theme-git
 ttf-harmonyos-sans
-whitesur-icon-theme
 winbox
 wiremix-git
 yay

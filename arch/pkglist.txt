@@ -82,6 +82,7 @@ libgepub
 libgsf
 libmad
 libopenraw
+libreoffice-fresh
 libva-utils
 linux
 linux-firmware
@@ -91,6 +92,7 @@ man-pages
 materia-gtk-theme
 matugen
 mc
+mediainfo
 mesa-utils
 meson
 minidlna
@@ -103,6 +105,8 @@ niri
 nmap
 nvtop
 nwg-look
+ollama
+ollama-rocm
 openscad
 openttd
 openttd-opengfx
