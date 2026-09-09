@@ -24,3 +24,5 @@ starship init fish | source
 
 # opencode
 fish_add_path /home/ksergey/.opencode/bin
+
+set -gx CPM_SOURCE_CACHE "$HOME/.cache/CPM"

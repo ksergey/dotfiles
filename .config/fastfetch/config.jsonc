@@ -7,7 +7,7 @@
         "separator": " • "
     },
     "logo": {
-        "type": "kitty",
+        "type": "auto",
         "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/images/\" -name \"*.png\" | sort -R | head -1)",
         "height": 15,
         "padding": {

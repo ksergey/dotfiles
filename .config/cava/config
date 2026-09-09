@@ -1,7 +1,0 @@
-[color]
-background = default
-
-gradient = 1
-gradient_color_1 = '#81a1c1' # base0d
-gradient_color_2 = '#ebcb8b' # base0a
-gradient_color_3 = '#d08770' # base09

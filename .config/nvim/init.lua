@@ -14,15 +14,16 @@ require("lazy").setup({
     require("plugins.completion"),
     require("plugins.autopairs"),
     require("plugins.alternate"),
-    require("plugins.treesitter"),
-    -- require("plugins.polyglot"),
-    require("plugins.indent"),
+    -- require("plugins.treesitter"),
+    require("plugins.polyglot"),
+    -- require("plugins.indent"),
     -- require("plugins.lualine"),
     require("plugins.fzf"),
     require("plugins.tree"),
     require("plugins.neogen"),
     require("plugins.colorscheme_nordic"),
     require("plugins.colorscheme_luna"),
+    require("plugins.colorscheme_soviet"),
 })
 
-vim.cmd.colorscheme("luna")
+vim.cmd.colorscheme("soviet-dark")

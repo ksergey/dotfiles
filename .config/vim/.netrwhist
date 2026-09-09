@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/run/media/ksergey/bdd5efc1-ba78-4a64-b3ad-5cb5904a7702/boot/dietpi'
 let g:netrw_dirhist_3='/home/ksergey/dev/turboq/code'
 let g:netrw_dirhist_2='/home/ksergey/dev/turboq/code/turboq'
 let g:netrw_dirhist_1='/home/ksergey/dev/fugo/deps/turboq'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_8='/home/ksergey/dev/roq-cpp-samples/src/roq/samples/io-cont
 let g:netrw_dirhist_7='/home/ksergey/.config/nvim/snippets'
 let g:netrw_dirhist_6='/home/ksergey/.config/nvim_/lua/plugins'
 let g:netrw_dirhist_5='/home/ksergey/minidlna'
-let g:netrw_dirhist_4='/home/ksergey/.config/nvim_/lua/plugins'
