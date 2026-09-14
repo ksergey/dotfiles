@@ -24,7 +24,7 @@ ENTRIES=(
   "${HOME}/.local/share/applications/Heroes3HotA.desktop"
   "${HOME}/.local/share/applications/OrcaSlicer.desktop"
   "${HOME}/.config/nvim"
-  "${HOME}/.config/vim"
+  "${HOME}/.config/vim/vimrc"
   "${HOME}/.config/tmux"
   "${HOME}/.config/swayimg"
   "${HOME}/.config/Thunar"
