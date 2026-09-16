@@ -83,9 +83,12 @@ for ENTRY_SRC in ${ENTRIES[@]}; do
   cp -r "${ENTRY_SRC}" "${ENTRY_DST}"
 done
 
+printf " * %bdumping noctalia shell config%b\n" "${C_CYAN}" "${C_RESET}"
+noctalia config export > noctalia-config.toml
+
 printf " * %bdumping installed packages list%b\n" "${C_CYAN}" "${C_RESET}"
 mkdir -p "${GIT_HOME}/arch"
 pacman -Qqen > "${GIT_HOME}/arch/pkglist.txt"
 pacman -Qqem > "${GIT_HOME}/arch/aurlist.txt"
 
-git add ${GIT_HOME}/{arch,.config,system}
+git add ${GIT_HOME}/{noctalia-config.toml,arch,.config,system}

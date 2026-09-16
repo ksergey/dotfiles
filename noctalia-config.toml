@@ -1,0 +1,186 @@
+[bar.default]
+center = [ "audio_visualizer" ]
+contact_shadow = false
+end = [ "status", "widget", "bluetooth", "network", "toggle", "battery", "clock" ]
+font_weight = 400
+margin_ends = 0
+radius_top_left = 0
+radius_top_right = 0
+shadow = false
+start = [ "recorder", "ocr", "clipboard", "workspaces" ]
+thickness = 24
+widget_spacing = 8
+
+[desktop_widgets]
+enabled = false
+
+[dock]
+shadow = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = "Moscow, Russia"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 768.0
+    cy = 778.0
+    output = "eDP-1"
+    placement_height = 960.0
+    placement_width = 1536.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[osd]
+orientation = "vertical"
+position_vertical = "center_left"
+
+    [osd.kinds]
+    keyboard_layout = false
+
+[plugin_settings."blackbartblues/audio-switcher"]
+show_percentage = false
+
+[plugin_settings."fel/ocr"]
+languages = "eng+rus"
+
+[plugin_settings."noctalia/screen_recorder"]
+video_source = "focused"
+
+[plugins]
+enabled = [ "ksergey/awg-status", "fel/ocr", "noctalia/screen_recorder", "blackbartblues/audio-switcher", "aristides/udiskie" ]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+date_format = "%A, %F"
+font_family = "HarmonyOS Sans"
+panel_anchor_bar = "default"
+
+    [shell.launcher]
+    categories = false
+    compact = true
+    fetch_exchange_rates = false
+
+    [shell.panel]
+    polkit_placement = "attached"
+    shadow = false
+
+[system.monitor]
+enabled = false
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "ADW"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "cava", "foot", "gtk3", "gtk4", "mango" ]
+    community_ids = [ "pywalfox-beta4" ]
+
+[wallpaper]
+directory = "/home/ksergey/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/ksergey/Pictures/Wallpapers/e5lr5q8yddmh1.png"
+
+    [wallpaper.last]
+    path = "/home/ksergey/Pictures/Wallpapers/e5lr5q8yddmh1.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/ksergey/Pictures/Wallpapers/e5lr5q8yddmh1.png"
+
+[widget.audio_visualizer]
+color_1 = "secondary"
+width = 128
+
+[widget.battery]
+show_label = false
+
+[widget.clock]
+color = "secondary"
+
+[widget.launcher]
+enabled = false
+
+[widget.network]
+show_label = false
+
+[widget.ocr]
+type = "fel/ocr:ocr"
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
+
+[widget.status]
+type = "aristides/udiskie:status"
+
+[widget.toggle]
+config_path = "~/.config/amnezia_for_awg.conf"
+icon_down = "U+F0499"
+icon_up = "U+F0BC4"
+type = "ksergey/awg-status:toggle"
+
+[widget.widget]
+type = "blackbartblues/audio-switcher:widget"
+
+[widget.workspaces]
+labels_only_when_occupied = true
+style = "minimal"
