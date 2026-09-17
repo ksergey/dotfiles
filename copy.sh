@@ -23,6 +23,7 @@ ENTRIES=(
   "${HOME}/.local/share/applications/Heroes3HotA-launcher.desktop"
   "${HOME}/.local/share/applications/Heroes3HotA.desktop"
   "${HOME}/.local/share/applications/OrcaSlicer.desktop"
+  "${HOME}/.local/scripts"
   "${HOME}/.config/nvim"
   "${HOME}/.config/vim/vimrc"
   "${HOME}/.config/tmux"
