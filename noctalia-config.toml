@@ -1,15 +1,20 @@
 [bar.default]
+background_opacity = 0.39999999105930328
+border_width = 1.0
+capsule_thickness = 0.99999998137354851
 center = [ "audio_visualizer" ]
 contact_shadow = false
-end = [ "status", "widget", "bluetooth", "network", "toggle", "battery", "clock" ]
+end = [ "widget_2", "status", "widget", "bluetooth", "network", "battery", "clock" ]
 font_weight = 400
-margin_ends = 0
-radius_top_left = 0
-radius_top_right = 0
+hover_highlight = false
+margin_edge = 8
+margin_ends = 8
+padding = 8
+radius = 8
 shadow = false
 start = [ "recorder", "ocr", "clipboard", "workspaces" ]
 thickness = 24
-widget_spacing = 8
+widget_spacing = 4
 
 [desktop_widgets]
 enabled = false
@@ -100,11 +105,21 @@ show_percentage = false
 [plugin_settings."fel/ocr"]
 languages = "eng+rus"
 
+[plugin_settings."mdj2812/mihomo-control"]
+port = "9093"
+
 [plugin_settings."noctalia/screen_recorder"]
 video_source = "focused"
 
 [plugins]
-enabled = [ "ksergey/awg-status", "fel/ocr", "noctalia/screen_recorder", "blackbartblues/audio-switcher", "aristides/udiskie" ]
+enabled = [
+    "ksergey/awg-status",
+    "fel/ocr",
+    "noctalia/screen_recorder",
+    "blackbartblues/audio-switcher",
+    "aristides/udiskie",
+    "mdj2812/mihomo-control"
+]
 
     [[plugins.source]]
     kind = "git"
@@ -148,16 +163,16 @@ wallpaper_scheme = "m3-content"
 directory = "/home/ksergey/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/ksergey/Pictures/Wallpapers/e5lr5q8yddmh1.png"
+    path = "/home/ksergey/Pictures/Wallpapers/ytbvy9r8gjsh1.png"
 
     [wallpaper.last]
-    path = "/home/ksergey/Pictures/Wallpapers/e5lr5q8yddmh1.png"
+    path = "/home/ksergey/Pictures/Wallpapers/ytbvy9r8gjsh1.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/ksergey/Pictures/Wallpapers/e5lr5q8yddmh1.png"
+    path = "/home/ksergey/Pictures/Wallpapers/ytbvy9r8gjsh1.png"
 
 [widget.audio_visualizer]
-color_1 = "secondary"
+color_2 = "error"
 width = 128
 
 [widget.battery]
@@ -181,15 +196,13 @@ type = "noctalia/screen_recorder:recorder"
 [widget.status]
 type = "aristides/udiskie:status"
 
-[widget.toggle]
-config_path = "~/.config/amnezia_for_awg.conf"
-icon_down = "U+F0499"
-icon_up = "U+F0BC4"
-type = "ksergey/awg-status:toggle"
-
 [widget.widget]
 type = "blackbartblues/audio-switcher:widget"
 
+[widget.widget_2]
+label_content = "connections"
+type = "mdj2812/mihomo-control:widget"
+
 [widget.workspaces]
-labels_only_when_occupied = true
+hide_when_empty = true
 style = "minimal"

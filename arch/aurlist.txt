@@ -8,8 +8,7 @@ dracula-gtk-theme
 elio
 etcher-bin
 gnu-netcat
-lidm
-mangowm
+mihomo
 mpv-thumbfast-git
 nordic-bluish-accent-theme
 nordic-darker-theme
@@ -18,7 +17,6 @@ pine64-rkdeveloptool-git
 pixora-icons-git
 python-pyamlboot-git
 ttf-harmonyos-sans
-vkquake
 winbox
 wiremix-git
 yay

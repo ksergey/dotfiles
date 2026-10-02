@@ -45,7 +45,9 @@ fwupd
 fwupd-efi
 fzf
 gdb
+gimp
 git
+glow
 gpu-screen-recorder
 grim
 grub
@@ -82,8 +84,10 @@ libva-utils
 linux
 linux-firmware
 linux-headers
+ly
 man-db
 man-pages
+mangowm
 materia-gtk-theme
 mc
 mediainfo
@@ -140,6 +144,7 @@ sdl2-compat
 slurp
 smartmontools
 socat
+speedtest-cli
 sshfs
 starship
 strace
@@ -167,6 +172,7 @@ unrar
 unzip
 valgrind
 vim
+vkquake
 vulkan-radeon
 vulkan-tools
 webkit2gtk-4.1
