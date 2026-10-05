@@ -35,6 +35,7 @@ ENTRIES=(
   "${HOME}/.config/noctalia"
   "/etc/iwd/main.conf"
   "/etc/sysctl.d/99_default_ttl.conf"
+  "/etc/udev/rules.d/99-keychron.rules"
   "/etc/systemd/logind.conf"
   "/etc/systemd/resolved.conf"
 )
