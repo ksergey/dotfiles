@@ -149,8 +149,8 @@ panel_anchor_bar = "default"
 enabled = false
 
 [theme]
-builtin = "Rosé Pine"
-community_palette = "ADW"
+builtin = "Ayu"
+community_palette = "Catppuccin Frappe Sapphire"
 mode = "dark"
 source = "builtin"
 wallpaper_scheme = "m3-content"
