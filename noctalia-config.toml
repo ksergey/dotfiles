@@ -4,7 +4,7 @@ border_width = 1.0
 capsule_thickness = 0.99999998137354851
 center = [ "audio_visualizer" ]
 contact_shadow = false
-end = [ "widget_2", "status", "widget", "bluetooth", "network", "battery", "clock" ]
+end = [ "bar", "widget_2", "status", "widget", "bluetooth", "network", "battery", "clock" ]
 font_weight = 400
 hover_highlight = false
 margin_edge = 8
@@ -105,6 +105,9 @@ show_percentage = false
 [plugin_settings."fel/ocr"]
 languages = "eng+rus"
 
+[plugin_settings."inndie/nape_pro_status"]
+device_match = "Keychron Nape Pro Mouse"
+
 [plugin_settings."mdj2812/mihomo-control"]
 port = "9093"
 
@@ -118,7 +121,8 @@ enabled = [
     "noctalia/screen_recorder",
     "blackbartblues/audio-switcher",
     "aristides/udiskie",
-    "mdj2812/mihomo-control"
+    "mdj2812/mihomo-control",
+    "inndie/nape_pro_status"
 ]
 
     [[plugins.source]]
@@ -174,6 +178,10 @@ directory = "/home/ksergey/Pictures/Wallpapers"
 [widget.audio_visualizer]
 color_2 = "error"
 width = 128
+
+[widget.bar]
+enabled = false
+type = "inndie/nape_pro_status:bar"
 
 [widget.battery]
 show_label = false

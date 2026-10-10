@@ -83,6 +83,7 @@ for ENTRY_SRC in ${ENTRIES[@]}; do
 
   printf "     copying to dst\n"
   cp -r "${ENTRY_SRC}" "${ENTRY_DST}"
+  git add "${ENTRY_DST_DIR}"
 done
 
 printf " * %bdumping noctalia shell config%b\n" "${C_CYAN}" "${C_RESET}"
